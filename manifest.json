@@ -1,0 +1,17 @@
+{
+  "name": "Les deux sous de l'économie",
+  "short_name": "Les deux sous",
+  "description": "Une fiche d'économie par jour, jusqu'au premier tour de la présidentielle 2027.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F3EADC",
+  "theme_color": "#56613F",
+  "orientation": "portrait",
+  "lang": "fr",
+  "icons": [
+    { "src": "icones/icone-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icones/icone-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icones/icone-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
