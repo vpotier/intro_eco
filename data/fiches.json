@@ -2042,5 +2042,1152 @@
         "bonne_reponse": 1
       }
     ]
+  },
+  {
+    "id": 50,
+    "ordre": 50,
+    "phase": 2,
+    "semaine": 2,
+    "jour": 1,
+    "type": "concept",
+    "titre": "Croissance démographique et ressources",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Après une semaine consacrée à la valeur et à l'échange, on change de registre : comment une société peut-elle continuer à nourrir et à faire prospérer une population qui augmente ? Cette question, en apparence simple, va structurer toute l'œuvre de l'auteur qu'on rencontre demain, Thomas Malthus, et continue de nourrir des débats très actuels sur l'environnement et les ressources planétaires."
+      },
+      {
+        "type": "texte",
+        "html": "L'intuition de départ est arithmétique. Une population qui croît à un taux constant progresse de façon <em class=\"accent\">exponentielle</em> : elle double, puis redouble, à intervalles réguliers. La production agricole, elle, dépend de la surface de terres cultivables disponibles et de la productivité de chaque parcelle — deux grandeurs qui, dans une économie préindustrielle, augmentent beaucoup plus lentement, de façon quasiment <em class=\"accent\">linéaire</em>. Si ces deux dynamiques se maintiennent durablement, l'écart entre la population et les ressources disponibles finit inévitablement par se creuser."
+      },
+      {
+        "type": "texte",
+        "html": "C'est ce raisonnement, popularisé par Malthus à la toute fin du xviiie siècle, qui donnera naissance à ce qu'on appellera plus tard le <em class=\"accent\">piège malthusien</em> : toute amélioration temporaire des conditions de vie stimule la croissance démographique, jusqu'à ce que la population revienne se heurter à la limite des ressources disponibles, ramenant le niveau de vie à son point de départ. Ce mécanisme a effectivement caractérisé une bonne partie de l'histoire humaine préindustrielle — avant que la révolution agricole et industrielle ne vienne, à partir du xixe siècle, bouleverser radicalement la donne en dissociant la croissance de la production de celle, purement arithmétique, des terres cultivées."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Une population croît en théorie de façon exponentielle, tandis que la production agricole préindustrielle croît beaucoup plus lentement. Ce déséquilibre potentiel, au cœur du raisonnement malthusien, a longtemps caractérisé l'histoire économique humaine, avant d'être bouleversé par la révolution industrielle."
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "ordre": 51,
+    "phase": 2,
+    "semaine": 2,
+    "jour": 2,
+    "type": "auteur",
+    "titre": "Thomas Malthus — le piège démographique",
+    "blocs": [
+      {
+        "type": "image",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Malthus.jpg",
+        "legende": "Thomas Robert Malthus (1766-1834), pasteur anglican et économiste britannique"
+      },
+      {
+        "type": "texte",
+        "html": "Thomas Robert Malthus, pasteur anglican et économiste, publie en 1798 son Essai sur le principe de population, texte resté l'un des plus commentés — et des plus controversés — de l'histoire de la pensée économique. Sa thèse centrale, déjà esquissée hier : la population croît de façon géométrique (1, 2, 4, 8, 16...) tandis que les subsistances ne peuvent croître que de façon arithmétique (1, 2, 3, 4, 5...). Cet écart mathématique condamne, selon lui, toute société à un ajustement douloureux dès que la population dépasse durablement ce que la terre peut nourrir."
+      },
+      {
+        "type": "texte",
+        "html": "Cet ajustement, Malthus l'appelle des « obstacles positifs » : famine, maladie, guerre — des mécanismes qui, en augmentant la mortalité, ramènent brutalement la population à un niveau soutenable. Face à cette perspective sombre, Malthus identifie un seul levier d'action véritablement volontaire et moralement acceptable à ses yeux : la <em class=\"accent\">contrainte morale</em>, c'est-à-dire le report volontaire du mariage et la limitation des naissances par la retenue — et non, contrairement à une idée reçue très répandue aujourd'hui, une quelconque forme de contraception, que Malthus, en pasteur de son temps, réprouvait moralement."
+      },
+      {
+        "type": "texte",
+        "html": "La postérité de Malthus est paradoxale. Sa prédiction d'une catastrophe démographique généralisée ne s'est pas réalisée en Europe, notamment parce que la révolution agricole puis industrielle a considérablement accéléré la croissance de la production, dissociant celle-ci de la seule surface de terres disponibles — un phénomène que Malthus, écrivant en 1798, ne pouvait anticiper. Pourtant, son raisonnement reste une référence obligée dès qu'on discute des limites physiques de la croissance, qu'il s'agisse des ressources naturelles, du changement climatique ou de la démographie mondiale — un débat qu'on prolonge dès demain avec une question résolument actuelle."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Thomas Malthus soutient, en 1798, que la population croît plus vite que les subsistances, menant à des ajustements douloureux (famine, maladie) sauf recours à la « contrainte morale » (report des naissances). Sa prédiction ne s'est pas réalisée en Europe grâce à la révolution agricole et industrielle, mais son raisonnement structure encore les débats sur les limites écologiques de la croissance."
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "ordre": 52,
+    "phase": 2,
+    "semaine": 2,
+    "jour": 3,
+    "type": "interpellation",
+    "titre": "Faut-il arrêter de faire des enfants pour sauver la planète ?",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "En lisant Malthus hier, une question contemporaine s'impose presque naturellement : et si son raisonnement, appliqué non plus aux terres agricoles mais aux ressources planétaires et au climat, avait aujourd'hui raison ? C'est la question posée, sous des formes diverses, par des mouvements comme le BirthStrike ou par certains débats sur l'empreinte carbone individuelle d'un enfant — faut-il, à l'échelle individuelle ou collective, limiter les naissances pour préserver la planète ?"
+      },
+      {
+        "type": "texte",
+        "html": "Précisons d'abord un point de rigueur historique, déjà évoqué hier : Malthus lui-même ne prônait jamais l'arrêt des naissances, mais leur report volontaire par la « contrainte morale ». Les mouvements contemporains d'antinatalisme écologique vont souvent plus loin que lui, en posant la question comme un choix individuel face à l'urgence climatique plutôt que comme une fatalité démographique subie. Certaines études, controversées dans leur méthodologie, ont mis en avant qu'avoir un enfant de moins serait, statistiquement, l'action individuelle ayant le plus fort effet sur l'empreinte carbone d'un ménage dans les pays riches, comparée par exemple à renoncer à la voiture ou à l'avion."
+      },
+      {
+        "type": "texte",
+        "html": "Les critiques de cette approche sont nombreuses et viennent d'horizons variés. D'un point de vue démographique, la croissance de la population mondiale est très inégalement répartie : l'essentiel de la croissance démographique future est projeté dans des pays à très faible empreinte carbone par habitant, tandis que la responsabilité historique des émissions de gaz à effet de serre incombe très majoritairement à une minorité de pays riches déjà en transition démographique ralentie. D'un point de vue éthique, certains estiment qu'individualiser la responsabilité climatique via des choix reproductifs personnels détourne l'attention des transformations structurelles nécessaires — industrielles, énergétiques, réglementaires — porteuses d'un effet bien plus déterminant. D'autres, enfin, rappellent qu'une population vieillissante et en déclin pose elle-même des défis économiques considérables, comme on le verra en phase 3 avec les questions de financement des retraites."
+      },
+      {
+        "type": "texte",
+        "html": "Entre ces positions, certains chercheurs proposent une voie médiane : ce n'est pas le nombre d'humains en tant que tel qui détermine l'impact environnemental, mais le niveau de consommation et le mode de production associés à chaque vie humaine — deux ménages de tailles identiques, l'un dans un pays à forte empreinte carbone et l'autre dans un pays à faible empreinte, n'ont pas du tout le même impact. Comme pour les précédentes fiches interpellation de ce programme, l'objectif n'est pas de te dicter une réponse, mais de te donner les repères nécessaires pour comprendre ce débat avec la nuance qu'il mérite."
+      },
+      {
+        "type": "encadre",
+        "titre": "Pas de réponse toute faite",
+        "html": "Le débat sur la natalité et l'environnement mêle des arguments démographiques, éthiques et économiques, sans qu'aucun consensus scientifique ne tranche clairement la question. Il est utile de le connaître pour décoder les discours médiatiques sur ce sujet, sans pour autant y voir une réponse simple et unique."
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "ordre": 53,
+    "phase": 2,
+    "semaine": 2,
+    "jour": 4,
+    "type": "concept",
+    "titre": "Les rendements décroissants",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Le raisonnement malthusien repose implicitement sur une idée que les économistes vont bientôt formaliser avec précision : la loi des <em class=\"accent\">rendements décroissants</em>. Elle énonce que, si l'on augmente progressivement un seul facteur de production (par exemple le travail) en gardant les autres facteurs constants (par exemple la surface de terre cultivée), chaque unité supplémentaire de ce facteur finit par apporter une production additionnelle de plus en plus faible."
+      },
+      {
+        "type": "texte",
+        "html": "L'exemple agricole, cher à Malthus, l'illustre bien : ajouter un premier ouvrier sur un champ augmente considérablement la récolte. En ajouter un second l'augmente encore, mais un peu moins. À force d'ajouter des travailleurs sur une surface fixe, on finit par se marcher sur les pieds, et chaque paire de bras supplémentaire n'apporte presque plus rien à la récolte totale — voire, au-delà d'un certain seuil, peut la faire diminuer. C'est précisément ce mécanisme qui, chez Malthus, limite structurellement la capacité de la production agricole à suivre une population croissante, tant que la surface de terre cultivable reste fixe."
+      },
+      {
+        "type": "texte",
+        "html": "Ce principe dépasse largement l'agriculture : il s'applique à n'importe quelle situation où l'on augmente un facteur en gardant les autres constants — ajouter des employés dans un bureau déjà plein, multiplier les études sur une même personne au-delà d'un certain point, ou encore accumuler du capital sans accroissement équivalent du travail disponible pour l'utiliser. C'est aussi ce principe qui explique pourquoi, historiquement, l'innovation technologique a joué un rôle si déterminant : en permettant de déplacer la courbe de production tout entière plutôt que de simplement ajouter des unités d'un même facteur, elle a permis d'échapper, au moins temporairement, aux rendements décroissants qui limitaient la pensée de Malthus."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "La loi des rendements décroissants énonce que chaque unité supplémentaire d'un facteur de production, les autres facteurs restant fixes, apporte une production additionnelle de moins en moins importante. C'est ce principe, sous-jacent au raisonnement de Malthus, que seule l'innovation technologique permet de contourner durablement."
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "ordre": 54,
+    "phase": 2,
+    "semaine": 2,
+    "jour": 5,
+    "type": "auteur",
+    "titre": "Jean-Baptiste Say — la loi des débouchés",
+    "blocs": [
+      {
+        "type": "image",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean-Baptiste%20Say%20%281767-1832%29.jpg",
+        "legende": "Jean-Baptiste Say (1767-1832), économiste français"
+      },
+      {
+        "type": "texte",
+        "html": "Jean-Baptiste Say, économiste et industriel français, publie en 1803 son Traité d'économie politique, dans lequel il popularise et systématise l'un des théorèmes classiques les plus débattus de l'histoire de la discipline : la <em class=\"accent\">loi des débouchés</em>, plus connue aujourd'hui sous le nom de « loi de Say »."
+      },
+      {
+        "type": "texte",
+        "html": "L'intuition centrale, résumée par la formule (que Say lui-même n'a jamais employée mot pour mot, mais qui synthétise assez bien sa pensée) selon laquelle « l'offre crée sa propre demande », tient au raisonnement suivant : produire un bien génère mécaniquement des revenus — salaires versés aux travailleurs, profits pour l'entrepreneur, rente pour le propriétaire foncier. Ces revenus, à leur tour, sont dépensés pour acheter d'autres biens sur le marché. Il ne peut donc pas exister, selon Say, de situation où l'ensemble de l'économie souffrirait durablement d'une insuffisance globale de la demande : chaque acte de production crée, du même mouvement, le pouvoir d'achat nécessaire à son écoulement."
+      },
+      {
+        "type": "texte",
+        "html": "Cette loi a une conséquence politique importante, dans la lignée du libéralisme économique déjà croisé avec Smith et Ricardo : si l'offre crée toujours sa propre demande à l'échelle de l'économie globale, alors les crises de surproduction généralisées et durables ne peuvent être, dans cette optique, que des phénomènes passagers, appelés à se résorber d'eux-mêmes par le jeu naturel des prix et des marchés, sans nécessiter d'intervention massive de l'État pour stimuler la demande."
+      },
+      {
+        "type": "texte",
+        "html": "Cette loi occupera une place centrale dans la pensée économique pendant plus d'un siècle, avant d'être frontalement contestée par John Maynard Keynes au xxe siècle — un débat qu'on retrouvera en détail en phase 3 de ce programme. Mais avant d'en arriver là, il est utile de confronter cette théorie à un cas très concret et très actuel, où la réalité semble prendre le contre-pied de l'intuition de Say."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "La loi des débouchés de Jean-Baptiste Say affirme que la production d'un bien génère mécaniquement les revenus nécessaires à son achat, rendant impossibles les crises de surproduction généralisées et durables. Cette idée influencera durablement le libéralisme économique, avant d'être remise en question par Keynes."
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "ordre": 55,
+    "phase": 2,
+    "semaine": 2,
+    "jour": 6,
+    "type": "actu",
+    "titre": "L'offre crée-t-elle vraiment sa demande ? Le cas de la surcapacité automobile chinoise",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "L'industrie automobile électrique chinoise offre un cas d'école pour interroger, très concrètement, la loi des débouchés vue hier. Selon une estimation de Goldman Sachs, la capacité de production chinoise de véhicules électriques équivalait déjà, il y a peu, à environ 2,1 fois la demande domestique chinoise, et 1,2 fois la demande mondiale totale. Autrement dit : la Chine produit, ou peut produire, bien plus de voitures électriques que ce que les marchés — chinois et mondial réunis — sont prêts à absorber aux prix actuels."
+      },
+      {
+        "type": "texte",
+        "html": "Cette situation a débouché sur une guerre des prix intérieure très vive, des stocks grandissants, et une stratégie massive d'exportation : en 2026, plus d'une voiture chinoise sur deux part désormais à l'exportation, avec des volumes mensuels dépassant parfois le total annuel exporté quelques années plus tôt. Cette vague exportatrice a elle-même provoqué des tensions commerciales avec plusieurs partenaires, l'Union européenne ayant notamment relevé ses droits de douane sur les véhicules électriques chinois pour protéger son industrie locale."
+      },
+      {
+        "type": "texte",
+        "html": "Ce cas illustre une limite concrète à la loi de Say dans sa version la plus simple : la production massive de véhicules électriques n'a pas automatiquement généré, en Chine, une demande domestique équivalente — une partie substantielle de cette offre a dû être écoulée par la baisse des prix, l'exportation massive, voire, selon certaines enquêtes journalistiques, par des pratiques comptables contestables consistant à enregistrer des véhicules neufs comme des véhicules d'occasion pour faciliter leur exportation. C'est précisément ce type de déséquilibre entre offre et demande globales que les critiques de la loi de Say, à commencer par Keynes, mettront en avant pour justifier un rôle actif de l'État dans la régulation de la demande — un débat central de la phase 3 de ce programme."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "La surcapacité de production automobile électrique en Chine, largement documentée en 2026, illustre un cas où l'offre ne génère pas mécaniquement une demande équivalente — un contre-exemple concret à la version la plus simple de la loi de Say, qui nourrit depuis un siècle le débat sur le rôle de la demande globale dans l'économie."
+      }
+    ],
+    "source": {
+      "texte": "Estimation Goldman Sachs : capacité de production chinoise de véhicules électriques équivalente à 2,1 fois la demande domestique et 1,2 fois la demande mondiale. En 2026, plus d'une voiture chinoise sur deux est exportée, avec des volumes mensuels dépassant le total annuel de certaines années précédentes.",
+      "lien": "https://www.coface.fr/actualites-economie-conseils/made-in-china-comment-la-chine-peut-elle-gerer-sa-surcapacite-industrielle",
+      "date_verification": "25 août 2026"
+    }
+  },
+  {
+    "id": 56,
+    "ordre": 56,
+    "phase": 2,
+    "semaine": 2,
+    "jour": 7,
+    "type": "quiz",
+    "titre": "Quiz — Semaine 2 (Phase 2)",
+    "contenu": "Teste ce que tu as retenu sur Malthus, les rendements décroissants et la loi de Say.",
+    "questions": [
+      {
+        "question": "Selon Malthus, comment évolue la population par rapport aux subsistances ?",
+        "options": [
+          "La population croît plus lentement que les subsistances",
+          "La population croît de façon géométrique, les subsistances de façon arithmétique",
+          "Les deux croissent toujours au même rythme"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Quel seul levier volontaire Malthus juge-t-il moralement acceptable pour limiter la croissance démographique ?",
+        "options": [
+          "La contraception moderne",
+          "La contrainte morale (report volontaire du mariage et des naissances)",
+          "L'immigration"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Pourquoi la prédiction de Malthus ne s'est-elle pas réalisée en Europe ?",
+        "options": [
+          "Parce que la population a cessé de croître",
+          "Grâce à la révolution agricole puis industrielle, qui a dissocié la production des seules terres disponibles",
+          "Parce que Malthus s'était trompé sur les mathématiques"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Que dit la loi des rendements décroissants ?",
+        "options": [
+          "Chaque unité supplémentaire d'un facteur apporte une production additionnelle de moins en moins importante, les autres facteurs étant fixes",
+          "La production augmente toujours proportionnellement au travail ajouté",
+          "Les rendements ne dépendent jamais des facteurs de production"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Selon la loi des débouchés de Jean-Baptiste Say, que crée la production d'un bien ?",
+        "options": [
+          "Uniquement des coûts",
+          "Les revenus nécessaires à sa propre consommation",
+          "Toujours une pénurie"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Quelle conséquence politique la loi de Say implique-t-elle, dans sa version classique ?",
+        "options": [
+          "Les crises de surproduction généralisées ne peuvent être que passagères, sans besoin d'intervention massive de l'État",
+          "L'État doit toujours stimuler la demande",
+          "Le commerce international est inutile"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Selon Goldman Sachs, à combien la capacité de production chinoise de véhicules électriques équivalait-elle par rapport à la demande domestique chinoise ?",
+        "options": [
+          "0,5 fois",
+          "2,1 fois",
+          "10 fois"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Comment la Chine a-t-elle en partie écoulé sa surcapacité de véhicules électriques ?",
+        "options": [
+          "En cessant totalement d'en produire",
+          "Par la baisse des prix et une exportation massive",
+          "En interdisant leur vente"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Quel économiste contestera plus tard, au xxe siècle, la loi de Say ?",
+        "options": [
+          "Adam Smith",
+          "John Maynard Keynes",
+          "David Ricardo"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Sur le débat natalité/environnement, quel est l'argument souvent opposé à l'antinatalisme écologique individuel ?",
+        "options": [
+          "Il n'existe aucun lien entre population et environnement",
+          "La responsabilité historique des émissions est très inégale entre pays riches et pays où la croissance démographique est la plus forte",
+          "Les enfants n'ont aucun impact environnemental"
+        ],
+        "bonne_reponse": 1
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "ordre": 57,
+    "phase": 2,
+    "semaine": 3,
+    "jour": 1,
+    "type": "concept",
+    "titre": "L'utilité marginale : la résolution du paradoxe de la valeur",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "On a laissé, en toute première semaine de cette phase, le paradoxe de l'eau et du diamant sans réponse pleinement satisfaisante. Voici enfin la clé qui va permettre de le résoudre, apportée à la toute fin du xixe siècle par ce qu'on appelle la <em class=\"accent\">révolution marginaliste</em> : ce n'est pas l'utilité totale d'un bien qui détermine sa valeur d'échange, mais son <em class=\"accent\">utilité marginale</em> — l'utilité apportée par la dernière unité consommée, dans les circonstances précises où l'échange a lieu."
+      },
+      {
+        "type": "texte",
+        "html": "L'eau, dans la plupart des situations, est abondante : consommer un verre de plus n'apporte qu'une satisfaction marginale très faible, puisque tous les besoins essentiels sont déjà largement couverts par les litres précédents. Le diamant, lui, est extrêmement rare : la moindre unité supplémentaire conserve une utilité marginale élevée, précisément parce qu'on en possède si peu. La valeur d'échange suit cette utilité marginale, et non l'utilité totale — ce qui explique enfin pourquoi l'eau, essentielle mais abondante, coûte presque rien, tandis que le diamant, superflu mais rare, coûte une fortune."
+      },
+      {
+        "type": "texte",
+        "html": "Ce basculement conceptuel, aussi simple qu'il paraisse une fois énoncé, va bouleverser toute l'économie : il ne s'agit plus de chercher la valeur du côté de la production (le travail nécessaire, comme chez Smith et Ricardo), mais du côté de la <em class=\"accent\">demande</em> et de la perception subjective qu'a chaque individu de l'utilité d'un bien. Trois économistes, travaillant indépendamment les uns des autres dans des pays différents entre 1871 et 1874, vont formuler ce principe presque simultanément — un cas resté célèbre de découverte scientifique multiple et indépendante, qu'on va découvrir cette semaine."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "L'utilité marginale — la satisfaction apportée par la dernière unité consommée d'un bien — explique enfin le paradoxe de l'eau et du diamant : l'eau, abondante, a une utilité marginale faible malgré son utilité totale élevée ; le diamant, rare, conserve une utilité marginale élevée. C'est ce basculement qui fonde la révolution marginaliste."
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "ordre": 58,
+    "phase": 2,
+    "semaine": 3,
+    "jour": 2,
+    "type": "auteur",
+    "titre": "Carl Menger — les premiers pas de l'école autrichienne",
+    "blocs": [
+      {
+        "type": "image",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carl%20Menger%20portrait.jpg",
+        "legende": "Carl Menger (1840-1921), économiste autrichien, fondateur de l'école autrichienne"
+      },
+      {
+        "type": "texte",
+        "html": "Carl Menger, économiste et professeur à l'université de Vienne, publie en 1871 ses Principes d'économie politique, l'un des trois textes fondateurs de la révolution marginaliste évoquée hier. C'est le fondateur de ce qu'on appellera l'<em class=\"accent\">école autrichienne</em>, un courant de pensée dont on retrouvera l'héritage bien plus tard dans ce programme, notamment avec Friedrich Hayek en phase 4."
+      },
+      {
+        "type": "texte",
+        "html": "L'apport spécifique de Menger tient à sa théorie subjective de la valeur, particulièrement radicale pour son époque : selon lui, un bien n'a aucune valeur intrinsèque, objective, indépendante de l'appréciation individuelle qu'en fait chaque personne, à un moment donné, selon ses besoins et ses préférences propres. La valeur n'existe que dans l'esprit de celui qui juge le bien utile — une rupture nette avec la théorie de la valeur-travail vue en semaine 1, qui cherchait au contraire une mesure objective, indépendante des goûts individuels."
+      },
+      {
+        "type": "texte",
+        "html": "Menger introduit aussi une distinction utile entre les biens de premier ordre — ceux qui satisfont directement un besoin, comme le pain — et les biens d'ordre supérieur — les facteurs de production (la farine, le blé, la terre) qui n'ont de valeur que parce qu'ils permettent, in fine, de produire des biens de premier ordre. Cette « théorie de l'imputation » remonte la chaîne de valeur depuis la satisfaction du consommateur jusqu'aux moyens de production, inversant ainsi le sens du raisonnement classique, qui partait plutôt du coût de production pour expliquer le prix final."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Carl Menger fonde l'école autrichienne en 1871 avec une théorie radicalement subjective de la valeur : un bien ne vaut rien en soi, seule l'appréciation individuelle qu'on lui porte compte. Il distingue aussi les biens de consommation directe des biens de production, dont la valeur découle de celle des biens qu'ils permettent de produire."
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "ordre": 59,
+    "phase": 2,
+    "semaine": 3,
+    "jour": 3,
+    "type": "concept",
+    "titre": "La rareté relative, revisitée",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "On a défini la rareté dès la toute première fiche de ce programme, en phase 1, comme le déséquilibre entre des ressources limitées et des besoins illimités. La révolution marginaliste permet aujourd'hui d'affiner considérablement cette notion : ce qui compte économiquement n'est jamais la rareté physique absolue d'un bien, mais sa rareté <em class=\"accent\">relative</em> par rapport à la demande qui s'exerce sur lui à un instant donné."
+      },
+      {
+        "type": "texte",
+        "html": "L'air est physiquement abondant, mais économiquement gratuit dans la plupart des circonstances, précisément parce que sa disponibilité dépasse largement les besoins de chacun — sauf circonstance particulière, comme l'air comprimé pour la plongée sous-marine, qui devient alors un bien économique à part entière, avec un prix. À l'inverse, un bien objectivement peu rare en quantité absolue, comme certaines terres agricoles très demandées à proximité d'une grande ville, peut devenir extrêmement coûteux si la demande locale qui s'y porte dépasse largement l'offre disponible à cet endroit précis — un principe qu'on avait déjà observé, sous un autre angle, avec le marché du logement en phase 1."
+      },
+      {
+        "type": "texte",
+        "html": "Cette relecture de la rareté a une conséquence méthodologique importante pour la suite de ce programme : elle explique pourquoi les économistes marginalistes vont désormais analyser les phénomènes économiques « à la marge » — en étudiant l'effet d'une unité supplémentaire ou en moins, plutôt qu'en raisonnant sur des quantités globales et moyennes, comme le faisaient largement les classiques. Cette approche « marginaliste » deviendra la méthode dominante de l'analyse économique pour tout le xxe siècle."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "La rareté économiquement pertinente n'est jamais absolue, mais relative à la demande exercée sur un bien à un instant et un lieu donnés. Cette relecture fonde la méthode « à la marge » — raisonner sur l'effet d'une unité de plus ou de moins — qui deviendra la méthode dominante de l'analyse économique du xxe siècle."
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "ordre": 60,
+    "phase": 2,
+    "semaine": 3,
+    "jour": 4,
+    "type": "auteur",
+    "titre": "William Stanley Jevons — la révolution marginaliste anglaise",
+    "blocs": [
+      {
+        "type": "image",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/William%20Stanley%20Jevons%20portrait.jpg",
+        "legende": "William Stanley Jevons (1835-1882), économiste et logicien britannique"
+      },
+      {
+        "type": "texte",
+        "html": "William Stanley Jevons, économiste et logicien britannique, publie en 1871 sa Théorie de l'économie politique — la même année que les Principes de Carl Menger, sans que les deux hommes n'aient eu connaissance des travaux de l'autre. C'est l'un des trois découvreurs indépendants et quasi simultanés de la révolution marginaliste, aux côtés de Menger et de Léon Walras, déjà rencontré en phase 1, dont les Éléments d'économie politique pure paraîtront trois ans plus tard, en 1874."
+      },
+      {
+        "type": "texte",
+        "html": "L'apport spécifique de Jevons tient à sa volonté d'appliquer un traitement résolument mathématique à l'économie — une démarche encore peu répandue à son époque. Il formule avec précision la loi de l'utilité marginale décroissante : plus on consomme d'unités d'un même bien, plus l'utilité apportée par chaque unité supplémentaire diminue. C'est cette formalisation qui permettra, par la suite, de construire rigoureusement les courbes de demande décroissantes qu'on a découvertes en phase 1."
+      },
+      {
+        "type": "texte",
+        "html": "Jevons reste également connu pour un paradoxe qui porte aujourd'hui son nom, formulé dans un tout autre contexte : celui de l'exploitation du charbon en Angleterre. Il observe qu'une amélioration de l'efficacité énergétique d'une machine, loin de réduire mécaniquement la consommation totale de charbon, peut au contraire l'augmenter, en rendant l'usage de cette énergie moins coûteux et donc plus attractif pour de nouveaux usages. Ce paradoxe, connu aujourd'hui sous le nom d'effet rebond, reste extrêmement débattu dans les politiques climatiques contemporaines : les gains d'efficacité énergétique suffisent-ils, à eux seuls, à réduire la consommation totale d'énergie, ou risquent-ils au contraire de l'stimuler par un effet de volume ?"
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "William Stanley Jevons, en 1871, formalise mathématiquement l'utilité marginale décroissante — indépendamment de Menger et Walras. Il est aussi l'auteur du « paradoxe de Jevons », selon lequel une meilleure efficacité énergétique peut, paradoxalement, augmenter la consommation totale d'énergie plutôt que la réduire."
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "ordre": 61,
+    "phase": 2,
+    "semaine": 3,
+    "jour": 5,
+    "type": "actu",
+    "titre": "Eau abondante, lithium rare : le paradoxe de la valeur en 2026",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Le paradoxe de l'eau et du diamant, vu cette semaine, trouve un écho saisissant dans l'actualité des matières premières critiques pour la transition énergétique. Début 2026, le prix du carbonate de lithium — matière première essentielle des batteries — a presque doublé en quelques mois, passant d'environ 13 400 dollars la tonne fin 2025 à plus de 26 000 dollars la tonne début 2026, avant de se stabiliser autour de 24 000 à 25 000 dollars au printemps."
+      },
+      {
+        "type": "texte",
+        "html": "Cette flambée illustre exactement la mécanique de l'utilité marginale vue cette semaine : le lithium, contrairement à l'eau, reste un métal relativement rare rapporté à l'explosion de la demande mondiale de batteries — pour les véhicules électriques, mais aussi, de façon croissante, pour le stockage d'électricité stationnaire. Cette rareté relative, conjuguée à des tensions d'approvisionnement (restrictions chinoises sur certaines terres rares, embargo congolais sur le cobalt), pousse mécaniquement les prix à la hausse, malgré l'absence de toute pénurie physique absolue du métal sur Terre — les réserves identifiées de lithium ont d'ailleurs plus que doublé en dix ans, selon les spécialistes du secteur."
+      },
+      {
+        "type": "texte",
+        "html": "L'eau, à l'inverse, reste extrêmement bon marché dans la quasi-totalité des situations — malgré son caractère absolument vital —, précisément parce que sa disponibilité, dans la plupart des régions du monde, dépasse encore largement la demande qui s'exerce sur elle au quotidien. C'est un rappel très concret que la valeur économique d'un bien ne se mesure jamais à son utilité vitale objective, mais bien à sa rareté relative face à la demande, exactement comme le prédisaient Menger et Jevons il y a plus de 150 ans."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "La flambée du prix du lithium début 2026, malgré des réserves mondiales abondantes en valeur absolue, illustre concrètement la théorie de l'utilité marginale : c'est la rareté relative à la demande — et non l'utilité vitale — qui détermine la valeur d'échange d'un bien."
+      }
+    ],
+    "source": {
+      "texte": "Prix du carbonate de lithium : environ 13 400 $/tonne fin décembre 2025, plus de 26 000 $/tonne fin janvier 2026 (+95 %), stabilisé autour de 24 000-25 000 $/tonne au printemps 2026. Réserves mondiales identifiées de lithium passées de 13,5 à 30 millions de tonnes en dix ans.",
+      "lien": "https://www.france-epargne.fr/news/lithium-le-rallye-de-2026-relance-les-producteurs-et-ravive-lenjeu-de-souverainete-europeenne",
+      "date_verification": "25 août 2026"
+    }
+  },
+  {
+    "id": 62,
+    "ordre": 62,
+    "phase": 2,
+    "semaine": 3,
+    "jour": 6,
+    "type": "concept",
+    "titre": "Utilité et choix du consommateur",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "La révolution marginaliste ne s'arrête pas à expliquer le prix d'un bien pris isolément : elle fournit aussi un cadre pour comprendre comment un consommateur, disposant d'un budget limité, répartit ses achats entre différents biens. Le principe central est celui de l'<em class=\"accent\">égalisation des utilités marginales pondérées par le prix</em> — une idée plus simple qu'elle n'y paraît une fois illustrée."
+      },
+      {
+        "type": "texte",
+        "html": "Imagine que tu disposes d'un budget fixe à répartir entre du pain et du fromage. Tant que le dernier euro dépensé en pain t'apporte plus de satisfaction que le dernier euro dépensé en fromage, tu as intérêt à acheter davantage de pain — jusqu'à ce que, l'utilité marginale du pain diminuant à mesure que tu en consommes, l'équilibre se rétablisse entre les deux biens. Le consommateur rationnel, dans ce cadre théorique, répartit son budget de façon à ce que le dernier euro dépensé sur chaque bien lui apporte exactement la même satisfaction marginale — sans quoi il aurait intérêt à réallouer ses achats."
+      },
+      {
+        "type": "texte",
+        "html": "Ce cadre théorique, aussi élégant soit-il, repose sur des hypothèses fortes qu'il faut garder à l'esprit : il suppose un consommateur parfaitement informé, capable de comparer précisément l'utilité de biens très différents, et agissant de façon purement rationnelle. Des décennies plus tard, l'économie comportementale — qu'on découvrira en détail en phase 5 avec Daniel Kahneman — viendra nuancer considérablement cette vision, en montrant que les choix réels des consommateurs s'écartent souvent, et de façon systématique, de ce modèle idéalisé. Mais comme point de départ pour comprendre la logique du choix économique, ce cadre marginaliste reste, encore aujourd'hui, la base de la microéconomie enseignée dans le monde entier."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Un consommateur rationnel répartit son budget entre différents biens de façon à égaliser, pour chaque bien, la satisfaction apportée par le dernier euro dépensé. Ce cadre marginaliste, bien que fondé sur des hypothèses de rationalité parfaite aujourd'hui nuancées, reste la base de la microéconomie moderne."
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "ordre": 63,
+    "phase": 2,
+    "semaine": 3,
+    "jour": 7,
+    "type": "quiz",
+    "titre": "Quiz — Semaine 3 (Phase 2)",
+    "contenu": "Teste ce que tu as retenu sur la révolution marginaliste.",
+    "questions": [
+      {
+        "question": "Qu'est-ce que l'utilité marginale ?",
+        "options": [
+          "L'utilité totale d'un bien",
+          "L'utilité apportée par la dernière unité consommée d'un bien",
+          "Le coût de production d'un bien"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Comment l'utilité marginale résout-elle le paradoxe de l'eau et du diamant ?",
+        "options": [
+          "Elle montre que l'eau n'a aucune utilité",
+          "L'eau, abondante, a une utilité marginale faible malgré son utilité totale élevée ; le diamant, rare, garde une utilité marginale élevée",
+          "Elle prouve que le diamant est plus utile que l'eau dans l'absolu"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Quelle est la spécificité de la théorie de la valeur de Carl Menger ?",
+        "options": [
+          "Elle est objective et fondée sur le travail",
+          "Elle est radicalement subjective : un bien ne vaut que par l'appréciation individuelle qu'on lui porte",
+          "Elle ignore totalement la notion de valeur"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Qu'est-ce que la rareté « relative », par opposition à la rareté absolue ?",
+        "options": [
+          "La rareté d'un bien par rapport à la demande qui s'exerce sur lui, à un instant et un lieu donnés",
+          "La quantité physique totale d'un bien sur Terre",
+          "Un concept qui n'existe pas en économie"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Qui a formulé, en 1871, la loi de l'utilité marginale décroissante de façon mathématique, indépendamment de Menger ?",
+        "options": [
+          "William Stanley Jevons",
+          "Adam Smith",
+          "Thomas Malthus"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Que décrit le « paradoxe de Jevons » ?",
+        "options": [
+          "Le fait qu'une meilleure efficacité énergétique peut augmenter la consommation totale d'énergie plutôt que la réduire",
+          "Le fait que l'eau est plus chère que le diamant",
+          "Une théorie sur la monnaie"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "En 2026, pourquoi le prix du lithium a-t-il fortement augmenté malgré des réserves mondiales abondantes ?",
+        "options": [
+          "Parce que le lithium a disparu de la planète",
+          "En raison d'une rareté relative face à l'explosion de la demande de batteries",
+          "Parce que son prix est fixé par la loi"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Selon le principe d'égalisation des utilités marginales, comment un consommateur rationnel répartit-il son budget ?",
+        "options": [
+          "Il dépense tout sur un seul bien",
+          "De façon à ce que le dernier euro dépensé sur chaque bien lui apporte la même satisfaction marginale",
+          "Au hasard"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Quels trois économistes ont formulé la révolution marginaliste de façon indépendante entre 1871 et 1874 ?",
+        "options": [
+          "Smith, Ricardo et Malthus",
+          "Menger, Jevons et Walras",
+          "Keynes, Hayek et Friedman"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Quel courant théorique viendra plus tard nuancer l'hypothèse de rationalité parfaite du consommateur marginaliste ?",
+        "options": [
+          "L'économie comportementale",
+          "Le marxisme",
+          "Le mercantilisme"
+        ],
+        "bonne_reponse": 0
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "ordre": 64,
+    "phase": 2,
+    "semaine": 4,
+    "jour": 1,
+    "type": "auteur",
+    "titre": "Léon Walras, approfondissement — l'équilibre général comme système",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Tu as rencontré Léon Walras en phase 1, avec sa théorie de l'équilibre général et son processus de tâtonnement. Revenons vers lui un instant, à la lumière de ce qu'on vient d'apprendre sur la révolution marginaliste : Walras est, avec Jevons et Menger, l'un des trois pères fondateurs de ce mouvement, mais avec une ambition plus systémique que les deux autres."
+      },
+      {
+        "type": "texte",
+        "html": "Là où Jevons et Menger s'attachent surtout à expliquer la formation de la valeur d'un bien pris isolément, Walras cherche à démontrer mathématiquement qu'un système de prix peut mettre en équilibre <em class=\"accent\">simultanément</em> l'ensemble des marchés d'une économie — celui du pain, du travail, du capital, de chaque bien pris un par un — les uns par rapport aux autres. C'est cette ambition d'embrasser l'économie comme un système global et interdépendant, plutôt que marché par marché, qui distingue fondamentalement son approche de celle de Marshall, qu'on va retrouver dans deux jours."
+      },
+      {
+        "type": "texte",
+        "html": "Un résultat mathématique portant son nom, la <em class=\"accent\">loi de Walras</em>, énonce que si tous les marchés d'une économie sont à l'équilibre sauf un, alors ce dernier marché est nécessairement, lui aussi, à l'équilibre — une conséquence directe du fait que la somme des valeurs des excédents de demande sur l'ensemble des marchés doit toujours être égale à zéro. Ce résultat, aussi abstrait paraisse-t-il, a des implications concrètes pour comprendre comment un déséquilibre sur un marché (par exemple une pénurie de main-d'œuvre) se répercute mécaniquement sur d'autres marchés (par exemple une hausse des salaires, qui influence à son tour les prix des biens produits)."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Léon Walras, pionnier de la révolution marginaliste aux côtés de Jevons et Menger, se distingue par son ambition systémique : démontrer qu'un système de prix peut équilibrer simultanément tous les marchés d'une économie. Sa loi énonce que si tous les marchés sont à l'équilibre sauf un, ce dernier l'est nécessairement aussi."
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "ordre": 65,
+    "phase": 2,
+    "semaine": 4,
+    "jour": 2,
+    "type": "concept",
+    "titre": "Équilibre général et équilibre partiel",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "On vient de croiser deux façons différentes d'analyser un marché, portées respectivement par Walras et par Marshall vu en phase 1 : l'<em class=\"accent\">équilibre général</em> et l'<em class=\"accent\">équilibre partiel</em>. Cette distinction, en apparence technique, a des conséquences très concrètes sur la façon dont les économistes raisonnent, encore aujourd'hui."
+      },
+      {
+        "type": "texte",
+        "html": "L'analyse en <em class=\"accent\">équilibre partiel</em>, celle de Marshall, consiste à étudier un marché isolément, en supposant que tout ce qui se passe ailleurs dans l'économie reste inchangé — une hypothèse résumée par l'expression latine ceteris paribus, « toutes choses égales par ailleurs ». C'est une méthode puissante et intuitive pour analyser une question précise : que se passe-t-il sur le marché du blé si une taxe y est instaurée ? On peut répondre sans avoir à modéliser l'ensemble de l'économie mondiale en même temps."
+      },
+      {
+        "type": "texte",
+        "html": "L'analyse en <em class=\"accent\">équilibre général</em>, celle de Walras, refuse au contraire cette simplification : une taxe sur le blé modifie le revenu des agriculteurs, qui modifie leur consommation d'autres biens, qui modifie à son tour les prix de ces biens, qui rétroagissent potentiellement sur le marché du blé lui-même. Cette approche est plus rigoureuse, mais beaucoup plus complexe à manier concrètement — ce qui explique pourquoi, dans la pratique, la plupart des analyses économiques du quotidien, y compris celles qu'on a croisées dans ce programme sur l'énergie ou le logement, utilisent une logique d'équilibre partiel, plus simple et souvent suffisante pour répondre à une question précise, tout en gardant en tête ses limites."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "L'équilibre partiel (Marshall) analyse un marché isolément, toutes choses égales par ailleurs — plus simple et souvent suffisant. L'équilibre général (Walras) prend en compte les interactions entre tous les marchés d'une économie — plus rigoureux mais bien plus complexe à manier concrètement."
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "ordre": 66,
+    "phase": 2,
+    "semaine": 4,
+    "jour": 3,
+    "type": "auteur",
+    "titre": "Alfred Marshall, approfondissement — l'économiste comme « outil »",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Retour vers Alfred Marshall, déjà rencontré en phase 1 avec la métaphore des deux lames de ciseaux et le concept d'élasticité. Ce qui mérite d'être approfondi aujourd'hui, c'est sa conception même de ce que doit être l'économie comme discipline — une conception qui a durablement façonné la façon dont elle est enseignée et pratiquée jusqu'à aujourd'hui."
+      },
+      {
+        "type": "texte",
+        "html": "Marshall considérait l'économie non pas comme un système de vérités abstraites et définitives, mais comme une <em class=\"accent\">boîte à outils</em> — un ensemble de méthodes et de concepts permettant d'analyser des situations concrètes et changeantes, plutôt qu'une doctrine figée à appliquer mécaniquement. Cette conception explique en partie pourquoi il a privilégié l'équilibre partiel, plus opérationnel au quotidien, plutôt que la rigueur systémique mais complexe de Walras — un choix méthodologique délibéré, pas une limite involontaire."
+      },
+      {
+        "type": "texte",
+        "html": "Marshall est aussi connu pour avoir cherché à rendre l'économie accessible au plus grand nombre, sans pour autant renoncer à la rigueur : ses Principes d'économie, publiés en 1890, mêlent délibérément raisonnement mathématique en notes de bas de page et explications en langage courant dans le corps du texte, pour toucher un public plus large que les seuls spécialistes — une préoccupation pédagogique qu'on pourrait presque qualifier, avec un clin d'œil, de précurseur du projet même de ce programme."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Alfred Marshall concevait l'économie comme une boîte à outils pragmatique pour analyser des situations concrètes, plutôt que comme un système de vérités abstraites — une conception qui a durablement influencé la façon dont la discipline est enseignée et pratiquée aujourd'hui."
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "ordre": 67,
+    "phase": 2,
+    "semaine": 4,
+    "jour": 4,
+    "type": "actu",
+    "titre": "Le choc pétrolier de 2026 : un équilibre de marché violemment perturbé",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Peu d'exemples récents illustrent aussi nettement un déplacement brutal d'équilibre de marché que le pétrole en 2026. Avant l'escalade militaire au Moyen-Orient fin février, le baril de Brent, référence internationale, s'échangeait autour de 72 dollars. En quelques semaines, sous l'effet des craintes sur l'approvisionnement — attaques dans le détroit d'Ormuz, annulations de couvertures d'assurance maritime sur la zone —, le prix a bondi jusqu'à dépasser 130 dollars en avril, soit une hausse de plus de 80 % en quelques mois."
+      },
+      {
+        "type": "texte",
+        "html": "Ce choc s'explique exactement par la mécanique de l'équilibre partiel vue cette semaine : une perturbation de l'offre disponible (crainte d'interruption des flux pétroliers du Golfe), la demande mondiale restant globalement stable à court terme, déplace mécaniquement le prix d'équilibre vers le haut. Depuis ce pic, les cours ont progressivement reflué — autour de 95 à 106 dollars mi-août 2026 — à mesure que le marché intégrait une normalisation partielle des risques, sans toutefois revenir à leur niveau d'avant-crise, la prime de risque géopolitique restant durablement intégrée dans les prix."
+      },
+      {
+        "type": "texte",
+        "html": "Cet épisode illustre bien les limites de l'équilibre partiel évoquées cette semaine : la hausse du pétrole ne reste jamais confinée à ce seul marché. Elle s'est immédiatement propagée aux prix du gaz — dont on a suivi l'évolution en phase 1 —, à l'inflation générale via les carburants et l'énergie, aux décisions de politique monétaire de la BCE, et jusqu'aux résultats du secteur du luxe, dont les ventes au Moyen-Orient ont été directement affectées. Une analyse rigoureuse de cet épisode demanderait, en toute logique walrasienne, de suivre ces répercussions à travers l'ensemble de l'économie — même si, au quotidien, l'analyse en équilibre partiel, marché par marché, reste l'outil le plus utilisé pour en comprendre chaque facette."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Le prix du Brent est passé d'environ 72 $ fin février 2026 à plus de 130 $ en avril, sous l'effet d'un choc sur l'offre lié à la guerre au Moyen-Orient, avant de refluer partiellement — un cas d'école de déplacement brutal d'équilibre de marché, dont les effets se sont propagés bien au-delà du seul secteur pétrolier."
+      }
+    ],
+    "source": {
+      "texte": "Prix du Brent : environ 72,48 $/baril le 27 février 2026, pic au-delà de 130 $/baril en avril 2026, stabilisation entre 95 et 106 $/baril à la mi-août 2026, dans un contexte de guerre au Moyen-Orient et de tensions sur le détroit d'Ormuz.",
+      "lien": "https://libertex.com/fr/blog/cours-de-petrole-prevision",
+      "date_verification": "25 août 2026"
+    }
+  },
+  {
+    "id": 68,
+    "ordre": 68,
+    "phase": 2,
+    "semaine": 4,
+    "jour": 5,
+    "type": "concept",
+    "titre": "Les rendements d'échelle",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "On a vu, en semaine 2, que la loi des rendements décroissants s'applique quand on augmente un seul facteur de production, les autres restant fixes. Une question différente, tout aussi centrale en économie, se pose quand on augmente <em class=\"accent\">tous</em> les facteurs de production simultanément, dans les mêmes proportions : c'est la question des <em class=\"accent\">rendements d'échelle</em>."
+      },
+      {
+        "type": "texte",
+        "html": "On parle de rendements d'échelle <em class=\"accent\">constants</em> quand doubler l'ensemble des facteurs (travail, capital, matières premières) double exactement la production — une petite boulangerie qui ouvre une seconde boutique identique produira, toutes choses égales par ailleurs, deux fois plus de pain. On parle de rendements <em class=\"accent\">croissants</em> quand doubler les facteurs plus que double la production — c'est typiquement le cas dans les secteurs à forts coûts fixes, comme l'industrie ou les plateformes numériques, où produire davantage permet de répartir un coût fixe initial sur un volume plus grand, réduisant le coût moyen par unité."
+      },
+      {
+        "type": "texte",
+        "html": "Les rendements <em class=\"accent\">décroissants</em> à l'échelle, plus rares mais réels, surviennent quand la coordination devient plus complexe à mesure qu'une organisation grandit, au point que doubler les moyens ne parvient plus à doubler la production — un phénomène parfois observé dans de très grandes bureaucraties. Cette notion de rendements d'échelle explique en partie pourquoi certains secteurs, comme les semi-conducteurs de pointe vus en semaine 1, tendent naturellement vers une concentration extrême autour de quelques très grands acteurs : les coûts fixes de recherche et d'investissement y sont si considérables que seule une production à très grande échelle permet de les rentabiliser, ce qu'on appelle des économies d'échelle."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Les rendements d'échelle décrivent l'effet d'une augmentation proportionnelle de tous les facteurs de production à la fois : constants si la production suit exactement, croissants si elle augmente plus que proportionnellement (économies d'échelle), décroissants si elle augmente moins — un concept clé pour comprendre la concentration de certains secteurs à forts coûts fixes."
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "ordre": 69,
+    "phase": 2,
+    "semaine": 4,
+    "jour": 6,
+    "type": "auteur",
+    "titre": "Francis Edgeworth — la boîte qui visualise l'échange",
+    "blocs": [
+      {
+        "type": "image",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Edgeworth%20box.png",
+        "legende": "La boîte d'Edgeworth : représentation graphique des échanges possibles entre deux agents détenant deux biens"
+      },
+      {
+        "type": "texte",
+        "html": "Francis Ysidro Edgeworth, économiste et statisticien irlandais, professeur à Oxford, publie en 1881 un ouvrage au titre singulier, Mathematical Psychics, dans lequel il pousse encore plus loin la formalisation mathématique de l'économie amorcée par Jevons, dont il fut proche. Sa contribution la plus durable, restée célèbre sous son nom, est un outil graphique d'une élégance redoutable pour visualiser l'échange entre deux personnes : la <em class=\"accent\">boîte d'Edgeworth</em>."
+      },
+      {
+        "type": "texte",
+        "html": "Le principe : imagine deux personnes possédant chacune une quantité de deux biens différents — disons du pain et du vin — dans des proportions différentes de leurs préférences respectives. La boîte d'Edgeworth représente, dans un même graphique, toutes les répartitions possibles de ces deux biens entre les deux personnes, ainsi que les courbes d'indifférence de chacune — des courbes reliant toutes les combinaisons de biens qui procurent le même niveau de satisfaction à une personne donnée, un autre concept que popularisera Edgeworth."
+      },
+      {
+        "type": "texte",
+        "html": "Cet outil permet de visualiser précisément un résultat fondamental : à partir d'une répartition initiale quelconque, les deux personnes ont souvent intérêt à échanger volontairement une partie de leurs biens, jusqu'à atteindre un point où plus aucun échange ne peut améliorer la situation de l'une sans détériorer celle de l'autre. Cet ensemble de points d'équilibre, appelé la <em class=\"accent\">courbe des contrats</em>, préfigure directement un concept qu'on va découvrir dès demain avec Vilfredo Pareto — l'idée qu'une situation peut être jugée « optimale » non pas parce qu'elle est juste ou égalitaire, mais parce qu'aucune amélioration mutuelle n'y est plus possible."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Francis Edgeworth invente en 1881 un outil graphique, la boîte d'Edgeworth, pour visualiser l'échange volontaire entre deux personnes détenant deux biens. Sa « courbe des contrats », qui rassemble les points où plus aucun échange mutuellement bénéfique n'est possible, annonce directement le concept d'optimum de Pareto."
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "ordre": 70,
+    "phase": 2,
+    "semaine": 4,
+    "jour": 7,
+    "type": "quiz",
+    "titre": "Quiz — Semaine 4 (Phase 2)",
+    "contenu": "Teste ce que tu as retenu sur Walras, Marshall, le choc pétrolier et Edgeworth.",
+    "questions": [
+      {
+        "question": "Qu'est-ce qui distingue l'ambition de Walras de celle de Jevons et Menger, au sein de la révolution marginaliste ?",
+        "options": [
+          "Walras s'intéresse uniquement à un seul bien",
+          "Walras cherche à démontrer l'équilibre simultané de tous les marchés d'une économie",
+          "Walras rejette totalement l'idée d'utilité marginale"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Que dit la loi de Walras ?",
+        "options": [
+          "Si tous les marchés sont à l'équilibre sauf un, ce dernier l'est nécessairement aussi",
+          "Tous les marchés sont toujours en déséquilibre",
+          "Les prix ne peuvent jamais s'ajuster"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Qu'est-ce que l'analyse en « équilibre partiel » ?",
+        "options": [
+          "L'analyse de tous les marchés simultanément",
+          "L'analyse d'un seul marché, toutes choses égales par ailleurs",
+          "Une méthode qui n'existe pas en économie"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Comment Alfred Marshall concevait-il l'économie comme discipline ?",
+        "options": [
+          "Comme un système de vérités abstraites et définitives",
+          "Comme une boîte à outils pragmatique pour analyser des situations concrètes",
+          "Comme une science purement mathématique sans lien avec le réel"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "De combien le prix du Brent a-t-il grimpé entre fin février et avril 2026 ?",
+        "options": [
+          "Il a baissé",
+          "D'environ 72 $ à plus de 130 $ le baril",
+          "Il est resté stable"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Qu'appelle-t-on des rendements d'échelle « croissants » ?",
+        "options": [
+          "Quand doubler tous les facteurs de production plus que double la production",
+          "Quand la production ne varie jamais",
+          "Quand un seul facteur de production augmente"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Pourquoi les secteurs à forts coûts fixes, comme les semi-conducteurs de pointe, tendent-ils à se concentrer ?",
+        "options": [
+          "Par hasard",
+          "Parce que seule une production à grande échelle permet de rentabiliser les coûts fixes de recherche et d'investissement",
+          "Parce que c'est interdit ailleurs"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Que permet de visualiser la boîte d'Edgeworth ?",
+        "options": [
+          "L'évolution du PIB dans le temps",
+          "Les répartitions possibles de deux biens entre deux personnes et les échanges mutuellement bénéfiques",
+          "Le taux de chômage"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Que représente la « courbe des contrats » chez Edgeworth ?",
+        "options": [
+          "L'ensemble des points où plus aucun échange ne peut améliorer une personne sans détériorer l'autre",
+          "Le prix d'équilibre d'un seul marché",
+          "Le montant total des impôts"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Quel économiste, qu'on va découvrir demain, prolonge directement l'idée de la courbe des contrats d'Edgeworth ?",
+        "options": [
+          "Vilfredo Pareto",
+          "John Maynard Keynes",
+          "Karl Marx"
+        ],
+        "bonne_reponse": 0
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "ordre": 71,
+    "phase": 2,
+    "semaine": 5,
+    "jour": 1,
+    "type": "auteur",
+    "titre": "Vilfredo Pareto — l'optimum qui porte son nom",
+    "blocs": [
+      {
+        "type": "image",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Vilfredo%20Pareto%201870s2.jpg",
+        "legende": "Vilfredo Pareto (1848-1923), ingénieur, économiste et sociologue italien"
+      },
+      {
+        "type": "texte",
+        "html": "Vilfredo Pareto, ingénieur civil italien de formation avant de se tourner vers l'économie, succède à Léon Walras à la chaire d'économie politique de l'université de Lausanne en 1893 — une transmission presque symbolique entre deux figures majeures de l'école marginaliste. Pareto va prolonger et systématiser plusieurs intuitions déjà croisées cette semaine, notamment la courbe des contrats d'Edgeworth, pour aboutir à l'un des concepts les plus durables de toute l'économie moderne : l'<em class=\"accent\">optimum de Pareto</em>."
+      },
+      {
+        "type": "texte",
+        "html": "Une situation est dite optimale au sens de Pareto lorsqu'il n'existe plus aucune réorganisation possible des ressources qui améliorerait le sort d'au moins une personne sans détériorer celui d'au moins une autre. C'est une définition volontairement minimaliste de l'efficacité économique : elle ne dit absolument rien sur la justice ou l'équité de la répartition initiale des ressources — une situation extrêmement inégalitaire peut parfaitement être optimale au sens de Pareto, du moment qu'aucune redistribution ne peut améliorer quelqu'un sans en léser un autre."
+      },
+      {
+        "type": "texte",
+        "html": "Cette précision est capitale, et souvent mal comprise dans le débat public : dire qu'une situation est « optimale au sens de Pareto » n'est en aucun cas un jugement moral sur sa désirabilité sociale — c'est un constat technique sur l'absence de gains d'efficacité mutuellement bénéfiques encore disponibles. Cette distinction, qu'on approfondira dès demain, deviendra centrale dans les débats économiques du xxe siècle sur l'arbitrage entre efficacité et justice sociale."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "L'optimum de Pareto désigne une situation où aucune réorganisation des ressources ne peut améliorer une personne sans en détériorer une autre. C'est un critère purement technique d'efficacité, qui ne dit rien sur la justice de la répartition — une situation très inégalitaire peut être parfaitement optimale au sens de Pareto."
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "ordre": 72,
+    "phase": 2,
+    "semaine": 5,
+    "jour": 2,
+    "type": "concept",
+    "titre": "Qu'est-ce qu'une situation économiquement « optimale » ?",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Le mot « optimal » est utilisé à tort et à travers dans le débat public — presque toujours pour signifier « souhaitable » ou « juste ». En économie, on l'a vu hier avec Pareto, ce mot a un sens beaucoup plus précis et beaucoup plus étroit, qu'il vaut la peine de bien fixer avant de poursuivre."
+      },
+      {
+        "type": "texte",
+        "html": "Reprenons un exemple concret : imagine une économie à deux personnes, où l'une possède l'intégralité des ressources et l'autre rien du tout. Cette situation extrême peut très bien être optimale au sens de Pareto — puisque prendre une ressource à la première personne pour la donner à la seconde la détériore nécessairement, même si cela améliore le sort de la seconde. Un économiste peut donc, en toute rigueur technique, qualifier cette situation profondément inégalitaire d'« optimale », sans que cela implique le moindre jugement sur sa désirabilité morale ou politique."
+      },
+      {
+        "type": "texte",
+        "html": "Cette distinction entre <em class=\"accent\">efficacité</em> (au sens de Pareto) et <em class=\"accent\">équité</em> (la question de savoir si une répartition est juste) structure une grande partie des désaccords économiques et politiques contemporains. Certains courants de pensée, plutôt favorables au marché, mettent l'accent sur l'efficacité, en estimant qu'un système qui maximise la taille du gâteau global bénéficie in fine à tous, y compris via des mécanismes de redistribution ultérieurs. D'autres courants, plus attentifs à la question distributive, estiment qu'une situation techniquement efficace mais extrêmement inégalitaire pose un problème politique et moral que le seul critère d'efficacité ne peut ni voir, ni résoudre. On retrouvera cette tension, sous une forme directement politique, dans la fiche interpellation de demain."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "L'« optimalité » économique, au sens de Pareto, est un critère d'efficacité technique, distinct de l'équité ou de la justice sociale. Une situation peut être optimale et pourtant profondément inégalitaire — une distinction essentielle pour décoder les désaccords entre courants économiques et politiques."
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "ordre": 73,
+    "phase": 2,
+    "semaine": 5,
+    "jour": 3,
+    "type": "interpellation",
+    "titre": "Les inégalités sont-elles la preuve d'un système qui marche ?",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "On vient de voir qu'une situation extrêmement inégalitaire peut, techniquement, être « optimale au sens de Pareto ». Cette idée, souvent déformée ou mal comprise, alimente en réalité un vrai débat de fond, bien au-delà du seul vocabulaire technique : certains discours politiques ou économiques présentent parfois les inégalités comme la preuve, presque mécanique, qu'un système économique fonctionne bien — puisqu'il « récompense » le mérite, l'effort ou la prise de risque. D'autres y voient au contraire le signe d'un dysfonctionnement profond, ou d'un rapport de force déséquilibré plutôt que d'un mérite réel."
+      },
+      {
+        "type": "texte",
+        "html": "L'argument en faveur d'un lien positif entre inégalités et dynamisme économique s'appuie sur l'idée d'incitation : si l'effort, l'innovation ou la prise de risque ne sont pas récompensés par des gains significativement supérieurs, les individus sont, selon cette lecture, moins incités à innover, entreprendre ou se former — ce qui, à terme, réduirait la croissance globale et donc, indirectement, le niveau de vie de tous, y compris des plus modestes, via des mécanismes de ruissellement économique. Certains économistes, comme Vilfredo Pareto lui-même dans ses travaux ultérieurs sur la répartition des revenus, observent aussi une régularité statistique frappante — la fameuse règle empirique selon laquelle une petite part de la population détient une part disproportionnée des richesses — qu'ils interprètent comme une constante presque naturelle des sociétés humaines plutôt que comme une anomalie à corriger."
+      },
+      {
+        "type": "texte",
+        "html": "L'argument inverse souligne que des inégalités très élevées ne reflètent pas toujours le mérite ou la productivité réelle : héritage, rentes de situation, avantages de départ dans l'accès à l'éducation, ou pouvoir de marché disproportionné de certains acteurs économiques peuvent creuser les écarts sans lien direct avec l'effort individuel. Des inégalités extrêmes peuvent aussi, selon cette lecture, freiner la croissance à long terme en limitant l'accès à l'éducation et à l'investissement pour une large partie de la population, ou en fragilisant la cohésion sociale et la stabilité politique nécessaires au bon fonctionnement même des marchés. On approfondira ce débat de façon beaucoup plus détaillée en phase 5 de ce programme, avec les travaux de Thomas Piketty."
+      },
+      {
+        "type": "texte",
+        "html": "Ce débat illustre bien pourquoi la distinction entre efficacité et équité, vue hier, est si importante à maîtriser : elle permet de repérer quand un discours politique glisse silencieusement d'un constat technique (« ce système est efficace ») à un jugement de valeur (« ce système est donc juste ») — deux affirmations bien différentes, que la rigueur économique invite à ne jamais confondre sans le dire explicitement."
+      },
+      {
+        "type": "encadre",
+        "titre": "Pas de réponse toute faite",
+        "html": "Le lien entre inégalités et performance économique fait l'objet de débats économiques et empiriques non tranchés, entre effet incitatif et frein à la croissance de long terme. La rigueur consiste surtout à ne jamais confondre un jugement d'efficacité technique avec un jugement de justice sociale, sans le rendre explicite."
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "ordre": 74,
+    "phase": 2,
+    "semaine": 5,
+    "jour": 4,
+    "type": "concept",
+    "titre": "Les limites du raisonnement classique",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Cette phase 2 touche à sa fin dans quelques jours, et il est temps de prendre un peu de recul sur ce qu'on vient de parcourir. Des classiques (Smith, Ricardo, Malthus, Say) aux marginalistes (Menger, Jevons, Walras, Marshall, Edgeworth, Pareto), l'économie du xixe siècle a construit un corpus théorique impressionnant, fondé sur quelques piliers communs : des marchés qui s'équilibrent spontanément par les prix, des agents rationnels qui maximisent leur utilité ou leur profit, et une confiance généralement forte dans la capacité du marché à s'auto-réguler."
+      },
+      {
+        "type": "texte",
+        "html": "Or, ce corpus théorique va être frontalement mis à l'épreuve par les événements du début du xxe siècle. La Grande Dépression des années 1930, avec un chômage de masse persistant que la théorie classique peinait à expliquer — puisqu'elle prédisait, via l'ajustement des salaires, un retour rapide au plein emploi —, va porter un coup décisif à la confiance dans l'auto-régulation spontanée des marchés. C'est dans ce contexte que John Maynard Keynes, qu'on découvrira en détail dès la phase 3 de ce programme, va bâtir une critique systématique de plusieurs piliers classiques, à commencer par la loi de Say vue en semaine 2 : et si l'offre ne créait pas toujours sa propre demande, notamment en période de crise de confiance généralisée ?"
+      },
+      {
+        "type": "texte",
+        "html": "D'autres limites, plus discrètes mais tout aussi structurantes, apparaîtront progressivement au fil du xxe siècle : la difficulté du raisonnement classique à intégrer les défaillances de marché (monopoles, externalités comme la pollution, information imparfaite entre acheteurs et vendeurs), l'hypothèse très forte de rationalité parfaite des agents économiques, ou encore l'absence de prise en compte sérieuse des institutions et des rapports de pouvoir dans la détermination des prix et des salaires. Ce sont précisément ces failles, identifiées progressivement, qui vont ouvrir la voie aux grands débats macroéconomiques qu'on explorera en phase 3 : le rôle de l'État, la gestion de la monnaie, et l'analyse des cycles économiques."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Le corpus classique et marginaliste du xixe siècle, fondé sur l'auto-régulation des marchés et la rationalité des agents, a été mis à l'épreuve par la Grande Dépression des années 1930 et le chômage de masse persistant — ouvrant la voie à la révolution keynésienne et aux grands débats macroéconomiques de la phase 3."
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "ordre": 75,
+    "phase": 2,
+    "semaine": 5,
+    "jour": 5,
+    "type": "auteur",
+    "titre": "Thorstein Veblen — la consommation ostentatoire",
+    "blocs": [
+      {
+        "type": "image",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Veblen3a.jpg",
+        "legende": "Thorstein Veblen (1857-1929), économiste et sociologue américain"
+      },
+      {
+        "type": "texte",
+        "html": "Thorstein Veblen, économiste et sociologue américain, publie en 1899 son ouvrage le plus célèbre, Théorie de la classe de loisir, dans lequel il développe une critique acerbe et originale de la société de consommation naissante de son époque — une critique qui prend délibérément le contre-pied de l'homo economicus rationnel des marginalistes qu'on vient d'étudier cette phase."
+      },
+      {
+        "type": "texte",
+        "html": "Veblen y forge deux concepts restés célèbres. La <em class=\"accent\">consommation ostentatoire</em> désigne l'achat de biens non pas pour leur utilité fonctionnelle, mais pour afficher publiquement sa richesse et son statut social — une motivation d'achat que le cadre marginaliste classique, centré sur l'utilité individuelle rationnelle, peine largement à intégrer. Le <em class=\"accent\">loisir ostentatoire</em>, symétriquement, désigne le fait d'afficher du temps libre non productif comme signe de statut social — l'oisiveté comme marqueur de richesse, plutôt que le travail."
+      },
+      {
+        "type": "texte",
+        "html": "On avait déjà croisé, en phase 1, l'idée de « bien de Veblen » — un bien dont la demande peut paradoxalement augmenter avec le prix, précisément parce que ce prix élevé fait partie intégrante de son attrait social. Cette intuition, qui porte logiquement son nom, illustre une limite concrète de la théorie marginaliste classique de l'utilité vue cette semaine : pour certains biens, l'utilité ne dépend pas seulement des caractéristiques intrinsèques du produit, mais aussi, et parfois surtout, de la comparaison sociale avec les autres consommateurs — une dimension que Veblen, précurseur, intègre bien avant que l'économie comportementale n'en fasse un champ d'étude à part entière."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Thorstein Veblen critique, dès 1899, la rationalité purement utilitaire des marginalistes en introduisant la consommation ostentatoire — l'achat pour afficher son statut social plutôt que pour l'utilité fonctionnelle du bien. C'est de là que vient le concept de « bien de Veblen », dont la demande peut augmenter avec le prix."
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "ordre": 76,
+    "phase": 2,
+    "semaine": 5,
+    "jour": 6,
+    "type": "actu",
+    "titre": "Le luxe en 2026 : quand la théorie de Veblen rencontre ses limites",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "L'industrie du luxe offre, en 2026, un cas d'étude vivant de la théorie de Veblen — mais aussi de ses limites. Après plusieurs années de ralentissement, le secteur traverse un début d'année particulièrement difficile : LVMH, numéro un mondial du secteur, a enregistré son pire début d'année de son histoire, avec des ventes en recul d'environ 6 % au premier trimestre 2026, pénalisées par le ralentissement du marché chinois — longtemps moteur de la croissance du secteur, avec des dépenses par habitant attendues en recul d'environ 4 % sur l'année — et par la guerre au Moyen-Orient, région qui représente environ 6 % des ventes mondiales du secteur."
+      },
+      {
+        "type": "texte",
+        "html": "Un rapport de la banque HSBC a pointé du doigt des « maux auto-infligés » par plusieurs maisons de luxe : des hausses de prix supérieures à celles des coûts de production, sans amélioration perçue de la créativité des collections — une stratégie qui, contrairement à la prédiction naïve de la théorie du bien de Veblen, n'a pas suffi à maintenir la demande. Certains consommateurs, confrontés à des prix jugés déraisonnables sans justification perçue en termes de désirabilité ou d'exclusivité réelle, ont tout simplement renoncé à l'achat."
+      },
+      {
+        "type": "texte",
+        "html": "Ce cas nuance utilement la lecture de Veblen : toutes les hausses de prix ne renforcent pas mécaniquement l'attrait social d'un bien de luxe. Certaines maisons, comme Hermès, ont mieux traversé cette période difficile en maintenant une politique de rareté véritable — listes d'attente, production volontairement limitée — plutôt qu'une simple hausse de prix sur une production en réalité massifiée. La différence est cruciale : le prix élevé seul ne suffit pas à créer l'effet Veblen, il doit s'accompagner d'une rareté et d'une désirabilité perçues comme authentiques par les consommateurs eux-mêmes."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Le ralentissement du marché du luxe en 2026 (LVMH en tête, pénalisé par la Chine et le Moyen-Orient) montre que l'effet Veblen n'est pas automatique : une simple hausse de prix sans rareté ni désirabilité réellement perçues peut, à l'inverse de la théorie simplifiée, faire fuir les consommateurs plutôt que renforcer l'attrait du bien."
+      }
+    ],
+    "source": {
+      "texte": "LVMH : ventes en baisse de 6 % au premier trimestre 2026, pire début d'année de son histoire. Dépenses de luxe en Chine attendues en recul d'environ 4 % en 2026. Moyen-Orient : environ 6 % des ventes mondiales du secteur luxe, affecté par le conflit depuis fin février 2026.",
+      "lien": "https://www.strategies.fr/actualites/marques/LQ6069158C/le-luxe-veut-retrouver-la-croissance-en-2026.html",
+      "date_verification": "25 août 2026"
+    }
+  },
+  {
+    "id": 77,
+    "ordre": 77,
+    "phase": 2,
+    "semaine": 5,
+    "jour": 7,
+    "type": "quiz",
+    "titre": "Quiz — Semaine 5 et bilan de la phase 2",
+    "contenu": "Dernière ligne droite de la phase 2 ! Ce quiz mélange les notions de la semaine et quelques rappels de l'ensemble de la phase, avant de passer à la phase 3 consacrée à la macroéconomie.",
+    "questions": [
+      {
+        "question": "Que désigne l'optimum de Pareto ?",
+        "options": [
+          "Une situation parfaitement égalitaire",
+          "Une situation où aucune réorganisation des ressources ne peut améliorer une personne sans en détériorer une autre",
+          "Le niveau de prix le plus bas possible"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Une situation optimale au sens de Pareto est-elle nécessairement juste ou équitable ?",
+        "options": [
+          "Oui, toujours",
+          "Non, ce critère ne dit rien sur l'équité de la répartition",
+          "Cela dépend uniquement du PIB du pays"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Quel événement du xxe siècle a mis à l'épreuve la confiance dans l'auto-régulation spontanée des marchés classiques ?",
+        "options": [
+          "La Grande Dépression des années 1930",
+          "La révolution marginaliste de 1871",
+          "La publication de La Richesse des nations"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Qu'est-ce que la « consommation ostentatoire » chez Thorstein Veblen ?",
+        "options": [
+          "L'achat d'un bien pour son utilité fonctionnelle uniquement",
+          "L'achat d'un bien pour afficher publiquement sa richesse et son statut social",
+          "Le refus total de consommer"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "En 2026, pourquoi les ventes de LVMH ont-elles reculé malgré des hausses de prix ?",
+        "options": [
+          "Parce que les consommateurs ont jugé les hausses de prix déraisonnables sans amélioration perçue de la créativité",
+          "Parce que le luxe n'intéresse plus personne",
+          "Parce que les prix ont baissé"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Quelle maison de luxe a mieux traversé la période en maintenant une rareté réelle (listes d'attente, production limitée) ?",
+        "options": [
+          "Hermès",
+          "Aucune maison n'a résisté",
+          "Toutes les maisons de la même façon"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Quel économiste, qu'on retrouvera en phase 3, a critiqué la loi de Say et l'auto-régulation classique des marchés ?",
+        "options": [
+          "John Maynard Keynes",
+          "Adam Smith",
+          "Carl Menger"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Rappel semaine 1 : que démontre l'avantage comparatif de Ricardo ?",
+        "options": [
+          "Que le protectionnisme est toujours préférable",
+          "Que deux pays ont intérêt à échanger même si l'un est plus efficace dans tous les domaines",
+          "Que le commerce international est toujours nuisible"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Rappel semaine 3 : qu'est-ce qui détermine la valeur d'échange d'un bien selon les marginalistes ?",
+        "options": [
+          "Son utilité totale uniquement",
+          "Son utilité marginale, liée à sa rareté relative",
+          "Uniquement le travail nécessaire à sa production"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Quelle phase du programme aborde ensuite la macroéconomie et la politique économique ?",
+        "options": [
+          "La phase 3",
+          "La phase 6",
+          "On revient à la phase 1"
+        ],
+        "bonne_reponse": 0
+      }
+    ]
   }
 ]
