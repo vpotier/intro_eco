@@ -165,14 +165,14 @@ function calculerMeilleurStreak() {
 }
 
 const PALIERS_STREAK = [
-  { seuil: 3, label: "Premier pas", detail: "3 jours de suite" },
-  { seuil: 7, label: "Une semaine pile", detail: "7 jours de suite" },
-  { seuil: 14, label: "Deux semaines", detail: "14 jours de suite" },
-  { seuil: 30, label: "Un mois de suite", detail: "30 jours de suite" },
+  { seuil: 3, label: "Premier Pas", detail: "3 jours de suite" },
+  { seuil: 7, label: "Une Semaine Pile", detail: "7 jours de suite" },
+  { seuil: 14, label: "Deux Semaines", detail: "14 jours de suite" },
+  { seuil: 30, label: "Un Mois De Suite", detail: "30 jours de suite" },
   { seuil: 60, label: "Tam Tam Marteau", detail: "60 jours de suite" },
-  { seuil: 100, label: "Reine des Valkyries", detail: "100 jours de suite" },
-  { seuil: 200, label: "Bébé chat sauvage", detail: "200 jours de suite" },
-  { seuil: 236, label: "Le programme entier", detail: "236 jours — la totalité du parcours" }
+  { seuil: 100, label: "Reine Des Valkyries", detail: "100 jours de suite" },
+  { seuil: 200, label: "Bébé Chat Sauvage", detail: "200 jours de suite" },
+  { seuil: 236, label: "Le Programme Entier", detail: "236 jours — la totalité du parcours" }
 ];
 
 function enregistrerReponseQuiz(correct) {
@@ -888,7 +888,7 @@ function afficherStreakContenu() {
     });
   }
 
-  const ENTETES_JOURS = ["L", "Ma", "Me", "J", "V", "S", "D"];
+  const ENTETES_JOURS = ["Lu", "Ma", "Me", "Je", "Ve", "Sa", "Di"];
 
   let html = `
     <div class="longread-header">
