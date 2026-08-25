@@ -6,8 +6,26 @@
     "semaine": 1,
     "jour": 1,
     "type": "concept",
-    "titre": "qu'est-ce que l'économie ?",
-    "contenu": "l'économie n'est pas d'abord une affaire de bourse, de banques ou de chiffres qui défilent sur un écran. c'est une science sociale, au même titre que la sociologie ou l'anthropologie, qui s'intéresse à une question très concrète : comment les individus et les sociétés font-ils des choix quand tout ne peut pas être satisfait à la fois ?<br><br>ce point de départ porte un nom : la <em class=\"accent\">rareté</em>. non pas au sens où les ressources seraient nécessairement peu abondantes dans l'absolu, mais au sens où elles sont toujours limitées face à des besoins et des désirs qui, eux, ne le sont pas. le temps dont tu disposes dans une journée est rare. le budget d'un ménage est rare. les terres agricoles, l'énergie, les compétences disponibles sur un marché du travail : tout est rare, en ce sens précis.<br><br>de cette rareté découle une conséquence directe : il faut choisir. et choisir, c'est nécessairement renoncer à autre chose — on y reviendra dans deux jours avec la notion de coût d'opportunité. l'économie, comme discipline, cherche à comprendre et à modéliser la façon dont ces choix se prennent : au niveau d'un individu, d'une entreprise, ou d'un état.<br><br>il existe de nombreuses écoles de pensée en économie, souvent en désaccord entre elles sur la meilleure façon d'organiser une société — on les croisera tout au long de ce programme. mais toutes partent de ce même point commun : la rareté impose l'arbitrage, et l'arbitrage est au cœur de toute décision économique."
+    "titre": "Qu'est-ce que l'économie ?",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "L'économie n'est pas d'abord une affaire de bourse, de banques ou de chiffres qui défilent sur un écran. C'est une science sociale, au même titre que la sociologie ou l'anthropologie, qui s'intéresse à une question très concrète : comment les individus et les sociétés font-ils des choix quand tout ne peut pas être satisfait à la fois ?<br><br>Ce point de départ porte un nom : la <em class=\"accent\">rareté</em>. Non pas au sens où les ressources seraient nécessairement peu abondantes dans l'absolu — l'eau, par exemple, est globalement abondante sur Terre —, mais au sens où elles sont toujours limitées face à des besoins et des désirs qui, eux, ne le sont pas. Le temps dont tu disposes dans une journée est rare : vingt-quatre heures, ni plus ni moins, à répartir entre travail, sommeil, loisirs et relations. Le budget d'un ménage est rare. Les terres agricoles, l'énergie, les compétences disponibles sur un marché du travail à un instant donné : tout est rare, en ce sens précis.<br><br>Cette rareté n'est pas un défaut du monde qu'il faudrait corriger — c'est une donnée structurelle avec laquelle toute société doit composer, quel que soit son niveau de richesse."
+      },
+      {
+        "type": "texte",
+        "html": "De cette rareté découle une conséquence directe : il faut choisir. Et choisir, c'est nécessairement renoncer à autre chose — on y reviendra dans deux jours avec la notion de coût d'opportunité, qui en est la traduction la plus concrète. L'économie, comme discipline, cherche à comprendre et à modéliser la façon dont ces choix se prennent, à trois niveaux distincts : celui de l'individu, celui de l'entreprise, et celui de la collectivité ou de l'État.<br><br>Il existe de très nombreuses écoles de pensée en économie, souvent en désaccord profond entre elles sur la meilleure façon d'organiser une société — certaines font davantage confiance aux mécanismes de marché, d'autres à l'intervention publique, d'autres encore cherchent des voies intermédiaires. On croisera toutes ces sensibilités tout au long de ce programme, en essayant de comprendre la logique interne de chacune plutôt que de la juger d'emblée. Mais toutes partent de ce même point commun : la rareté impose l'arbitrage, et l'arbitrage est au cœur de toute décision économique, individuelle ou collective."
+      },
+      {
+        "type": "texte",
+        "html": "Prenons un exemple simple pour ancrer cette idée. Imagine une personne qui dispose d'une soirée libre : elle peut soit suivre un cours du soir pour progresser dans sa carrière, soit se reposer devant une série. Ces deux options ont une valeur, mais le temps ne permet d'en choisir qu'une seule. Ce dilemme, en apparence anodin, contient déjà toute la mécanique de la pensée économique : une ressource rare, plusieurs usages possibles, un choix à faire, et un renoncement inévitable à l'option écartée.<br><br>À l'échelle d'un pays, le même mécanisme se rejoue avec des enjeux autrement plus lourds : un gouvernement qui consacre une part de son budget à la défense ne peut, avec les mêmes ressources, financer davantage la recherche médicale ou l'aide au logement. La rareté, loin d'être une abstraction réservée aux économistes, est la texture même de toute décision, du plus intime au plus collectif — et c'est précisément ce qui rend cette discipline utile pour lire l'actualité, notamment en période électorale."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "L'économie étudie comment individus, entreprises et États font des choix face à des ressources limitées. Ce principe de rareté, et le renoncement que suppose tout choix, structurent l'ensemble de la discipline, quelles que soient les écoles de pensée qui s'y affrontent."
+      }
+    ]
   },
   {
     "id": 2,
@@ -16,8 +34,26 @@
     "semaine": 1,
     "jour": 2,
     "type": "auteur",
-    "titre": "xénophon et aristote — l'origine du mot économie",
-    "contenu": "le mot économie vient du grec ancien <em class=\"accent\">oikonomia</em>, formé de oikos (la maison, le foyer, le patrimoine) et nomos (la règle, la gestion). à l'origine, il ne désigne donc pas une science globale, mais un art très concret : celui de bien administrer un domaine.<br><br>c'est xénophon, au ive siècle avant notre ère, qui donne ce sens au terme dans un traité intitulé l'économique (oikonomikos), sous forme de dialogue. il y décrit les qualités nécessaires à un bon chef de famille pour faire prospérer ses terres et ses biens.<br><br>aristote, quelques décennies plus tard, reprend et complexifie la notion dans sa politique. il distingue l'économie proprement dite — l'art de gérer une maison pour satisfaire des besoins réels — d'une autre activité qu'il nomme la <em class=\"accent\">chrématistique</em> : l'art d'accumuler de la richesse pour elle-même, sans autre finalité que l'enrichissement. pour aristote, cette seconde activité est suspecte, car elle n'a pas de limite naturelle, contrairement aux besoins d'un foyer.<br><br>cette distinction, vieille de plus de deux mille ans, résonne étrangement avec des débats très actuels : l'économie doit-elle servir à satisfaire des besoins, ou la recherche du profit peut-elle constituer une fin en soi ?"
+    "titre": "Xénophon et Aristote — l'origine du mot économie",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Le mot économie vient du grec ancien <em class=\"accent\">oikonomia</em>, formé de oikos (la maison, le foyer, le patrimoine) et nomos (la règle, la gestion). À l'origine, il ne désigne donc pas une science globale de la richesse des nations, mais un art très concret et domestique : celui de bien administrer un domaine.<br><br>C'est Xénophon, disciple de Socrate, qui donne ce sens au terme au ive siècle avant notre ère, dans un traité intitulé L'Économique (Oikonomikos). Le texte prend la forme d'un dialogue : Socrate y interroge un jeune homme, Critobule, sur l'art de faire prospérer ses terres, son bétail et sa maisonnée. On y trouve des conseils très pratiques — l'importance de l'ordre, de la discipline du travail agricole, du choix d'une épouse compétente en gestion — mais aussi une réflexion plus large sur ce que signifie « bien gérer » : non pas simplement accumuler, mais utiliser ses biens de façon à vivre dignement."
+      },
+      {
+        "type": "texte",
+        "html": "Aristote, quelques décennies plus tard, reprend et complexifie considérablement la notion dans le premier livre de sa Politique. Il distingue l'économie proprement dite — l'art de gérer une maison pour satisfaire des besoins réels et permettre une vie bonne — d'une autre activité qu'il nomme la <em class=\"accent\">chrématistique</em> : l'art d'accumuler de la richesse pour elle-même, sans autre finalité que l'enrichissement.<br><br>Pour Aristote, l'échange naturel consiste à troquer un bien dont on a un surplus contre un bien dont on manque — il a une limite naturelle, celle du besoin satisfait. Mais dès lors que l'échange vise l'accumulation de monnaie pour la monnaie elle-même, il devient, selon lui, contre nature : rien ne borne plus la quête d'enrichissement. Aristote va jusqu'à condamner le prêt à intérêt, qu'il juge particulièrement artificiel, car il fait naître de l'argent à partir de l'argent lui-même, sans passer par la production d'un bien réel."
+      },
+      {
+        "type": "texte",
+        "html": "Cette distinction, vieille de plus de deux mille trois cents ans, résonne étrangement avec des débats très actuels. Les mouvements de décroissance, certaines critiques de la financiarisation de l'économie, ou les réflexions sur les limites planétaires posent, sous des formes renouvelées, la même question qu'Aristote : l'activité économique doit-elle rester subordonnée à la satisfaction de besoins réels et bornés, ou peut-elle légitimement viser une croissance et un enrichissement sans limite prédéfinie ? Tu retrouveras cette tension, sous d'autres habits, face à des auteurs bien plus récents comme Malthus ou les théoriciens de la décroissance contemporaine."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "L'économie, avant d'être une science de la croissance et des marchés, désignait pour les Grecs l'art de bien administrer un foyer. Aristote y ajoute très tôt une mise en garde : distinguer l'échange qui répond à un besoin de l'accumulation de richesse comme fin en soi — une frontière que beaucoup de débats économiques contemporains continuent d'interroger."
+      }
+    ]
   },
   {
     "id": 3,
@@ -26,8 +62,26 @@
     "semaine": 1,
     "jour": 3,
     "type": "concept",
-    "titre": "le coût d'opportunité",
-    "contenu": "choisir, c'est renoncer. cette phrase résume l'une des idées les plus utiles de la pensée économique : le <em class=\"accent\">coût d'opportunité</em>.<br><br>le coût d'opportunité d'une décision, ce n'est pas seulement ce qu'elle coûte en argent — c'est la valeur de la meilleure option à laquelle on renonce en la prenant. si tu passes ta soirée à regarder un film plutôt qu'à avancer sur un projet personnel, le coût de cette soirée n'est pas nul sous prétexte que le film était gratuit : c'est le temps que tu n'as pas consacré à ton projet.<br><br>ce raisonnement s'applique à toutes les échelles. une entreprise qui investit dans une usine renonce, avec le même argent, à un placement financier ou à une autre usine. un état qui augmente le budget de la défense renonce, à budget constant, à une dépense équivalente ailleurs.<br><br>c'est un outil de lecture précieux en période électorale : quand un programme politique promet une dépense nouvelle, la vraie question n'est pas seulement « combien ça coûte ? » mais « à quoi renonce-t-on pour la financer ? ». exemple concret dans la fiche suivante, avec le budget de l'état français pour 2027."
+    "titre": "Le coût d'opportunité",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Choisir, c'est renoncer. Cette phrase, un peu lapidaire, résume l'une des idées les plus utiles — et les plus sous-utilisées dans le débat public — de la pensée économique : le <em class=\"accent\">coût d'opportunité</em>.<br><br>Le coût d'opportunité d'une décision, ce n'est pas seulement ce qu'elle coûte en argent. C'est la valeur de la meilleure option à laquelle on renonce en la prenant. Si tu passes ta soirée à regarder un film plutôt qu'à avancer sur un projet personnel, le coût de cette soirée n'est pas nul sous prétexte que le film était déjà payé par un abonnement : c'est le temps que tu n'as pas consacré à ton projet, et la valeur que ce temps aurait pu avoir."
+      },
+      {
+        "type": "texte",
+        "html": "Ce raisonnement s'applique à toutes les échelles, du choix individuel le plus anodin à la décision publique la plus lourde. Une entreprise qui investit dans une nouvelle usine renonce, avec le même argent, à un placement financier ou à une autre usine. Un étudiant qui poursuit des études longues renonce aux revenus qu'il aurait pu percevoir en travaillant immédiatement — un coût réel, même s'il n'apparaît sur aucune facture. Un État qui augmente le budget de la défense renonce, à budget constant, à une dépense équivalente ailleurs, dans la santé, l'éducation ou les retraites.<br><br>Le coût d'opportunité oblige donc à sortir d'un réflexe très répandu, qui consiste à ne raisonner qu'en termes de dépense monétaire directe. Beaucoup de décisions qui paraissent « gratuites » ont en réalité un coût bien réel, simplement invisible sur un relevé bancaire."
+      },
+      {
+        "type": "texte",
+        "html": "C'est un outil de lecture particulièrement précieux en période électorale. Quand un programme politique promet une dépense nouvelle — une baisse d'impôt, une hausse de salaire dans la fonction publique, un investissement massif dans la transition énergétique —, la vraie question économique n'est pas seulement « combien ça coûte ? » mais « à quoi renonce-t-on pour la financer, ou quelle dette supplémentaire cela suppose-t-il ? ». Un programme qui ne répond jamais à cette seconde question mérite une vigilance particulière : il occulte l'arbitrage, il ne le supprime pas. On verra un exemple très concret de cette mécanique dans la fiche suivante, avec le budget de l'État français pour 2027."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Le coût d'opportunité, c'est la valeur de ce à quoi on renonce en faisant un choix — et pas seulement ce que ce choix coûte en argent. Un réflexe utile pour évaluer n'importe quelle promesse, personnelle ou politique : qu'est-ce que cela déplace ailleurs ?"
+      }
+    ]
   },
   {
     "id": 4,
@@ -36,10 +90,28 @@
     "semaine": 1,
     "jour": 4,
     "type": "actu",
-    "titre": "un budget, c'est une suite de renoncements : l'exemple du budget 2027",
-    "contenu": "chaque été, le gouvernement français répartit les crédits de l'état entre ses ministères pour l'année suivante — un exercice qui illustre le coût d'opportunité à une échelle très concrète.<br><br>pour le budget 2027, les premiers arbitrages transmis au parlement à l'été 2026 montrent des choix nets : le ministère des armées bénéficie d'une hausse de plus de 6 milliards d'euros, protégée par la loi de programmation militaire, de même que la transition écologique et la justice. mais ces hausses ne sont pas financées par de l'argent qui apparaît par magie : elles ont un miroir. la mission travail et administration des ministères sociaux, elle, voit ses crédits amputés de 2,8 milliards d'euros.<br><br>ce n'est pas une anomalie isolée : c'est la mécanique même d'un budget contraint. la france affichait un déficit public de 5,1 % du pib en 2025, largement au-dessus de la cible européenne de 3 %, ce qui limite fortement la marge de manœuvre pour augmenter toutes les dépenses en même temps.<br><br><em class=\"accent\">à retenir</em> : la prochaine fois qu'un responsable politique annonce une dépense nouvelle, la question à se poser n'est pas seulement « est-ce une bonne idée ? » mais « qu'est-ce que cela déplace, ailleurs dans le budget ? ».",
+    "titre": "Un budget, c'est une suite de renoncements : l'exemple du budget 2027",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Chaque été, le gouvernement français doit répartir les crédits de l'État entre ses différents ministères pour l'année suivante — un exercice qui illustre le coût d'opportunité à une échelle très concrète, loin de toute abstraction théorique.<br><br>Pour le budget 2027, les premiers arbitrages transmis au Parlement à l'été 2026 montrent des choix nets. Le ministère des Armées bénéficie d'une hausse de plus de 6 milliards d'euros, protégée par la loi de programmation militaire, de même que la Transition écologique, dont les crédits augmentent d'environ 1,5 milliard d'euros, et la Justice, qui obtient une rallonge de 400 millions d'euros."
+      },
+      {
+        "type": "texte",
+        "html": "Mais ces hausses ne sont pas financées par de l'argent qui apparaît par magie : elles ont un miroir, ailleurs dans le budget. La mission « travail et administration des ministères sociaux » voit, elle, ses crédits amputés de 2,8 milliards d'euros. Le gouvernement explore par ailleurs plusieurs pistes supplémentaires d'économies : un doublement possible du plafond des franchises médicales, une révision du remboursement de certains médicaments, ou encore le retour éventuel d'une « année blanche » consistant à ne pas indexer certaines prestations sociales — dont les retraites — sur l'inflation.<br><br>Ce n'est pas une anomalie ni un choix arbitraire isolé : c'est la mécanique même d'un budget contraint. La France affichait un déficit public de 5,1 % du PIB en 2025, largement au-dessus de la cible européenne de 3 %, et vise un objectif de 4,9 % pour 2027 — ce qui limite fortement la marge de manœuvre pour augmenter toutes les dépenses en même temps."
+      },
+      {
+        "type": "texte",
+        "html": "Ce type d'arbitrage est un excellent cas d'école pour lire n'importe quel débat budgétaire, quel que soit le camp politique qui le porte. Une hausse annoncée avec fierté dans une mission ministérielle s'accompagne presque toujours d'une baisse, moins médiatisée, ailleurs. Repérer cette seconde moitié de l'équation — souvent absente des communiqués officiels — permet de juger un choix budgétaire avec bien plus de justesse que de s'arrêter à son seul affichage."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "La prochaine fois qu'un responsable politique annonce une dépense nouvelle, la question à te poser n'est pas seulement « est-ce une bonne idée ? » mais « qu'est-ce que cela déplace, ailleurs dans le budget ? »."
+      }
+    ],
     "source": {
-      "texte": "arbitrages du budget 2027 : défense +6 md€, justice +400 m€, transition écologique +1,5 md€, mission travail et administration des ministères sociaux -2,8 md€. déficit public 2025 : 5,1 % du pib.",
+      "texte": "Arbitrages du budget 2027 : Défense +6 Md€, Justice +400 M€, Transition écologique +1,5 Md€, mission travail et administration des ministères sociaux -2,8 Md€. Déficit public 2025 : 5,1 % du PIB, objectif 4,9 % en 2027.",
       "lien": "https://www.europe1.fr/politique/budget-2027-les-1ers-arbitrages-devoiles-976140",
       "date_verification": "25 août 2026"
     }
@@ -51,8 +123,26 @@
     "semaine": 1,
     "jour": 5,
     "type": "concept",
-    "titre": "les facteurs de production",
-    "contenu": "pour produire un bien ou un service — une baguette, un smartphone, un cours de yoga — il faut combiner des ressources. les économistes regroupent traditionnellement ces ressources en trois grandes catégories, appelées <em class=\"accent\">facteurs de production</em>.<br><br>le premier est le travail : les compétences, le temps et l'effort humain mobilisés. le second est le capital, au sens économique — pas seulement l'argent, mais l'ensemble des outils, machines et infrastructures qui permettent de produire plus efficacement. le troisième, plus ancien dans la pensée économique, est la terre ou les ressources naturelles : le sol agricole, les matières premières, l'énergie.<br><br>la façon de combiner ces trois facteurs varie selon les époques et les secteurs. une agriculture du xviiie siècle mobilisait énormément de travail et de terre, très peu de capital. une usine de semi-conducteurs aujourd'hui mobilise à l'inverse un capital considérable — des machines valant parfois plusieurs centaines de millions d'euros — pour une quantité de travail humain directement impliqué relativement faible.<br><br>cette répartition n'est pas un détail technique : elle explique en partie pourquoi certains pays se spécialisent dans certaines productions plutôt que d'autres, question qu'on approfondira bientôt avec la théorie des avantages comparatifs de david ricardo."
+    "titre": "Les facteurs de production",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Pour produire un bien ou un service — une baguette de pain, un smartphone, un cours de yoga —, il faut combiner des ressources. Les économistes regroupent traditionnellement ces ressources en trois grandes catégories, appelées <em class=\"accent\">facteurs de production</em>.<br><br>Le premier est le travail : l'ensemble des compétences, du temps et de l'effort humain mobilisés dans la production, du geste manuel le plus simple à l'expertise la plus spécialisée. Le second est le capital, au sens économique du terme — pas seulement l'argent, mais l'ensemble des outils, machines, bâtiments et infrastructures qui permettent de produire plus efficacement : un four à pain, une chaîne de montage, un ordinateur, un réseau de fibre optique. Le troisième, plus ancien dans la pensée économique, est la terre ou les ressources naturelles : le sol agricole, les matières premières, l'énergie, l'eau."
+      },
+      {
+        "type": "texte",
+        "html": "La façon dont on combine ces trois facteurs varie énormément selon les époques et les secteurs. Une agriculture du xviiie siècle mobilisait énormément de travail et de terre, très peu de capital : des paysans nombreux, des parcelles, presque pas de machines. Une usine de semi-conducteurs aujourd'hui mobilise à l'inverse un capital considérable — des machines de lithographie valant parfois plusieurs centaines de millions d'euros pièce — pour une quantité de travail humain directement impliqué relativement faible, mais hautement qualifié.<br><br>Certains économistes contemporains ajoutent parfois un quatrième facteur à cette liste classique : le capital humain, c'est-à-dire les connaissances et compétences accumulées par la formation, tant il est devenu, depuis le xxe siècle, un moteur de croissance à part entière."
+      },
+      {
+        "type": "texte",
+        "html": "Cette répartition n'est pas un détail technique réservé aux manuels : elle explique en partie pourquoi certains pays se spécialisent dans certaines productions plutôt que d'autres. Un pays disposant de vastes terres agricoles et d'une main-d'œuvre abondante n'aura pas la même trajectoire économique qu'un pays pauvre en ressources naturelles mais doté d'un capital humain et technologique considérable. On approfondira cette logique très bientôt avec la théorie des avantages comparatifs de David Ricardo, qui explique pourquoi les pays ont intérêt à se spécialiser plutôt qu'à chercher à tout produire eux-mêmes."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Travail, capital, ressources naturelles : ces trois facteurs, combinés dans des proportions variables selon les époques et les secteurs, sont la matière première de toute production. Leur répartition inégale entre pays explique une grande partie des logiques de spécialisation internationale."
+      }
+    ]
   },
   {
     "id": 6,
@@ -61,8 +151,26 @@
     "semaine": 1,
     "jour": 6,
     "type": "auteur",
-    "titre": "adam smith — la main invisible et la division du travail",
-    "contenu": "adam smith publie en 1776 son ouvrage fondateur, recherches sur la nature et les causes de la richesse des nations, souvent abrégé en la richesse des nations. c'est l'un des textes fondateurs de l'économie comme discipline autonome.<br><br>smith y développe deux idées devenues centrales. la première est la <em class=\"accent\">division du travail</em> : il prend l'exemple, resté célèbre, d'une manufacture d'épingles. fabriquer une épingle demande une vingtaine d'opérations distinctes. si un seul ouvrier réalisait toutes ces étapes seul, il produirait péniblement quelques dizaines d'épingles par jour. mais en décomposant la tâche entre plusieurs ouvriers spécialisés, chacun sur une seule opération, la production explose — smith évoque une production journalière multipliée par plusieurs centaines. la spécialisation, selon lui, est l'un des principaux moteurs de la richesse d'une nation.<br><br>la seconde idée, plus connue encore, est celle de la <em class=\"accent\">main invisible</em> — une image que smith n'emploie en réalité qu'une seule fois dans tout l'ouvrage, mais qui a fini par résumer sa pensée dans l'imaginaire collectif. l'idée : quand chaque individu poursuit son propre intérêt sur un marché, l'ensemble de ces intérêts individuels, mis en concurrence, tend à produire un résultat collectivement bénéfique, sans qu'aucune autorité centrale n'ait eu besoin de le planifier.<br><br>cette idée est fondatrice du libéralisme économique — on la retrouvera, discutée et nuancée, tout au long du programme, notamment face aux arguments de keynes ou de hayek."
+    "titre": "Adam Smith — la main invisible et la division du travail",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Adam Smith publie en 1776 son ouvrage fondateur, Recherches sur la nature et les causes de la richesse des nations, le plus souvent abrégé en La Richesse des nations. C'est l'un des textes fondateurs de l'économie comme discipline autonome, distincte de la philosophie morale dont Smith, professeur à Glasgow, était pourtant issu.<br><br>Smith y développe deux idées devenues centrales dans toute la pensée économique ultérieure. La première est la <em class=\"accent\">division du travail</em> : il prend l'exemple, resté célèbre, d'une manufacture d'épingles. Fabriquer une épingle demande une vingtaine d'opérations distinctes — tirer le fil, le couper, l'affûter, poser la tête, polir, empaqueter. Si un seul ouvrier réalisait toutes ces étapes seul, sans spécialisation, il produirait péniblement quelques dizaines d'épingles par jour. Mais en décomposant la tâche entre plusieurs ouvriers, chacun spécialisé sur une seule opération, la production explose : Smith évoque une production journalière multipliée par plusieurs centaines pour un même nombre de travailleurs."
+      },
+      {
+        "type": "texte",
+        "html": "La spécialisation, selon lui, est l'un des principaux moteurs de la richesse d'une nation, pour trois raisons : elle permet à chaque travailleur de devenir plus habile dans une tâche précise, elle évite les pertes de temps liées au passage d'une activité à une autre, et elle favorise l'invention de machines dédiées à une opération unique et répétitive.<br><br>La seconde idée, plus connue encore dans l'imaginaire collectif, est celle de la <em class=\"accent\">main invisible</em> — une image que Smith n'emploie en réalité qu'une seule fois dans tout l'ouvrage, mais qui a fini par résumer sa pensée tout entière, parfois de façon caricaturale. L'idée : quand chaque individu poursuit son propre intérêt sur un marché — le boulanger vend son pain pour gagner sa vie, non par pure bienveillance envers ses clients —, l'ensemble de ces intérêts individuels, mis en concurrence les uns avec les autres, tend à produire un résultat collectivement bénéfique, sans qu'aucune autorité centrale n'ait eu besoin de le planifier."
+      },
+      {
+        "type": "texte",
+        "html": "Il faut se garder d'une lecture trop simpliste : Smith n'était pas un défenseur naïf du marché sans aucune limite. Dans ce même ouvrage, il se montre critique envers les monopoles, envers les marchands qui s'entendent pour manipuler les prix, et il attribue à l'État un rôle bien réel — assurer la justice, la défense, et certains investissements publics que le marché ne financerait pas spontanément. Cette nuance se perd souvent dans les usages contemporains de sa pensée, mobilisée aussi bien par des libéraux stricts que critiquée par leurs opposants.<br><br>Cette idée de la main invisible est fondatrice du libéralisme économique. On la retrouvera, discutée, nuancée et parfois frontalement combattue, tout au long de ce programme, notamment face aux arguments de Keynes ou de Hayek, qui reviendront chacun, à leur manière, sur la place exacte que doit occuper l'État."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Adam Smith pose, dès 1776, deux piliers de la pensée économique moderne : la division du travail comme moteur de productivité, et l'idée qu'un marché où chacun poursuit son intérêt peut produire un résultat collectivement bénéfique — sans pour autant, chez Smith lui-même, exclure tout rôle pour l'État."
+      }
+    ]
   },
   {
     "id": 7,
@@ -71,32 +179,57 @@
     "semaine": 1,
     "jour": 7,
     "type": "quiz",
-    "titre": "quiz — semaine 1",
-    "contenu": "teste ce que tu as retenu cette semaine.",
+    "titre": "Quiz — Semaine 1",
+    "contenu": "Teste ce que tu as retenu cette semaine.",
     "questions": [
       {
-        "question": "que signifie le terme économique de « rareté » ?",
-        "options": ["un bien coûteux", "une ressource limitée face à des besoins illimités", "un produit précieux et peu répandu"],
+        "question": "Que signifie le terme économique de « rareté » ?",
+        "options": ["Un bien coûteux", "Une ressource limitée face à des besoins illimités", "Un produit précieux et peu répandu"],
         "bonne_reponse": 1
       },
       {
-        "question": "d'où vient le mot « économie » ?",
-        "options": ["du grec oikonomia, la gestion de la maison", "du latin economia", "de l'anglais economy"],
+        "question": "D'où vient le mot « économie » ?",
+        "options": ["Du grec oikonomia, la gestion de la maison", "Du latin economia", "De l'anglais economy"],
         "bonne_reponse": 0
       },
       {
-        "question": "que désigne le « coût d'opportunité » d'un choix ?",
-        "options": ["son prix affiché", "la valeur de la meilleure option à laquelle on renonce", "le coût de production d'un bien"],
+        "question": "Selon Aristote, quelle activité juge-t-il « contre nature » ?",
+        "options": ["Le troc de biens pour satisfaire un besoin", "L'accumulation de richesse pour elle-même, comme le prêt à intérêt", "L'agriculture"],
         "bonne_reponse": 1
       },
       {
-        "question": "quels sont les trois facteurs de production traditionnels ?",
-        "options": ["travail, capital, terre", "argent, banque, état", "offre, demande, prix"],
+        "question": "Que désigne le « coût d'opportunité » d'un choix ?",
+        "options": ["Son prix affiché", "La valeur de la meilleure option à laquelle on renonce", "Le coût de production d'un bien"],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Dans l'exemple du budget 2027 français, quelle mission voit ses crédits augmenter fortement ?",
+        "options": ["Les Armées", "La Culture", "Le Tourisme"],
         "bonne_reponse": 0
       },
       {
-        "question": "quelle est l'idée derrière la « main invisible » d'adam smith ?",
-        "options": ["l'état doit tout planifier", "la poursuite d'intérêts individuels sur un marché peut produire un résultat collectivement bénéfique", "les marchés sont toujours justes"],
+        "question": "Quel était le déficit public français en 2025, selon les chiffres cités ?",
+        "options": ["1,1 % du PIB", "5,1 % du PIB", "10 % du PIB"],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Quels sont les trois facteurs de production traditionnels ?",
+        "options": ["Travail, capital, terre", "Argent, banque, État", "Offre, demande, prix"],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Dans l'exemple de la manufacture d'épingles d'Adam Smith, qu'est-ce qui explique la hausse spectaculaire de la production ?",
+        "options": ["L'achat de matières premières moins chères", "La division du travail entre ouvriers spécialisés", "L'augmentation du nombre d'heures travaillées"],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Que signifie l'expression « main invisible » chez Adam Smith ?",
+        "options": ["L'État doit tout planifier en secret", "La poursuite d'intérêts individuels sur un marché peut produire un résultat collectivement bénéfique", "Les marchés sont toujours justes"],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Adam Smith était-il opposé à toute intervention de l'État ?",
+        "options": ["Oui, totalement", "Non, il lui attribuait un rôle réel : justice, défense, certains investissements", "Il n'aborde jamais la question"],
         "bonne_reponse": 1
       }
     ]
