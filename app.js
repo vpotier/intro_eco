@@ -360,7 +360,10 @@ function afficherToday() {
 
         // Le contenu change pendant que la carte est complètement aplatie et invisible :
         // aucun flash possible puisqu'il n'y a rien à voir à cet instant précis.
-        carte.innerHTML = construireCarteRecto(fiche, true);
+        // Seule la carte va dans le conteneur animé (ombre + coins arrondis) ; les boutons
+        // d'action restent en dehors, sinon l'ombre englobe aussi leur zone (bug visuel).
+        carte.innerHTML = construireCarteRecto(fiche, false);
+        carte.insertAdjacentHTML("afterend", construireActionRow(fiche));
         brancherEvenementsRecto(fiche);
 
         // On laisse le temps au navigateur de peindre l'état "aplati" avant de relancer
@@ -392,9 +395,18 @@ function afficherToday() {
   document.getElementById("btn-streak").addEventListener("click", ouvrirStreak);
 }
 
-function construireCarteRecto(fiche, avecActions, classeSupplementaire) {
+function construireActionRow(fiche) {
   const favoris = getFavoris();
   const estFavori = favoris.includes(fiche.id);
+  return `
+    <div class="action-row">
+      <button class="btn-go-deeper serif" id="btn-go-deeper">Aller plus loin</button>
+      <button class="btn-favori ${estFavori ? 'actif' : ''}" id="btn-favori">🔖</button>
+    </div>
+  `;
+}
+
+function construireCarteRecto(fiche, avecActions, classeSupplementaire) {
   const typeLabel = NOMS_TYPES[fiche.type] || fiche.type;
 
   let teaser = "";
@@ -413,10 +425,6 @@ function construireCarteRecto(fiche, avecActions, classeSupplementaire) {
     }
   }
 
-  const hint = fiche.type === "actu"
-    ? "🔗 Toucher pour le cas concret"
-    : (fiche.type === "quiz" ? "📝 Toucher pour commencer le quiz" : "→ Aller plus loin pour en savoir plus");
-
   let html = `
     <div class="carte-recto ${classeSupplementaire || ''}" id="carte-recto">
       <span class="carte-numero">N° ${fiche.ordre}</span>
@@ -424,17 +432,11 @@ function construireCarteRecto(fiche, avecActions, classeSupplementaire) {
       <h2 class="serif">${fiche.titre}</h2>
       ${teaser}
       ${visuel}
-      <div class="tap-hint">${hint}</div>
     </div>
   `;
 
   if (avecActions) {
-    html += `
-      <div class="action-row">
-        <button class="btn-go-deeper serif" id="btn-go-deeper">Aller plus loin</button>
-        <button class="btn-favori ${estFavori ? 'actif' : ''}" id="btn-favori">🔖</button>
-      </div>
-    `;
+    html += construireActionRow(fiche);
   }
 
   return html;
@@ -447,18 +449,11 @@ function extraireTexte(html, maxLen) {
 }
 
 function brancherEvenementsRecto(fiche) {
-  const recto = document.getElementById("carte-recto");
-  if (recto) recto.addEventListener("click", () => ouvrirLongRead(fiche.id));
-
   const btnDeeper = document.getElementById("btn-go-deeper");
-  if (btnDeeper) btnDeeper.addEventListener("click", (e) => {
-    e.stopPropagation();
-    ouvrirLongRead(fiche.id);
-  });
+  if (btnDeeper) btnDeeper.addEventListener("click", () => ouvrirLongRead(fiche.id));
 
   const btnFav = document.getElementById("btn-favori");
-  if (btnFav) btnFav.addEventListener("click", (e) => {
-    e.stopPropagation();
+  if (btnFav) btnFav.addEventListener("click", () => {
     toggleFavori(fiche.id);
     btnFav.classList.toggle("actif");
   });
