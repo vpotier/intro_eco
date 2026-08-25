@@ -21,7 +21,13 @@ const NOMS_SEMAINES = {
   "2-2": "Malthus et les limites",
   "2-3": "La révolution marginaliste",
   "2-4": "Walras, Marshall, l'équilibre général",
-  "2-5": "Pareto et la bascule vers le 20e siècle"
+  "2-5": "Pareto et la bascule vers le 20e siècle",
+  "3-1": "Qu'est-ce que la macroéconomie",
+  "3-2": "Monnaie et monétarisme",
+  "3-3": "Inflation et chômage",
+  "3-4": "Dette et budget public",
+  "3-5": "Croissance et cycles",
+  "3-6": "Commerce international et change"
 };
 
 function titreSemaine(phase, semaine) {
