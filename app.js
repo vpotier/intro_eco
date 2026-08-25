@@ -350,9 +350,11 @@ function afficherToday() {
     const carte = document.getElementById("carte-flip-simple");
     carte.addEventListener("click", () => {
       carte.classList.add("ecrasee");
+      let dejaTraite = false;
 
-      carte.addEventListener("transitionend", function gererEcrasement(e) {
-        if (e.propertyName !== "transform") return;
+      function poursuivreApresEcrasement() {
+        if (dejaTraite) return; // ne s'exécute qu'une seule fois, quel que soit le déclencheur
+        dejaTraite = true;
         carte.removeEventListener("transitionend", gererEcrasement);
         ouvrirCarteDuJour(fiche.id);
 
@@ -368,7 +370,17 @@ function afficherToday() {
             carte.classList.remove("ecrasee");
           });
         });
-      }, { once: true });
+      }
+
+      function gererEcrasement(e) {
+        if (e.propertyName !== "transform") return; // ignore l'événement "opacity", qui se déclenche aussi
+        poursuivreApresEcrasement();
+      }
+
+      carte.addEventListener("transitionend", gererEcrasement);
+      // Filet de sécurité : si transitionend ne se déclenche pas (certains navigateurs mobiles
+      // peuvent le manquer), on poursuit quand même une fois la durée de la transition écoulée.
+      setTimeout(poursuivreApresEcrasement, 450);
     }, { once: true });
   } else {
     html += construireCarteRecto(fiche, true);
