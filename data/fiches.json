@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "date": "2026-08-25",
+    "ordre": 1,
     "phase": 1,
     "semaine": 1,
     "jour": 1,
@@ -11,10 +11,59 @@
   },
   {
     "id": 2,
-    "date": "2026-08-26",
+    "ordre": 2,
     "phase": 1,
     "semaine": 1,
     "jour": 2,
     "type": "auteur",
     "titre": "Xénophon et Aristote — l'origine du mot économie",
-    "contenu": "Le mot économie vient du grec ancien 'oikonomia', littéralement la gestion (nomos) de la maison (oikos). Xénophon, au 4e siècle avant notre ère, l'utilise pour désigner l'art de bien administrer un domaine. Aristote va plus loin en distinguant
+    "contenu": "Le mot économie vient du grec ancien 'oikonomia', littéralement la gestion (nomos) de la maison (oikos). Xénophon, au 4e siècle avant notre ère, l'utilise pour désigner l'art de bien administrer un domaine. Aristote va plus loin en distinguant l'économie domestique de la 'chrématistique', l'accumulation de richesse pour elle-même, qu'il juge moralement suspecte."
+  },
+  {
+    "id": 3,
+    "ordre": 3,
+    "phase": 1,
+    "semaine": 1,
+    "jour": 3,
+    "type": "actu",
+    "titre": "Le coût d'opportunité, illustré par l'actualité",
+    "contenu": "Choisir, c'est renoncer : le coût d'opportunité désigne ce à quoi on renonce quand on fait un choix plutôt qu'un autre. Exemple à insérer après vérification par recherche web au moment de la publication.",
+    "source": {
+      "texte": "Exemple à vérifier et sourcer au moment de la publication réelle",
+      "lien": "",
+      "date_verification": ""
+    }
+  },
+  {
+    "id": 4,
+    "ordre": 4,
+    "phase": 1,
+    "semaine": 1,
+    "jour": 4,
+    "type": "interpellation",
+    "titre": "Faut-il toujours choisir le moins cher ?",
+    "contenu": "Exemple de fiche interpellation : une question frontale liée au concept du jour, avec plusieurs points de vue exposés sans trancher. Contenu réel à rédiger lors de la phase de rédaction."
+  },
+  {
+    "id": 5,
+    "ordre": 5,
+    "phase": 1,
+    "semaine": 1,
+    "jour": 5,
+    "type": "quiz",
+    "titre": "Quiz — Semaine 1",
+    "contenu": "Teste ce que tu as retenu cette semaine.",
+    "questions": [
+      {
+        "question": "Que signifie le terme 'rareté' en économie ?",
+        "options": ["Un bien coûteux", "Une ressource limitée face à des besoins illimités", "Un produit de luxe"],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "D'où vient le mot 'économie' ?",
+        "options": ["Du latin 'economia'", "Du grec 'oikonomia' (gestion de la maison)", "De l'anglais 'economy'"],
+        "bonne_reponse": 1
+      }
+    ]
+  }
+]
