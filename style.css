@@ -50,6 +50,11 @@ nav button.actif {
   margin-bottom: 10px;
 }
 
+.accent {
+  font-style: italic;
+  color: #9c6b3f;
+}
+
 .source {
   margin-top: 15px;
   padding: 10px;
