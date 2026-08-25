@@ -1740,5 +1740,307 @@
         "bonne_reponse": 0
       }
     ]
+  },
+  {
+    "id": 43,
+    "ordre": 43,
+    "phase": 2,
+    "semaine": 1,
+    "jour": 1,
+    "type": "concept",
+    "titre": "Qu'est-ce que la « valeur » d'un bien ?",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "On entre aujourd'hui dans la phase 2 de ce programme, consacrée aux grands courants classiques de la pensée économique — les auteurs qui, entre la fin du xviiie et le début du xxe siècle, ont bâti les fondations théoriques de la discipline. On commence par une question qui a occupé les économistes pendant plus d'un siècle : qu'est-ce qui détermine la <em class=\"accent\">valeur</em> d'un bien ?"
+      },
+      {
+        "type": "texte",
+        "html": "Les économistes classiques distinguent très tôt deux notions de valeur. La <em class=\"accent\">valeur d'usage</em> désigne l'utilité concrète qu'un bien procure — la capacité de l'eau à désaltérer, celle du pain à nourrir. La <em class=\"accent\">valeur d'échange</em>, elle, désigne la quantité d'autres biens (ou de monnaie) contre laquelle ce bien peut s'échanger sur un marché. Ces deux notions, en apparence proches, peuvent diverger de façon spectaculaire — et c'est précisément cette divergence qui va nourrir l'un des débats les plus féconds de l'histoire de la pensée économique."
+      },
+      {
+        "type": "texte",
+        "html": "Adam Smith, dans La Richesse des nations déjà croisée en phase 1, formule ce problème sous la forme d'un paradoxe resté célèbre, le <em class=\"accent\">paradoxe de la valeur</em>, ou paradoxe de l'eau et du diamant. L'eau a une valeur d'usage considérable — elle est indispensable à la vie — mais s'échange, dans la plupart des circonstances, contre presque rien. Le diamant, à l'inverse, a une valeur d'usage quasiment nulle sur le plan de la survie, mais s'échange contre des sommes considérables. Comment expliquer qu'un bien aussi vital que l'eau ait une valeur d'échange aussi faible, comparée à un bien aussi superflu que le diamant ?"
+      },
+      {
+        "type": "texte",
+        "html": "Ce paradoxe restera sans réponse pleinement satisfaisante pendant près d'un siècle après Smith. Les classiques, qu'on va découvrir cette semaine, tenteront de le résoudre en cherchant la source de la valeur du côté de la production — notamment via la théorie de la valeur-travail. Il faudra attendre la révolution marginaliste de la fin du xixe siècle, qu'on étudiera en semaine 3, pour obtenir une résolution plus convaincante, fondée sur la notion de rareté relative et d'utilité marginale plutôt que sur le coût de production seul."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "La valeur d'usage (l'utilité d'un bien) et la valeur d'échange (ce contre quoi il s'échange) peuvent diverger fortement, comme l'illustre le paradoxe de l'eau et du diamant. Résoudre cette énigme occupera les économistes classiques pendant plus d'un siècle."
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "ordre": 44,
+    "phase": 2,
+    "semaine": 1,
+    "jour": 2,
+    "type": "auteur",
+    "titre": "Adam Smith et la première théorie de la valeur-travail",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Tu as déjà rencontré Adam Smith en phase 1, à travers la division du travail et la main invisible. Revenons vers lui aujourd'hui sous un angle différent : sa tentative de résoudre le problème de la valeur posé hier, à travers ce qu'on appelle sa théorie de la valeur-travail."
+      },
+      {
+        "type": "texte",
+        "html": "Pour Smith, dans les sociétés primitives où le travail est le seul facteur de production significatif, la valeur d'échange d'un bien correspond directement à la quantité de travail nécessaire pour le produire : s'il faut deux fois plus de temps pour tuer un castor que pour tuer un daim, un castor s'échangera naturellement contre deux daims. Mais Smith complique cette intuition en distinguant deux façons de mesurer le travail : le travail <em class=\"accent\">incorporé</em> dans un bien (le temps qu'il a fallu pour le produire) et le travail qu'un bien peut <em class=\"accent\">commander</em> à l'échange (la quantité de travail d'autrui qu'on peut obtenir en échange de ce bien)."
+      },
+      {
+        "type": "texte",
+        "html": "Dans une économie plus développée, où interviennent aussi le capital et la rente foncière, Smith reconnaît que cette équivalence simple entre travail et valeur ne tient plus parfaitement : le prix d'un bien doit désormais couvrir non seulement le travail, mais aussi le profit du capitaliste et la rente versée au propriétaire terrien. Smith laisse ainsi la théorie de la valeur dans un état inachevé — une tension que ses successeurs, notamment David Ricardo qu'on rencontrera dans quelques jours, chercheront à résoudre avec davantage de rigueur."
+      },
+      {
+        "type": "texte",
+        "html": "Il est important de noter que Smith ne résout jamais complètement le paradoxe de l'eau et du diamant évoqué hier : sa théorie explique assez bien pourquoi le travail nécessaire à produire un bien influence son prix, mais elle peine à expliquer pourquoi un bien aussi peu coûteux à produire que l'eau, dans certaines régions, peut pourtant avoir une valeur d'usage si élevée. Cette difficulté restera une des grandes énigmes non résolues de l'économie classique."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Adam Smith propose une première théorie de la valeur fondée sur le travail nécessaire à la production d'un bien, mais reconnaît ses limites dès qu'interviennent le capital et la rente. Le paradoxe de la valeur reste, chez lui, sans réponse pleinement satisfaisante."
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "ordre": 45,
+    "phase": 2,
+    "semaine": 1,
+    "jour": 3,
+    "type": "actu",
+    "titre": "Les semi-conducteurs : quand une chaîne de production mondialisée tient sur une poignée d'usines",
+    "blocs": [
+      {
+        "type": "image",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Semiconductor%20Wafer%20of%20Microelectronics.jpg",
+        "legende": "Plaquette de silicium (wafer) utilisée pour la fabrication de semi-conducteurs"
+      },
+      {
+        "type": "texte",
+        "html": "L'industrie des semi-conducteurs offre un cas d'école saisissant de spécialisation mondiale extrême — un thème qu'on approfondira sur le plan théorique dans quelques jours avec David Ricardo. La demande explosive de puces destinées à l'intelligence artificielle a concentré, entre 2024 et 2026, une quantité considérable de valeur économique mondiale sur un nombre restreint d'usines, situées presque toutes à Taïwan."
+      },
+      {
+        "type": "texte",
+        "html": "L'entreprise taïwanaise TSMC fabrique à elle seule plus de la moitié des semi-conducteurs les plus avancés au monde. Les processeurs graphiques les plus utilisés pour l'entraînement des modèles d'intelligence artificielle, ainsi que les puces conçues sur mesure par plusieurs géants technologiques américains, sont exclusivement produits dans ses usines de pointe. Les États-Unis ont bien investi, via le CHIPS Act, dans une usine TSMC en Arizona — mais celle-ci ne produit, en 2026, qu'une génération de puces déjà dépassée par rapport à ce qui sort des usines taïwanaises les plus avancées."
+      },
+      {
+        "type": "texte",
+        "html": "Cette concentration extrême illustre à la fois la force et la fragilité du raisonnement économique classique sur la spécialisation, qu'on va détailler cette semaine : produire là où on est le plus efficace génère des gains considérables — c'est ce que prédit la théorie —, mais cela crée aussi une dépendance stratégique majeure. Une perturbation affectant les usines taïwanaises les plus avancées — tension géopolitique dans le détroit de Taïwan, catastrophe naturelle — n'aurait, selon les experts du secteur, aucune solution de repli avant un horizon 2030-2035, le temps que d'autres capacités de production équivalentes soient construites ailleurs dans le monde."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "La concentration de la production de semi-conducteurs avancés à Taïwan illustre les gains considérables de la spécialisation mondiale, mais aussi le risque stratégique qu'elle fait peser sur les pays qui en dépendent — une tension qu'on retrouvera dans le raisonnement de David Ricardo sur l'avantage comparatif."
+      }
+    ],
+    "source": {
+      "texte": "TSMC produit plus de 50 % des semi-conducteurs avancés mondiaux ; l'usine TSMC d'Arizona (soutenue par le CHIPS Act) reste en retard technologique par rapport aux usines taïwanaises. Diversification complète de la production de pointe hors de Taïwan jugée improbable avant l'horizon 2030-2035.",
+      "lien": "https://www.vaasblock.com/fr/tsmc-controle-le-goulot-detranglement-de-lia-cest-un-probleme-de-fragilite/",
+      "date_verification": "25 août 2026"
+    }
+  },
+  {
+    "id": 46,
+    "ordre": 46,
+    "phase": 2,
+    "semaine": 1,
+    "jour": 4,
+    "type": "concept",
+    "titre": "La théorie de la valeur-travail, précisée",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Après Smith, plusieurs économistes classiques vont chercher à rendre la théorie de la valeur-travail plus rigoureuse. L'idée centrale, dans sa version la plus aboutie, est la suivante : la valeur d'échange d'un bien reproductible correspond, à l'équilibre, à la quantité de travail socialement nécessaire pour le produire — c'est-à-dire le temps de travail requis dans des conditions de production normales, avec le niveau de compétence et d'outillage habituel d'une époque donnée."
+      },
+      {
+        "type": "texte",
+        "html": "Cette théorie a une portée qui dépasse la seule curiosité historique : elle structure une bonne partie de l'analyse économique classique du xixe siècle, influence directement le raisonnement de David Ricardo qu'on va découvrir dans quelques jours, et sera reprise — sous une forme profondément réélaborée — par Karl Marx, qu'on croisera plus tard dans ce programme, pour construire sa critique du capitalisme. Elle explique notamment pourquoi un diamant, difficile et long à extraire, conserve une valeur d'échange élevée malgré une utilité pratique limitée : ce n'est pas son utilité qui compte ici, mais la rareté du travail nécessaire à son extraction."
+      },
+      {
+        "type": "texte",
+        "html": "Cette théorie n'est cependant pas sans limites, que les classiques eux-mêmes ont largement débattues. Elle peine à expliquer la valeur de biens non reproductibles par le travail, comme une œuvre d'art unique ou une terre particulièrement fertile, dont la rareté ne dépend d'aucun effort de production. Elle explique mal, aussi, pourquoi deux biens nécessitant un temps de travail identique peuvent avoir des valeurs d'échange très différentes selon les circonstances du marché — une difficulté qui préfigure directement la révolution marginaliste et sa théorie de l'utilité, qu'on étudiera dans deux semaines."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "La théorie de la valeur-travail, dans sa version classique, fait dépendre la valeur d'échange d'un bien du temps de travail socialement nécessaire à sa production. Puissante pour expliquer de nombreux cas, elle peine à rendre compte de la valeur des biens rares et non reproductibles — une limite qui ouvrira la voie à d'autres explications."
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "ordre": 47,
+    "phase": 2,
+    "semaine": 1,
+    "jour": 5,
+    "type": "auteur",
+    "titre": "David Ricardo — l'avantage comparatif",
+    "blocs": [
+      {
+        "type": "image",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20David%20Ricardo%20by%20Thomas%20Phillips.jpg",
+        "legende": "David Ricardo (1772-1823), économiste britannique, portrait par Thomas Phillips"
+      },
+      {
+        "type": "texte",
+        "html": "David Ricardo, né en 1772 à Londres dans une famille de courtiers, fait fortune comme agent de change avant de se consacrer à l'économie. Son ouvrage majeur, Des principes de l'économie politique et de l'impôt, publié en 1817, contient l'une des idées les plus contre-intuitives — et les plus durables — de toute l'histoire de la pensée économique : la théorie de l'<em class=\"accent\">avantage comparatif</em>."
+      },
+      {
+        "type": "texte",
+        "html": "L'intuition de départ semble évidente : un pays a intérêt à se spécialiser dans ce qu'il produit le mieux, et à échanger le reste. Mais que se passe-t-il si un pays est meilleur que tous les autres dans absolument tous les domaines ? Faut-il en conclure qu'il n'a aucun intérêt à commercer ? Ricardo démontre, à l'aide d'un exemple resté célèbre opposant l'Angleterre et le Portugal pour la production de drap et de vin, que la réponse est non — et que la conclusion est même exactement inverse."
+      },
+      {
+        "type": "texte",
+        "html": "Dans son exemple, le Portugal produit à la fois le vin et le drap avec moins d'heures de travail que l'Angleterre : il dispose d'un avantage <em class=\"accent\">absolu</em> sur les deux produits. Pourtant, Ricardo montre que si le Portugal est relativement bien meilleur en vin qu'en drap (comparé à l'Angleterre), tandis que l'Angleterre est relativement moins mauvaise en drap qu'en vin, les deux pays ont intérêt à se spécialiser chacun dans le bien où leur désavantage est le plus faible — leur avantage <em class=\"accent\">comparatif</em> — puis à échanger. Ce faisant, la quantité totale de vin et de drap disponible pour les deux pays réunis augmente, par rapport à une situation où chacun produirait tout lui-même."
+      },
+      {
+        "type": "texte",
+        "html": "Cette démonstration, aussi élégante que déroutante au premier abord, est devenue l'un des piliers théoriques du libre-échange : elle explique pourquoi le commerce international peut être mutuellement bénéfique même entre des pays très inégaux en termes de productivité globale, du moment que chacun se concentre sur ce qu'il fait relativement le mieux. C'est cette même logique qu'on retrouve, deux siècles plus tard, derrière la spécialisation extrême de Taïwan dans les semi-conducteurs de pointe vue avant-hier — même si, comme on l'a souligné, cette spécialisation a aussi un revers en termes de dépendance stratégique, une dimension que le modèle théorique de Ricardo, construit sur des hypothèses simplificatrices, ne prend pas directement en compte."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "L'avantage comparatif de David Ricardo montre que deux pays ont intérêt à échanger même si l'un est plus efficace que l'autre dans absolument tous les domaines — à condition que chacun se spécialise dans le bien où son désavantage relatif est le plus faible. C'est l'un des fondements théoriques les plus durables du libre-échange."
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "ordre": 48,
+    "phase": 2,
+    "semaine": 1,
+    "jour": 6,
+    "type": "actu",
+    "titre": "2026 : la théorie du libre-échange à l'épreuve d'une nouvelle guerre commerciale",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "La théorie de l'avantage comparatif, vue hier, prédit des gains mutuels du commerce international. Pourtant, l'actualité de l'été 2026 illustre à quel point cette logique se heurte, en pratique, à des considérations politiques et stratégiques qui dépassent le seul calcul économique. Fin août 2026, les tensions commerciales entre les États-Unis et le Canada se sont nettement durcies : Donald Trump a annoncé de nouveaux droits de douane pouvant atteindre 50 % sur l'acier, l'aluminium, les véhicules et pièces automobiles à compter de janvier 2027."
+      },
+      {
+        "type": "texte",
+        "html": "Le Canada a répliqué en annonçant des surtaxes d'un montant équivalent, « au dollar près », sur environ 20 milliards de dollars de produits américains — touchant notamment le ciment, le papier, les machines agricoles et l'électronique, avec une entrée en vigueur prévue le 8 septembre 2026. Une association réunissant plus de 200 grandes entreprises américaines a publiquement appelé les deux gouvernements à revenir à la table des négociations, soulignant le coût économique de cette escalade pour les deux économies."
+      },
+      {
+        "type": "texte",
+        "html": "Ce type d'épisode illustre une tension classique entre la théorie économique et la décision politique. Selon la logique de Ricardo, ces droits de douane réduisent les gains mutuels du commerce entre les deux pays voisins, en renchérissant artificiellement des biens que chacun pourrait produire plus efficacement en se spécialisant. Mais les défenseurs de ces mesures avancent d'autres arguments, non strictement économiques : protection d'emplois industriels jugés stratégiques, rapport de force dans des négociations plus larges, ou volonté de réduire une dépendance jugée excessive envers un partenaire commercial. Ce débat entre gains économiques du libre-échange et arguments stratégiques du protectionnisme reste, deux siècles après Ricardo, une ligne de fracture majeure entre écoles de pensée économiques et entre partis politiques."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "L'escalade tarifaire américano-canadienne de l'été 2026 illustre la tension entre la théorie de l'avantage comparatif, qui prédit des gains mutuels du libre-échange, et des considérations politiques ou stratégiques qui poussent parfois les gouvernements à s'en écarter délibérément."
+      }
+    ],
+    "source": {
+      "texte": "Annonce de droits de douane américains jusqu'à 50 % sur l'acier, l'aluminium et l'automobile visant le Canada à compter du 1er janvier 2027 ; réplique canadienne annoncée sur environ 20 Md$ de produits américains, effective le 8 septembre 2026.",
+      "lien": "https://www.france24.com/fr/am%C3%A9riques/20260823-commerce-%C3%A9conomie-droits-de-douane-le-ton-monte-entre-donald-trump-%C3%A9tats-unis-canada-marc-carney",
+      "date_verification": "25 août 2026"
+    }
+  },
+  {
+    "id": 49,
+    "ordre": 49,
+    "phase": 2,
+    "semaine": 1,
+    "jour": 7,
+    "type": "quiz",
+    "titre": "Quiz — Semaine 1 (Phase 2)",
+    "contenu": "Première semaine de la phase 2 ! Teste ce que tu as retenu sur la valeur, Smith, Ricardo et le libre-échange.",
+    "questions": [
+      {
+        "question": "Quelle est la différence entre valeur d'usage et valeur d'échange ?",
+        "options": [
+          "Il n'y a aucune différence",
+          "La valeur d'usage est l'utilité d'un bien, la valeur d'échange est ce contre quoi il s'échange",
+          "La valeur d'usage ne concerne que les biens de luxe"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Que désigne le « paradoxe de la valeur » (eau et diamant) ?",
+        "options": [
+          "Le fait qu'un bien essentiel comme l'eau ait une faible valeur d'échange, contrairement au diamant",
+          "Le fait que l'eau soit plus chère que les diamants",
+          "Une théorie sur la monnaie"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Selon la première théorie de la valeur d'Adam Smith, qu'est-ce qui détermine la valeur d'échange d'un bien ?",
+        "options": [
+          "Le prix fixé par l'État",
+          "La quantité de travail nécessaire pour le produire",
+          "La rareté du bien uniquement"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Pourquoi l'industrie des semi-conducteurs avancés est-elle très concentrée géographiquement ?",
+        "options": [
+          "Parce qu'aucun autre pays ne s'y intéresse",
+          "Parce que la production de pointe nécessite des usines extrêmement coûteuses et spécialisées, concentrées principalement à Taïwan",
+          "Parce que c'est interdit ailleurs"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Qu'appelle-t-on la valeur-travail « socialement nécessaire » ?",
+        "options": [
+          "Le temps de travail requis dans des conditions de production normales pour une époque donnée",
+          "Le salaire minimum légal",
+          "Le temps de travail exact d'un seul ouvrier précis"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Dans l'exemple de Ricardo, le Portugal a un avantage absolu sur l'Angleterre pour le vin ET le drap. Pourquoi les deux pays ont-ils quand même intérêt à échanger ?",
+        "options": [
+          "Ils n'ont aucun intérêt à échanger dans ce cas",
+          "Chacun a intérêt à se spécialiser dans le bien où son désavantage relatif est le plus faible (avantage comparatif)",
+          "Parce que le Portugal doit aider l'Angleterre par charité"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Que démontre la théorie de l'avantage comparatif de Ricardo ?",
+        "options": [
+          "Que le commerce n'est bénéfique qu'entre pays de productivité égale",
+          "Que deux pays peuvent avoir intérêt à échanger même si l'un est plus efficace que l'autre dans tous les domaines",
+          "Que le protectionnisme est toujours préférable"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "En août 2026, quels produits sont visés par la nouvelle hausse de droits de douane américains contre le Canada ?",
+        "options": [
+          "Les produits agricoles uniquement",
+          "L'acier, l'aluminium, les véhicules et pièces automobiles",
+          "Les services numériques"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Quel argument est parfois avancé pour justifier le protectionnisme, malgré les prédictions de la théorie de l'avantage comparatif ?",
+        "options": [
+          "Des considérations stratégiques ou de protection de l'emploi industriel",
+          "Le fait que le commerce international n'existe pas",
+          "Le fait que Ricardo se soit trompé sur toute sa théorie"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "En quelle année David Ricardo publie-t-il son ouvrage majeur contenant la théorie de l'avantage comparatif ?",
+        "options": [
+          "1776",
+          "1817",
+          "1936"
+        ],
+        "bonne_reponse": 1
+      }
+    ]
   }
 ]
