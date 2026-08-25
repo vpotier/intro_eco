@@ -333,10 +333,14 @@ function afficherToday() {
         if (e.propertyName !== "transform") return;
         inner.removeEventListener("transitionend", gererFinFlip);
         ouvrirCarteDuJour(fiche.id);
-        // On ne remplace que la carte elle-même, pas tout l'écran :
-        // ça évite de relancer l'animation d'entrée sur l'en-tête et de créer un clignotement.
-        conteneurFlip.outerHTML = construireCarteRecto(fiche, true);
-        brancherEvenementsRecto(fiche);
+
+        // Fondu de sortie rapide sur la carte retournée...
+        conteneurFlip.classList.add("carte-flip-sortie");
+        setTimeout(() => {
+          // ...puis remplacement (invisible à ce stade) et fondu d'entrée sur la carte finale.
+          conteneurFlip.outerHTML = construireCarteRecto(fiche, true, "carte-entree-douce");
+          brancherEvenementsRecto(fiche);
+        }, 180);
       }, { once: true });
     }, { once: true });
   } else {
@@ -349,7 +353,7 @@ function afficherToday() {
   document.getElementById("btn-streak").addEventListener("click", ouvrirStreak);
 }
 
-function construireCarteRecto(fiche, avecActions) {
+function construireCarteRecto(fiche, avecActions, classeSupplementaire) {
   const favoris = getFavoris();
   const estFavori = favoris.includes(fiche.id);
   const typeLabel = NOMS_TYPES[fiche.type] || fiche.type;
@@ -375,7 +379,7 @@ function construireCarteRecto(fiche, avecActions) {
     : (fiche.type === "quiz" ? "📝 Toucher pour commencer le quiz" : "→ Aller plus loin pour en savoir plus");
 
   let html = `
-    <div class="carte-recto" id="carte-recto">
+    <div class="carte-recto ${classeSupplementaire || ''}" id="carte-recto">
       <span class="carte-numero">N° ${fiche.ordre}</span>
       <span class="type-tag ${classeType(fiche.type)}">${typeLabel}</span>
       <h2 class="serif">${fiche.titre}</h2>
