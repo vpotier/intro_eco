@@ -326,11 +326,18 @@ function afficherToday() {
 
     document.getElementById("carte-flip").addEventListener("click", () => {
       const inner = document.getElementById("carte-flip-inner");
+      const conteneurFlip = document.getElementById("carte-flip");
       inner.classList.add("retournee");
-      setTimeout(() => {
+
+      inner.addEventListener("transitionend", function gererFinFlip(e) {
+        if (e.propertyName !== "transform") return;
+        inner.removeEventListener("transitionend", gererFinFlip);
         ouvrirCarteDuJour(fiche.id);
-        afficherToday();
-      }, 650);
+        // On ne remplace que la carte elle-même, pas tout l'écran :
+        // ça évite de relancer l'animation d'entrée sur l'en-tête et de créer un clignotement.
+        conteneurFlip.outerHTML = construireCarteRecto(fiche, true);
+        brancherEvenementsRecto(fiche);
+      }, { once: true });
     }, { once: true });
   } else {
     html += construireCarteRecto(fiche, true);
