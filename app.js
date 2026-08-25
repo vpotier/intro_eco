@@ -22,8 +22,35 @@ const DESC_TYPES = {
   quiz: "De quoi tester ce que tu as retenu."
 };
 
+const SVG_FLECHE = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>`;
+
+const NOMS_PHASES = {
+  1: "Fondamentaux",
+  2: "Courants classiques",
+  3: "Macro & politique économique",
+  4: "État vs marché",
+  5: "Économie contemporaine",
+  6: "Économistes médiatiques"
+};
+
+const NOMS_SEMAINES = {
+  "1-1": "Les bases", "1-2": "Le marché", "1-3": "Équilibre et monnaie",
+  "1-4": "Monnaie et prix", "1-5": "Mesurer l'économie", "1-6": "Travail et pouvoir d'achat",
+  "2-1": "Adam Smith et les fondateurs", "2-2": "Malthus et les limites", "2-3": "La révolution marginaliste",
+  "2-4": "Walras, Marshall, l'équilibre général", "2-5": "Pareto et la bascule vers le 20e siècle",
+  "3-1": "Qu'est-ce que la macroéconomie", "3-2": "Monnaie et monétarisme", "3-3": "Inflation et chômage",
+  "3-4": "Dette et budget public", "3-5": "Croissance et cycles", "3-6": "Commerce international et change",
+  "4-1": "Les libéraux et l'État minimal", "4-2": "Keynésianisme et interventionnisme", "4-3": "L'État-providence",
+  "4-4": "Néolibéralisme et critique de l'État", "4-5": "Régulation et externalités", "4-6": "Synthèse État/marché",
+  "5-1": "Mondialisation", "5-2": "Inégalités", "5-3": "Travail et capitalisme contemporain",
+  "5-4": "Économie du développement", "5-5": "Économie comportementale", "5-6": "Croissance, innovation, limites",
+  "6-1": "Voix favorables à l'intervention publique", "6-2": "Voix favorables au marché",
+  "6-3": "Voix techniques et institutionnelles", "6-4": "Cartographie et synthèse électorale"
+};
+
 let toutesLesFiches = [];
-let ecranActuel = "today";
+let vueRacine = "today";       // écran de fond : today / collection / threads
+let pileImbriquee = [];        // écrans empilés par-dessus : longread, recherche, sommaire
 let ficheLongreadId = null;
 
 /* ===================== Utilitaires stockage ===================== */
@@ -111,8 +138,8 @@ async function init() {
 }
 
 function allerA(ecran) {
-  ecranActuel = ecran;
-  ficheLongreadId = null;
+  vueRacine = ecran;
+  pileImbriquee = [];
   document.querySelectorAll(".nav-btn").forEach(b => {
     b.classList.toggle("actif", b.dataset.screen === ecran);
   });
@@ -120,6 +147,48 @@ function allerA(ecran) {
   if (ecran === "today") afficherToday();
   if (ecran === "collection") afficherCollection();
   if (ecran === "threads") afficherThreads();
+  window.scrollTo(0, 0);
+  mettreAJourBarreProgression();
+}
+
+/* ===================== Navigation imbriquée (longread / recherche / sommaire) ===================== */
+function ouvrirLongRead(id) {
+  pileImbriquee.push({ type: "longread", id });
+  document.getElementById("bottom-nav").style.display = "none";
+  rendreVueImbriquee();
+}
+
+function ouvrirSommaire() {
+  pileImbriquee.push({ type: "sommaire" });
+  document.getElementById("bottom-nav").style.display = "none";
+  rendreVueImbriquee();
+}
+
+function ouvrirRechercheMotCle(mot) {
+  pileImbriquee.push({ type: "recherche", mot });
+  rendreVueImbriquee();
+}
+
+function retourArriere() {
+  pileImbriquee.pop();
+  if (pileImbriquee.length === 0) {
+    document.getElementById("bottom-nav").style.display = "flex";
+    allerA(vueRacine);
+  } else {
+    rendreVueImbriquee();
+  }
+}
+
+function rendreVueImbriquee() {
+  const sommet = pileImbriquee[pileImbriquee.length - 1];
+  if (sommet.type === "longread") {
+    ficheLongreadId = sommet.id;
+    afficherLongRead();
+  } else if (sommet.type === "recherche") {
+    afficherRechercheContenu(sommet.mot);
+  } else if (sommet.type === "sommaire") {
+    afficherSommaireContenu();
+  }
   window.scrollTo(0, 0);
   mettreAJourBarreProgression();
 }
@@ -172,7 +241,10 @@ function afficherToday() {
   let html = `
     <div class="header-row">
       <h1 class="ecran-titre serif">Éco du jour</h1>
-      <div class="streak-badge">🔥 ${streak} -day streak</div>
+      <div class="header-right">
+        <button class="btn-icone" id="btn-sommaire" title="Sommaire">☰</button>
+        <div class="streak-badge">🔥 ${streak} -day streak</div>
+      </div>
     </div>
     <div class="date-ligne">${dateCapitalisee}<span class="separateur">·</span>Card no. ${fiche.ordre}</div>
   `;
@@ -197,6 +269,8 @@ function afficherToday() {
     zone.innerHTML = html;
     brancherEvenementsRecto(fiche);
   }
+
+  document.getElementById("btn-sommaire").addEventListener("click", ouvrirSommaire);
 }
 
 function construireCarteRecto(fiche, avecActions) {
@@ -272,19 +346,6 @@ function brancherEvenementsRecto(fiche) {
 }
 
 /* ===================== Long Read ("Go deeper") ===================== */
-function ouvrirLongRead(id) {
-  ficheLongreadId = id;
-  document.getElementById("bottom-nav").style.display = "none";
-  afficherLongRead();
-  window.scrollTo(0, 0);
-}
-
-function fermerLongRead() {
-  document.getElementById("bottom-nav").style.display = "flex";
-  ficheLongreadId = null;
-  allerA(ecranActuel === "longread" ? "today" : ecranActuel);
-}
-
 function afficherLongRead() {
   const fiche = toutesLesFiches.find(f => f.id === ficheLongreadId);
   const zone = document.getElementById("contenu");
@@ -293,7 +354,7 @@ function afficherLongRead() {
 
   let html = `
     <div class="longread-header">
-      <button class="btn-retour-rond" id="btn-retour-longread">←</button>
+      <button class="btn-retour-rond" id="btn-retour-longread">${SVG_FLECHE}</button>
       <div>
         <div class="longread-eyebrow">THE LONG READ</div>
       </div>
@@ -316,13 +377,17 @@ function afficherLongRead() {
 
   zone.innerHTML = html;
 
-  document.getElementById("btn-retour-longread").addEventListener("click", fermerLongRead);
+  document.getElementById("btn-retour-longread").addEventListener("click", retourArriere);
 
   const btnGarder = document.getElementById("btn-garder");
   btnGarder.addEventListener("click", () => {
     marquerLue(fiche.id);
     btnGarder.textContent = "✓ In your collection";
     btnGarder.classList.add("dans-collection");
+  });
+
+  document.querySelectorAll(".tag-pill-clic").forEach(el => {
+    el.addEventListener("click", () => ouvrirRechercheMotCle(el.dataset.mot));
   });
 
   if (fiche.type === "quiz") activerQuizLongRead(fiche);
@@ -378,16 +443,33 @@ function construireBlocsLongRead(fiche) {
   return html;
 }
 
+function extraireMotsCles(fiche) {
+  // Les termes importants sont déjà balisés dans le contenu avec <em class="accent">…</em> :
+  // on les réutilise comme mots-clés plutôt que de retagger les 231 fiches à la main.
+  if (!fiche.blocs) return [];
+  const motsCles = new Set();
+  const regex = /<em class="accent">(.*?)<\/em>/g;
+  fiche.blocs.forEach(bloc => {
+    if (bloc.type !== "texte" || !bloc.html) return;
+    regex.lastIndex = 0;
+    let m;
+    while ((m = regex.exec(bloc.html)) !== null) {
+      const mot = m[1].replace(/<[^>]+>/g, "").trim();
+      if (mot.length > 1) motsCles.add(mot);
+    }
+  });
+  return Array.from(motsCles).slice(0, 6);
+}
+
 function construirePullsOn(fiche) {
-  const semaineLabel = `Semaine ${fiche.semaine}`;
-  const phaseLabel = `Phase ${fiche.phase}`;
+  const motsCles = extraireMotsCles(fiche);
+  if (motsCles.length === 0) return "";
+  const pills = motsCles.map(mot =>
+    `<button class="tag-pill tag-pill-clic" data-mot="${mot.replace(/"/g, '&quot;')}">${mot}</button>`
+  ).join("");
   return `
     <div class="longread-section-eyebrow">Pulls on</div>
-    <div class="pulls-on">
-      <span class="tag-pill">${phaseLabel}</span>
-      <span class="tag-pill">${semaineLabel}</span>
-      <span class="tag-pill">${NOMS_TYPES[fiche.type] || fiche.type}</span>
-    </div>
+    <div class="pulls-on">${pills}</div>
   `;
 }
 
@@ -523,6 +605,117 @@ function afficherThreads() {
   });
 
   zone.innerHTML = html;
+}
+
+/* ===================== Recherche par mot-clé ===================== */
+function afficherRechercheContenu(mot) {
+  const zone = document.getElementById("contenu");
+  const motLower = mot.toLowerCase();
+  const lues = getLues();
+
+  const resultats = toutesLesFiches.filter(f =>
+    f.blocs && f.blocs.some(b => b.type === "texte" && b.html.toLowerCase().includes(motLower))
+  );
+
+  let html = `
+    <div class="longread-header">
+      <button class="btn-retour-rond" id="btn-retour-imbrique">${SVG_FLECHE}</button>
+      <div><div class="longread-eyebrow">MOT-CLÉ</div></div>
+    </div>
+    <h2 class="longread-titre serif">${mot}</h2>
+    <div class="ecran-soustitre">${resultats.length} carte${resultats.length > 1 ? "s" : ""} en parlent</div>
+    <div class="grille-collection">
+  `;
+
+  resultats.forEach((f, i) => {
+    const teinte = i % 2 === 0 ? "teinte-a" : "teinte-b";
+    const check = lues.includes(f.id) ? "✓ " : "";
+    html += `
+      <div class="mini-carte ${teinte}" data-id="${f.id}">
+        <span class="carte-numero-label">NO. ${f.ordre}</span>
+        <div class="mini-titre serif">${check}${f.titre}</div>
+        <div class="mini-type">${NOMS_TYPES[f.type] || f.type}</div>
+      </div>
+    `;
+  });
+
+  html += `</div>`;
+  zone.innerHTML = html;
+
+  document.getElementById("btn-retour-imbrique").addEventListener("click", retourArriere);
+  document.querySelectorAll(".mini-carte").forEach(el => {
+    el.addEventListener("click", () => ouvrirLongRead(parseInt(el.dataset.id)));
+  });
+}
+
+/* ===================== Sommaire ===================== */
+function afficherSommaireContenu() {
+  const zone = document.getElementById("contenu");
+  const lues = getLues();
+
+  const groupes = {};
+  toutesLesFiches.forEach(f => {
+    if (!groupes[f.phase]) groupes[f.phase] = {};
+    if (!groupes[f.phase][f.semaine]) groupes[f.phase][f.semaine] = [];
+    groupes[f.phase][f.semaine].push(f);
+  });
+
+  let html = `
+    <div class="longread-header">
+      <button class="btn-retour-rond" id="btn-retour-imbrique">${SVG_FLECHE}</button>
+      <div><div class="longread-eyebrow">SOMMAIRE</div></div>
+    </div>
+    <h2 class="longread-titre serif">Toutes les fiches</h2>
+  `;
+
+  Object.keys(groupes).sort((a, b) => a - b).forEach(phase => {
+    const semaines = groupes[phase];
+    const fichesPhase = Object.values(semaines).flat();
+    const luesPhase = fichesPhase.filter(f => lues.includes(f.id)).length;
+
+    html += `<details class="groupe-phase" open>
+      <summary>
+        <span class="numero-phase">${phase}</span>
+        <span class="texte-phase serif">${NOMS_PHASES[phase] || ("Phase " + phase)}</span>
+        <span class="thread-compte">${luesPhase}/${fichesPhase.length}</span>
+      </summary>`;
+
+    Object.keys(semaines).sort((a, b) => a - b).forEach(semaine => {
+      const fichesSemaine = semaines[semaine];
+      const luesSemaine = fichesSemaine.filter(f => lues.includes(f.id)).length;
+      const cle = `${phase}-${semaine}`;
+      const titreSemaine = NOMS_SEMAINES[cle] ? `Semaine ${semaine} — ${NOMS_SEMAINES[cle]}` : `Semaine ${semaine}`;
+
+      html += `<details class="groupe-semaine">
+        <summary>
+          <span class="texte-semaine">${titreSemaine}</span>
+          <span class="thread-compte">${luesSemaine}/${fichesSemaine.length}</span>
+        </summary>
+        <ul class="sommaire-liste">`;
+
+      fichesSemaine.forEach(f => {
+        const lu = lues.includes(f.id);
+        html += `
+          <li class="ligne-sommaire ${lu ? 'lue' : ''}" data-id="${f.id}">
+            <span class="check">${lu ? '✓' : '○'}</span>
+            <span class="type-tag mini">${NOMS_TYPES[f.type] || f.type}</span>
+            <span class="titre-sommaire">${f.titre}</span>
+          </li>
+        `;
+      });
+
+      html += `</ul></details>`;
+    });
+
+    html += `</details>`;
+  });
+
+  zone.innerHTML = html;
+
+  document.getElementById("btn-retour-imbrique").addEventListener("click", retourArriere);
+  document.querySelectorAll(".ligne-sommaire").forEach(el => {
+    el.addEventListener("click", () => ouvrirLongRead(parseInt(el.dataset.id)));
+  });
 }
 
 /* ===================== Barre de progression de lecture ===================== */
