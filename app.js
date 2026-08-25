@@ -22,6 +22,10 @@ const DESC_TYPES = {
   quiz: "De quoi tester ce que tu as retenu."
 };
 
+function classeType(type) {
+  return "type-tag-" + (type || "concept");
+}
+
 const SVG_FLECHE = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>`;
 
 const NOMS_PHASES = {
@@ -77,13 +81,17 @@ function remplacerContenu(zone, html) {
   zone.classList.add("contenu-anime");
 }
 
-function marquerLue(id) {
-  const lues = getLues();
-  if (!lues.includes(id)) {
+function toggleLue(id) {
+  let lues = getLues();
+  if (lues.includes(id)) {
+    lues = lues.filter(x => x !== id);
+    localStorage.setItem(CLE_LUES, JSON.stringify(lues));
+  } else {
     lues.push(id);
     localStorage.setItem(CLE_LUES, JSON.stringify(lues));
+    enregistrerJourActif();
   }
-  enregistrerJourActif();
+  return lues.includes(id);
 }
 
 function toggleFavori(id) {
@@ -124,6 +132,36 @@ function calculerStreak() {
   }
   return streak;
 }
+
+function calculerMeilleurStreak() {
+  const dates = getStreakDates().slice().sort();
+  if (dates.length === 0) return 0;
+  let meilleur = 1;
+  let courant = 1;
+  for (let i = 1; i < dates.length; i++) {
+    const precedent = new Date(dates[i - 1]);
+    const actuel = new Date(dates[i]);
+    const ecartJours = Math.round((actuel - precedent) / 86400000);
+    if (ecartJours === 1) {
+      courant++;
+    } else if (ecartJours > 1) {
+      courant = 1;
+    }
+    meilleur = Math.max(meilleur, courant);
+  }
+  return Math.max(meilleur, calculerStreak());
+}
+
+const PALIERS_STREAK = [
+  { seuil: 3, label: "Premier pas", detail: "3 jours de suite" },
+  { seuil: 7, label: "Une semaine pile", detail: "7 jours de suite" },
+  { seuil: 14, label: "Deux semaines", detail: "14 jours de suite" },
+  { seuil: 30, label: "Un mois de suite", detail: "30 jours de suite" },
+  { seuil: 60, label: "Deux mois", detail: "60 jours de suite" },
+  { seuil: 100, label: "Centurion", detail: "100 jours de suite" },
+  { seuil: 200, label: "Marathonien", detail: "200 jours de suite" },
+  { seuil: 236, label: "Le programme entier", detail: "236 jours — la totalité du parcours" }
+];
 
 function enregistrerReponseQuiz(correct) {
   const s = getQuizStats();
@@ -172,6 +210,12 @@ function ouvrirSommaire() {
   rendreVueImbriquee();
 }
 
+function ouvrirStreak() {
+  pileImbriquee.push({ type: "streak" });
+  document.getElementById("bottom-nav").style.display = "none";
+  rendreVueImbriquee();
+}
+
 function ouvrirRechercheMotCle(mot) {
   pileImbriquee.push({ type: "recherche", mot });
   rendreVueImbriquee();
@@ -196,6 +240,8 @@ function rendreVueImbriquee() {
     afficherRechercheContenu(sommet.mot);
   } else if (sommet.type === "sommaire") {
     afficherSommaireContenu();
+  } else if (sommet.type === "streak") {
+    afficherStreakContenu();
   }
   window.scrollTo(0, 0);
   mettreAJourBarreProgression();
@@ -251,7 +297,7 @@ function afficherToday() {
       <h1 class="ecran-titre serif">Les deux sous</h1>
       <div class="header-right">
         <button class="btn-icone" id="btn-sommaire" title="Sommaire">☰</button>
-        <div class="streak-badge">🔥 ${streak} jours de suite</div>
+        <div class="streak-badge" id="btn-streak">🔥 ${streak} jours de suite</div>
       </div>
     </div>
     <div class="date-ligne">${dateCapitalisee}<span class="separateur">·</span>Carte n° ${fiche.ordre}</div>
@@ -293,6 +339,7 @@ function afficherToday() {
   }
 
   document.getElementById("btn-sommaire").addEventListener("click", ouvrirSommaire);
+  document.getElementById("btn-streak").addEventListener("click", ouvrirStreak);
 }
 
 function construireCarteRecto(fiche, avecActions) {
@@ -323,7 +370,7 @@ function construireCarteRecto(fiche, avecActions) {
   let html = `
     <div class="carte-recto" id="carte-recto">
       <span class="carte-numero">N° ${fiche.ordre}</span>
-      <span class="type-tag">${typeLabel}</span>
+      <span class="type-tag ${classeType(fiche.type)}">${typeLabel}</span>
       <h2 class="serif">${fiche.titre}</h2>
       ${teaser}
       ${visuel}
@@ -403,9 +450,9 @@ function afficherLongRead() {
 
   const btnGarder = document.getElementById("btn-garder");
   btnGarder.addEventListener("click", () => {
-    marquerLue(fiche.id);
-    btnGarder.textContent = "✓ Dans ta collection";
-    btnGarder.classList.add("dans-collection");
+    const estMaintenantLue = toggleLue(fiche.id);
+    btnGarder.textContent = estMaintenantLue ? "✓ Dans ta collection" : "Garder dans ma collection";
+    btnGarder.classList.toggle("dans-collection", estMaintenantLue);
   });
 
   document.querySelectorAll(".tag-pill-clic").forEach(el => {
@@ -720,7 +767,7 @@ function afficherSommaireContenu() {
         html += `
           <li class="ligne-sommaire ${lu ? 'lue' : ''}" data-id="${f.id}">
             <span class="check">${lu ? '✓' : '○'}</span>
-            <span class="type-tag mini">${NOMS_TYPES[f.type] || f.type}</span>
+            <span class="type-tag mini ${classeType(f.type)}">${NOMS_TYPES[f.type] || f.type}</span>
             <span class="titre-sommaire">${f.titre}</span>
           </li>
         `;
@@ -738,6 +785,70 @@ function afficherSommaireContenu() {
   document.querySelectorAll(".ligne-sommaire").forEach(el => {
     el.addEventListener("click", () => ouvrirLongRead(parseInt(el.dataset.id)));
   });
+}
+
+/* ===================== Écran Streak (gamification) ===================== */
+function afficherStreakContenu() {
+  const zone = document.getElementById("contenu");
+  const streak = calculerStreak();
+  const meilleur = calculerMeilleurStreak();
+  const datesActives = new Set(getStreakDates());
+
+  // Calendrier des 28 derniers jours, du plus ancien au plus récent
+  const jours = [];
+  for (let i = 27; i >= 0; i--) {
+    const d = new Date();
+    d.setDate(d.getDate() - i);
+    const iso = d.toISOString().split("T")[0];
+    jours.push({
+      iso,
+      actif: datesActives.has(iso),
+      estAujourdhui: iso === aujourdhui(),
+      lettre: "LMMJVSD"[(d.getDay() + 6) % 7]
+    });
+  }
+
+  let html = `
+    <div class="longread-header">
+      <button class="btn-retour-rond" id="btn-retour-imbrique">${SVG_FLECHE}</button>
+      <div><div class="longread-eyebrow">SÉRIE EN COURS</div></div>
+    </div>
+    <div class="streak-hero">
+      <div class="streak-flamme">🔥</div>
+      <div class="streak-gros-chiffre serif">${streak}</div>
+      <div class="streak-sous-titre">jour${streak > 1 ? "s" : ""} de suite</div>
+    </div>
+    <div class="streak-record">Record personnel : <strong>${meilleur} jour${meilleur > 1 ? "s" : ""}</strong></div>
+
+    <div class="longread-section-eyebrow">Les 4 dernières semaines</div>
+    <div class="calendrier-streak">
+      ${jours.map(j => `
+        <div class="jour-streak ${j.actif ? 'actif' : ''} ${j.estAujourdhui ? 'aujourdhui' : ''}" title="${j.iso}">
+          <span class="jour-streak-lettre">${j.lettre}</span>
+          <span class="jour-streak-point"></span>
+        </div>
+      `).join("")}
+    </div>
+
+    <div class="longread-section-eyebrow">Paliers</div>
+    <div class="paliers-liste">
+      ${PALIERS_STREAK.map(p => {
+        const atteint = meilleur >= p.seuil;
+        return `
+          <div class="palier ${atteint ? 'atteint' : ''}">
+            <span class="palier-icone">${atteint ? '🏅' : '🔒'}</span>
+            <div class="palier-texte">
+              <div class="palier-label serif">${p.label}</div>
+              <div class="palier-detail">${p.detail}</div>
+            </div>
+          </div>
+        `;
+      }).join("")}
+    </div>
+  `;
+
+  remplacerContenu(zone, html);
+  document.getElementById("btn-retour-imbrique").addEventListener("click", retourArriere);
 }
 
 /* ===================== Barre de progression de lecture ===================== */
