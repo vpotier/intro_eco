@@ -4882,5 +4882,1693 @@
         "bonne_reponse": 0
       }
     ]
+  },
+  {
+    "id": 120,
+    "ordre": 120,
+    "phase": 4,
+    "semaine": 1,
+    "jour": 1,
+    "type": "concept",
+    "titre": "Qu'est-ce que le libéralisme économique ?",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "On entre aujourd'hui dans la phase 4 de ce programme, consacrée au clivage le plus structurant du débat économique et politique contemporain : quelle place donner à l'État face au marché ? C'est précisément la question qui traverse la campagne présidentielle de 2027, entre les candidats qui proposent de renforcer l'intervention publique et ceux qui plaident pour son retrait."
+      },
+      {
+        "type": "texte",
+        "html": "Le <em class=\"accent\">libéralisme économique</em>, dont on a déjà croisé les racines avec Adam Smith en phase 1, repose sur une conviction centrale : les individus, en poursuivant librement leurs intérêts propres sur des marchés concurrentiels, produisent collectivement un résultat généralement supérieur à celui qu'obtiendrait une planification centralisée. L'État y a un rôle, mais un rôle borné : garantir le droit de propriété, faire respecter les contrats, assurer la concurrence, et fournir les quelques biens que le marché ne peut produire seul — la justice, la défense, certaines infrastructures de base."
+      },
+      {
+        "type": "texte",
+        "html": "Ce courant n'est pas monolithique : il regroupe des sensibilités parfois très différentes, du libéralisme classique de Smith à l'ordolibéralisme allemand qu'on découvrira en semaine 4, en passant par l'école autrichienne de Hayek et l'école de Chicago de Friedman, déjà rencontrée en phase 3. Ce qui les unit néanmoins est une méfiance de principe envers la capacité de l'État à améliorer, par une action volontariste, ce que le marché produit spontanément — une méfiance qu'on va explorer en détail cette semaine à travers l'un de ses représentants les plus influents du xxe siècle."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Le libéralisme économique fait confiance aux mécanismes de marché pour coordonner efficacement les décisions individuelles, et confine le rôle de l'État à quelques fonctions essentielles (droit, concurrence, biens publics de base). Ce courant regroupe plusieurs écoles aux nuances importantes, qu'on détaillera tout au long de cette phase."
+      }
+    ]
+  },
+  {
+    "id": 121,
+    "ordre": 121,
+    "phase": 4,
+    "semaine": 1,
+    "jour": 2,
+    "type": "auteur",
+    "titre": "Friedrich Hayek — la route de la servitude",
+    "blocs": [
+      {
+        "type": "image",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Friedrich%20Hayek%20portrait.jpg",
+        "legende": "Friedrich Hayek (1899-1992), économiste et philosophe autrichien, prix Nobel d'économie 1974"
+      },
+      {
+        "type": "texte",
+        "html": "Friedrich Hayek, économiste et philosophe né à Vienne en 1899, publie en 1944, en pleine Seconde Guerre mondiale, un ouvrage qui va devenir l'un des textes fondateurs du libéralisme du xxe siècle : La Route de la servitude. Il l'écrit en réaction directe à la planification économique centralisée qu'il observe alors en Allemagne nazie et en Union soviétique, mais aussi, plus inattendu, en réaction aux politiques interventionnistes de plus en plus poussées adoptées par certains gouvernements occidentaux, y compris démocratiques, dans l'après-guerre."
+      },
+      {
+        "type": "texte",
+        "html": "La thèse centrale de Hayek, qui donne son titre à l'ouvrage, est provocante : toute planification économique centralisée, même engagée avec les meilleures intentions démocratiques, contiendrait en germe une dérive vers le totalitarisme. Son argument repose sur ce qu'il appelle le problème de la <em class=\"accent\">connaissance dispersée</em> : l'information nécessaire pour organiser efficacement une économie — les préférences de millions de consommateurs, les coûts de production de millions d'entreprises, les innovations locales — est dispersée entre des millions d'individus, et ne peut jamais être centralisée par un planificateur, aussi compétent et bien intentionné soit-il. Le système de prix, résultant des millions de décisions décentralisées du marché, agrège cette information de façon bien plus efficace qu'aucune administration centrale ne pourrait le faire."
+      },
+      {
+        "type": "texte",
+        "html": "De ce constat, Hayek tire une mise en garde politique : chercher à planifier centralement de plus en plus de pans de l'économie oblige, selon lui, à recourir à une coercition croissante pour faire respecter ce plan, érodant progressivement les libertés individuelles — d'où le risque, même dans une démocratie de départ, de glisser vers un régime autoritaire. Cette thèse reste aujourd'hui vivement débattue : ses défenseurs y voient une mise en garde prophétique, ses détracteurs lui reprochent d'assimiler trop rapidement toute intervention publique — y compris l'État-providence modéré qu'on étudiera en semaine 3 — à une pente glissante vers le totalitarisme, une lecture que beaucoup jugent excessive au vu de l'expérience des démocraties sociales européennes d'après-guerre."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Friedrich Hayek soutient, en 1944, que la planification centralisée d'une économie est vouée à l'échec — la connaissance nécessaire étant dispersée entre des millions d'individus — et fait courir un risque de dérive autoritaire, même dans une démocratie. Cette thèse influente reste débattue, notamment sur sa portée exacte face à l'État-providence modéré."
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "ordre": 122,
+    "phase": 4,
+    "semaine": 1,
+    "jour": 3,
+    "type": "actu",
+    "titre": "L'Union européenne dérégule : la vague des paquets « omnibus »",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "L'argument hayékien sur les coûts de la réglementation excessive trouve un écho très concret dans la politique européenne de 2025-2026. Face aux critiques sur la compétitivité de l'économie européenne — notamment celles du rapport Draghi de 2024 —, la Commission européenne a engagé une vague de simplification réglementaire à travers des textes dits « omnibus », qui modifient plusieurs lois existantes en même temps."
+      },
+      {
+        "type": "texte",
+        "html": "Entre janvier 2025 et juin 2026, la Commission a présenté douze propositions omnibus, réduisant selon ses propres estimations les coûts administratifs récurrents de 14 milliards d'euros, avec un objectif affiché de 37,5 milliards d'euros d'économies sur l'ensemble du mandat 2024-2029. Ces textes touchent notamment les obligations de reporting de durabilité des entreprises (la CSRD) et le devoir de vigilance sur les chaînes d'approvisionnement (la CSDDD), ainsi qu'une simplification du mécanisme d'ajustement carbone aux frontières, qu'on détaillera en semaine 5."
+      },
+      {
+        "type": "texte",
+        "html": "Cette vague de dérégulation suscite des réactions très contrastées, qui illustrent bien le clivage de cette phase : ses défenseurs, dont la présidente de la Commission Ursula von der Leyen, y voient un allègement nécessaire de la bureaucratie pour restaurer la compétitivité des entreprises européennes face à la concurrence internationale. Ses détracteurs, parmi lesquels de nombreuses ONG environnementales et une partie du Parlement européen, dénoncent un affaiblissement des piliers du Pacte vert européen déguisé en simple « simplification » technique, redoutant que cette méthode ne serve à défaire, sans débat démocratique frontal, des protections sociales et environnementales durement négociées."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Entre 2025 et 2026, l'Union européenne a engagé une vague de dérégulation via des textes « omnibus », réduisant les coûts administratifs des entreprises de 14 milliards d'euros sur objectif de 37,5 milliards — une politique saluée comme un gain de compétitivité par ses défenseurs, mais critiquée comme un affaiblissement discret du Pacte vert par ses opposants."
+      }
+    ],
+    "source": {
+      "texte": "Douze propositions omnibus entre janvier 2025 et juin 2026, réduisant les coûts administratifs récurrents de 14 Md€ (objectif 37,5 Md€ sur 2024-2029). Textes concernés : CSRD, CSDDD, mécanisme d'ajustement carbone aux frontières.",
+      "lien": "https://commission.europa.eu/law/law-making-process/better-regulation/simplification-implementation-and-enforcement/simplification_en",
+      "date_verification": "25 août 2026"
+    }
+  },
+  {
+    "id": 123,
+    "ordre": 123,
+    "phase": 4,
+    "semaine": 1,
+    "jour": 4,
+    "type": "concept",
+    "titre": "La main invisible et ses limites",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "On a rencontré, en phase 1, l'idée de la main invisible d'Adam Smith : la poursuite d'intérêts individuels sur un marché peut produire un résultat collectivement bénéfique. Après une semaine consacrée à Hayek, il est utile de revenir sur les limites reconnues, y compris par des économistes proches du libéralisme, de ce mécanisme."
+      },
+      {
+        "type": "texte",
+        "html": "Le marché fonctionne efficacement sous certaines conditions précises : une information suffisamment disponible pour tous les participants, une concurrence réelle entre un nombre suffisant d'offreurs, l'absence d'effets significatifs d'une transaction sur des tiers non impliqués (ce qu'on appellera les externalités, développées en semaine 5), et la possibilité d'exclure ceux qui ne payent pas (ce qui exclut certains biens publics, comme l'éclairage public ou la défense nationale, qu'on ne peut réserver aux seuls contribuables). Quand une ou plusieurs de ces conditions ne sont pas réunies, on parle de <em class=\"accent\">défaillance de marché</em> : le résultat spontané du marché n'est alors plus nécessairement optimal."
+      },
+      {
+        "type": "texte",
+        "html": "Même Adam Smith, on l'a vu en phase 1, reconnaissait ces limites : il se méfiait des monopoles et des ententes entre marchands, et attribuait à l'État un rôle réel dans la justice, la défense et certains investissements publics. La question qui divise aujourd'hui les économistes n'est donc pas tant « le marché a-t-il des limites ? » — un point largement partagé — que « quelle est l'ampleur de ces défaillances, et l'intervention de l'État pour les corriger ne risque-t-elle pas, elle-même, de créer des problèmes plus graves que ceux qu'elle prétend résoudre ? » — une question qu'on approfondira dès demain avec George Stigler."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Le marché fonctionne efficacement sous certaines conditions (information, concurrence, absence d'externalités, exclusion possible des non-payeurs). Quand ces conditions ne sont pas réunies, on parle de défaillance de marché — un point largement reconnu, y compris par les libéraux, mais dont l'ampleur et le bon remède restent débattus."
+      }
+    ]
+  },
+  {
+    "id": 124,
+    "ordre": 124,
+    "phase": 4,
+    "semaine": 1,
+    "jour": 5,
+    "type": "auteur",
+    "titre": "George Stigler — quand la réglementation sert les régulés",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "George Stigler, économiste américain formé et enseignant à l'université de Chicago, figure majeure de l'école de Chicago aux côtés de Milton Friedman déjà rencontré en phase 3, reçoit le prix Nobel d'économie en 1982. Sa contribution la plus influente pour le débat État-marché de cette semaine est la <em class=\"accent\">théorie de la capture réglementaire</em>, développée dans un article de 1971."
+      },
+      {
+        "type": "texte",
+        "html": "L'intuition, redoutable pour les défenseurs naïfs de la régulation publique : quand un secteur économique est soumis à une réglementation — par exemple une autorité qui fixe les prix, délivre des licences, ou contrôle la qualité —, ce sont souvent les entreprises du secteur régulé elles-mêmes, plutôt que les consommateurs qu'elle est censée protéger, qui finissent par en tirer le principal bénéfice. Pourquoi ? Parce que les entreprises concernées ont un intérêt concentré et une forte capacité à influencer le régulateur (lobbying, expertise technique, portes tournantes entre l'industrie et l'administration), tandis que les consommateurs, chacun individuellement peu affecté, ont beaucoup moins d'incitation à s'organiser pour défendre leurs intérêts diffus."
+      },
+      {
+        "type": "texte",
+        "html": "Le résultat, selon Stigler, est souvent contre-intuitif : une réglementation censée protéger les consommateurs finit par restreindre l'entrée de nouveaux concurrents (via des licences coûteuses à obtenir), protégeant ainsi les entreprises déjà installées d'une concurrence qui aurait pu faire baisser les prix. Cette théorie, qui a durablement influencé l'analyse économique de la régulation, ne condamne pas toute réglementation par principe, mais invite à examiner systématiquement qui, concrètement, bénéficie d'une règle donnée — une grille de lecture précieuse pour analyser, par exemple, pourquoi certaines professions réglementées résistent farouchement à toute ouverture à la concurrence."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "George Stigler montre, en 1971, que les réglementations censées protéger les consommateurs finissent souvent « capturées » par les entreprises du secteur régulé elles-mêmes, mieux organisées pour influencer le régulateur que des consommateurs aux intérêts diffus — une grille de lecture précieuse pour interroger l'efficacité réelle de toute réglementation."
+      }
+    ]
+  },
+  {
+    "id": 125,
+    "ordre": 125,
+    "phase": 4,
+    "semaine": 1,
+    "jour": 6,
+    "type": "actu",
+    "titre": "États-Unis 2025-2026 : baisse d'impôts et recul de l'État fédéral",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "L'administration Trump a engagé, depuis 2025, une politique économique alignée sur plusieurs des principes libéraux vus cette semaine : réduction des impôts, recul du périmètre de l'État fédéral, et dérégulation. La loi budgétaire votée à l'été 2025, surnommée « One Big Beautiful Bill Act », pérennise d'importantes baisses d'impôts sur le revenu, notamment une exonération sur les pourboires et les heures supplémentaires, tout en amputant de 163 milliards de dollars, soit environ 23 %, les crédits civils fédéraux hors défense pour 2026."
+      },
+      {
+        "type": "texte",
+        "html": "Les défenseurs de cette politique y voient une application concrète des principes de Stigler et de l'école de Chicago : moins de bureaucratie fédérale, plus de marge de manœuvre laissée aux acteurs privés, et un pouvoir d'achat renforcé par la baisse d'impôts. Les critiques, notamment ceux de l'OFCE, soulignent que ces baisses d'impôts bénéficient avant tout aux ménages les plus aisés, tandis que les coupes budgétaires durcissent, pour leur part, les conditions d'accès à certains programmes d'aide sociale destinés aux ménages modestes."
+      },
+      {
+        "type": "texte",
+        "html": "Le bilan économique de cette politique reste, à mi-2026, contrasté : la consommation des ménages s'est globalement maintenue en 2025, mais l'indice de confiance des consommateurs de l'université du Michigan a chuté de près de 28,5 % sur l'année, traduisant une inquiétude croissante d'une partie de la population, y compris parmi l'électorat qui avait porté Donald Trump au pouvoir en 2024 — un paradoxe qui illustre bien la difficulté à évaluer, en temps réel, l'effet net d'une politique combinant simultanément baisses d'impôts, coupes budgétaires et hausses de droits de douane déjà vues en phase 2 et 3."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "La loi budgétaire américaine de 2025 combine baisses d'impôts pérennisées et coupes de 23 % des crédits civils fédéraux hors défense — une politique saluée par ses défenseurs comme un recul bienvenu de l'État, mais critiquée pour ses effets distributifs, dans un contexte où la confiance des ménages américains s'est nettement dégradée en 2025."
+      }
+    ],
+    "source": {
+      "texte": "One Big Beautiful Bill Act (2025) : baisses d'impôts pérennisées (dont exonération pourboires/heures supplémentaires), coupes de 163 Md$ (23 %) des crédits civils fédéraux hors défense pour 2026. Confiance des consommateurs (Michigan) en baisse d'environ 28,5 % sur 2025.",
+      "lien": "https://ofce.sciences-po.fr/blog2024/fr/2026/20260123_CB/",
+      "date_verification": "25 août 2026"
+    }
+  },
+  {
+    "id": 126,
+    "ordre": 126,
+    "phase": 4,
+    "semaine": 1,
+    "jour": 7,
+    "type": "quiz",
+    "titre": "Quiz — Semaine 1 (Phase 4)",
+    "contenu": "Teste ce que tu as retenu sur le libéralisme économique, Hayek et Stigler.",
+    "questions": [
+      {
+        "question": "Selon le libéralisme économique, quel doit être le rôle principal de l'État ?",
+        "options": [
+          "Planifier l'ensemble de la production",
+          "Garantir le droit de propriété, la concurrence, et fournir quelques biens essentiels",
+          "N'exister sous aucune forme"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Quelle est la thèse centrale de La Route de la servitude de Hayek (1944) ?",
+        "options": [
+          "Toute planification centralisée risquerait de mener à une dérive autoritaire",
+          "L'État doit tout planifier pour éviter le chaos",
+          "Le marché ne fonctionne jamais"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Sur quel problème repose l'argument de Hayek contre la planification centralisée ?",
+        "options": [
+          "Le problème de la connaissance dispersée entre des millions d'individus",
+          "Le manque d'argent de l'État",
+          "L'absence de fonctionnaires compétents"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Quel est l'objectif affiché des paquets « omnibus » européens de 2025-2026 ?",
+        "options": [
+          "Augmenter la réglementation",
+          "Réduire les coûts administratifs et simplifier la réglementation",
+          "Supprimer l'Union européenne"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Qu'est-ce qu'une « défaillance de marché » ?",
+        "options": [
+          "Une situation où le résultat spontané du marché n'est plus optimal",
+          "Un marché qui fonctionne parfaitement",
+          "Un synonyme de récession"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Que démontre la théorie de la capture réglementaire de George Stigler ?",
+        "options": [
+          "Que les réglementations profitent toujours aux consommateurs",
+          "Que les réglementations peuvent finir captées par les entreprises du secteur régulé lui-même",
+          "Que la réglementation n'existe pas en pratique"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Pourquoi les entreprises régulées ont-elles souvent plus d'influence sur le régulateur que les consommateurs, selon Stigler ?",
+        "options": [
+          "Parce qu'elles ont un intérêt concentré, contrairement aux consommateurs dont l'intérêt est diffus",
+          "Parce que les consommateurs n'existent pas",
+          "Parce que c'est interdit par la loi"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Que prévoit la loi budgétaire américaine « One Big Beautiful Bill Act » de 2025 ?",
+        "options": [
+          "Une hausse générale des impôts",
+          "Des baisses d'impôts pérennisées et une réduction de 23 % des crédits civils fédéraux hors défense",
+          "La suppression de tous les impôts fédéraux"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Comment a évolué la confiance des consommateurs américains (indice Michigan) en 2025 ?",
+        "options": [
+          "Elle a fortement augmenté",
+          "Elle a chuté d'environ 28,5 %",
+          "Elle est restée parfaitement stable"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Adam Smith était-il un défenseur absolu du marché sans aucune limite, comme on l'a vu en phase 1 ?",
+        "options": [
+          "Oui, sans aucune réserve",
+          "Non, il reconnaissait déjà un rôle réel à l'État",
+          "Il n'a jamais parlé de l'État"
+        ],
+        "bonne_reponse": 1
+      }
+    ]
+  },
+  {
+    "id": 127,
+    "ordre": 127,
+    "phase": 4,
+    "semaine": 2,
+    "jour": 1,
+    "type": "concept",
+    "titre": "Pourquoi l'État intervient : défaillances de marché et biens publics",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Après une semaine consacrée aux arguments libéraux, on explore désormais la logique inverse : sur quelles bases économiques précises un État justifie-t-il son intervention dans l'économie ? Au-delà des grandes politiques de relance keynésiennes vues en phase 3, les économistes identifient plusieurs justifications techniques précises, indépendantes de tout jugement politique."
+      },
+      {
+        "type": "texte",
+        "html": "La première tient aux <em class=\"accent\">biens publics</em>, déjà évoqués cette semaine : des biens non exclusifs (impossible d'empêcher quelqu'un d'en profiter, même sans payer) et non rivaux (ma consommation n'empêche pas la tienne) — l'éclairage public, la défense nationale, la recherche fondamentale. Un marché purement privé sous-produirait structurellement ces biens, chacun espérant profiter de l'effort payé par les autres sans contribuer lui-même, un phénomène appelé le problème du <em class=\"accent\">passager clandestin</em>."
+      },
+      {
+        "type": "texte",
+        "html": "La deuxième justification tient aux situations de <em class=\"accent\">monopole naturel</em>, où les coûts fixes considérables d'une infrastructure (un réseau ferré, un réseau électrique) rendent inefficace la duplication de plusieurs réseaux concurrents, justifiant soit une gestion publique, soit une régulation stricte d'un opérateur privé en situation de monopole. La troisième tient aux <em class=\"accent\">asymétries d'information</em> entre acheteurs et vendeurs — un patient ne peut évaluer aussi bien qu'un médecin la pertinence d'un traitement, justifiant une régulation des professions de santé. On approfondira ces mécanismes de défaillance de marché, notamment les externalités, dans le détail en semaine 5 de cette phase."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "L'intervention de l'État se justifie économiquement dans plusieurs situations précises : les biens publics, les monopoles naturels, et les asymétries d'information entre acheteurs et vendeurs — des justifications techniques distinctes des débats plus généraux sur le rôle souhaitable de l'État."
+      }
+    ]
+  },
+  {
+    "id": 128,
+    "ordre": 128,
+    "phase": 4,
+    "semaine": 2,
+    "jour": 2,
+    "type": "auteur",
+    "titre": "John Kenneth Galbraith — la critique du capitalisme managérial",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "John Kenneth Galbraith, économiste canado-américain, conseiller de plusieurs présidents démocrates américains et ambassadeur des États-Unis en Inde sous Kennedy, publie en 1958 un ouvrage devenu best-seller, La Société d'abondance, qui pose un regard critique original sur le capitalisme d'après-guerre — original notamment parce qu'il s'écarte de la critique marxiste traditionnelle pour proposer une analyse institutionnaliste, attentive aux structures concrètes des grandes entreprises modernes."
+      },
+      {
+        "type": "texte",
+        "html": "Galbraith observe que les grandes entreprises du xxe siècle ne correspondent plus au modèle du marché concurrentiel classique décrit par les théories vues en phases 1 et 2 : dominées par une poignée de grands groupes, elles ne se contentent plus de répondre à une demande préexistante des consommateurs, mais la créent activement à travers la publicité et le marketing de masse — ce qu'il appelle la <em class=\"accent\">filière inversée</em>. Dans ce contexte, l'idée d'une souveraineté du consommateur, pilier de la pensée libérale, lui semble largement mythique : les préférences des consommateurs sont, selon lui, en grande partie façonnées par les entreprises elles-mêmes plutôt que librement formées."
+      },
+      {
+        "type": "texte",
+        "html": "Galbraith en tire une conclusion politique assumée : face à ce pouvoir concentré des grandes entreprises, seul un État suffisamment fort peut rééquilibrer le rapport de force et orienter la production vers des besoins collectifs — infrastructures, éducation, environnement — plutôt que vers la seule consommation privée stimulée artificiellement. Cette analyse, restée influente dans les courants critiques du capitalisme contemporain, s'oppose frontalement à la vision de Hayek et Stigler vue la semaine dernière, qui voient au contraire dans le marché, malgré ses imperfections, un mécanisme globalement plus fiable que l'intervention publique pour orienter les choix économiques."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "John Kenneth Galbraith conteste, en 1958, l'idée d'une souveraineté du consommateur : les grandes entreprises modernes créeraient activement la demande via le marketing plutôt que de simplement y répondre. Il en conclut qu'un État fort est nécessaire pour rééquilibrer ce pouvoir concentré et orienter l'économie vers des besoins collectifs."
+      }
+    ]
+  },
+  {
+    "id": 129,
+    "ordre": 129,
+    "phase": 4,
+    "semaine": 2,
+    "jour": 3,
+    "type": "actu",
+    "titre": "NextGenerationEU : le plus grand plan d'investissement public de l'histoire européenne",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "L'un des exemples les plus significatifs d'intervention publique volontariste de ces dernières années reste le plan de relance européen NextGenerationEU, adopté en 2020-2021 en réponse à la pandémie de Covid-19, et dont les effets continuent de se déployer jusqu'en 2026. D'un montant total d'environ 800 milliards d'euros, financé pour la première fois de l'histoire par une dette commune levée directement par l'Union européenne, ce plan illustre une rupture majeure avec la doctrine budgétaire européenne traditionnelle, plutôt restrictive."
+      },
+      {
+        "type": "texte",
+        "html": "Ce plan finance des investissements massifs dans la transition écologique et numérique des économies européennes, avec des fonds distribués sous forme de subventions et de prêts aux États membres, conditionnés à des réformes structurelles précises. Pour la France, il a notamment cofinancé le volet « France Relance » puis « France 2030 », soutenant des investissements industriels dans les technologies vertes, les semi-conducteurs déjà évoqués en phase 2, et la recherche."
+      },
+      {
+        "type": "texte",
+        "html": "Ce plan illustre concrètement la logique keynésienne vue en phase 3 — compenser un choc de demande majeur par la dépense publique — mais avec une dimension supplémentaire, plus proche de l'esprit de Galbraith vu hier : orienter délibérément l'investissement vers des priorités collectives (transition écologique, souveraineté technologique) plutôt que de laisser le seul marché en décider. Le débat sur son efficacité reste vif : ses défenseurs soulignent son rôle dans l'accélération de la transition écologique européenne, ses critiques pointent des retards de mise en œuvre significatifs dans plusieurs pays et s'interrogent sur la capacité de l'Union européenne à reconduire un tel instrument de dette commune à l'avenir."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "NextGenerationEU, plan de relance européen d'environ 800 milliards d'euros financé par une dette commune inédite, illustre une intervention publique volontariste orientant délibérément l'investissement vers la transition écologique et numérique — un instrument dont l'efficacité et la reconduction future restent débattues."
+      }
+    ],
+    "source": {
+      "texte": "NextGenerationEU : plan de relance européen d'environ 800 Md€ adopté en 2020-2021, financé par une dette commune européenne inédite, déployé jusqu'en 2026 via des subventions et prêts conditionnés à des réformes structurelles.",
+      "lien": "https://ec.europa.eu/info/strategy/recovery-plan-europe_fr",
+      "date_verification": "25 août 2026"
+    }
+  },
+  {
+    "id": 130,
+    "ordre": 130,
+    "phase": 4,
+    "semaine": 2,
+    "jour": 4,
+    "type": "concept",
+    "titre": "Les stabilisateurs automatiques",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "On a vu, en phase 3, que l'État peut intervenir activement pour compenser une récession. Mais une partie de l'action stabilisatrice de l'État se produit en réalité automatiquement, sans qu'aucune décision politique nouvelle ne soit nécessaire : ce sont les <em class=\"accent\">stabilisateurs automatiques</em>."
+      },
+      {
+        "type": "texte",
+        "html": "Le mécanisme est le suivant : en période de récession, quand les revenus et l'emploi reculent, les recettes fiscales de l'État diminuent automatiquement, tandis que certaines dépenses publiques augmentent tout aussi automatiquement — allocations chômage, minima sociaux — sans qu'aucune loi nouvelle n'ait besoin d'être votée. Ce mécanisme amortit, mécaniquement, une partie du choc sur le revenu disponible des ménages, atténuant l'ampleur de la récession par rapport à une économie qui n'aurait aucun filet social ou fiscal progressif."
+      },
+      {
+        "type": "texte",
+        "html": "L'ampleur de ces stabilisateurs automatiques varie considérablement selon les pays : les économies européennes, dotées d'un État-providence développé qu'on étudiera en détail dès la semaine prochaine, disposent de stabilisateurs automatiques nettement plus puissants que les États-Unis, où la protection sociale publique est structurellement plus limitée. Cette différence explique en partie pourquoi les récessions ont historiquement tendance à avoir des effets sociaux plus amortis en Europe qu'aux États-Unis, même si elle a aussi un coût, en termes de prélèvements obligatoires plus élevés."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Les stabilisateurs automatiques (baisse mécanique des impôts, hausse mécanique des allocations en période de récession) amortissent les chocs économiques sans intervention politique nouvelle. Leur ampleur, plus forte dans les pays dotés d'un État-providence développé, explique en partie les différences d'impact social des récessions entre l'Europe et les États-Unis."
+      }
+    ]
+  },
+  {
+    "id": 131,
+    "ordre": 131,
+    "phase": 4,
+    "semaine": 2,
+    "jour": 5,
+    "type": "interpellation",
+    "titre": "Faut-il plus ou moins d'État ?",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Après trois semaines d'immersion dans les arguments libéraux (Hayek, Stigler) puis interventionnistes (Galbraith, stabilisateurs automatiques), le moment est venu de poser la question la plus directe possible, celle qui traverse en filigrane toute cette phase et une bonne partie de la campagne présidentielle de 2027 : faut-il, globalement, plus ou moins d'État dans l'économie ?"
+      },
+      {
+        "type": "texte",
+        "html": "L'argument en faveur de moins d'État s'appuie sur les intuitions de Hayek et Stigler vues en semaine 1 : le marché agrège efficacement une information dispersée que l'État ne peut jamais centraliser aussi bien ; la réglementation, même bien intentionnée, finit souvent captée par des intérêts particuliers plutôt que par l'intérêt général qu'elle prétend servir ; et des prélèvements obligatoires trop élevés découragent l'initiative, l'investissement et l'innovation, freinant à terme la croissance dont tout le monde bénéficie in fine."
+      },
+      {
+        "type": "texte",
+        "html": "L'argument en faveur de plus d'État s'appuie sur les intuitions de Keynes (phase 3) et Galbraith vues cette semaine : le marché seul ne corrige pas spontanément ses propres défaillances (biens publics, monopoles, information imparfaite) ; les grandes entreprises modernes exercent un pouvoir de marché considérable que seul un État suffisamment puissant peut contrebalancer ; et une protection sociale développée, loin d'être un pur coût, amortit les chocs économiques et permet une prise de risque individuelle plus grande."
+      },
+      {
+        "type": "texte",
+        "html": "Ce débat, formulé de façon aussi binaire, est en réalité trompeur : aucune économie développée n'est purement libérale ni purement étatisée — on y reviendra en détail en semaine 6 de cette phase. La vraie question, bien plus fine que « plus ou moins », porte sur où, précisément, l'État doit intervenir, et comment — des choix qui varient énormément selon les pays, les époques et les sensibilités politiques, sans qu'aucune réponse universelle ne fasse consensus parmi les économistes eux-mêmes."
+      },
+      {
+        "type": "encadre",
+        "titre": "Pas de réponse toute faite",
+        "html": "Le débat « plus ou moins d'État » oppose des arguments économiques solides de chaque côté. La question la plus utile n'est pas binaire, mais porte sur où et comment l'État doit intervenir — un choix qui varie selon les contextes et ne fait pas consensus parmi les économistes."
+      }
+    ]
+  },
+  {
+    "id": 132,
+    "ordre": 132,
+    "phase": 4,
+    "semaine": 2,
+    "jour": 6,
+    "type": "actu",
+    "titre": "Modèle scandinave contre modèle anglo-saxon : deux visions du capitalisme",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Le débat théorique de cette semaine trouve une illustration concrète et durable dans la comparaison entre deux grandes familles de capitalisme développé, régulièrement mise en avant dans le débat public : le modèle dit « scandinave » (Suède, Danemark, Finlande) et le modèle dit « anglo-saxon » (États-Unis, Royaume-Uni)."
+      },
+      {
+        "type": "texte",
+        "html": "Le modèle scandinave combine, de façon a priori paradoxale au regard des intuitions les plus simples de Hayek, une dépense publique et une fiscalité parmi les plus élevées des économies développées avec des marchés du travail et des produits par ailleurs très ouverts à la concurrence, peu réglementés sur l'embauche et le licenciement. Cette combinaison, parfois résumée par l'expression « flexisécurité », mise sur une protection sociale généreuse pour amortir les risques individuels d'un marché du travail flexible, plutôt que sur une protection directe de l'emploi lui-même."
+      },
+      {
+        "type": "texte",
+        "html": "Le modèle anglo-saxon, à l'inverse, combine une fiscalité et une dépense publique plus faibles avec, historiquement, une protection sociale publique plus limitée, laissant davantage de place à la couverture privée et misant sur l'incitation individuelle et la flexibilité du marché comme principaux moteurs de la croissance. Aucun de ces deux modèles n'est unanimement jugé supérieur par les économistes : les pays scandinaves affichent souvent de meilleurs résultats sur les inégalités et le bien-être perçu, tandis que le modèle anglo-saxon revendique historiquement un dynamisme entrepreneurial parfois plus soutenu — deux critères de réussite différents, qui renvoient directement à la distinction entre efficacité et équité déjà vue en phase 2 avec Pareto."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Le modèle scandinave combine dépense publique élevée et marché du travail flexible (« flexisécurité ») ; le modèle anglo-saxon combine fiscalité plus faible et protection sociale publique plus limitée. Aucun n'est unanimement jugé supérieur par les économistes, chacun excellant sur des critères différents."
+      }
+    ]
+  },
+  {
+    "id": 133,
+    "ordre": 133,
+    "phase": 4,
+    "semaine": 2,
+    "jour": 7,
+    "type": "quiz",
+    "titre": "Quiz — Semaine 2 (Phase 4)",
+    "contenu": "Teste ce que tu as retenu sur l'interventionnisme, Galbraith et les modèles de capitalisme.",
+    "questions": [
+      {
+        "question": "Qu'est-ce qu'un bien public au sens économique ?",
+        "options": [
+          "Un bien non exclusif et non rival, que le marché privé sous-produirait spontanément",
+          "N'importe quel bien vendu par l'État",
+          "Un bien réservé aux fonctionnaires"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Qu'est-ce qu'un monopole naturel ?",
+        "options": [
+          "Une situation où les coûts fixes rendent inefficace la duplication de plusieurs réseaux concurrents",
+          "Un monopole créé par une loi",
+          "Un monopole qui n'existe jamais en réalité"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Que conteste John Kenneth Galbraith dans La Société d'abondance (1958) ?",
+        "options": [
+          "L'idée d'une souveraineté du consommateur face aux grandes entreprises modernes",
+          "L'existence même du capitalisme",
+          "Le rôle de l'État"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Quel est le montant approximatif du plan NextGenerationEU ?",
+        "options": [
+          "Environ 8 milliards d'euros",
+          "Environ 800 milliards d'euros",
+          "Environ 80 000 milliards d'euros"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Qu'ont de particulier les stabilisateurs automatiques ?",
+        "options": [
+          "Ils nécessitent une nouvelle loi à chaque récession",
+          "Ils amortissent automatiquement les chocs économiques, sans décision politique nouvelle",
+          "Ils n'existent que dans les pays pauvres"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Pourquoi les stabilisateurs automatiques sont-ils généralement plus puissants en Europe qu'aux États-Unis ?",
+        "options": [
+          "Parce que l'État-providence y est plus développé",
+          "Parce que l'Europe n'a pas de chômage",
+          "Ce n'est pas le cas, ils sont identiques"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Que combine le modèle scandinave, en apparence paradoxalement ?",
+        "options": [
+          "Une dépense publique élevée et un marché du travail flexible",
+          "Aucune protection sociale et un marché du travail très rigide",
+          "Une absence totale d'impôts"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Sur quels critères le modèle anglo-saxon est-il souvent jugé performant, par ses défenseurs ?",
+        "options": [
+          "Le dynamisme entrepreneurial et la productivité",
+          "L'égalité parfaite des revenus",
+          "L'absence totale de chômage"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Le débat « plus ou moins d'État » a-t-il une réponse universellement tranchée parmi les économistes ?",
+        "options": [
+          "Oui, un consensus total existe",
+          "Non, la question la plus utile porte sur où et comment l'État doit intervenir",
+          "Le débat n'existe pas"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Quel économiste, vu en phase 3, a le premier justifié un rôle actif de l'État en cas d'effondrement de la demande privée ?",
+        "options": [
+          "John Maynard Keynes",
+          "Friedrich Hayek",
+          "George Stigler"
+        ],
+        "bonne_reponse": 0
+      }
+    ]
+  },
+  {
+    "id": 134,
+    "ordre": 134,
+    "phase": 4,
+    "semaine": 3,
+    "jour": 1,
+    "type": "concept",
+    "titre": "Qu'est-ce que l'État-providence ?",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "On a rencontré, en phase 1, William Beveridge et son rapport fondateur de 1942 sur la protection sociale britannique. Il est temps de préciser ce que recouvre exactement la notion d'<em class=\"accent\">État-providence</em> : l'ensemble des dispositifs par lesquels une collectivité mutualise, à travers l'action publique, les grands risques sociaux auxquels chaque individu est exposé au cours de sa vie — la maladie, le chômage, la vieillesse, la pauvreté, les charges familiales."
+      },
+      {
+        "type": "texte",
+        "html": "L'idée centrale de l'État-providence est celle de la <em class=\"accent\">mutualisation du risque</em> : plutôt que chaque individu ne supporte seul le coût d'un accident de la vie, la collectivité tout entière en partage le coût, via des cotisations ou des impôts prélevés sur l'ensemble de la population active, redistribués vers ceux qui subissent effectivement le risque à un moment donné. Ce mécanisme repose sur un principe assurantiel proche de celui d'une assurance privée classique, à ceci près qu'il est généralement obligatoire et universel, plutôt que facultatif et réservé à ceux qui peuvent se le payer."
+      },
+      {
+        "type": "texte",
+        "html": "Historiquement, plusieurs modèles nationaux d'État-providence se sont développés en parallèle en Europe au xxe siècle : le modèle bismarckien, né en Allemagne à la fin du xixe siècle, fonde la protection sociale sur les cotisations liées à l'emploi ; le modèle beveridgien, vu en phase 1, fonde au contraire la protection sociale sur la citoyenneté, financée par l'impôt et universelle, indépendamment de l'activité professionnelle. La France, on va le voir dès demain, a construit son propre système en 1945 en empruntant, de façon originale, à ces deux logiques à la fois."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "L'État-providence mutualise les grands risques sociaux à l'échelle de la collectivité, plutôt que de les laisser peser sur chaque individu isolément. Deux grandes logiques historiques coexistent : le modèle bismarckien, fondé sur les cotisations liées à l'emploi, et le modèle beveridgien, fondé sur la citoyenneté et l'impôt."
+      }
+    ]
+  },
+  {
+    "id": 135,
+    "ordre": 135,
+    "phase": 4,
+    "semaine": 3,
+    "jour": 2,
+    "type": "auteur",
+    "titre": "Pierre Laroque — l'architecte de la Sécurité sociale française",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Pierre Laroque, haut fonctionnaire français, est chargé à la Libération, en 1945, de bâtir le système de protection sociale français moderne — un chantier mené dans un contexte de reconstruction nationale comparable à celui qui, au même moment, inspirait Beveridge outre-Manche, mais avec des choix architecturaux sensiblement différents."
+      },
+      {
+        "type": "texte",
+        "html": "L'ordonnance du 4 octobre 1945, dont Laroque est la cheville ouvrière, crée la <em class=\"accent\">Sécurité sociale</em> française selon un principe hybride, original par rapport aux modèles bismarckien et beveridgien vus hier : le financement repose principalement sur des cotisations sociales assises sur les salaires, à la manière du modèle bismarckien allemand, mais l'ambition affichée est universaliste, à la manière de Beveridge — couvrir, à terme, l'ensemble de la population, et non les seuls salariés cotisants. Cette ambition d'universalité ne se réalisera que très progressivement, jusqu'à la couverture maladie universelle instaurée bien plus tard, à la toute fin du xxe siècle."
+      },
+      {
+        "type": "texte",
+        "html": "Laroque défend une conception de la Sécurité sociale fondée sur la solidarité nationale plutôt que sur la seule logique assurantielle individuelle : chacun cotise selon ses moyens et reçoit selon ses besoins, indépendamment du montant précisément versé. Ce système, né en 1945, reste aujourd'hui la colonne vertébrale de la protection sociale française, même s'il a connu depuis de nombreuses réformes, notamment sur son financement, aujourd'hui partiellement assuré par l'impôt (la CSG) plutôt que par les seules cotisations — un rapprochement progressif vers la logique beveridgienne initialement écartée en 1945."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Pierre Laroque bâtit en 1945 la Sécurité sociale française, un système hybride combinant financement par cotisations (logique bismarckienne) et ambition universaliste (logique beveridgienne), fondé sur un principe de solidarité nationale plutôt que sur la seule logique assurantielle individuelle."
+      }
+    ]
+  },
+  {
+    "id": 136,
+    "ordre": 136,
+    "phase": 4,
+    "semaine": 3,
+    "jour": 3,
+    "type": "actu",
+    "titre": "Retraites, santé : la France face à ses voisins européens",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Le système hérité de Pierre Laroque, vu hier, place la France parmi les pays consacrant la part la plus élevée de leur richesse nationale à la protection sociale au sein de l'Union européenne — un niveau de dépenses sociales qui dépasse structurellement celui de la moyenne européenne, porté notamment par un système de retraite par répartition généreux et un système de santé à couverture quasi universelle."
+      },
+      {
+        "type": "texte",
+        "html": "Cette générosité relative a un revers directement lié au vieillissement démographique déjà évoqué avec Malthus en phase 2 : le ratio entre cotisants actifs et retraités s'est considérablement dégradé, passant de trois cotisants pour un retraité en 1970 à environ 1,7 aujourd'hui, un déséquilibre démographique qui pèse mécaniquement sur l'équilibre financier du système par répartition, où les cotisations des actifs financent directement les pensions des retraités du moment, sans capitalisation individuelle intermédiaire."
+      },
+      {
+        "type": "texte",
+        "html": "Face à ce défi, les pays européens ont adopté des stratégies différentes : certains, comme l'Allemagne ou la Suède, ont indexé plus strictement l'âge de départ à l'espérance de vie ou développé une part de capitalisation individuelle en complément de la répartition ; la France, elle, a privilégié jusqu'ici des réformes paramétriques successives (report de l'âge légal, allongement de la durée de cotisation), dont on verra dans deux jours l'état d'avancement très concret et disputé en 2026."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "La France consacre une part de sa richesse nationale à la protection sociale parmi les plus élevées d'Europe, portée notamment par un système de retraite par répartition confronté à une dégradation démographique majeure (1,7 cotisant pour un retraité aujourd'hui, contre 3 en 1970) — un défi que les pays européens abordent avec des stratégies contrastées."
+      }
+    ]
+  },
+  {
+    "id": 137,
+    "ordre": 137,
+    "phase": 4,
+    "semaine": 3,
+    "jour": 4,
+    "type": "concept",
+    "titre": "Assurance sociale et assistance : deux logiques de protection",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "La protection sociale, on l'a vu depuis le début de cette semaine, ne repose pas sur une logique unique : les économistes distinguent deux grands mécanismes, souvent combinés dans les systèmes réels, mais qui obéissent à des principes très différents. L'<em class=\"accent\">assurance sociale</em> repose sur des cotisations préalables, liées à l'activité professionnelle, ouvrant droit à des prestations généralement proportionnelles à ces cotisations — c'est la logique de l'assurance chômage ou de la retraite de base en France."
+      },
+      {
+        "type": "texte",
+        "html": "L'<em class=\"accent\">assistance sociale</em>, à l'inverse, ne dépend d'aucune cotisation préalable : elle repose sur un critère de besoin, généralement une condition de ressources, et vise à garantir un minimum vital indépendamment de la trajectoire professionnelle de la personne — c'est la logique du RSA ou de l'allocation aux adultes handicapés, financés par l'impôt plutôt que par des cotisations spécifiques."
+      },
+      {
+        "type": "texte",
+        "html": "Cette distinction a des implications politiques et économiques importantes, qu'on retrouvera d'ailleurs directement dans le débat sur le revenu garanti abordé en phase 1 : l'assurance sociale, fondée sur la contribution, est souvent perçue comme plus légitime politiquement, mais elle exclut structurellement ceux qui n'ont jamais eu ou peu eu d'activité professionnelle. L'assistance sociale comble ces trous du filet assurantiel, mais s'expose plus facilement à la critique politique de « l'assistanat », un débat récurrent et souvent clivant dans le débat public français."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "L'assurance sociale (retraite, chômage) repose sur des cotisations préalables et des prestations proportionnelles ; l'assistance sociale (RSA, minima sociaux) repose sur un critère de besoin, financée par l'impôt, sans condition de cotisation préalable. Ces deux logiques, combinées, structurent l'ensemble du système de protection sociale français."
+      }
+    ]
+  },
+  {
+    "id": 138,
+    "ordre": 138,
+    "phase": 4,
+    "semaine": 3,
+    "jour": 5,
+    "type": "auteur",
+    "titre": "Gunnar Myrdal — l'architecte intellectuel du modèle suédois",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Gunnar Myrdal, économiste et sociologue suédois, reçoit en 1974 le prix Nobel d'économie, partagé de façon symbolique avec Friedrich Hayek — deux lauréats aux orientations économiques presque opposées, récompensés la même année. Myrdal, figure intellectuelle majeure de la social-démocratie suédoise du xxe siècle, influence directement la construction du modèle scandinave déjà évoqué en semaine 2 de cette phase."
+      },
+      {
+        "type": "texte",
+        "html": "Sa contribution la plus originale, avec son épouse Alva Myrdal, tient à l'articulation qu'il propose entre politique sociale généreuse et dynamisme économique — une combinaison que les intuitions les plus simples du libéralisme classique jugeraient a priori contradictoire. Pour Myrdal, une protection sociale développée n'est pas un frein à la croissance mais, au contraire, un investissement productif : une population en bonne santé, bien formée, et sereine face aux risques de la vie, travaille mieux et innove davantage qu'une population anxieuse et précarisée. C'est l'intuition théorique derrière la « flexisécurité » scandinave vue en semaine 2."
+      },
+      {
+        "type": "texte",
+        "html": "Myrdal insiste aussi sur le rôle de l'État en matière de politique familiale et d'égalité entre les sexes, des décennies avant que ces questions ne deviennent centrales dans le débat économique international : des politiques de congé parental généreuses et de garde d'enfants accessibles, selon lui, ne relèvent pas seulement de la justice sociale, mais permettent aussi de maximiser la participation des femmes au marché du travail — un facteur de croissance économique à part entière."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Gunnar Myrdal, prix Nobel 1974, défend l'idée qu'une protection sociale généreuse constitue un investissement productif plutôt qu'un frein à la croissance — une intuition théorique au fondement du modèle scandinave, articulant flexibilité économique et sécurité sociale forte."
+      }
+    ]
+  },
+  {
+    "id": 139,
+    "ordre": 139,
+    "phase": 4,
+    "semaine": 3,
+    "jour": 6,
+    "type": "actu",
+    "titre": "Le débat des retraites en France : suspendu jusqu'en 2028",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Le débat sur les retraites vu depuis le début de cette semaine connaît en France, en 2025-2026, un rebondissement politique majeur. Face à l'instabilité parlementaire déjà évoquée en phase 3, le Premier ministre Sébastien Lecornu a annoncé, le 14 octobre 2025, la suspension de la réforme des retraites de 2023 — celle qui prévoyait le report progressif de l'âge légal de départ à 64 ans — comme condition d'un compromis budgétaire avec les socialistes pour éviter une censure du gouvernement."
+      },
+      {
+        "type": "texte",
+        "html": "Cette suspension, votée par l'Assemblée nationale le 16 décembre 2025 puis validée par le Conseil constitutionnel fin décembre, gèle l'âge légal à 62 ans et 9 mois jusqu'en janvier 2028 — soit juste après l'élection présidentielle de 2027, déplaçant de fait la décision politique définitive sur ce sujet vers le prochain exécutif. Le coût de cette mesure est chiffré par le gouvernement à 400 millions d'euros pour 2026 et 1,4 à 1,5 milliard d'euros pour 2027."
+      },
+      {
+        "type": "texte",
+        "html": "L'ampleur réelle de cette suspension mérite d'être nuancée : selon la directrice de l'Assurance retraite, elle ne concerne concrètement, dès 2026, qu'environ 64 000 personnes pouvant partir plus tôt que prévu, sur un total de 854 000 départs à la retraite attendus cette année-là — un effet bien plus limité que ce que laissaient entendre certaines annonces politiques évoquant « 3,5 millions de Français bénéficiaires », un chiffre qui recouvre en réalité l'ensemble des générations concernées sur plusieurs années. Ce cas illustre bien la difficulté à distinguer, dans le débat public, l'effet immédiat d'une mesure de son effet cumulé sur le temps long."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "La réforme des retraites de 2023 a été suspendue en France jusqu'en janvier 2028, gelant l'âge légal à 62 ans et 9 mois — une mesure au coût chiffré entre 400 M€ (2026) et 1,5 Md€ (2027), dont l'effet réel immédiat (environ 64 000 personnes en 2026) reste plus limité que certaines annonces politiques ne le laissaient entendre."
+      }
+    ],
+    "source": {
+      "texte": "Suspension de la réforme des retraites de 2023 votée le 16 décembre 2025 (LFSS 2026), gelant l'âge légal à 62 ans et 9 mois jusqu'en janvier 2028. Coût : 400 M€ en 2026, 1,4-1,5 Md€ en 2027. Effet immédiat 2026 : environ 64 000 personnes sur 854 000 départs attendus.",
+      "lien": "https://observatoiredesfragilites.fr/suspension-reforme-des-retraites-qui-est-concerne-en-2026/",
+      "date_verification": "25 août 2026"
+    }
+  },
+  {
+    "id": 140,
+    "ordre": 140,
+    "phase": 4,
+    "semaine": 3,
+    "jour": 7,
+    "type": "quiz",
+    "titre": "Quiz — Semaine 3 (Phase 4)",
+    "contenu": "Teste ce que tu as retenu sur l'État-providence, Laroque, Myrdal et les retraites.",
+    "questions": [
+      {
+        "question": "Sur quel principe repose l'État-providence ?",
+        "options": [
+          "La mutualisation collective des grands risques sociaux",
+          "L'absence totale de protection sociale",
+          "L'assurance privée obligatoire uniquement"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Quelle est la différence entre le modèle bismarckien et le modèle beveridgien ?",
+        "options": [
+          "Il n'y a aucune différence",
+          "Le bismarckien se fonde sur les cotisations liées à l'emploi, le beveridgien sur la citoyenneté et l'impôt",
+          "Le beveridgien n'existe qu'en France"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Qui est à l'origine de la Sécurité sociale française créée en 1945 ?",
+        "options": [
+          "Pierre Laroque",
+          "William Beveridge",
+          "John Maynard Keynes"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Le système français de 1945 est-il purement bismarckien ou purement beveridgien ?",
+        "options": [
+          "Purement bismarckien",
+          "Purement beveridgien",
+          "Hybride, combinant financement par cotisations et ambition universaliste"
+        ],
+        "bonne_reponse": 2
+      },
+      {
+        "question": "Comment a évolué le ratio cotisants/retraités en France depuis 1970 ?",
+        "options": [
+          "Il est resté stable à 3 pour 1",
+          "Il s'est dégradé, passant de 3 pour 1 à environ 1,7 pour 1",
+          "Il a augmenté à 5 pour 1"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Quelle est la différence entre assurance sociale et assistance sociale ?",
+        "options": [
+          "L'assurance repose sur des cotisations préalables, l'assistance sur un critère de besoin sans cotisation",
+          "Il n'y a aucune différence",
+          "L'assistance sociale n'existe pas en France"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Selon Gunnar Myrdal, une protection sociale généreuse est-elle un frein à la croissance ?",
+        "options": [
+          "Oui, toujours",
+          "Non, elle peut constituer un investissement productif",
+          "La question ne se pose pas selon lui"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "En France, jusqu'à quelle date la réforme des retraites de 2023 a-t-elle été suspendue ?",
+        "options": [
+          "Janvier 2028",
+          "Définitivement",
+          "Elle n'a jamais été suspendue"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Combien de personnes la suspension de la réforme concerne-t-elle concrètement dès 2026 ?",
+        "options": [
+          "Environ 64 000 personnes",
+          "3,5 millions de personnes immédiatement",
+          "Aucune personne"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Quel prix Gunnar Myrdal a-t-il partagé, de façon symbolique, avec un économiste aux orientations très différentes ?",
+        "options": [
+          "Le prix Nobel d'économie 1974, partagé avec Friedrich Hayek",
+          "Le prix Nobel de la paix",
+          "Aucun prix"
+        ],
+        "bonne_reponse": 0
+      }
+    ]
+  },
+  {
+    "id": 141,
+    "ordre": 141,
+    "phase": 4,
+    "semaine": 4,
+    "jour": 1,
+    "type": "concept",
+    "titre": "Le terme « néolibéralisme », souvent mal défini",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Peu de termes économiques sont aussi employés, et aussi diversement compris, que le <em class=\"accent\">néolibéralisme</em>. Dans le débat public contemporain, il est le plus souvent utilisé comme une étiquette critique, désignant de façon assez vague un excès de marché ou de dérégulation — un usage qui s'éloigne considérablement du sens que lui donnaient ses créateurs."
+      },
+      {
+        "type": "texte",
+        "html": "Le terme naît en réalité dans les années 1930, lors d'un colloque réunissant des économistes libéraux inquiets de voir le libéralisme classique discrédité par la Grande Dépression. Leur projet n'était pas de prôner un marché totalement livré à lui-même, mais au contraire de repenser un cadre institutionnel et juridique solide, fixé par l'État, à l'intérieur duquel la concurrence pourrait s'exercer sainement — une nuance essentielle, souvent perdue dans l'usage contemporain du mot."
+      },
+      {
+        "type": "texte",
+        "html": "Cette ambiguïté explique pourquoi le terme est aujourd'hui employé de façon très différente selon les auteurs : pour ses critiques, il désigne un projet politique visant à étendre la logique de marché à des domaines toujours plus larges de la vie sociale. Pour ses défenseurs originels, comme on le verra dès demain avec l'ordolibéralisme allemand, il désignait au contraire un projet précis de régulation forte de la concurrence par l'État, à l'opposé d'un laisser-faire pur. Cette confusion terminologique invite à toujours préciser, dans un débat économique, de quel type de politique précise on parle plutôt que de se contenter de l'étiquette."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Le terme « néolibéralisme », né dans les années 1930 pour désigner un cadre institutionnel fort garantissant une concurrence saine, est aujourd'hui le plus souvent employé comme une critique désignant un excès de marché — un glissement de sens qui invite à toujours préciser la politique concrète dont on parle."
+      }
+    ]
+  },
+  {
+    "id": 142,
+    "ordre": 142,
+    "phase": 4,
+    "semaine": 4,
+    "jour": 2,
+    "type": "auteur",
+    "titre": "Walter Eucken — l'ordolibéralisme allemand",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Walter Eucken, économiste allemand et professeur à l'université de Fribourg, fonde dans les années 1930 et 1940 un courant de pensée original, l'<em class=\"accent\">ordolibéralisme</em>, dont l'influence sur l'économie européenne contemporaine reste considérable. Le nom même du courant, dérivé du latin ordo (l'ordre), résume son projet : ni laisser-faire pur, ni planification étatique, mais un ordre de marché défini, garanti et surveillé activement par l'État."
+      },
+      {
+        "type": "texte",
+        "html": "Eucken identifie plusieurs principes constitutifs qu'un État doit garantir pour qu'un marché fonctionne sainement : une monnaie stable, la stabilité juridique et la sécurité de la propriété privée, une concurrence effective (ce qui implique une lutte active contre les monopoles et les cartels), et une responsabilité individuelle claire des acteurs économiques. Contrairement à une lecture rapide qui l'assimilerait à un simple laisser-faire, Eucken insiste sur le fait que la concurrence ne s'auto-entretient jamais spontanément : sans surveillance active de l'État, le marché tend, selon lui, à s'auto-détruire lui-même."
+      },
+      {
+        "type": "texte",
+        "html": "L'influence de l'ordolibéralisme d'Eucken sur l'Allemagne d'après-guerre est considérable : c'est ce cadre de pensée qui inspire directement l'« économie sociale de marché » adoptée par la République fédérale d'Allemagne dès les années 1950, combinant concurrence disciplinée et protection sociale — un modèle qui a durablement marqué, par ricochet, la construction des règles de concurrence et de stabilité budgétaire au cœur du projet européen, dont on retrouvera l'héritage très concret dans les règles budgétaires de l'Union européenne, vues dans la fiche suivante."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Walter Eucken fonde l'ordolibéralisme : un cadre où l'État garantit activement les conditions institutionnelles d'une concurrence saine, plutôt que de laisser le marché s'auto-réguler seul. Ce courant a durablement influencé l'économie sociale de marché allemande et les règles européennes de concurrence et de stabilité budgétaire."
+      }
+    ]
+  },
+  {
+    "id": 143,
+    "ordre": 143,
+    "phase": 4,
+    "semaine": 4,
+    "jour": 3,
+    "type": "actu",
+    "titre": "Les nouvelles règles budgétaires européennes : l'héritage ordolibéral en action",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "L'influence de l'ordolibéralisme vue hier se retrouve très concrètement dans le fonctionnement de l'Union européenne, notamment à travers ses règles de discipline budgétaire — les fameux critères de 3 % de déficit et 60 % de dette publique rapportée au PIB, hérités du traité de Maastricht et régulièrement invoqués dans le débat français, comme on l'a vu en phase 3 avec le budget français et sa dégradation de notation."
+      },
+      {
+        "type": "texte",
+        "html": "Ces règles ont été révisées en 2024 dans le cadre d'une réforme du Pacte de stabilité et de croissance, qui introduit une approche jugée plus différenciée selon la situation propre de chaque État membre, avec des trajectoires d'ajustement budgétaire personnalisées négociées avec la Commission européenne. La France, avec un déficit de 5,1 % du PIB en 2025 très supérieur au plafond de 3 %, s'est vu imposer une procédure de déficit excessif, l'obligeant théoriquement à présenter un plan crédible de retour sous ce seuil dans un délai fixé par Bruxelles."
+      },
+      {
+        "type": "texte",
+        "html": "Cette architecture institutionnelle illustre presque littéralement l'intuition ordolibérale d'Eucken vue hier : un cadre de règles fixé collectivement en amont, censé discipliner les comportements budgétaires nationaux. Les critiques de cette approche, souvent proches des positions keynésiennes vues en phase 3, estiment que ces règles rigides peuvent contraindre excessivement la capacité des États à mener des politiques de relance en période de ralentissement économique, quand elles seraient précisément les plus utiles selon la logique du multiplicateur keynésien."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Les règles budgétaires européennes, révisées en 2024 avec des trajectoires plus personnalisées, incarnent directement l'héritage ordolibéral d'un cadre de discipline collective fixé en amont — une architecture qui vaut à la France, en déficit excessif, une procédure de surveillance renforcée de la Commission européenne."
+      }
+    ],
+    "source": {
+      "texte": "Réforme du Pacte de stabilité et de croissance entrée en vigueur en 2024, introduisant des trajectoires d'ajustement budgétaire différenciées par pays. France en procédure de déficit excessif du fait d'un déficit de 5,1 % du PIB en 2025, contre un plafond européen de 3 %.",
+      "lien": "https://www.consilium.europa.eu/fr/policies/economic-and-monetary-union/eu-economic-governance/",
+      "date_verification": "25 août 2026"
+    }
+  },
+  {
+    "id": 144,
+    "ordre": 144,
+    "phase": 4,
+    "semaine": 4,
+    "jour": 4,
+    "type": "concept",
+    "titre": "Privatisation : biens publics et biens privés",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "La <em class=\"accent\">privatisation</em> désigne le transfert de la propriété ou de la gestion d'une activité du secteur public vers le secteur privé. À l'opposé, la <em class=\"accent\">nationalisation</em> transfère une activité du secteur privé vers l'État. Ces deux mouvements ont rythmé, par vagues successives, l'histoire économique des pays développés depuis un siècle."
+      },
+      {
+        "type": "texte",
+        "html": "L'argument économique en faveur de la privatisation d'une activité repose généralement sur l'idée que la propriété privée, exposée à la discipline de la concurrence et au risque de faillite, incite à une gestion plus efficace qu'une entreprise publique. L'argument inverse, en faveur du maintien ou du retour dans le giron public, met en avant les secteurs stratégiques où la logique de profit privé pourrait entrer en tension avec l'intérêt général — l'énergie, l'eau, certains transports, où la continuité du service et l'accessibilité pour tous priment, selon cette lecture, sur la seule rentabilité financière."
+      },
+      {
+        "type": "texte",
+        "html": "Cette tension rejoint directement la distinction entre biens publics et biens privés esquissée en semaine 2 : un bien authentiquement public ne se privatise en réalité jamais complètement — même une autoroute privée à péage reste, en pratique, souvent fortement régulée par l'État en matière de tarifs et de sécurité. La plupart des débats de privatisation portent en réalité sur des biens dits « mixtes » ou des monopoles naturels, où la question n'est pas tant « public ou privé » que « quelle forme de régulation encadre le mieux l'activité »."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "La privatisation transfère une activité du secteur public au secteur privé, la nationalisation opère le mouvement inverse. Le débat porte rarement sur des biens publics purs, mais sur des biens « mixtes » ou des monopoles naturels, où la vraie question est souvent moins « public ou privé » que « quelle régulation encadre le mieux l'activité »."
+      }
+    ]
+  },
+  {
+    "id": 145,
+    "ordre": 145,
+    "phase": 4,
+    "semaine": 4,
+    "jour": 5,
+    "type": "auteur",
+    "titre": "James Buchanan — la théorie du choix public",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "James Buchanan, économiste américain né dans une famille modeste du Tennessee, fonde avec Gordon Tullock, dans leur ouvrage de 1962 Le Calcul du consentement, un courant de pensée qui va profondément renouveler l'analyse économique de l'État : la <em class=\"accent\">théorie du choix public</em>, pour laquelle il recevra le prix Nobel d'économie en 1986."
+      },
+      {
+        "type": "texte",
+        "html": "L'apport central de Buchanan est méthodologique, avant d'être politique : il propose d'appliquer aux décideurs publics — élus, fonctionnaires, régulateurs — la même hypothèse de rationalité intéressée que les économistes appliquent classiquement aux acteurs du marché privé. Là où beaucoup d'analyses économiques traditionnelles supposaient implicitement un État bienveillant, Buchanan pose la question dérangeante : pourquoi les élus et les fonctionnaires cesseraient-ils, une fois en fonction, de poursuivre leurs propres intérêts — réélection, budget de leur administration, carrière — plutôt que le seul intérêt collectif ?"
+      },
+      {
+        "type": "texte",
+        "html": "Cette grille de lecture éclaire des phénomènes bien concrets : la tendance des administrations à croître indépendamment des besoins réels, ou celle des élus à privilégier des dépenses visibles à court terme, avant une échéance électorale, plutôt que des investissements moins visibles mais plus utiles à long terme. Cette approche, qui rejoint et prolonge directement la théorie de la capture réglementaire de Stigler vue en semaine 1, ne conclut pas nécessairement que l'État est toujours inefficace, mais invite à analyser ses dysfonctionnements avec les mêmes outils rigoureux que ceux utilisés pour analyser les défaillances de marché."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "James Buchanan fonde la théorie du choix public en appliquant aux décideurs publics la même hypothèse de rationalité intéressée qu'aux acteurs de marché — élus et fonctionnaires poursuivant aussi leurs propres intérêts. Une grille de lecture qui éclaire la croissance des administrations et le court-termisme électoral, sans conclure que l'État est nécessairement inefficace."
+      }
+    ]
+  },
+  {
+    "id": 146,
+    "ordre": 146,
+    "phase": 4,
+    "semaine": 4,
+    "jour": 6,
+    "type": "actu",
+    "titre": "France : le mouvement des privatisations, entre vagues et arrêts",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "L'histoire française des privatisations, vue à la lumière des débats de cette semaine, illustre bien l'absence de doctrine linéaire et définitive sur le sujet. Après une vague de nationalisations en 1981-1982 sous la présidence de François Mitterrand, un mouvement inverse s'engage dès 1986, sous le gouvernement de Jacques Chirac, avec la privatisation de sociétés récemment nationalisées comme Paribas ou Saint-Gobain — un mouvement poursuivi par étapes successives jusqu'aux années 2000, réduisant de moitié, depuis les années 1980, le nombre d'entreprises publiques et leurs effectifs en France."
+      },
+      {
+        "type": "texte",
+        "html": "Plus récemment, la loi Pacte de 2019 a relancé le débat en prévoyant la privatisation de plusieurs actifs publics majeurs, dont Aéroports de Paris (ADP) et Engie. Le projet concernant ADP, particulièrement controversé, a finalement été suspendu face à l'opposition politique et à une procédure de référendum d'initiative partagée — tandis que la privatisation de la Française des Jeux (FDJ), moins contestée, a bien été menée à son terme en 2019."
+      },
+      {
+        "type": "texte",
+        "html": "L'État français reste aujourd'hui actionnaire, via son agence des participations, d'un portefeuille conséquent d'entreprises — 83 entreprises dont 12 cotées en bourse, pour une valorisation totale de l'ordre de 180 milliards d'euros. Ce cas illustre bien la tension identifiée en début de semaine entre l'argument d'efficacité de la gestion privée et celui de la préservation d'activités jugées stratégiques : contrairement à la FDJ, jugée non stratégique, ADP a été considéré, par une partie significative de l'opinion et des parlementaires, comme une infrastructure trop essentielle pour être cédée au secteur privé — un jugement de valeur politique, davantage qu'une conclusion strictement économique."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "La France a connu plusieurs vagues de privatisations depuis 1986, réduisant de moitié le nombre d'entreprises publiques. La privatisation prévue d'ADP en 2019 a été suspendue face à l'opposition politique, tandis que celle de la FDJ a été menée à terme — illustrant que la frontière entre activité « stratégique » et activité privatisable relève souvent d'un choix politique plus que d'un critère strictement économique."
+      }
+    ],
+    "source": {
+      "texte": "Depuis les années 1980, le nombre d'entreprises publiques françaises et leurs effectifs ont diminué de moitié. Loi Pacte (2019) : privatisation de la FDJ réalisée, projet de privatisation d'ADP suspendu. Portefeuille de l'État actionnaire : 83 entreprises (12 cotées), valorisation totale d'environ 180 Md€.",
+      "lien": "https://www.lafinancepourtous.com/decryptages/politiques-economiques/economie-francaise/comptes-publics/le-budget-de-letat/letat-actionnaire-entre-nationalisations-et-privatisations/",
+      "date_verification": "25 août 2026"
+    }
+  },
+  {
+    "id": 147,
+    "ordre": 147,
+    "phase": 4,
+    "semaine": 4,
+    "jour": 7,
+    "type": "quiz",
+    "titre": "Quiz — Semaine 4 (Phase 4)",
+    "contenu": "Teste ce que tu as retenu sur le néolibéralisme, l'ordolibéralisme et le choix public.",
+    "questions": [
+      {
+        "question": "Le néolibéralisme, à sa création dans les années 1930, prônait-il l'absence totale de régulation ?",
+        "options": [
+          "Oui, c'était son objectif premier",
+          "Non, il prônait un cadre institutionnel fort garantissant une concurrence saine",
+          "Le terme n'existait pas dans les années 1930"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Que signifie « ordo » dans ordolibéralisme, courant fondé par Walter Eucken ?",
+        "options": [
+          "L'ordre",
+          "Le désordre",
+          "Le marché"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Selon Eucken, la concurrence s'auto-entretient-elle spontanément sur un marché ?",
+        "options": [
+          "Oui, sans aucune intervention",
+          "Non, sans surveillance active de l'État, le marché tend à s'auto-détruire",
+          "La concurrence n'existe jamais"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Quel plafond de déficit public les règles budgétaires européennes fixent-elles traditionnellement ?",
+        "options": [
+          "3 % du PIB",
+          "30 % du PIB",
+          "Aucun plafond n'existe"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Qu'est-ce que la privatisation ?",
+        "options": [
+          "Le transfert de propriété du secteur privé vers l'État",
+          "Le transfert de propriété du secteur public vers le secteur privé",
+          "La fermeture définitive d'une entreprise"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Quelle hypothèse méthodologique centrale James Buchanan applique-t-il aux décideurs publics ?",
+        "options": [
+          "Qu'ils sont toujours parfaitement désintéressés",
+          "La même rationalité intéressée qu'aux acteurs de marché privés",
+          "Qu'ils n'existent pas réellement"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Quel phénomène la théorie du choix public de Buchanan aide-t-elle à expliquer ?",
+        "options": [
+          "La tendance des administrations à croître indépendamment des besoins réels",
+          "L'impossibilité totale de toute administration",
+          "La disparition de l'État"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "En 2019, quelle privatisation prévue par la loi Pacte a été suspendue en France ?",
+        "options": [
+          "Celle d'Aéroports de Paris (ADP)",
+          "Celle de la Française des Jeux (FDJ)",
+          "Aucune n'a été suspendue"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Combien d'entreprises l'État français détient-il aujourd'hui via son agence des participations ?",
+        "options": [
+          "Environ 83 entreprises",
+          "Aucune",
+          "Plus de 1000"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "La distinction entre activité « stratégique » et activité privatisable relève-t-elle d'un critère purement économique ?",
+        "options": [
+          "Oui, toujours",
+          "Non, elle relève souvent aussi d'un choix politique",
+          "Cette distinction n'existe pas"
+        ],
+        "bonne_reponse": 1
+      }
+    ]
+  },
+  {
+    "id": 148,
+    "ordre": 148,
+    "phase": 4,
+    "semaine": 5,
+    "jour": 1,
+    "type": "concept",
+    "titre": "Défaillances de marché : les monopoles",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "On a évoqué, en semaine 1 et 2 de cette phase, les grandes catégories de défaillances de marché. Il est temps d'approfondir la première d'entre elles, déjà croisée à plusieurs reprises dans ce programme depuis Adam Smith : le <em class=\"accent\">monopole</em>, situation où un seul offreur contrôle l'intégralité d'un marché, sans concurrent réel."
+      },
+      {
+        "type": "texte",
+        "html": "Un monopole pose un problème économique précis : privé de concurrence, l'offreur unique n'a plus la même incitation à baisser ses prix ou à améliorer sa qualité pour attirer des clients — il peut fixer un prix plus élevé que celui qui prévaudrait sur un marché concurrentiel, captant ainsi une part de la richesse qui, en situation de concurrence, aurait bénéficié aux consommateurs. Les économistes distinguent plusieurs origines aux monopoles : les monopoles naturels vus en semaine 2, les monopoles légaux (un brevet, une licence exclusive accordée par l'État), et les monopoles de fait, résultant de stratégies d'entreprise."
+      },
+      {
+        "type": "texte",
+        "html": "Face à ce risque, les États ont développé des politiques de <em class=\"accent\">concurrence</em> (ou antitrust), interdisant les ententes entre entreprises censées se faire concurrence, encadrant les fusions-acquisitions susceptibles de créer une position dominante excessive, et sanctionnant les abus de position dominante. Ces politiques, héritées directement de l'intuition ordolibérale d'Eucken vue la semaine dernière, restent un terrain d'affrontement particulièrement vif dans l'économie numérique contemporaine, comme on va le voir concrètement dès demain."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Un monopole, en l'absence de concurrence, peut fixer des prix plus élevés qu'un marché concurrentiel, au détriment des consommateurs. Les politiques de concurrence (antitrust) — interdiction des ententes, contrôle des fusions, sanction des abus de position dominante — visent à limiter ce risque, particulièrement vif aujourd'hui dans l'économie numérique."
+      }
+    ]
+  },
+  {
+    "id": 149,
+    "ordre": 149,
+    "phase": 4,
+    "semaine": 5,
+    "jour": 2,
+    "type": "actu",
+    "titre": "L'UE contre les GAFAM : la bataille du Digital Markets Act",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "La politique de concurrence vue hier trouve une illustration particulièrement vive dans la régulation européenne des grandes plateformes numériques américaines. Le Digital Markets Act (DMA), entré en application en 2023, désigne les plus grandes entreprises technologiques comme « contrôleurs d'accès » (gatekeepers) et leur impose des obligations spécifiques pour limiter les avantages qui leur permettraient de maintenir artificiellement leur position dominante."
+      },
+      {
+        "type": "texte",
+        "html": "Les premières sanctions sous ce nouveau régime sont tombées à partir du 23 avril 2025 : 500 millions d'euros d'amende pour Apple et 200 millions d'euros pour Meta. Le 23 juillet 2026, la Commission a franchi une nouvelle étape avec une double amende record de 890 millions d'euros contre Google, pour favoritisme de ses propres services dans les résultats de recherche et pratiques restrictives sur sa boutique d'applications Google Play — portant le total des sanctions infligées à Google par l'UE depuis 2017 à plus de 10 milliards d'euros."
+      },
+      {
+        "type": "texte",
+        "html": "Cette confrontation reste néanmoins disputée sur le plan juridique : le 3 juin 2026, le Tribunal de l'Union européenne a partiellement annulé la désignation de Meta comme contrôleur d'accès pour son service Facebook Marketplace, illustrant que l'application de ce cadre réglementaire, aussi ambitieux soit-il, reste soumise au contrôle juridictionnel. Ce bras de fer réglementaire s'inscrit par ailleurs dans un climat commercial tendu avec Washington, les autorités américaines dénonçant régulièrement ces amendes comme une forme de protectionnisme déguisé."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Le Digital Markets Act européen a infligé, entre avril 2025 et juillet 2026, des centaines de millions d'euros d'amendes à Apple, Meta et Google pour pratiques anticoncurrentielles — une politique de régulation antitrust ambitieuse, mais dont l'application reste juridiquement disputée et politiquement tendue avec les États-Unis."
+      }
+    ],
+    "source": {
+      "texte": "DMA : amendes de 500 M€ (Apple) et 200 M€ (Meta) le 23 avril 2025 ; amende record de 890 M€ contre Google le 23 juillet 2026, portant le total des amendes UE contre Google depuis 2017 à plus de 10 Md€. Annulation partielle par le Tribunal de l'UE de la désignation de Meta pour Facebook Marketplace le 3 juin 2026.",
+      "lien": "https://www.usine-digitale.fr/big-tech/google/nouvelle-phase-de-confrontation-entre-lue-et-les-geants-americains-de-la-tech-avec-lamende-record-de-890-millions-deuros-contre-google-infligee-par-le-digital-markets-act.IC37A2SY7ZFHNFWC6IG434YZ5Y.html",
+      "date_verification": "25 août 2026"
+    }
+  },
+  {
+    "id": 150,
+    "ordre": 150,
+    "phase": 4,
+    "semaine": 5,
+    "jour": 3,
+    "type": "concept",
+    "titre": "Les externalités négatives",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Une autre grande catégorie de défaillance de marché, déjà annoncée à plusieurs reprises dans ce programme, mérite d'être formalisée précisément : l'<em class=\"accent\">externalité</em>. Elle désigne l'effet, positif ou négatif, qu'une activité économique produit sur des tiers qui n'ont pris part ni à sa décision, ni à sa transaction — un effet qui n'est donc pas reflété dans le prix de marché du bien concerné."
+      },
+      {
+        "type": "texte",
+        "html": "L'exemple le plus classique d'<em class=\"accent\">externalité négative</em> est la pollution : une usine qui rejette des fumées toxiques dans l'atmosphère fait supporter, à l'ensemble de la population environnante, un coût sanitaire et environnemental réel, sans que ce coût n'apparaisse jamais dans le prix des biens qu'elle produit et vend. Le prix de marché, dans ce cas, ne reflète que le coût privé de production, et non le coût social total, qui inclut aussi le dommage infligé à des tiers non consentants."
+      },
+      {
+        "type": "texte",
+        "html": "Cette divergence entre coût privé et coût social conduit, en l'absence d'intervention, à une <em class=\"accent\">surproduction</em> du bien polluant par rapport à ce qui serait socialement optimal : puisque l'entreprise ne paie pas le coût réel qu'elle inflige à la société, elle produit davantage que si elle devait l'intégrer. C'est précisément ce problème, identifié avec une précision redoutable, qu'un économiste britannique déjà brièvement croisé en phase 2 va s'atteler à résoudre dès demain."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Une externalité négative désigne le coût qu'une activité économique fait peser sur des tiers, sans que ce coût n'apparaisse dans son prix de marché — la pollution en étant l'exemple le plus classique. Cette divergence entre coût privé et coût social conduit à une surproduction du bien concerné par rapport à l'optimum social."
+      }
+    ]
+  },
+  {
+    "id": 151,
+    "ordre": 151,
+    "phase": 4,
+    "semaine": 5,
+    "jour": 4,
+    "type": "auteur",
+    "titre": "Arthur Pigou — internaliser le coût social",
+    "blocs": [
+      {
+        "type": "image",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/A.C.%20Pigou.jpg",
+        "legende": "Arthur Cecil Pigou (1877-1959), économiste britannique, disciple d'Alfred Marshall"
+      },
+      {
+        "type": "texte",
+        "html": "Arthur Cecil Pigou, économiste britannique et disciple direct d'Alfred Marshall à Cambridge, déjà rencontré en phase 1, publie en 1920 un ouvrage fondateur de l'économie du bien-être, L'Économie du bien-être. C'est dans ce texte qu'il propose la solution la plus durablement influente au problème des externalités négatives vu hier : la <em class=\"accent\">taxe pigouvienne</em>."
+      },
+      {
+        "type": "texte",
+        "html": "L'idée de Pigou est d'une élégance redoutable : plutôt que d'interdire purement et simplement une activité polluante, l'État peut imposer à l'entreprise responsable une taxe d'un montant équivalent au dommage qu'elle inflige à des tiers. Ce faisant, le coût social de la pollution est artificiellement réintégré — on dit « internalisé » — dans le calcul économique privé de l'entreprise : celle-ci, désormais confrontée au coût réel de son activité, ajuste naturellement sa production à la baisse jusqu'au niveau socialement optimal."
+      },
+      {
+        "type": "texte",
+        "html": "Cette idée, restée un pilier de l'économie de l'environnement plus d'un siècle après sa formulation, présente un avantage majeur par rapport à une réglementation strictement quantitative : elle laisse chaque acteur libre de choisir sa réponse la plus efficace économiquement — réduire sa pollution, payer la taxe, ou investir dans une technologie plus propre —, tout en garantissant une réduction globale de la pollution à moindre coût collectif. On a déjà croisé une application très concrète de ce principe en phase 1, avec la taxe carbone française — et on en découvrira une version plus ambitieuse encore dès demain, à l'échelle des frontières européennes tout entières."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Arthur Pigou propose, en 1920, de corriger une externalité négative en imposant une taxe équivalente au dommage social causé — « internalisant » ainsi ce coût dans le calcul économique privé de l'entreprise. Ce principe reste, un siècle plus tard, un pilier de l'économie de l'environnement."
+      }
+    ]
+  },
+  {
+    "id": 152,
+    "ordre": 152,
+    "phase": 4,
+    "semaine": 5,
+    "jour": 5,
+    "type": "actu",
+    "titre": "Le MACF européen : la taxe pigouvienne aux frontières du continent",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Le principe pigouvien vu hier trouve, depuis le 1er janvier 2026, une application à une échelle inédite : le Mécanisme d'Ajustement Carbone aux Frontières (MACF, ou CBAM en anglais) de l'Union européenne. Ce dispositif étend la logique de la taxe carbone, déjà vue en phase 1 pour les seuls producteurs européens, aux importations en provenance de pays tiers, pour des secteurs particulièrement intensifs en carbone : l'acier, le ciment, les engrais, l'aluminium, l'hydrogène et l'électricité."
+      },
+      {
+        "type": "texte",
+        "html": "L'objectif est directement pigouvien, mais avec une dimension internationale supplémentaire : sans ce mécanisme, une entreprise européenne soumise au prix du carbone européen pourrait se retrouver désavantagée face à un concurrent étranger produisant, dans un pays sans tarification carbone équivalente, sans supporter ce même coût — un phénomène appelé « fuite de carbone ». Le MACF impose donc aux importateurs de ces produits l'achat de certificats équivalant au prix du carbone qui aurait été payé si le bien avait été produit en Europe."
+      },
+      {
+        "type": "texte",
+        "html": "Ce dispositif, entré dans sa phase définitive après une période de rodage entre 2023 et 2025, pourrait rapporter jusqu'à 10 milliards d'euros par an au budget européen. La Commission européenne a par ailleurs annoncé vouloir étendre, à partir de 2028, ce mécanisme à environ 180 produits transformés supplémentaires, comme les automobiles — un élargissement qui illustre bien l'ambition, directement héritée de Pigou, de faire du signal-prix carbone un outil de politique climatique à l'échelle continentale."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Le Mécanisme d'Ajustement Carbone aux Frontières, entré dans sa phase définitive au 1er janvier 2026, applique le principe pigouvien à l'échelle des importations européennes : les produits à forte intensité carbone importés doivent désormais acquitter un prix du carbone équivalent à celui payé par les producteurs européens."
+      }
+    ],
+    "source": {
+      "texte": "MACF/CBAM : entré dans sa phase définitive le 1er janvier 2026, couvrant acier, ciment, engrais, aluminium, hydrogène, électricité. Recettes potentielles estimées jusqu'à 10 Md€/an pour le budget européen. Extension prévue à environ 180 produits transformés à partir de 2028.",
+      "lien": "https://fr.wikipedia.org/wiki/M%C3%A9canisme_d'ajustement_carbone_aux_fronti%C3%A8res",
+      "date_verification": "25 août 2026"
+    }
+  },
+  {
+    "id": 153,
+    "ordre": 153,
+    "phase": 4,
+    "semaine": 5,
+    "jour": 6,
+    "type": "concept",
+    "titre": "Les biens communs et la tragédie des communs",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "On a distingué, en semaine 2, les biens publics purs des biens privés classiques. Il existe une troisième catégorie, intermédiaire, particulièrement importante pour comprendre les grands défis environnementaux contemporains : les <em class=\"accent\">biens communs</em> — des ressources non exclusives mais rivales, comme un stock de poissons dans une mer internationale, une nappe phréatique, ou l'atmosphère terrestre elle-même."
+      },
+      {
+        "type": "texte",
+        "html": "Cette combinaison particulière de caractéristiques engendre un risque bien identifié, popularisé en 1968 par le biologiste Garrett Hardin sous le nom de <em class=\"accent\">tragédie des communs</em> : chaque utilisateur individuel d'une ressource commune, agissant rationnellement dans son propre intérêt à court terme, est incité à en surexploiter sa part, puisqu'il capte l'intégralité du bénéfice de sa propre consommation tout en ne supportant qu'une fraction du coût de l'épuisement collectif. Si tous les pêcheurs raisonnent ainsi individuellement, le stock de poissons s'effondre collectivement."
+      },
+      {
+        "type": "texte",
+        "html": "Les solutions traditionnellement envisagées à ce problème suivent deux grandes logiques opposées, qui recoupent directement le clivage de cette phase : soit une régulation publique stricte (quotas fixés et contrôlés par l'État), soit une privatisation de la ressource (droits de propriété individuels incitant chaque propriétaire à préserver la valeur à long terme). Mais il existe une troisième voie, longtemps sous-estimée par la théorie économique classique, qu'on va découvrir dès la semaine prochaine avec les travaux d'Elinor Ostrom."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Les biens communs (non exclusifs mais rivaux) sont exposés au risque de « tragédie des communs » : chaque usager rationnel est incité à surexploiter sa part, au détriment de la ressource collective. Régulation publique stricte et privatisation sont les deux solutions classiquement envisagées, mais une troisième voie existe, qu'on explorera la semaine prochaine."
+      }
+    ]
+  },
+  {
+    "id": 154,
+    "ordre": 154,
+    "phase": 4,
+    "semaine": 5,
+    "jour": 7,
+    "type": "quiz",
+    "titre": "Quiz — Semaine 5 (Phase 4)",
+    "contenu": "Teste ce que tu as retenu sur les monopoles, les externalités, Pigou et les biens communs.",
+    "questions": [
+      {
+        "question": "Pourquoi un monopole peut-il fixer des prix plus élevés qu'un marché concurrentiel ?",
+        "options": [
+          "Parce qu'il n'a pas la même incitation à baisser ses prix en l'absence de concurrent",
+          "Parce que la loi l'y oblige toujours",
+          "Ce n'est jamais le cas"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Combien d'amende la Commission européenne a-t-elle infligée à Google le 23 juillet 2026 au titre du DMA ?",
+        "options": [
+          "890 millions d'euros",
+          "10 000 euros",
+          "Aucune amende"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Qu'est-ce qu'une externalité négative ?",
+        "options": [
+          "Un coût qu'une activité économique fait peser sur des tiers, sans apparaître dans son prix de marché",
+          "Un bénéfice pour l'entreprise uniquement",
+          "Un synonyme de monopole"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Que se passe-t-il, en l'absence d'intervention, quand un coût social n'est pas intégré au prix d'un bien polluant ?",
+        "options": [
+          "Une sous-production du bien",
+          "Une surproduction du bien par rapport à l'optimum social",
+          "Aucun effet"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Que propose Arthur Pigou pour corriger une externalité négative ?",
+        "options": [
+          "Une taxe équivalente au dommage social causé, pour internaliser ce coût",
+          "L'interdiction totale et immédiate de toute production",
+          "Ne rien faire"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Depuis quelle date le Mécanisme d'Ajustement Carbone aux Frontières (MACF) est-il entré dans sa phase définitive ?",
+        "options": [
+          "Le 1er janvier 2026",
+          "Il n'existe pas encore",
+          "Depuis 1990"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Quel est l'objectif principal du MACF ?",
+        "options": [
+          "Éviter les « fuites de carbone » en appliquant un prix carbone équivalent aux importations concernées",
+          "Interdire totalement les importations",
+          "Réduire les impôts des entreprises européennes"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Qu'est-ce qu'un bien commun, par opposition à un bien public pur ?",
+        "options": [
+          "Un bien non exclusif mais rival",
+          "Un bien totalement privé",
+          "Un bien qui n'existe pas en économie"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Que décrit la « tragédie des communs » popularisée par Garrett Hardin en 1968 ?",
+        "options": [
+          "La tendance de chaque usager rationnel à surexploiter une ressource commune, au détriment collectif",
+          "Un phénomène purement théorique sans application réelle",
+          "La disparition totale de toutes les ressources naturelles"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Quelles sont les deux solutions classiquement envisagées face à la tragédie des communs ?",
+        "options": [
+          "La régulation publique stricte et la privatisation de la ressource",
+          "L'ignorer et ne rien faire",
+          "Uniquement la privatisation"
+        ],
+        "bonne_reponse": 0
+      }
+    ]
+  },
+  {
+    "id": 155,
+    "ordre": 155,
+    "phase": 4,
+    "semaine": 6,
+    "jour": 1,
+    "type": "auteur",
+    "titre": "Elinor Ostrom — une troisième voie pour les biens communs",
+    "blocs": [
+      {
+        "type": "image",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Elinor%20Ostrom%20close-up%20%28cropped%29.jpg",
+        "legende": "Elinor Ostrom (1933-2012), politologue et économiste américaine, première femme à recevoir le prix Nobel d'économie"
+      },
+      {
+        "type": "texte",
+        "html": "Elinor Ostrom, politologue et économiste américaine, devient en 2009 la première femme à recevoir le prix Nobel d'économie, récompensée « pour son analyse de la gouvernance économique, et en particulier des biens communs ». Sa méthode de travail, déjà singulière pour une économiste, tient à son approche empirique : plutôt que de partir d'un modèle théorique abstrait, elle a mené, pendant des décennies, des études de terrain minutieuses sur des cas concrets de gestion de ressources communes — systèmes d'irrigation au Népal, forêts communautaires, pêcheries locales — aux quatre coins du monde."
+      },
+      {
+        "type": "texte",
+        "html": "Sa conclusion, exposée dans son ouvrage majeur Governing the Commons (1990), bouscule directement la tragédie des communs vue en fin de semaine dernière : ni la régulation publique centralisée, ni la privatisation systématique, ne sont les seules solutions viables. Ostrom documente, à travers des dizaines d'études de cas, l'existence d'une <em class=\"accent\">troisième voie</em> : l'auto-organisation des communautés d'usagers elles-mêmes, à travers des règles collectives élaborées et surveillées localement, sans intervention extérieure d'un État ou d'un marché privé."
+      },
+      {
+        "type": "texte",
+        "html": "Ostrom identifie plusieurs conditions précises pour qu'une telle auto-gouvernance fonctionne durablement : des frontières claires de la ressource et de la communauté d'usagers, des règles adaptées au contexte local plutôt qu'imposées uniformément de l'extérieur, une participation effective des usagers à l'élaboration de ces règles, et des mécanismes de résolution des conflits accessibles à tous. Cette découverte a une portée considérable pour le débat de cette phase : elle démontre empiriquement qu'il n'existe pas seulement deux options, marché ou État, mais bien un troisième mode de coordination économique possible."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Elinor Ostrom, première femme Nobel d'économie en 2009, démontre empiriquement qu'au-delà du marché et de l'État, une troisième voie existe pour gérer durablement les biens communs : l'auto-organisation des communautés d'usagers elles-mêmes, à travers des règles collectives locales."
+      }
+    ]
+  },
+  {
+    "id": 156,
+    "ordre": 156,
+    "phase": 4,
+    "semaine": 6,
+    "jour": 2,
+    "type": "concept",
+    "titre": "Aucun pays n'est purement marché ou purement État",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Après cinq semaines à explorer, tour à tour, les arguments les plus forts en faveur du marché et de l'État, une évidence empirique s'impose, trop souvent oubliée dans les débats politiques les plus polarisés : aucune économie développée contemporaine ne fonctionne selon une logique purement libérale ou purement étatisée. Même les économies les plus souvent citées comme des modèles de libre marché, comme les États-Unis, consacrent une part considérable de leur richesse nationale à la dépense publique — de l'ordre de 35 à 38 % du PIB selon les années."
+      },
+      {
+        "type": "texte",
+        "html": "À l'inverse, même les économies les plus interventionnistes d'Europe, comme la France ou les pays scandinaves déjà vus en semaine 2, laissent l'essentiel de la production de biens et services être organisée par des entreprises privées en concurrence sur des marchés largement décentralisés. La différence entre les modèles nationaux tient donc moins à un choix binaire « marché contre État » qu'à un curseur, positionné différemment selon les pays, sur un continuum bien plus riche et nuancé."
+      },
+      {
+        "type": "texte",
+        "html": "Cette réalité empirique invite à une certaine prudence face aux discours politiques qui présentent le débat économique comme un affrontement pur entre deux blocs homogènes et irréconciliables. Dans la pratique, la plupart des désaccords substantiels entre économistes et responsables politiques portent moins sur le principe même de l'intervention publique — largement acquis partout — que sur son ampleur précise, ses modalités concrètes, et les secteurs qu'elle doit ou non concerner."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Aucune économie développée n'est purement libérale ou purement étatisée : même les économies les plus « libérales » consacrent une part considérable de leur PIB à la dépense publique, et même les économies les plus interventionnistes laissent l'essentiel de la production aux entreprises privées. Le vrai débat porte sur le curseur précis, pas sur un choix binaire."
+      }
+    ]
+  },
+  {
+    "id": 157,
+    "ordre": 157,
+    "phase": 4,
+    "semaine": 6,
+    "jour": 3,
+    "type": "actu",
+    "titre": "Dépense publique dans le monde : un curseur, pas un interrupteur",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Pour illustrer concrètement le continuum évoqué hier plutôt que le choix binaire souvent présenté dans le débat public, il est utile de comparer, en ordre de grandeur, le poids de la dépense publique dans quelques grandes économies développées, telle que suivie régulièrement par l'OCDE. La France se situe traditionnellement en tête des pays développés, avec une dépense publique avoisinant 57 % du PIB — un niveau souvent commenté dans le débat électoral français."
+      },
+      {
+        "type": "texte",
+        "html": "Les pays scandinaves, malgré leur réputation d'État-providence généreux vue en semaine 2 et 3, affichent en réalité un niveau de dépense publique souvent inférieur à celui de la France, généralement entre 45 et 50 % du PIB selon les années — rappelant que l'ampleur des prélèvements et de la redistribution n'est pas le seul facteur distinguant les modèles. Les États-Unis, à l'autre extrémité, se situent structurellement autour de 35 à 38 % du PIB, l'un des niveaux les plus bas parmi les grandes économies développées."
+      },
+      {
+        "type": "texte",
+        "html": "Cette hiérarchie n'a en elle-même aucune valeur normative : elle ne dit rien, prise isolément, de l'efficacité, de l'équité ou du bien-être produit par chaque système — exactement la distinction entre efficacité et équité déjà posée avec Pareto en phase 2. Elle offre en revanche un repère chiffré utile pour resituer, avec un peu de recul, les débats sur le niveau « excessif » ou « insuffisant » de dépense publique qui animeront la campagne présidentielle de 2027."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "La dépense publique varie, selon l'OCDE, d'environ 35-38 % du PIB aux États-Unis à environ 57 % en France, avec les pays scandinaves en position intermédiaire (45-50 %) malgré leur réputation d'État-providence généreux — un continuum qui ne préjuge en rien, à lui seul, de l'efficacité ou de l'équité de chaque système."
+      }
+    ],
+    "source": {
+      "texte": "Dépense publique en % du PIB (ordres de grandeur, données OCDE) : France environ 57 %, pays scandinaves environ 45-50 %, États-Unis environ 35-38 %.",
+      "lien": "https://data.oecd.org/gga/general-government-spending.htm",
+      "date_verification": "25 août 2026"
+    }
+  },
+  {
+    "id": 158,
+    "ordre": 158,
+    "phase": 4,
+    "semaine": 6,
+    "jour": 4,
+    "type": "interpellation",
+    "titre": "Le marché peut-il tout réguler seul ?",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Dernière fiche interpellation de cette phase 4, en écho direct à toute la matière parcourue depuis six semaines : le marché, livré à ses seuls mécanismes internes — concurrence, prix, innovation —, peut-il réguler seul l'ensemble des grands défis économiques et sociaux contemporains, sans intervention structurante de l'État ?"
+      },
+      {
+        "type": "texte",
+        "html": "L'argument en faveur d'une confiance maximale dans le marché s'appuie sur l'ensemble des intuitions de la semaine 1 : la connaissance dispersée que seul le système de prix agrège efficacement (Hayek), le risque de capture de toute réglementation par des intérêts particuliers (Stigler), et la conviction que la concurrence et la destruction créatrice vue avec Schumpeter en phase 3 finissent, sur le temps long, par résoudre la plupart des problèmes qu'une intervention publique maladroite risquerait au contraire de figer."
+      },
+      {
+        "type": "texte",
+        "html": "L'argument inverse s'appuie sur l'ensemble des défaillances de marché documentées tout au long de cette phase : les biens publics que le marché sous-produit structurellement, les monopoles qui exigent une régulation active comme on l'a vu avec le DMA, les externalités négatives que seule une intervention corrective — la taxe pigouvienne ou le MACF — permet d'internaliser, et les biens communs qui, sans coordination collective, s'exposent à la tragédie identifiée par Hardin. Même Ostrom, dont la troisième voie enrichit ce débat, ne prétend pas que le marché seul suffise."
+      },
+      {
+        "type": "texte",
+        "html": "La réponse la plus honnête à cette question, si l'on prend au sérieux l'ensemble des arguments rassemblés dans cette phase, est probablement qu'elle est mal posée dans sa formulation binaire : la question n'est pas de savoir si le marché peut « tout » réguler seul — la réponse théorique et empirique est largement négative, y compris pour des économistes proches du libéralisme, comme on l'a vu avec les nuances mêmes de Smith et Hayek — mais plutôt de déterminer, secteur par secteur, quelle combinaison précise de mécanismes de marché, de régulation publique et, potentiellement, d'auto-organisation collective produit le meilleur résultat."
+      },
+      {
+        "type": "encadre",
+        "titre": "Pas de réponse toute faite",
+        "html": "La question de savoir si le marché peut « tout » réguler seul appelle, dans sa formulation la plus stricte, une réponse largement négative même chez les économistes les plus favorables au marché — mais la vraie question utile porte sur la combinaison précise, secteur par secteur, entre marché, régulation publique et auto-organisation collective."
+      }
+    ]
+  },
+  {
+    "id": 159,
+    "ordre": 159,
+    "phase": 4,
+    "semaine": 6,
+    "jour": 5,
+    "type": "concept",
+    "titre": "Récapitulatif : cartographier le clivage État/marché",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Avant de clore cette phase, une synthèse s'impose pour organiser mentalement les nombreux auteurs et concepts traversés depuis six semaines. On peut regrouper les grandes voix de cette phase selon deux axes de lecture complémentaires, utiles pour situer rapidement n'importe quel discours économique ou politique."
+      },
+      {
+        "type": "texte",
+        "html": "Le premier axe oppose la confiance dans l'auto-régulation spontanée du marché (Hayek, Stigler, Buchanan, Friedman déjà vu en phase 3) à la conviction qu'une intervention publique structurante est nécessaire pour corriger ses défaillances (Keynes en phase 3, Galbraith, Pigou, Myrdal). Le second axe, souvent négligé dans le débat public mais tout aussi essentiel, oppose deux logiques différentes d'intervention quand celle-ci est jugée nécessaire : une intervention qui fixe un cadre de règles stable et laisse ensuite le marché fonctionner à l'intérieur de ce cadre (l'ordolibéralisme d'Eucken, les politiques de concurrence), par opposition à une intervention plus directe, via la dépense publique et la redistribution (l'État-providence de Beveridge et Laroque, les plans de relance keynésiens)."
+      },
+      {
+        "type": "texte",
+        "html": "Cette cartographie à deux axes permet d'éviter un écueil fréquent du débat public : réduire chaque position politique à un point unique sur un seul axe gauche-droite simplifié. Un même responsable politique peut, par exemple, défendre une régulation de la concurrence assez stricte (proche d'Eucken) tout en étant réticent à une redistribution fiscale ambitieuse (loin de Myrdal) — deux positions qui, sur un axe unique, sembleraient contradictoires, mais qui s'articulent en réalité de façon cohérente une fois qu'on distingue ces deux dimensions du débat économique."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Le clivage État/marché se lit utilement selon deux axes : la confiance dans l'auto-régulation du marché versus la nécessité d'une correction publique, et, quand l'intervention est jugée nécessaire, un cadre de règles stables (ordolibéralisme) versus une intervention plus directe (redistribution, dépense publique). Cette grille à deux dimensions évite de réduire le débat économique à un axe binaire trop simple."
+      }
+    ]
+  },
+  {
+    "id": 160,
+    "ordre": 160,
+    "phase": 4,
+    "semaine": 6,
+    "jour": 6,
+    "type": "concept",
+    "titre": "Comment repérer le positionnement État/marché d'un programme électoral",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Fort de la cartographie établie hier, voici une grille de lecture pratique, directement mobilisable pour décoder n'importe quel programme électoral à l'approche de la présidentielle de 2027 — sans prendre position sur le fond, mais en donnant les outils pour situer chaque proposition dans le cadre théorique parcouru tout au long de cette phase."
+      },
+      {
+        "type": "texte",
+        "html": "Une première question à se poser : la proposition vise-t-elle à réduire le périmètre de l'intervention publique (baisse d'impôts, dérégulation, privatisation) ou à l'étendre (nouvelles dépenses, nouvelles réglementations, nationalisations) ? On l'a vu cette semaine, cette question seule ne suffit pas : il faut aussi se demander de quel type d'intervention il s'agit — un cadre de règles renforçant la concurrence (proche d'Eucken), ou une redistribution directe des ressources (proche de Myrdal) ? Ces deux logiques d'intervention n'ont ni le même objectif ni le même effet économique, même si le débat public les confond souvent sous une même étiquette de « plus d'État »."
+      },
+      {
+        "type": "texte",
+        "html": "Une deuxième question, tout aussi utile, consiste à identifier qui, concrètement, bénéficie et qui supporte le coût d'une mesure donnée — un réflexe hérité directement de Stigler et Buchanan vus en semaines 1 et 4 : une mesure présentée comme protégeant l'intérêt général sert-elle en réalité, une fois les détails examinés, des intérêts plus particuliers et concentrés ? Une troisième question, enfin, porte sur le financement : toute promesse de dépense nouvelle a-t-elle une contrepartie financière clairement identifiée, ou cette question reste-t-elle simplement éludée, comme on l'a vu dès la toute première fiche de ce programme avec le coût d'opportunité ?"
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Pour décoder un programme électoral sur l'axe État/marché : identifier s'il étend ou réduit l'intervention publique, distinguer un cadre de règles renforçant la concurrence d'une redistribution directe, repérer qui bénéficie concrètement d'une mesure présentée comme d'intérêt général, et vérifier si son financement est clairement identifié."
+      }
+    ]
+  },
+  {
+    "id": 161,
+    "ordre": 161,
+    "phase": 4,
+    "semaine": 6,
+    "jour": 7,
+    "type": "quiz",
+    "titre": "Quiz — Semaine 6 et bilan de la phase 4",
+    "contenu": "Dernière ligne droite de la phase 4 ! Ce quiz mélange les notions de la semaine et quelques rappels de l'ensemble de la phase, avant de passer à la phase 5 consacrée à l'économie contemporaine.",
+    "questions": [
+      {
+        "question": "Que démontre Elinor Ostrom à travers ses études de terrain sur les biens communs ?",
+        "options": [
+          "Que seule la privatisation fonctionne",
+          "Qu'une troisième voie existe : l'auto-organisation des communautés d'usagers elles-mêmes",
+          "Que les biens communs n'existent pas"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Une économie développée peut-elle être qualifiée de purement libérale ou purement étatisée ?",
+        "options": [
+          "Oui, la plupart le sont",
+          "Non, aucune ne fonctionne selon une logique pure",
+          "La question n'a pas de sens"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Selon les ordres de grandeur de l'OCDE, quel pays a la dépense publique la plus élevée en % du PIB parmi France, pays scandinaves et États-Unis ?",
+        "options": [
+          "La France",
+          "Les États-Unis",
+          "Les trois sont identiques"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Le débat sur le marché « tout réguler seul » appelle-t-il une réponse tranchée, même chez les économistes libéraux ?",
+        "options": [
+          "Oui, un consensus existe pour répondre oui",
+          "Non, même les économistes proches du marché reconnaissent des limites",
+          "La question n'a jamais été posée"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Quels sont les deux axes proposés pour cartographier le débat État/marché ?",
+        "options": [
+          "Confiance dans le marché vs nécessité de correction publique, et cadre de règles vs intervention directe",
+          "Gauche contre droite uniquement",
+          "Riche contre pauvre uniquement"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Pourquoi un même responsable politique peut-il défendre une régulation stricte de la concurrence tout en étant réticent à une forte redistribution ?",
+        "options": [
+          "Parce que ce sont deux dimensions distinctes du débat économique",
+          "Parce que c'est toujours contradictoire",
+          "Ce cas ne peut jamais se produire"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Pour décoder un programme électoral, quelle question hérite directement de Stigler et Buchanan ?",
+        "options": [
+          "Qui bénéficie concrètement d'une mesure présentée comme d'intérêt général ?",
+          "Quelle est la couleur du logo du parti ?",
+          "Combien de pages fait le programme ?"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Rappel semaine 1 : que démontre la théorie de la capture réglementaire de Stigler ?",
+        "options": [
+          "Que les réglementations peuvent finir captées par les entreprises régulées elles-mêmes",
+          "Que la réglementation profite toujours aux consommateurs",
+          "Que la réglementation n'existe jamais"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Rappel semaine 3 : sur quel principe repose l'État-providence ?",
+        "options": [
+          "La mutualisation collective des grands risques sociaux",
+          "L'absence de toute solidarité",
+          "L'assurance privée uniquement"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Quelle phase du programme aborde ensuite l'économie contemporaine (mondialisation, inégalités, Piketty, Duflo...) ?",
+        "options": [
+          "La phase 5",
+          "La phase 1",
+          "On revient à la phase 3"
+        ],
+        "bonne_reponse": 0
+      }
+    ]
   }
 ]
