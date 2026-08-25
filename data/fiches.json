@@ -37,8 +37,18 @@
     "titre": "Xénophon et Aristote — l'origine du mot économie",
     "blocs": [
       {
+        "type": "image",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Xenophon_bust.jpg",
+        "legende": "Buste de Xénophon (musée d'Aphrodisias, Turquie)"
+      },
+      {
         "type": "texte",
         "html": "Le mot économie vient du grec ancien <em class=\"accent\">oikonomia</em>, formé de oikos (la maison, le foyer, le patrimoine) et nomos (la règle, la gestion). À l'origine, il ne désigne donc pas une science globale de la richesse des nations, mais un art très concret et domestique : celui de bien administrer un domaine.<br><br>C'est Xénophon, disciple de Socrate, qui donne ce sens au terme au ive siècle avant notre ère, dans un traité intitulé L'Économique (Oikonomikos). Le texte prend la forme d'un dialogue : Socrate y interroge un jeune homme, Critobule, sur l'art de faire prospérer ses terres, son bétail et sa maisonnée. On y trouve des conseils très pratiques — l'importance de l'ordre, de la discipline du travail agricole, du choix d'une épouse compétente en gestion — mais aussi une réflexion plus large sur ce que signifie « bien gérer » : non pas simplement accumuler, mais utiliser ses biens de façon à vivre dignement."
+      },
+      {
+        "type": "image",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aristoteles_Louvre.jpg",
+        "legende": "Buste d'Aristote, copie romaine d'un original grec perdu (musée du Louvre)"
       },
       {
         "type": "texte",
@@ -153,6 +163,11 @@
     "type": "auteur",
     "titre": "Adam Smith — la main invisible et la division du travail",
     "blocs": [
+      {
+        "type": "image",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Adam_Smith_The_Muir_portrait.jpg",
+        "legende": "Adam Smith (1723-1790), portrait dit « de Muir »"
+      },
       {
         "type": "texte",
         "html": "Adam Smith publie en 1776 son ouvrage fondateur, Recherches sur la nature et les causes de la richesse des nations, le plus souvent abrégé en La Richesse des nations. C'est l'un des textes fondateurs de l'économie comme discipline autonome, distincte de la philosophie morale dont Smith, professeur à Glasgow, était pourtant issu.<br><br>Smith y développe deux idées devenues centrales dans toute la pensée économique ultérieure. La première est la <em class=\"accent\">division du travail</em> : il prend l'exemple, resté célèbre, d'une manufacture d'épingles. Fabriquer une épingle demande une vingtaine d'opérations distinctes — tirer le fil, le couper, l'affûter, poser la tête, polir, empaqueter. Si un seul ouvrier réalisait toutes ces étapes seul, sans spécialisation, il produirait péniblement quelques dizaines d'épingles par jour. Mais en décomposant la tâche entre plusieurs ouvriers, chacun spécialisé sur une seule opération, la production explose : Smith évoque une production journalière multipliée par plusieurs centaines pour un même nombre de travailleurs."
