@@ -29,9 +29,9 @@
     "ressources": [
       {
         "type": "podcast",
-        "titre": "Entendez-vous l'éco ?",
-        "source": "France Culture",
-        "url": "https://www.franceculture.fr/emissions/entendez-vous-leco"
+        "titre": "Économie de la rareté — de Smith à Sartre, quel est le visage de la rareté ?",
+        "source": "France Culture, série \"Entendez-vous l'éco ?\"",
+        "url": "https://franceculture.fr/emissions/series/economie-de-la-rarete"
       },
       {
         "type": "article",
