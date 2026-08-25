@@ -248,7 +248,7 @@ function afficherToday() {
 
   let html = `
     <div class="header-row">
-      <h1 class="ecran-titre serif">Éco du jour</h1>
+      <h1 class="ecran-titre serif">Les deux sous</h1>
       <div class="header-right">
         <button class="btn-icone" id="btn-sommaire" title="Sommaire">☰</button>
         <div class="streak-badge">🔥 ${streak} jours de suite</div>
