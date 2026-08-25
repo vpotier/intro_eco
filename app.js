@@ -94,6 +94,18 @@ function toggleLue(id) {
   return lues.includes(id);
 }
 
+// Contrairement à toggleLue (bascule, utilisée par le bouton explicite "Garder dans ma
+// collection"), celle-ci ne fait qu'ajouter — appelée automatiquement dès qu'on consulte
+// la carte du jour, pour que le streak avance sans action supplémentaire.
+function marquerCommeLue(id) {
+  const lues = getLues();
+  if (!lues.includes(id)) {
+    lues.push(id);
+    localStorage.setItem(CLE_LUES, JSON.stringify(lues));
+    enregistrerJourActif();
+  }
+}
+
 function toggleFavori(id) {
   let favoris = getFavoris();
   if (favoris.includes(id)) {
@@ -299,6 +311,7 @@ function carteEstOuverte(id) {
 
 function ouvrirCarteDuJour(id) {
   localStorage.setItem(CLE_OUVERTE, JSON.stringify({ id, date: aujourdhui() }));
+  marquerCommeLue(id);
 }
 
 /* ===================== Écran Today ===================== */
@@ -851,20 +864,31 @@ function afficherStreakContenu() {
   const streak = calculerStreak();
   const meilleur = calculerMeilleurStreak();
   const datesActives = new Set(getStreakDates());
+  const iso_aujourdhui = aujourdhui();
 
-  // Calendrier des 28 derniers jours, du plus ancien au plus récent
+  // On aligne la grille sur de vraies semaines calendaires (lundi → dimanche) :
+  // on part du lundi de la semaine en cours, puis on remonte 3 semaines complètes avant.
+  const aujourdhuiDate = new Date();
+  const decalageLundi = (aujourdhuiDate.getDay() + 6) % 7; // 0 = lundi, ..., 6 = dimanche
+  const lundiCourant = new Date(aujourdhuiDate);
+  lundiCourant.setDate(aujourdhuiDate.getDate() - decalageLundi);
+  const debutGrille = new Date(lundiCourant);
+  debutGrille.setDate(lundiCourant.getDate() - 21); // 3 semaines complètes avant
+
   const jours = [];
-  for (let i = 27; i >= 0; i--) {
-    const d = new Date();
-    d.setDate(d.getDate() - i);
+  for (let i = 0; i < 28; i++) {
+    const d = new Date(debutGrille);
+    d.setDate(debutGrille.getDate() + i);
     const iso = d.toISOString().split("T")[0];
     jours.push({
       iso,
       actif: datesActives.has(iso),
-      estAujourdhui: iso === aujourdhui(),
-      lettre: "LMMJVSD"[(d.getDay() + 6) % 7]
+      estAujourdhui: iso === iso_aujourdhui,
+      futur: iso > iso_aujourdhui
     });
   }
+
+  const ENTETES_JOURS = ["L", "Ma", "Me", "J", "V", "S", "D"];
 
   let html = `
     <div class="longread-header">
@@ -878,11 +902,13 @@ function afficherStreakContenu() {
     </div>
     <div class="streak-record">Record personnel : <strong>${meilleur} jour${meilleur > 1 ? "s" : ""}</strong></div>
 
-    <div class="longread-section-eyebrow">Les 4 dernières semaines</div>
+    <div class="longread-section-eyebrow">Les 4 dernières semaines (lun. → dim.)</div>
+    <div class="calendrier-entetes">
+      ${ENTETES_JOURS.map(l => `<span>${l}</span>`).join("")}
+    </div>
     <div class="calendrier-streak">
       ${jours.map(j => `
-        <div class="jour-streak ${j.actif ? 'actif' : ''} ${j.estAujourdhui ? 'aujourdhui' : ''}" title="${j.iso}">
-          <span class="jour-streak-lettre">${j.lettre}</span>
+        <div class="jour-streak ${j.actif ? 'actif' : ''} ${j.estAujourdhui ? 'aujourdhui' : ''} ${j.futur ? 'futur' : ''}" title="${j.iso}">
           <span class="jour-streak-point"></span>
         </div>
       `).join("")}
