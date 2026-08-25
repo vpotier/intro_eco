@@ -16,7 +16,12 @@ const NOMS_SEMAINES = {
   "1-3": "Équilibre et monnaie",
   "1-4": "Monnaie et prix",
   "1-5": "Mesurer l'économie",
-  "1-6": "Travail et pouvoir d'achat"
+  "1-6": "Travail et pouvoir d'achat",
+  "2-1": "Adam Smith et les fondateurs",
+  "2-2": "Malthus et les limites",
+  "2-3": "La révolution marginaliste",
+  "2-4": "Walras, Marshall, l'équilibre général",
+  "2-5": "Pareto et la bascule vers le 20e siècle"
 };
 
 function titreSemaine(phase, semaine) {
