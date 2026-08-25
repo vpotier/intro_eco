@@ -10,6 +10,7 @@ async function init() {
 
   document.getElementById("nav-jour").addEventListener("click", afficherFicheDuJour);
   document.getElementById("nav-sommaire").addEventListener("click", afficherSommaire);
+  window.addEventListener("scroll", mettreAJourBarreProgression);
 
   afficherFicheDuJour();
 }
@@ -19,12 +20,14 @@ function getLues() {
   return stocke ? JSON.parse(stocke) : [];
 }
 
-function marquerCommeLue(id) {
-  const lues = getLues();
-  if (!lues.includes(id)) {
+function toggleLue(id) {
+  let lues = getLues();
+  if (lues.includes(id)) {
+    lues = lues.filter(x => x !== id);
+  } else {
     lues.push(id);
-    localStorage.setItem(CLE_LUES, JSON.stringify(lues));
   }
+  localStorage.setItem(CLE_LUES, JSON.stringify(lues));
 }
 
 function getFicheAffichee() {
@@ -67,6 +70,8 @@ function afficherFicheDuJour() {
 
   if (fiche.type === "quiz") activerQuiz(fiche);
   brancherBoutonLue(fiche, afficherFicheDuJour);
+  window.scrollTo(0, 0);
+  mettreAJourBarreProgression();
 }
 
 function afficherSommaire() {
@@ -93,6 +98,9 @@ function afficherSommaire() {
   document.querySelectorAll(".ligne-sommaire").forEach(ligne => {
     ligne.addEventListener("click", () => afficherFicheParId(parseInt(ligne.dataset.id)));
   });
+
+  window.scrollTo(0, 0);
+  mettreAJourBarreProgression();
 }
 
 function afficherFicheParId(id) {
@@ -105,15 +113,34 @@ function afficherFicheParId(id) {
   if (fiche.type === "quiz") activerQuiz(fiche);
   document.getElementById("btn-retour-sommaire").addEventListener("click", afficherSommaire);
   brancherBoutonLue(fiche, () => afficherFicheParId(id));
+  window.scrollTo(0, 0);
+  mettreAJourBarreProgression();
 }
 
 function brancherBoutonLue(fiche, callbackRafraichir) {
   const bouton = document.getElementById("btn-marquer-lue");
   if (bouton) {
     bouton.addEventListener("click", () => {
-      marquerCommeLue(fiche.id);
+      toggleLue(fiche.id);
       callbackRafraichir();
     });
+  }
+}
+
+function construireBloc(bloc) {
+  switch (bloc.type) {
+    case "texte":
+      return `<div class="bloc-texte">${bloc.html}</div>`;
+    case "image":
+      return `<figure class="bloc-image"><img src="${bloc.url}" alt="${bloc.legende || ''}" loading="lazy"><figcaption>${bloc.legende || ''}</figcaption></figure>`;
+    case "video":
+      return `<div class="bloc-video"><iframe src="${bloc.url}" title="${bloc.titre || ''}" frameborder="0" allowfullscreen loading="lazy"></iframe></div>`;
+    case "lien":
+      return `<p class="bloc-lien">🔗 <a href="${bloc.url}" target="_blank" rel="noopener">${bloc.texte}</a></p>`;
+    case "encadre":
+      return `<div class="bloc-encadre"><p class="encadre-titre">${bloc.titre}</p><div>${bloc.html}</div></div>`;
+    default:
+      return "";
   }
 }
 
@@ -121,8 +148,15 @@ function construireHTMLFiche(fiche, dejaLue) {
   let html = `
     <span class="type">${fiche.type}</span>
     <h2>${fiche.titre}</h2>
-    <p>${fiche.contenu}</p>
   `;
+
+  if (fiche.blocs) {
+    fiche.blocs.forEach(bloc => {
+      html += construireBloc(bloc);
+    });
+  } else if (fiche.contenu) {
+    html += `<p>${fiche.contenu}</p>`;
+  }
 
   if (fiche.type === "actu" && fiche.source) {
     html += `
@@ -145,9 +179,7 @@ function construireHTMLFiche(fiche, dejaLue) {
   }
 
   html += `<div class="marquer-lue-zone">
-    ${dejaLue
-      ? `<p class="statut-lue">✓ Fiche marquée comme lue</p>`
-      : `<button id="btn-marquer-lue">Marquer comme lue</button>`}
+    <button id="btn-marquer-lue" class="${dejaLue ? 'lue' : ''}">${dejaLue ? 'Annuler la lecture' : 'Marquer comme lue'}</button>
   </div>`;
 
   return html;
@@ -170,6 +202,15 @@ function activerQuiz(fiche) {
       }
     });
   });
+}
+
+function mettreAJourBarreProgression() {
+  const barre = document.getElementById("barre-progression");
+  if (!barre) return;
+  const hauteurTotale = document.documentElement.scrollHeight - window.innerHeight;
+  const scroll = window.scrollY;
+  const pourcentage = hauteurTotale > 0 ? Math.min(100, (scroll / hauteurTotale) * 100) : 0;
+  barre.style.width = pourcentage + "%";
 }
 
 init();
