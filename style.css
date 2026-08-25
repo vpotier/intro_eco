@@ -277,6 +277,13 @@ button:active {
   color: var(--ink-soft);
 }
 
+/* Code couleur par type de carte, repris de la version précédente et adouci pour la palette */
+.type-tag-concept { background-color: #DCE6EF; border-color: #C0D3E3; color: #33587A; }
+.type-tag-auteur { background-color: #E9DCC9; border-color: #D6BD9C; color: #6B4A2D; }
+.type-tag-actu { background-color: var(--mint); border-color: #C9D9B8; color: var(--olive-dark); }
+.type-tag-interpellation { background-color: #F1D9D3; border-color: #E0B3A8; color: #A6433A; }
+.type-tag-quiz { background-color: #E6DBEC; border-color: #CDB4DA; color: #6B4A79; }
+
 .carte-numero {
   float: right;
   font-size: 0.72rem;
@@ -574,6 +581,85 @@ button:active {
 }
 
 .titre-sommaire { flex: 1; font-size: 0.9rem; }
+
+/* ---------- Écran Streak (gamification) ---------- */
+.streak-hero {
+  text-align: center;
+  padding: 20px 0 6px;
+}
+.streak-flamme { font-size: 2.4rem; line-height: 1; }
+.streak-gros-chiffre {
+  font-size: 3.6rem;
+  line-height: 1.05;
+  color: var(--terracotta-dark);
+}
+.streak-sous-titre {
+  font-size: 1rem;
+  color: var(--ink-soft);
+  font-weight: 600;
+}
+.streak-record {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  margin: 10px 0 24px;
+}
+.streak-record strong { color: var(--ink); }
+
+.calendrier-streak {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  margin: 10px 0 26px;
+}
+
+.jour-streak {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.jour-streak-lettre {
+  font-size: 0.62rem;
+  color: var(--ink-soft);
+  font-weight: 600;
+}
+.jour-streak-point {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: var(--cream-dark);
+  border: 1px solid var(--cream-darker);
+}
+.jour-streak.actif .jour-streak-point {
+  background-color: var(--terracotta);
+  border-color: var(--terracotta-dark);
+}
+.jour-streak.aujourdhui .jour-streak-point {
+  box-shadow: 0 0 0 2px var(--cream), 0 0 0 4px var(--olive);
+}
+
+.paliers-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.palier {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--cream-dark);
+  border-radius: 14px;
+  padding: 12px 14px;
+  opacity: 0.5;
+}
+.palier.atteint {
+  opacity: 1;
+  background-color: var(--mint);
+}
+.palier-icone { font-size: 1.3rem; flex-shrink: 0; }
+.palier-label { font-size: 0.95rem; }
+.palier-detail { font-size: 0.78rem; color: var(--ink-soft); }
 
 .btn-collection {
   width: 100%;
