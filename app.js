@@ -176,8 +176,21 @@ async function init() {
   toutesLesFiches = await reponse.json();
   toutesLesFiches.sort((a, b) => a.ordre - b.ordre);
 
+  history.replaceState({ profondeur: 0 }, "", "");
+
   document.querySelectorAll(".nav-btn").forEach(btn => {
     btn.addEventListener("click", () => allerA(btn.dataset.screen));
+  });
+
+  window.addEventListener("popstate", () => {
+    if (pileImbriquee.length > 0) {
+      pileImbriquee.pop();
+    }
+    if (pileImbriquee.length === 0) {
+      afficherEcranRacine();
+    } else {
+      rendreVueImbriquee();
+    }
   });
 
   allerA("today");
@@ -186,13 +199,17 @@ async function init() {
 function allerA(ecran) {
   vueRacine = ecran;
   pileImbriquee = [];
+  afficherEcranRacine();
+}
+
+function afficherEcranRacine() {
   document.querySelectorAll(".nav-btn").forEach(b => {
-    b.classList.toggle("actif", b.dataset.screen === ecran);
+    b.classList.toggle("actif", b.dataset.screen === vueRacine);
   });
   document.getElementById("bottom-nav").style.display = "flex";
-  if (ecran === "today") afficherToday();
-  if (ecran === "collection") afficherCollection();
-  if (ecran === "threads") afficherThreads();
+  if (vueRacine === "today") afficherToday();
+  if (vueRacine === "collection") afficherCollection();
+  if (vueRacine === "threads") afficherThreads();
   window.scrollTo(0, 0);
   mettreAJourBarreProgression();
 }
@@ -200,35 +217,35 @@ function allerA(ecran) {
 /* ===================== Navigation imbriquée (longread / recherche / sommaire) ===================== */
 function ouvrirLongRead(id) {
   pileImbriquee.push({ type: "longread", id });
+  history.pushState({ profondeur: pileImbriquee.length }, "", "");
   document.getElementById("bottom-nav").style.display = "none";
   rendreVueImbriquee();
 }
 
 function ouvrirSommaire() {
   pileImbriquee.push({ type: "sommaire" });
+  history.pushState({ profondeur: pileImbriquee.length }, "", "");
   document.getElementById("bottom-nav").style.display = "none";
   rendreVueImbriquee();
 }
 
 function ouvrirStreak() {
   pileImbriquee.push({ type: "streak" });
+  history.pushState({ profondeur: pileImbriquee.length }, "", "");
   document.getElementById("bottom-nav").style.display = "none";
   rendreVueImbriquee();
 }
 
 function ouvrirRechercheMotCle(mot) {
   pileImbriquee.push({ type: "recherche", mot });
+  history.pushState({ profondeur: pileImbriquee.length }, "", "");
   rendreVueImbriquee();
 }
 
 function retourArriere() {
-  pileImbriquee.pop();
-  if (pileImbriquee.length === 0) {
-    document.getElementById("bottom-nav").style.display = "flex";
-    allerA(vueRacine);
-  } else {
-    rendreVueImbriquee();
-  }
+  // Passe toujours par l'historique du navigateur : ainsi, le bouton retour
+  // physique du téléphone et notre flèche déclenchent exactement le même chemin (popstate).
+  history.back();
 }
 
 function rendreVueImbriquee() {
@@ -556,6 +573,7 @@ function construirePullsOn(fiche) {
 function construireQuizLongRead(fiche) {
   if (!fiche.questions) return "";
   let html = `<div class="longread-bloc"><p>${fiche.contenu || ''}</p></div>`;
+  html += `<div id="conteneur-quiz">`;
   fiche.questions.forEach((q, i) => {
     html += `
       <div class="check-yourself" data-question="${i}">
@@ -565,16 +583,28 @@ function construireQuizLongRead(fiche) {
       </div>
     `;
   });
+  html += `</div>`;
+  html += `<button class="btn-recommencer-quiz serif" id="btn-recommencer-quiz" hidden>↻ Recommencer le quiz</button>`;
   return html;
 }
 
 function activerQuizLongRead(fiche) {
+  const total = fiche.questions.length;
+  const btnRecommencer = document.getElementById("btn-recommencer-quiz");
+
+  function verifierFinDuQuiz() {
+    const repondues = document.querySelectorAll('.check-yourself[data-repondu="1"]').length;
+    if (repondues === total) {
+      btnRecommencer.hidden = false;
+    }
+  }
+
   document.querySelectorAll(".option").forEach(bouton => {
     bouton.addEventListener("click", () => {
       const qIndex = parseInt(bouton.dataset.question);
       const oIndex = parseInt(bouton.dataset.option);
       const conteneur = document.querySelector(`.check-yourself[data-question="${qIndex}"]`);
-      if (conteneur.dataset.repondu === "1") return; // une seule tentative comptabilisée
+      if (conteneur.dataset.repondu === "1") return; // une seule tentative comptabilisée par passage
       conteneur.dataset.repondu = "1";
 
       const bonneReponse = fiche.questions[qIndex].bonne_reponse;
@@ -582,14 +612,34 @@ function activerQuizLongRead(fiche) {
       const correct = oIndex === bonneReponse;
       enregistrerReponseQuiz(correct);
 
+      conteneur.querySelectorAll(".option").forEach(b => b.disabled = true);
+      bouton.classList.add(correct ? "option-correcte" : "option-incorrecte");
+
       if (correct) {
         resultat.textContent = "Bonne réponse !";
         resultat.style.color = "#4a7a3a";
       } else {
-        resultat.textContent = "Pas tout à fait — réessaie la prochaine fois.";
+        resultat.textContent = "Pas tout à fait — la bonne réponse est surlignée.";
         resultat.style.color = "#b03a2e";
+        const bonBouton = conteneur.querySelector(`.option[data-option="${bonneReponse}"]`);
+        if (bonBouton) bonBouton.classList.add("option-correcte");
       }
+
+      verifierFinDuQuiz();
     });
+  });
+
+  btnRecommencer.addEventListener("click", () => {
+    document.querySelectorAll(".check-yourself").forEach(conteneur => {
+      delete conteneur.dataset.repondu;
+      conteneur.querySelectorAll(".option").forEach(b => {
+        b.disabled = false;
+        b.classList.remove("option-correcte", "option-incorrecte");
+      });
+      conteneur.querySelector(".resultat").textContent = "";
+    });
+    btnRecommencer.hidden = true;
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
 }
 
