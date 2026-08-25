@@ -33,7 +33,17 @@ const NOMS_SEMAINES = {
   "4-3": "L'État-providence",
   "4-4": "Néolibéralisme et critique de l'État",
   "4-5": "Régulation et externalités",
-  "4-6": "Synthèse État/marché"
+  "4-6": "Synthèse État/marché",
+  "5-1": "Mondialisation",
+  "5-2": "Inégalités",
+  "5-3": "Travail et capitalisme contemporain",
+  "5-4": "Économie du développement",
+  "5-5": "Économie comportementale",
+  "5-6": "Croissance, innovation, limites",
+  "6-1": "Voix favorables à l'intervention publique",
+  "6-2": "Voix favorables au marché",
+  "6-3": "Voix techniques et institutionnelles",
+  "6-4": "Cartographie et synthèse électorale"
 };
 
 function titreSemaine(phase, semaine) {
