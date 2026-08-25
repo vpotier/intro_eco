@@ -157,9 +157,9 @@ const PALIERS_STREAK = [
   { seuil: 7, label: "Une semaine pile", detail: "7 jours de suite" },
   { seuil: 14, label: "Deux semaines", detail: "14 jours de suite" },
   { seuil: 30, label: "Un mois de suite", detail: "30 jours de suite" },
-  { seuil: 60, label: "Deux mois", detail: "60 jours de suite" },
-  { seuil: 100, label: "Centurion", detail: "100 jours de suite" },
-  { seuil: 200, label: "Marathonien", detail: "200 jours de suite" },
+  { seuil: 60, label: "Tam Tam Marteau", detail: "60 jours de suite" },
+  { seuil: 100, label: "Reine des Valkyries", detail: "100 jours de suite" },
+  { seuil: 200, label: "Bébé chat sauvage", detail: "200 jours de suite" },
   { seuil: 236, label: "Le programme entier", detail: "236 jours — la totalité du parcours" }
 ];
 
@@ -322,42 +322,39 @@ function afficherToday() {
 
   if (!carteEstOuverte(fiche.id)) {
     html += `
-      <div class="carte-flip" id="carte-flip">
-        <div class="carte-flip-inner" id="carte-flip-inner">
-          <div class="carte-face carte-face-avant">
-            <div class="carte-verrouillee">
-              <div class="anneau a1"></div>
-              <div class="anneau a2"></div>
-              <div class="anneau a3"></div>
-              <h2 class="serif">Ta carte du jour est prête</h2>
-              <button class="btn-reveler serif" id="btn-reveler">Toucher pour révéler</button>
-            </div>
-          </div>
-          <div class="carte-face carte-face-arriere">
-            ${construireCarteRecto(fiche, false)}
-          </div>
+      <div class="carte-flip-simple" id="carte-flip-simple">
+        <div class="carte-verrouillee">
+          <div class="anneau a1"></div>
+          <div class="anneau a2"></div>
+          <div class="anneau a3"></div>
+          <h2 class="serif">Ta carte du jour est prête</h2>
+          <button class="btn-reveler serif" id="btn-reveler">Toucher pour révéler</button>
         </div>
       </div>
     `;
     remplacerContenu(zone, html);
 
-    document.getElementById("carte-flip").addEventListener("click", () => {
-      const inner = document.getElementById("carte-flip-inner");
-      const conteneurFlip = document.getElementById("carte-flip");
-      inner.classList.add("retournee");
+    const carte = document.getElementById("carte-flip-simple");
+    carte.addEventListener("click", () => {
+      carte.classList.add("ecrasee");
 
-      inner.addEventListener("transitionend", function gererFinFlip(e) {
+      carte.addEventListener("transitionend", function gererEcrasement(e) {
         if (e.propertyName !== "transform") return;
-        inner.removeEventListener("transitionend", gererFinFlip);
+        carte.removeEventListener("transitionend", gererEcrasement);
         ouvrirCarteDuJour(fiche.id);
 
-        // Fondu de sortie rapide sur la carte retournée...
-        conteneurFlip.classList.add("carte-flip-sortie");
-        setTimeout(() => {
-          // ...puis remplacement (invisible à ce stade) et fondu d'entrée sur la carte finale.
-          conteneurFlip.outerHTML = construireCarteRecto(fiche, true, "carte-entree-douce");
-          brancherEvenementsRecto(fiche);
-        }, 180);
+        // Le contenu change pendant que la carte est complètement aplatie et invisible :
+        // aucun flash possible puisqu'il n'y a rien à voir à cet instant précis.
+        carte.innerHTML = construireCarteRecto(fiche, true);
+        brancherEvenementsRecto(fiche);
+
+        // On laisse le temps au navigateur de peindre l'état "aplati" avant de relancer
+        // la transition inverse, sinon elle risque d'être ignorée.
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            carte.classList.remove("ecrasee");
+          });
+        });
       }, { once: true });
     }, { once: true });
   } else {
