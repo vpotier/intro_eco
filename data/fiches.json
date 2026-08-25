@@ -3189,5 +3189,1698 @@
         "bonne_reponse": 0
       }
     ]
+  },
+  {
+    "id": 78,
+    "ordre": 78,
+    "phase": 3,
+    "semaine": 1,
+    "jour": 1,
+    "type": "concept",
+    "titre": "Macroéconomie et microéconomie",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "On entre aujourd'hui dans la phase 3 de ce programme, consacrée à la macroéconomie et à la politique économique. Après deux phases centrées sur les marchés, les prix et les choix individuels — le terrain de la <em class=\"accent\">microéconomie</em> —, on change d'échelle pour s'intéresser à l'économie prise dans son ensemble : c'est le champ de la <em class=\"accent\">macroéconomie</em>."
+      },
+      {
+        "type": "texte",
+        "html": "La microéconomie, qu'on a pratiquée sans toujours la nommer dans les phases 1 et 2, étudie le comportement des agents individuels — un consommateur, une entreprise, un marché précis — et la façon dont leurs décisions s'agrègent. La macroéconomie, elle, s'intéresse à des grandeurs globales : le PIB d'un pays entier, le niveau général des prix (l'inflation), le taux de chômage national, la balance commerciale avec le reste du monde. Ce ne sont pas deux disciplines totalement séparées — la macroéconomie s'appuie souvent sur des comportements individuels pour expliquer des phénomènes globaux —, mais les questions posées et les outils mobilisés diffèrent sensiblement."
+      },
+      {
+        "type": "texte",
+        "html": "Cette distinction a une conséquence méthodologique importante, parfois contre-intuitive : ce qui est vrai à l'échelle individuelle ne l'est pas toujours à l'échelle collective. Si un seul épargnant décide d'épargner davantage, il s'enrichit individuellement. Mais si tous les ménages d'un pays décident simultanément d'épargner davantage en réduisant leur consommation, la demande globale adressée aux entreprises chute, ce qui peut freiner la production et l'emploi — et donc, paradoxalement, réduire le revenu global disponible pour épargner. Ce type de paradoxe, où la somme des comportements individuels rationnels produit un résultat collectif indésirable, est au cœur de la macroéconomie moderne, et on le retrouvera très concrètement dès demain avec Keynes."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "La microéconomie étudie les comportements individuels et les marchés pris isolément ; la macroéconomie étudie l'économie dans son ensemble (PIB, inflation, chômage). Ce qui est vrai à l'échelle individuelle n'est pas toujours vrai à l'échelle collective — un paradoxe central de la macroéconomie."
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "ordre": 79,
+    "phase": 3,
+    "semaine": 1,
+    "jour": 2,
+    "type": "auteur",
+    "titre": "John Maynard Keynes — la révolution de la demande",
+    "blocs": [
+      {
+        "type": "image",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Maynard%20Keynes%20photo%20from%20National%20Portrait%20Gallery.jpg",
+        "legende": "John Maynard Keynes (1883-1946), économiste britannique"
+      },
+      {
+        "type": "texte",
+        "html": "John Maynard Keynes, économiste britannique et élève d'Alfred Marshall à Cambridge, publie en 1936 son ouvrage le plus influent, Théorie générale de l'emploi, de l'intérêt et de la monnaie — un texte souvent considéré comme l'acte de naissance de la macroéconomie moderne. Il l'écrit en pleine Grande Dépression, alors que le chômage de masse persiste depuis des années dans la plupart des économies occidentales, malgré les prédictions classiques d'un retour rapide au plein emploi."
+      },
+      {
+        "type": "texte",
+        "html": "L'apport central de Keynes est de renverser la causalité classique vue en phase 2 : plutôt que de partir de l'offre (la loi de Say : l'offre crée sa propre demande), il place la <em class=\"accent\">demande globale</em> au centre de l'analyse. Selon lui, rien ne garantit qu'une économie s'ajuste automatiquement vers le plein emploi : si les ménages et les entreprises, par prudence ou par manque de confiance, réduisent simultanément leur consommation et leur investissement, la demande globale s'effondre, entraînant production, emploi et revenus dans une spirale négative — un scénario que la théorie classique, fondée sur l'auto-régulation des marchés, ne parvenait pas à expliquer de façon satisfaisante."
+      },
+      {
+        "type": "texte",
+        "html": "Face à ce risque, Keynes assigne à l'État un rôle actif et contracyclique : quand la demande privée s'effondre, l'État doit compenser ce recul par ses propres dépenses — investissements publics, aides directes —, quitte à emprunter temporairement, pour relancer l'activité et éviter que le chômage ne s'installe durablement. Cette idée, qui semble aujourd'hui presque évidente, constituait à l'époque une rupture profonde avec l'orthodoxie économique dominante, pour laquelle un budget public devait rester équilibré en toutes circonstances."
+      },
+      {
+        "type": "texte",
+        "html": "L'influence de Keynes sur la politique économique du xxe siècle est considérable : ses idées inspireront directement les politiques de relance des décennies d'après-guerre, puis, plus près de nous, les plans massifs déployés après la crise de 2008 et pendant la pandémie de Covid-19. On approfondira concrètement ces mécanismes dans les prochaines fiches de cette semaine."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "John Maynard Keynes, en 1936, place la demande globale — et non l'offre — au centre de l'analyse macroéconomique, et assigne à l'État un rôle actif pour compenser les effondrements de la demande privée en période de crise, quitte à s'endetter temporairement."
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "ordre": 80,
+    "phase": 3,
+    "semaine": 1,
+    "jour": 3,
+    "type": "actu",
+    "titre": "2008 et 2020 : deux relances keynésiennes grandeur nature",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Deux crises récentes offrent des cas d'école grandeur nature des idées de Keynes vues hier. Lors de la crise financière de 2008, déclenchée par l'effondrement du marché immobilier américain puis la faillite de la banque Lehman Brothers, la plupart des grandes économies ont déployé des plans de relance massifs — travaux publics, aides aux banques, soutien à l'industrie automobile — pour compenser l'effondrement brutal de la demande privée et éviter que la récession ne se transforme en dépression durable, sur le modèle de celle des années 1930 qui avait inspiré Keynes lui-même."
+      },
+      {
+        "type": "texte",
+        "html": "La crise du Covid-19, en 2020, a donné lieu à une mobilisation budgétaire encore plus spectaculaire : confinements généralisés, arrêt brutal d'une large partie de l'activité économique, et en réponse, des dispositifs comme le chômage partiel en France ou les chèques directs aux ménages aux États-Unis, financés par un endettement public considérable, assumé explicitement au nom de la nécessité de soutenir la demande et d'éviter un effondrement économique en cascade."
+      },
+      {
+        "type": "texte",
+        "html": "Ces deux épisodes illustrent bien la logique keynésienne : dans les deux cas, l'argument central des gouvernements n'était pas seulement moral (protéger les plus vulnérables) mais économique — un effondrement non compensé de la demande aurait entraîné des destructions d'emplois et de capacités productives bien plus coûteuses à long terme que le coût immédiat de l'endettement public. Cette logique reste néanmoins débattue : certains estiment que ces relances ont été surdimensionnées, contribuant notamment à l'épisode inflationniste de 2022-2023 — un débat qu'on approfondira dans les prochaines fiches de cette phase, notamment avec les critiques monétaristes de Milton Friedman."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Les plans de relance massifs de 2008 et 2020 illustrent concrètement la logique keynésienne : compenser par la dépense publique un effondrement brutal de la demande privée, au prix d'un endettement assumé — une stratégie qui reste débattue, notamment sur son lien avec l'épisode inflationniste qui a suivi."
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "ordre": 81,
+    "phase": 3,
+    "semaine": 1,
+    "jour": 4,
+    "type": "concept",
+    "titre": "La demande globale",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Puisque la demande globale occupe désormais une place centrale, il est temps de la décomposer précisément. Les économistes distinguent traditionnellement quatre composantes de la <em class=\"accent\">demande globale</em> (ou demande agrégée) d'une économie : la consommation des ménages, l'investissement des entreprises, les dépenses publiques, et le solde du commerce extérieur (exportations moins importations)."
+      },
+      {
+        "type": "texte",
+        "html": "En France comme dans la plupart des économies développées, la consommation des ménages représente historiquement la composante la plus importante de la demande globale — souvent plus de la moitié du PIB —, ce qui explique pourquoi la confiance des consommateurs, leur pouvoir d'achat (vu en phase 1) et leur propension à épargner plutôt qu'à consommer sont des indicateurs si étroitement surveillés par les économistes et les gouvernants. L'investissement des entreprises, quoique plus modeste en volume, est particulièrement volatil : c'est souvent lui qui varie le plus fortement lors des retournements conjoncturels, les entreprises repoussant leurs projets au moindre signe d'incertitude."
+      },
+      {
+        "type": "texte",
+        "html": "Comprendre cette décomposition permet de lire beaucoup plus finement n'importe quelle actualité économique. Quand on a vu, en phase 1, que la croissance française du deuxième trimestre 2026 était portée par les exportations et un léger regain de la consommation des ménages, c'est précisément cette grille de lecture — les composantes de la demande globale — qui permettait de comprendre d'où venait, concrètement, la croissance observée, plutôt que de se contenter d'un chiffre agrégé."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "La demande globale se décompose en quatre éléments : consommation des ménages, investissement des entreprises, dépenses publiques et solde commercial extérieur. Identifier laquelle de ces composantes porte ou freine la croissance permet une lecture bien plus fine de la conjoncture économique."
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "ordre": 82,
+    "phase": 3,
+    "semaine": 1,
+    "jour": 5,
+    "type": "concept",
+    "titre": "Le circuit économique",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Pour visualiser comment ces différentes composantes s'articulent entre elles, les économistes utilisent souvent un schéma simple mais puissant : le <em class=\"accent\">circuit économique</em>. Il représente une économie comme un flux circulaire de revenus et de dépenses entre grands acteurs — les ménages, les entreprises, l'État, et le reste du monde."
+      },
+      {
+        "type": "texte",
+        "html": "Le principe de base : les entreprises versent des revenus aux ménages (salaires, dividendes) en échange de leur travail et de leur capital ; les ménages dépensent une partie de ces revenus en achetant les biens et services produits par les entreprises, et en épargnent une autre partie, généralement captée par le système bancaire puis réinjectée sous forme de crédit aux entreprises pour financer leurs investissements. L'État prélève des impôts sur les ménages et les entreprises, et reverse des dépenses publiques et des prestations sociales. Le reste du monde, enfin, achète des exportations et vend des importations, ajoutant une fuite ou un apport net au circuit national."
+      },
+      {
+        "type": "texte",
+        "html": "Ce schéma, aussi simplifié soit-il, permet de comprendre intuitivement pourquoi un choc sur l'un des acteurs se propage nécessairement aux autres : une hausse de l'épargne des ménages (une « fuite » hors du circuit de consommation immédiate) réduit, toutes choses égales par ailleurs, les débouchés des entreprises, sauf si cette épargne supplémentaire est effectivement captée par le crédit et réinjectée sous forme d'investissement. C'est exactement ce mécanisme de circulation, et ses points de blocage possibles, que Keynes cherchait à mettre en lumière avec sa théorie de la demande globale."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Le circuit économique représente une économie comme un flux de revenus et de dépenses entre ménages, entreprises, État et reste du monde. Il permet de visualiser comment un choc sur un acteur (par exemple une hausse de l'épargne) se propage nécessairement au reste du circuit."
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "ordre": 83,
+    "phase": 3,
+    "semaine": 1,
+    "jour": 6,
+    "type": "concept",
+    "titre": "Le multiplicateur keynésien",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Une dernière idée, directement issue de Keynes, complète utilement cette semaine : l'<em class=\"accent\">effet multiplicateur</em>. L'intuition : quand l'État dépense un euro supplémentaire — par exemple pour financer des travaux publics —, cet euro ne s'arrête pas là. Il devient un revenu pour l'entreprise qui réalise les travaux et pour ses salariés, qui en dépensent eux-mêmes une partie, générant à leur tour un revenu pour d'autres acteurs économiques, et ainsi de suite. Au total, l'augmentation du PIB peut donc être supérieure à la dépense publique initiale — d'où le terme de multiplicateur."
+      },
+      {
+        "type": "texte",
+        "html": "L'ampleur de cet effet dépend directement d'un paramètre central : la part du revenu supplémentaire que chaque acteur choisit de dépenser plutôt que d'épargner, appelée propension marginale à consommer. Plus cette propension est élevée, plus l'effet multiplicateur est fort, car chaque euro circule davantage avant d'être capté par l'épargne ou par des importations (une dépense qui « fuit » vers l'étranger plutôt que de stimuler la production nationale)."
+      },
+      {
+        "type": "texte",
+        "html": "Ce concept, aussi élégant soit-il théoriquement, reste débattu empiriquement : sa valeur exacte varie fortement selon le contexte économique (une économie déjà proche du plein emploi a un multiplicateur plus faible qu'une économie en récession profonde, où les capacités inutilisées sont abondantes), selon le type de dépense (investissement en infrastructures versus transferts sociaux directs), et selon le degré d'ouverture de l'économie au commerce extérieur. C'est précisément ce type de débat empirique, sur l'ampleur réelle du multiplicateur, qui alimentera plus tard les critiques monétaristes qu'on découvrira la semaine prochaine avec Milton Friedman."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Le multiplicateur keynésien décrit comment une dépense publique initiale se propage et amplifie la croissance du PIB, via les dépenses successives des acteurs qui en bénéficient. Son ampleur exacte dépend de la propension à consommer, du contexte économique et du type de dépense — un point encore largement débattu parmi les économistes."
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "ordre": 84,
+    "phase": 3,
+    "semaine": 1,
+    "jour": 7,
+    "type": "quiz",
+    "titre": "Quiz — Semaine 1 (Phase 3)",
+    "contenu": "Teste ce que tu as retenu sur la macroéconomie, Keynes et la demande globale.",
+    "questions": [
+      {
+        "question": "Quelle est la différence entre microéconomie et macroéconomie ?",
+        "options": [
+          "Il n'y a aucune différence",
+          "La microéconomie étudie les agents individuels, la macroéconomie l'économie dans son ensemble",
+          "La macroéconomie ne concerne que les entreprises"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Que renverse Keynes par rapport à la théorie classique vue en phase 2 ?",
+        "options": [
+          "Il place la demande globale, et non l'offre, au centre de l'analyse",
+          "Il nie l'existence de la monnaie",
+          "Il rejette totalement l'idée de marché"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Selon Keynes, quel rôle l'État doit-il jouer en cas d'effondrement de la demande privée ?",
+        "options": [
+          "Ne rien faire et attendre l'ajustement automatique",
+          "Compenser ce recul par ses propres dépenses, quitte à s'endetter temporairement",
+          "Réduire immédiatement ses propres dépenses"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Quelles crises récentes illustrent concrètement la logique keynésienne de relance ?",
+        "options": [
+          "Les crises de 2008 et de 2020 (Covid-19)",
+          "La révolution marginaliste de 1871",
+          "La Grande Dépression uniquement"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Quelles sont les quatre composantes de la demande globale ?",
+        "options": [
+          "Offre, demande, prix, quantité",
+          "Consommation des ménages, investissement des entreprises, dépenses publiques, solde commercial extérieur",
+          "Travail, capital, terre, technologie"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Que représente le circuit économique ?",
+        "options": [
+          "Un flux circulaire de revenus et de dépenses entre ménages, entreprises, État et reste du monde",
+          "Un graphique d'offre et de demande",
+          "Le bilan d'une seule entreprise"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Qu'est-ce que l'effet multiplicateur keynésien ?",
+        "options": [
+          "Le fait qu'une dépense publique se propage et peut amplifier la croissance du PIB au-delà du montant initial",
+          "Une taxe sur les entreprises",
+          "Un indicateur de chômage"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "De quoi dépend principalement l'ampleur du multiplicateur ?",
+        "options": [
+          "De la couleur de la monnaie",
+          "De la propension à consommer et du contexte économique",
+          "Du nombre d'habitants d'un pays uniquement"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "En 1936, dans quel ouvrage Keynes développe-t-il sa théorie ?",
+        "options": [
+          "La Richesse des nations",
+          "Théorie générale de l'emploi, de l'intérêt et de la monnaie",
+          "Le Capital"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Pourquoi une hausse simultanée de l'épargne de tous les ménages peut-elle poser un problème macroéconomique ?",
+        "options": [
+          "Parce qu'elle enrichit automatiquement tout le monde sans effet secondaire",
+          "Parce qu'elle peut réduire la demande globale et donc la production et l'emploi",
+          "Parce que l'épargne est interdite par la loi"
+        ],
+        "bonne_reponse": 1
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "ordre": 85,
+    "phase": 3,
+    "semaine": 2,
+    "jour": 1,
+    "type": "concept",
+    "titre": "La masse monétaire et ses agrégats",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "On a vu, en phase 1, que la monnaie est essentiellement créée par les banques commerciales via le crédit. Il est temps aujourd'hui de préciser comment les économistes mesurent la quantité totale de monnaie en circulation dans une économie — ce qu'on appelle la <em class=\"accent\">masse monétaire</em> — à travers plusieurs agrégats emboîtés, du plus liquide au moins liquide."
+      },
+      {
+        "type": "texte",
+        "html": "L'agrégat <em class=\"accent\">M1</em> regroupe la monnaie immédiatement disponible : les pièces et billets en circulation, ainsi que les dépôts à vue (le solde de ton compte courant). L'agrégat <em class=\"accent\">M2</em> ajoute à M1 l'épargne facilement mobilisable, comme les livrets d'épargne à court terme. L'agrégat <em class=\"accent\">M3</em>, le plus large, y ajoute des instruments financiers un peu moins liquides, comme certains titres de créance à court terme. Plus un agrégat est large, plus il inclut des formes d'épargne qui demandent un délai, même court, pour être converties en pouvoir d'achat immédiat."
+      },
+      {
+        "type": "texte",
+        "html": "Cette distinction n'est pas qu'un exercice de classification technique : elle est centrale pour la politique monétaire, puisque les banques centrales surveillent étroitement l'évolution de ces agrégats pour évaluer les risques inflationnistes. Une croissance de la masse monétaire durablement plus rapide que celle de la production réelle de biens et services est traditionnellement considérée comme un signal avant-coureur de tensions inflationnistes — une intuition qui va structurer toute l'œuvre de l'économiste qu'on découvre dès demain, Milton Friedman."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "La masse monétaire se mesure via des agrégats emboîtés (M1, M2, M3), du plus liquide au moins liquide. Sa croissance, surveillée de près par les banques centrales, est un indicateur classique des tensions inflationnistes à venir."
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "ordre": 86,
+    "phase": 3,
+    "semaine": 2,
+    "jour": 2,
+    "type": "auteur",
+    "titre": "Milton Friedman — le retour de la monnaie",
+    "blocs": [
+      {
+        "type": "image",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Milton%20Friedman.jpg",
+        "legende": "Milton Friedman (1912-2006), économiste américain, prix Nobel d'économie 1976"
+      },
+      {
+        "type": "texte",
+        "html": "Milton Friedman, économiste américain formé à l'université de Chicago où il enseignera l'essentiel de sa carrière, devient à partir des années 1950 le chef de file d'un courant qui va directement contester l'hégémonie keynésienne dans l'analyse macroéconomique : le <em class=\"accent\">monétarisme</em>. Il reçoit le prix Nobel d'économie en 1976 pour ses travaux, notamment sur la théorie quantitative de la monnaie."
+      },
+      {
+        "type": "texte",
+        "html": "La formule qui résume le mieux sa pensée, devenue l'un des slogans les plus célèbres de l'histoire économique, tient en une phrase : l'inflation est toujours et partout un phénomène monétaire. Contrairement à Keynes, qui explique les fluctuations économiques principalement par les variations de la demande globale, Friedman replace la <em class=\"accent\">masse monétaire</em> — vue hier — au centre de l'explication de l'inflation : quand la quantité de monnaie en circulation croît durablement plus vite que la production réelle de biens et services, l'excès de monnaie disponible finit, selon lui, par se traduire mécaniquement en hausse générale des prix."
+      },
+      {
+        "type": "texte",
+        "html": "Cette analyse a une conséquence politique majeure : pour Friedman, les banques centrales devraient viser une croissance stable et prévisible de la masse monétaire, plutôt que de chercher à piloter finement l'activité économique via des politiques de relance discrétionnaires à la Keynes — ces dernières risquant, selon lui, de créer davantage d'instabilité qu'elles n'en résolvent, notamment parce que leurs effets se manifestent avec des délais imprévisibles, rendant leur calibrage périlleux. Friedman plaide plus largement pour un rôle limité de l'État dans l'économie, une position qu'on retrouvera développée en détail en phase 4, dans le débat État versus marché."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Milton Friedman fonde le monétarisme en replaçant la masse monétaire, plutôt que la demande globale keynésienne, au centre de l'explication de l'inflation. Il plaide pour une règle monétaire stable plutôt que pour des politiques de relance discrétionnaires, jugées trop imprévisibles dans leurs effets."
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "ordre": 87,
+    "phase": 3,
+    "semaine": 2,
+    "jour": 3,
+    "type": "actu",
+    "titre": "La Fed sous pression : l'indépendance des banques centrales à l'épreuve",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Le débat sur l'indépendance des banques centrales, déjà abordé en phase 1, connaît en 2026 une illustration spectaculaire aux États-Unis. Depuis le début de l'année, le président Donald Trump multiplie les pressions publiques sur la Réserve fédérale américaine (la Fed) pour qu'elle baisse rapidement ses taux directeurs — allant jusqu'à évoquer publiquement un possible limogeage de son président, Jerome Powell, et à faire planer la menace de poursuites judiciaires contre l'institution."
+      },
+      {
+        "type": "texte",
+        "html": "Jerome Powell a publiquement dénoncé ces pressions comme des tentatives d'intimidation, rappelant l'indépendance statutaire de la Fed et affirmant avoir toujours agi « sans crainte ni faveur politique », qu'il serve sous des administrations républicaines ou démocrates. Le mandat de Powell à la présidence de la Fed devant expirer au printemps 2026, l'administration Trump a d'ores et déjà commencé à évaluer les profils de successeurs jugés plus favorables à une politique monétaire accommodante."
+      },
+      {
+        "type": "texte",
+        "html": "Cet épisode illustre concrètement l'enjeu théorique de l'indépendance des banques centrales, vu en phase 1 : la tentation, pour un pouvoir exécutif, de faire pression sur la politique monétaire pour des raisons de calendrier politique ou de compétitivité commerciale (un dollar plus faible favorisant les exportations américaines) plutôt que pour la seule stabilité des prix, mandat théoriquement premier d'une banque centrale. Les économistes, y compris ceux proches du monétarisme de Friedman, s'accordent largement à considérer qu'une perte d'indépendance de la banque centrale la plus systémique au monde constituerait un risque significatif pour la crédibilité de la lutte contre l'inflation, à l'échelle américaine comme mondiale."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Les pressions exercées par Donald Trump sur la Réserve fédérale américaine en 2026, jusqu'à évoquer le limogeage de son président, illustrent concrètement les tensions entre logique politique de court terme et indépendance statutaire d'une banque centrale, un principe jugé essentiel par la plupart des économistes pour la crédibilité de la lutte contre l'inflation."
+      }
+    ],
+    "source": {
+      "texte": "Pressions répétées de Donald Trump sur la Fed en 2026 pour une baisse rapide des taux, évocations d'un limogeage de Jerome Powell et de poursuites judiciaires contre l'institution. Mandat de Powell à la présidence expirant au printemps 2026 ; recherche de successeurs jugés plus favorables à une politique accommodante.",
+      "lien": "https://fr.euronews.com/business/2026/01/27/la-fed-devrait-laisser-ses-taux-inchanges-trump-menace-son-independance",
+      "date_verification": "25 août 2026"
+    }
+  },
+  {
+    "id": 88,
+    "ordre": 88,
+    "phase": 3,
+    "semaine": 2,
+    "jour": 4,
+    "type": "concept",
+    "titre": "L'équation quantitative de la monnaie",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "La théorie de Friedman, vue cette semaine, repose sur une relation mathématique ancienne, remontant en réalité à des économistes classiques bien antérieurs à lui, mais que Friedman va réactiver et populariser : l'<em class=\"accent\">équation quantitative de la monnaie</em>, souvent résumée par la formule M × V = P × Y."
+      },
+      {
+        "type": "texte",
+        "html": "Dans cette équation, M représente la masse monétaire (vue en début de semaine), V la <em class=\"accent\">vitesse de circulation</em> de la monnaie — c'est-à-dire le nombre de fois où une même unité monétaire change de mains pour financer des transactions sur une période donnée —, P le niveau général des prix, et Y la production réelle de l'économie (proche du PIB réel vu en phase 1). Cette équation est, à la base, une identité comptable presque tautologique : elle est toujours vraie par construction, puisque la valeur totale des transactions monétaires (M × V) doit nécessairement égaler la valeur totale de ce qui est produit et échangé (P × Y)."
+      },
+      {
+        "type": "texte",
+        "html": "Ce qui transforme cette identité en véritable théorie économique, chez Friedman, c'est une hypothèse supplémentaire : que la vitesse de circulation V est relativement stable et prévisible à moyen terme. Si cette hypothèse tient, alors une augmentation de la masse monétaire M, la production réelle Y étant donnée par ailleurs, se traduit presque mécaniquement par une hausse du niveau des prix P — d'où la formule déjà vue hier, l'inflation est toujours et partout un phénomène monétaire. Cette hypothèse de stabilité de V a cependant été largement débattue, notamment depuis la crise de 2008, où la vitesse de circulation de la monnaie a connu des variations bien plus importantes que ne le prédisait la théorie monétariste classique."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "L'équation quantitative de la monnaie (M × V = P × Y) relie masse monétaire, vitesse de circulation, niveau des prix et production réelle. C'est l'hypothèse de stabilité de la vitesse de circulation, chez Friedman, qui transforme cette identité comptable en théorie de l'inflation — une hypothèse débattue depuis 2008."
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "ordre": 89,
+    "phase": 3,
+    "semaine": 2,
+    "jour": 5,
+    "type": "concept",
+    "titre": "Politique monétaire conventionnelle et non conventionnelle",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "On a vu, en phase 1, l'outil le plus visible de la politique monétaire : les taux directeurs. C'est ce qu'on appelle la politique monétaire <em class=\"accent\">conventionnelle</em>. Mais depuis la crise de 2008, les grandes banques centrales ont dû recourir, en complément, à des outils plus inhabituels, dits <em class=\"accent\">non conventionnels</em>, quand les taux directeurs, déjà proches de zéro, ne suffisaient plus à stimuler suffisamment l'économie."
+      },
+      {
+        "type": "texte",
+        "html": "Le principal de ces outils est l'<em class=\"accent\">assouplissement quantitatif</em> (quantitative easing, ou QE) : la banque centrale achète massivement des titres financiers — le plus souvent des obligations d'État — directement sur les marchés, injectant ainsi de la monnaie centrale dans le système financier et cherchant à faire baisser les taux d'intérêt à long terme, au-delà de ce que permettent les seuls taux directeurs. La BCE et la Fed y ont largement recouru après 2008 puis pendant la pandémie, gonflant considérablement la taille de leur bilan."
+      },
+      {
+        "type": "texte",
+        "html": "L'opération inverse, le <em class=\"accent\">resserrement quantitatif</em> (quantitative tightening, ou QT), consiste à laisser ces titres arriver naturellement à échéance sans les remplacer, ce qui réduit progressivement la taille du bilan de la banque centrale et retire mécaniquement de la liquidité du système financier — une politique plus restrictive, complémentaire d'une hausse des taux directeurs. On verra demain un exemple très concret et actuel de ce mécanisme à l'œuvre du côté de la BCE."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Au-delà des taux directeurs (politique conventionnelle), les banques centrales disposent d'outils non conventionnels : l'assouplissement quantitatif (QE), qui injecte de la liquidité en achetant des titres, et le resserrement quantitatif (QT), qui la retire en laissant ces titres arriver à échéance sans les remplacer."
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "ordre": 90,
+    "phase": 3,
+    "semaine": 2,
+    "jour": 6,
+    "type": "actu",
+    "titre": "Le bilan de la BCE fond : le resserrement quantitatif à l'épreuve de ses limites",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Le resserrement quantitatif vu hier n'est pas une abstraction théorique : la Banque centrale européenne le pratique activement depuis plusieurs années, avec des conséquences concrètes en 2026. Le bilan de l'Eurosystème, qui avait culminé à près de 8 900 milliards d'euros mi-2022 au plus fort des politiques de soutien exceptionnelles, est retombé autour de 6 170 milliards d'euros fin 2025 — une contraction obtenue par l'arrêt des opérations de refinancement ciblées (TLTRO) puis par le non-réinvestissement progressif des titres arrivant à échéance, retirant environ 35 milliards d'euros de liquidité chaque mois."
+      },
+      {
+        "type": "texte",
+        "html": "Cette réduction touche cependant à ses limites, selon plusieurs analystes de marché : en asséchant progressivement la liquidité du système bancaire, la BCE réduit aussi les réserves excédentaires des banques commerciales, un matelas jugé indispensable pour absorber les chocs et assurer la fluidité du marché interbancaire. Ce seuil minimal de réserves est estimé par certains analystes entre 900 et 1 900 milliards d'euros, alors que le stock actuel tourne autour de 2 500 milliards — une zone de tension qui pourrait être atteinte dès le second semestre 2026, selon ces mêmes estimations, obligeant potentiellement la BCE à ralentir, voire arrêter, ce resserrement quantitatif."
+      },
+      {
+        "type": "texte",
+        "html": "Ce cas illustre bien la complexité pratique de la politique monétaire non conventionnelle : contrairement aux taux directeurs, dont l'effet est relativement direct et prévisible, le pilotage du bilan d'une banque centrale implique des arbitrages techniques délicats, où aller trop loin dans un sens ou dans l'autre peut fragiliser la stabilité financière plutôt que la renforcer."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Le bilan de la BCE, après avoir culminé à près de 8 900 milliards d'euros en 2022, est redescendu autour de 6 170 milliards fin 2025 via le resserrement quantitatif — une politique qui pourrait toutefois atteindre ses limites dès le second semestre 2026, faute de réserves bancaires suffisantes pour assurer la stabilité du système financier."
+      }
+    ],
+    "source": {
+      "texte": "Bilan de l'Eurosystème : pic à environ 8 900 Md€ mi-2022, environ 6 170 Md€ fin 2025. Resserrement quantitatif retirant environ 35 Md€ de liquidité par mois. Seuil minimal de réserves excédentaires estimé entre 900 et 1 900 Md€, contre un stock actuel d'environ 2 500 Md€.",
+      "lien": "https://zoominvest.fr/actualites/analyse/macro-and-banques-centrales/bce-la-reduction-du-bilan-va-t-elle-se-poursuivre-en-2026/tje4hzuvpkyfnp113j38y4j3",
+      "date_verification": "25 août 2026"
+    }
+  },
+  {
+    "id": 91,
+    "ordre": 91,
+    "phase": 3,
+    "semaine": 2,
+    "jour": 7,
+    "type": "quiz",
+    "titre": "Quiz — Semaine 2 (Phase 3)",
+    "contenu": "Teste ce que tu as retenu sur la monnaie, Friedman et la politique monétaire.",
+    "questions": [
+      {
+        "question": "Que mesure l'agrégat monétaire M1 ?",
+        "options": [
+          "La monnaie immédiatement disponible : pièces, billets et dépôts à vue",
+          "Uniquement l'or détenu par une banque centrale",
+          "Le PIB d'un pays"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Quelle est la formule qui résume la pensée de Milton Friedman ?",
+        "options": [
+          "« L'offre crée sa propre demande »",
+          "« L'inflation est toujours et partout un phénomène monétaire »",
+          "« La main invisible guide les marchés »"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Que préconise Friedman pour la politique monétaire, plutôt que des relances discrétionnaires ?",
+        "options": [
+          "Une croissance stable et prévisible de la masse monétaire",
+          "L'abandon total de toute politique monétaire",
+          "Une intervention permanente et imprévisible des banques centrales"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "En 2026, quelles pressions Donald Trump exerce-t-il sur la Réserve fédérale américaine ?",
+        "options": [
+          "Il l'encourage à rester totalement indépendante",
+          "Il fait pression pour une baisse rapide des taux, évoquant même un possible limogeage de son président",
+          "Il n'exerce aucune pression"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Que représente le « V » dans l'équation quantitative de la monnaie (M × V = P × Y) ?",
+        "options": [
+          "La valeur du PIB",
+          "La vitesse de circulation de la monnaie",
+          "Le taux de chômage"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Quelle hypothèse de Friedman transforme l'équation quantitative en véritable théorie de l'inflation ?",
+        "options": [
+          "La stabilité de la vitesse de circulation de la monnaie à moyen terme",
+          "La disparition totale de la monnaie",
+          "La hausse continue des salaires"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Qu'est-ce que l'assouplissement quantitatif (QE) ?",
+        "options": [
+          "Une hausse des impôts",
+          "L'achat massif de titres financiers par une banque centrale pour injecter de la liquidité",
+          "Une politique qui n'existe pas en réalité"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Qu'est-ce que le resserrement quantitatif (QT) ?",
+        "options": [
+          "Le fait de laisser les titres détenus par une banque centrale arriver à échéance sans les remplacer, réduisant la liquidité",
+          "Une baisse des taux directeurs",
+          "Une nouvelle forme de monnaie"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "De combien le bilan de la BCE est-il passé entre 2022 et fin 2025 ?",
+        "options": [
+          "D'environ 8 900 Md€ à environ 6 170 Md€",
+          "Il a doublé",
+          "Il est resté strictement identique"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Pourquoi le resserrement quantitatif de la BCE pourrait-il atteindre ses limites en 2026 ?",
+        "options": [
+          "Parce que les réserves excédentaires des banques risquent de descendre sous un seuil jugé nécessaire à la stabilité financière",
+          "Parce que la BCE va disparaître",
+          "Parce que l'euro va être supprimé"
+        ],
+        "bonne_reponse": 0
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "ordre": 92,
+    "phase": 3,
+    "semaine": 3,
+    "jour": 1,
+    "type": "concept",
+    "titre": "La courbe de Phillips",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "En 1958, l'économiste néo-zélandais Alban William Phillips publie une étude empirique portant sur les salaires et le chômage au Royaume-Uni sur près d'un siècle, mettant en évidence une relation statistique frappante : quand le chômage est faible, les salaires (et donc, indirectement, les prix) ont tendance à augmenter plus vite ; quand le chômage est élevé, cette pression à la hausse s'atténue. Cette relation, généralisée par la suite à l'inflation des prix plutôt qu'aux seuls salaires, est restée célèbre sous le nom de <em class=\"accent\">courbe de Phillips</em>."
+      },
+      {
+        "type": "texte",
+        "html": "L'intuition économique sous-jacente est assez naturelle : quand le chômage est bas, les entreprises se disputent une main-d'œuvre rare et doivent proposer des salaires plus attractifs pour recruter et fidéliser, ce qui alimente l'inflation. Quand le chômage est élevé, à l'inverse, les travailleurs disponibles sont nombreux et le rapport de force salarial penche du côté des employeurs, limitant la pression inflationniste. Cette relation a rapidement été interprétée, dans les années 1960, comme un véritable arbitrage de politique économique : un gouvernement pourrait, selon cette lecture, choisir consciemment un peu plus d'inflation en échange d'un peu moins de chômage, ou inversement."
+      },
+      {
+        "type": "texte",
+        "html": "Cette interprétation, séduisante et largement adoptée par les gouvernements occidentaux dans les années 1960, va cependant être frontalement remise en cause par les événements économiques des années 1970 — et par la critique théorique qu'on découvre dès demain avec Milton Friedman, déjà croisé la semaine dernière."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "La courbe de Phillips établit une relation statistique inverse entre chômage et inflation : moins de chômage tendrait à s'accompagner de plus d'inflation, et inversement. Cette relation a été interprétée, dans les années 1960, comme un arbitrage possible de politique économique — une lecture qui sera bientôt remise en cause."
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "ordre": 93,
+    "phase": 3,
+    "semaine": 3,
+    "jour": 2,
+    "type": "auteur",
+    "titre": "Milton Friedman contre la courbe de Phillips",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Milton Friedman, déjà rencontré la semaine dernière avec le monétarisme, s'attaque frontalement à l'interprétation de la courbe de Phillips comme arbitrage stable et exploitable par les gouvernements. Dans un discours resté célèbre prononcé en 1967, il avance un argument redoutablement simple mais dévastateur pour la théorie dominante de l'époque."
+      },
+      {
+        "type": "texte",
+        "html": "Son raisonnement repose sur la notion d'<em class=\"accent\">anticipations</em> : si un gouvernement cherche délibérément à faire baisser le chômage en tolérant davantage d'inflation, les travailleurs et les entreprises, dans un premier temps surpris, ajustent leurs comportements — en négociant des hausses de salaires plus fortes, en révisant leurs prix à la hausse — pour intégrer cette inflation désormais anticipée. L'effet initial sur le chômage, temporaire, finit par s'estomper, tandis que l'inflation, elle, reste durablement plus élevée. Tenter de répéter l'opération pousse alors à accepter une inflation toujours plus forte, pour un gain sur le chômage de plus en plus fugace."
+      },
+      {
+        "type": "texte",
+        "html": "Friedman en conclut qu'il existe, à long terme, un <em class=\"accent\">taux de chômage naturel</em> (ou taux de chômage d'équilibre), déterminé par des facteurs structurels — l'organisation du marché du travail, les compétences disponibles, les rigidités salariales déjà croisées en phase 1 — sur lequel la politique monétaire n'a, selon lui, aucune prise durable. À long terme, la courbe de Phillips devient donc verticale : on ne peut pas acheter durablement moins de chômage avec plus d'inflation, on ne peut qu'accepter davantage d'inflation sans gain durable sur l'emploi. Cette prédiction théorique va trouver une confirmation empirique brutale dans les années 1970, comme on le verra dans la fiche suivante."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Milton Friedman démontre que l'arbitrage apparent de la courbe de Phillips n'est que temporaire : dès lors que les anticipations d'inflation s'ajustent, l'effet sur le chômage s'estompe, laissant place à une inflation durablement plus élevée sans gain sur l'emploi. À long terme, le chômage tend vers un « taux naturel » indépendant de la politique monétaire."
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "ordre": 94,
+    "phase": 3,
+    "semaine": 3,
+    "jour": 3,
+    "type": "actu",
+    "titre": "La stagflation des années 1970 : quand la théorie de Friedman se confirme",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "La prédiction de Friedman, vue hier, trouve une illustration historique saisissante avec les chocs pétroliers de 1973 et 1979. À la suite de l'embargo pétrolier décrété par les pays exportateurs, puis de la révolution iranienne, les prix du pétrole s'envolent, provoquant dans la plupart des économies occidentales un phénomène jusqu'alors jugé quasiment impossible par la courbe de Phillips traditionnelle : une inflation très élevée combinée à un chômage également très élevé, plutôt qu'à un chômage faible — un phénomène resté célèbre sous le nom de <em class=\"accent\">stagflation</em> (contraction de stagnation et d'inflation)."
+      },
+      {
+        "type": "texte",
+        "html": "Ce cas historique invalide directement la lecture naïve de la courbe de Phillips comme arbitrage stable : loin de choisir entre chômage et inflation, les économies occidentales ont subi simultanément les deux maux, précisément parce que le choc venait de l'offre (un renchérissement brutal du coût de l'énergie, donc des coûts de production) et non d'un excès de demande que la politique monétaire aurait pu réguler finement. Vaincre cette inflation a nécessité, à la fin des années 1970 et au début des années 1980, des politiques monétaires extrêmement restrictives — des taux d'intérêt américains portés à plus de 20 % sous la présidence de Paul Volcker à la tête de la Fed —, au prix d'une récession sévère et d'une remontée temporaire mais brutale du chômage."
+      },
+      {
+        "type": "texte",
+        "html": "L'épisode inflationniste de 2022-2023, largement lié à la guerre en Ukraine et aux prix de l'énergie, a été régulièrement comparé à cette séquence des années 1970 — de même que la remontée observée en 2026, déjà vue en phase 1, à la suite de la guerre au Moyen-Orient. Ces comparaisons doivent cependant être maniées avec prudence : les banques centrales contemporaines, ayant précisément tiré les leçons théoriques de Friedman sur les anticipations, réagissent aujourd'hui beaucoup plus rapidement pour éviter que ces chocs ponctuels ne s'installent durablement dans les anticipations d'inflation — exactement la logique qui a justifié la hausse des taux de la BCE en juin 2026."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "La stagflation des années 1970, provoquée par les chocs pétroliers, a confirmé empiriquement la théorie de Friedman : un choc sur l'offre peut produire simultanément inflation et chômage élevés, invalidant la lecture naïve de la courbe de Phillips comme simple arbitrage — une leçon qui explique la réactivité actuelle des banques centrales face aux chocs énergétiques."
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "ordre": 95,
+    "phase": 3,
+    "semaine": 3,
+    "jour": 4,
+    "type": "concept",
+    "titre": "Les anticipations rationnelles",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "L'argument de Friedman sur les anticipations, vu cette semaine, a été poussé encore plus loin par une génération d'économistes suivants, à travers ce qu'on appelle la théorie des <em class=\"accent\">anticipations rationnelles</em>, formalisée notamment par Robert Lucas dans les années 1970 — un apport qui lui vaudra le prix Nobel en 1995."
+      },
+      {
+        "type": "texte",
+        "html": "Friedman supposait des anticipations dites « adaptatives » : les agents économiques ajustent progressivement leurs attentes d'inflation en fonction de ce qu'ils ont observé récemment, avec un certain délai. La théorie des anticipations rationnelles va plus loin : elle suppose que les agents économiques utilisent efficacement toute l'information disponible, y compris sur les intentions annoncées des pouvoirs publics, pour former leurs anticipations — sans commettre d'erreurs systématiques et répétées dans le temps."
+      },
+      {
+        "type": "texte",
+        "html": "Cette hypothèse a une conséquence radicale, connue sous le nom de <em class=\"accent\">critique de Lucas</em> : si les agents économiques anticipent correctement les effets d'une politique économique annoncée, ils ajustent immédiatement leur comportement en conséquence, ce qui peut neutraliser dès le départ l'effet recherché par cette politique — par exemple, une relance budgétaire clairement annoncée à l'avance pourrait être immédiatement anticipée par les ménages, qui épargneraient par précaution en prévision d'une hausse future des impôts nécessaire pour la financer, plutôt que de consommer davantage. On retrouvera cette logique précise, appliquée à la dette publique, avec l'équivalence ricardienne de Robert Barro, en semaine 4 de cette phase."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "La théorie des anticipations rationnelles, développée notamment par Robert Lucas, suppose que les agents économiques utilisent efficacement toute l'information disponible pour anticiper les effets des politiques économiques — ce qui peut, selon la critique de Lucas, neutraliser par avance l'efficacité d'une politique clairement annoncée."
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "ordre": 96,
+    "phase": 3,
+    "semaine": 3,
+    "jour": 5,
+    "type": "auteur",
+    "titre": "Edmund Phelps — le taux de chômage naturel formalisé",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Edmund Phelps, économiste américain, développe indépendamment et quasi simultanément avec Milton Friedman, à la fin des années 1960, la théorie du taux de chômage naturel vue plus tôt cette semaine — une contribution pour laquelle il reçoit le prix Nobel d'économie en 2006. Phelps disparaît le 15 mai 2026, à l'âge de 92 ans, quelques mois seulement avant la rédaction de cette fiche, ce qui donne une résonance particulière à ce retour sur son œuvre."
+      },
+      {
+        "type": "texte",
+        "html": "L'apport spécifique de Phelps, complémentaire à celui de Friedman, tient à ce qu'on appelle l'introduction de « microfondations » dans l'analyse macroéconomique : plutôt que de raisonner uniquement sur des agrégats globaux, Phelps cherche à comprendre comment les décisions individuelles des travailleurs et des entreprises — en particulier leur formation d'anticipations sur les salaires et les prix, dans un contexte d'information imparfaite — déterminent, une fois agrégées, le taux de chômage global d'une économie."
+      },
+      {
+        "type": "texte",
+        "html": "Le concept qui porte aujourd'hui son héritage le plus direct, le <em class=\"accent\">NAIRU</em> (non-accelerating inflation rate of unemployment, ou taux de chômage n'accélérant pas l'inflation), reste un outil central pour les banques centrales contemporaines : il désigne le niveau de chômage en dessous duquel l'économie s'expose à un risque d'accélération continue de l'inflation, un seuil que les décideurs de politique monétaire cherchent à estimer, non sans grande difficulté pratique, pour calibrer leurs décisions."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Edmund Phelps, disparu en mai 2026, a formalisé indépendamment de Friedman la théorie du taux de chômage naturel, en insérant des microfondations — les décisions individuelles fondées sur des anticipations imparfaites — dans l'analyse macroéconomique. Son héritage se prolonge aujourd'hui dans le concept de NAIRU, utilisé par les banques centrales."
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "ordre": 97,
+    "phase": 3,
+    "semaine": 3,
+    "jour": 6,
+    "type": "actu",
+    "titre": "Chômage et inflation en France 2026 : la lecture par le NAIRU",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Les concepts vus cette semaine permettent une relecture éclairante de deux chiffres déjà croisés dans ce programme : le chômage français, qui a atteint 8,3 % au deuxième trimestre 2026 (vu en phase 1), et l'inflation, remontée à 2,1 % en juillet 2026, tirée principalement par l'énergie. À première vue, cette combinaison — chômage en hausse, inflation également en légère hausse — pourrait sembler contredire la courbe de Phillips traditionnelle vue en tout début de semaine."
+      },
+      {
+        "type": "texte",
+        "html": "La grille de lecture de Friedman et Phelps permet cependant de clarifier la situation : cette inflation de 2026 est très majoritairement d'origine externe (le choc pétrolier lié à la guerre au Moyen-Orient), et non le résultat d'un marché du travail tendu au sens de la courbe de Phillips originelle. L'inflation sous-jacente, hors énergie, reste d'ailleurs nettement plus contenue à 1,3 % — un signe que le marché du travail français, avec un chômage remontant vers 8,3 %, ne semble pas exercer de pression inflationniste par les salaires comparable à celle qu'aurait prédite un marché du travail proche du plein emploi."
+      },
+      {
+        "type": "texte",
+        "html": "Cette configuration illustre bien pourquoi les économistes contemporains, héritiers directs de Friedman et Phelps, insistent sur la nécessité de distinguer les chocs d'offre ponctuels (comme une flambée pétrolière) des tensions structurelles du marché du travail pour évaluer correctement où se situe une économie par rapport à son taux de chômage naturel, ou NAIRU — une estimation toujours délicate, mais indispensable pour calibrer une politique monétaire adaptée."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "La combinaison, en France en 2026, d'un chômage en hausse et d'une inflation tirée par un choc externe (l'énergie) plutôt que par la tension du marché du travail illustre bien la distinction, héritée de Friedman et Phelps, entre chocs d'offre ponctuels et pressions inflationnistes structurelles liées au marché du travail."
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "ordre": 98,
+    "phase": 3,
+    "semaine": 3,
+    "jour": 7,
+    "type": "quiz",
+    "titre": "Quiz — Semaine 3 (Phase 3)",
+    "contenu": "Teste ce que tu as retenu sur la courbe de Phillips, les anticipations et le chômage naturel.",
+    "questions": [
+      {
+        "question": "Que met en évidence la courbe de Phillips originelle ?",
+        "options": [
+          "Une relation inverse entre chômage et inflation (ou hausse des salaires)",
+          "Une relation entre le PIB et la population",
+          "L'absence totale de lien entre chômage et prix"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Selon Friedman, que se passe-t-il si un gouvernement tente d'exploiter durablement la courbe de Phillips ?",
+        "options": [
+          "Le chômage baisse durablement sans aucun coût",
+          "L'effet sur le chômage s'estompe une fois les anticipations d'inflation ajustées, laissant une inflation durablement plus élevée",
+          "L'inflation disparaît complètement"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Qu'est-ce que la stagflation observée dans les années 1970 ?",
+        "options": [
+          "Une combinaison d'inflation élevée et de chômage élevé simultanément",
+          "Une période sans aucune inflation",
+          "Une croissance très forte du PIB"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Quel événement a déclenché la stagflation des années 1970 ?",
+        "options": [
+          "Les chocs pétroliers de 1973 et 1979",
+          "La révolution marginaliste",
+          "La création de l'euro"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Que suppose la théorie des anticipations rationnelles, par rapport aux anticipations adaptatives de Friedman ?",
+        "options": [
+          "Que les agents économiques n'anticipent jamais rien",
+          "Que les agents utilisent efficacement toute l'information disponible, sans erreurs systématiques répétées",
+          "Que seules les banques centrales peuvent anticiper l'avenir"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Que désigne la « critique de Lucas » ?",
+        "options": [
+          "Le fait qu'une politique économique clairement anticipée peut voir son effet neutralisé par l'ajustement immédiat des comportements",
+          "Une critique de la monnaie unique européenne",
+          "Une critique du PIB comme indicateur"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Quelle contribution spécifique apporte Edmund Phelps à la théorie du chômage naturel ?",
+        "options": [
+          "L'introduction de microfondations : les décisions individuelles fondées sur des anticipations imparfaites",
+          "L'invention du PIB",
+          "La théorie de l'avantage comparatif"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Que signifie le sigle NAIRU ?",
+        "options": [
+          "Le taux de chômage n'accélérant pas l'inflation",
+          "Le taux de croissance annuel du PIB",
+          "Une agence de notation financière"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "En juillet 2026 en France, pourquoi l'inflation ne reflète-t-elle pas nécessairement une tension du marché du travail ?",
+        "options": [
+          "Parce qu'elle est tirée majoritairement par un choc externe sur l'énergie, pas par les salaires",
+          "Parce qu'il n'y a plus de chômage en France",
+          "Parce que l'inflation est nulle"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "En quelle année Edmund Phelps est-il décédé ?",
+        "options": [
+          "2006",
+          "2026",
+          "1970"
+        ],
+        "bonne_reponse": 1
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "ordre": 99,
+    "phase": 3,
+    "semaine": 4,
+    "jour": 1,
+    "type": "concept",
+    "titre": "La dette publique : mécanismes de base",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Quand les recettes publiques (essentiellement les impôts et cotisations) ne suffisent pas à couvrir les dépenses publiques d'une année, l'État doit combler ce <em class=\"accent\">déficit</em> en empruntant — le plus souvent en émettant des obligations d'État, achetées par des investisseurs (banques, fonds de pension, assureurs, particuliers, investisseurs étrangers) qui prêtent leur argent à l'État en échange d'un remboursement futur assorti d'intérêts. L'accumulation de ces déficits successifs, année après année, constitue la <em class=\"accent\">dette publique</em>."
+      },
+      {
+        "type": "texte",
+        "html": "Un indicateur central pour juger de la soutenabilité d'une dette publique est son rapport au PIB : une dette de 3 000 milliards d'euros ne représente pas le même risque pour un pays dont le PIB annuel est de 1 000 milliards que pour un pays dont le PIB est de 10 000 milliards — c'est la capacité de l'économie à générer, année après année, les ressources fiscales nécessaires au remboursement qui compte, bien plus que le montant absolu de la dette."
+      },
+      {
+        "type": "texte",
+        "html": "Ce ratio dette/PIB évolue selon une mécanique relativement simple : il augmente quand le déficit public annuel est important, mais aussi, indépendamment de tout nouveau déficit, quand la croissance économique est faible ou que les taux d'intérêt sur la dette existante dépassent le taux de croissance du PIB — un effet dit « boule de neige » où les seuls intérêts de la dette existante suffisent à faire grimper le ratio, même sans nouvel emprunt net. C'est précisément cette dynamique qui explique pourquoi la faiblesse de la croissance française, déjà vue en phase 1, inquiète particulièrement les observateurs des finances publiques."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "La dette publique résulte de l'accumulation des déficits successifs. Sa soutenabilité se juge surtout par son rapport au PIB, qui peut augmenter non seulement par de nouveaux déficits, mais aussi mécaniquement par un effet « boule de neige » quand les taux d'intérêt dépassent la croissance économique."
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "ordre": 100,
+    "phase": 3,
+    "semaine": 4,
+    "jour": 2,
+    "type": "actu",
+    "titre": "La note de la France dégradée : ce que disent les agences de notation",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "La question de la soutenabilité de la dette française, vue hier de façon théorique, a pris une tournure très concrète en 2025-2026 : après plus d'une décennie de dégradations progressives, les trois grandes agences de notation financière ont abaissé la note souveraine de la France en dessous du niveau AA qu'elle occupait depuis des années. Fitch a ouvert le mouvement le 12 septembre 2025 en abaissant la note française de AA- à A+, invoquant explicitement l'instabilité politique — la chute du gouvernement Bayrou — et les doutes sur la trajectoire de consolidation des finances publiques. Standard & Poor's a suivi peu après, alignant également sa note sur A+."
+      },
+      {
+        "type": "texte",
+        "html": "Moody's, la troisième grande agence, a pour sa part choisi fin octobre 2025 de maintenir sa note à Aa3 (équivalente à AA-) tout en abaissant sa perspective de « stable » à « négative » — un signal indiquant qu'une dégradation supplémentaire reste possible dans les mois suivants si la trajectoire budgétaire ne s'améliore pas. Ces décisions s'appuient sur des critères précis : le niveau et la trajectoire de l'endettement, le déficit public annuel, mais aussi, de façon plus qualitative, la stabilité politique et institutionnelle du pays — un facteur directement affecté par l'instabilité gouvernementale française de cette période."
+      },
+      {
+        "type": "texte",
+        "html": "Concrètement, une dégradation de note n'a pas d'effet automatique et immédiat sur les taux d'emprunt d'un pays — la demande pour la dette française reste, selon plusieurs économistes, globalement soutenue par les investisseurs internationaux. Mais elle envoie un signal négatif qui peut, dans la durée, pousser les investisseurs à exiger une prime de risque plus élevée pour continuer à prêter à l'État français, renchérissant ainsi le coût de la dette future — un mécanisme qui illustre bien, de façon très actuelle, pourquoi la trajectoire des finances publiques, déjà évoquée dès la toute première semaine de ce programme avec le budget 2027, reste un sujet de vigilance aussi central dans le débat économique et politique français."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Entre septembre et octobre 2025, Fitch et S&P ont dégradé la note souveraine de la France à A+, tandis que Moody's a maintenu sa note à Aa3 en abaissant sa perspective à négative — des décisions motivées par l'instabilité politique et les doutes sur la trajectoire budgétaire, qui pourraient renchérir à terme le coût de la dette française."
+      }
+    ],
+    "source": {
+      "texte": "Fitch : dégradation de AA- à A+ le 12 septembre 2025, invoquant l'instabilité politique (chute du gouvernement Bayrou). S&P : alignement sur A+ peu après. Moody's : maintien de la note à Aa3 le 24 octobre 2025, perspective abaissée de stable à négative.",
+      "lien": "https://www.franceinfo.fr/economie/crise/aaa/dette-de-la-france-visualisez-comment-la-note-francaise-s-est-progressivement-degradee-passant-de-aaa-a-a_7571278.html",
+      "date_verification": "25 août 2026"
+    }
+  },
+  {
+    "id": 101,
+    "ordre": 101,
+    "phase": 3,
+    "semaine": 4,
+    "jour": 3,
+    "type": "concept",
+    "titre": "Déficit public : comment il se finance",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Un déficit public peut se financer de deux grandes façons, aux implications économiques très différentes. La première, largement dominante dans les économies développées contemporaines, est l'<em class=\"accent\">emprunt sur les marchés financiers</em> : l'État émet des obligations, achetées par des investisseurs privés ou publics, français ou étrangers, qui lui prêtent des fonds en échange d'un remboursement futur avec intérêts. C'est cette méthode qui alimente directement la dette publique et le ratio dette/PIB vus cette semaine."
+      },
+      {
+        "type": "texte",
+        "html": "La seconde, plus rare et généralement bien plus risquée, consiste à faire financer le déficit directement par la banque centrale, en créant de la monnaie — une pratique qu'on appelle parfois, de façon imagée, la « planche à billets » ou le financement monétaire. Cette option est aujourd'hui explicitement interdite aux banques centrales indépendantes des grandes économies développées, dont la BCE, précisément pour éviter la tentation, déjà dénoncée par Nicole Oresme au xive siècle en phase 1, de financer les dépenses publiques par une création monétaire excessive, potentiellement inflationniste."
+      },
+      {
+        "type": "texte",
+        "html": "Dans la pratique, le financement par les marchés implique une distinction importante entre les investisseurs résidents et non-résidents : une part significative de la dette française — souvent plus de la moitié — est aujourd'hui détenue par des investisseurs étrangers, ce qui rend le pays potentiellement plus sensible à l'évolution de leur perception du risque (comme lors des dégradations de notation vues hier), mais aussi permet de financer un déficit que l'épargne intérieure seule ne suffirait pas à couvrir."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Un déficit public se finance principalement par l'emprunt sur les marchés financiers, plutôt que par une création monétaire directe de la banque centrale — une pratique aujourd'hui interdite dans la plupart des économies développées. Une part importante de la dette française est détenue par des investisseurs étrangers."
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "ordre": 102,
+    "phase": 3,
+    "semaine": 4,
+    "jour": 4,
+    "type": "auteur",
+    "titre": "Robert Barro et l'équivalence ricardienne",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Robert Barro, économiste américain né en 1944 et professeur à Harvard, publie en 1974 un article resté célèbre, Les obligations d'État sont-elles une richesse nette ?, dans lequel il ressuscite et formalise mathématiquement une intuition ancienne, déjà esquissée deux siècles plus tôt par David Ricardo — rencontré en phase 2 — d'où le nom donné à cette théorie : l'<em class=\"accent\">équivalence ricardienne</em>, parfois aussi appelée « effet Ricardo-Barro »."
+      },
+      {
+        "type": "texte",
+        "html": "L'argument, qui mobilise directement les anticipations rationnelles vues en semaine 3, est le suivant : si l'État finance une baisse d'impôts ou une hausse de dépenses par de la dette plutôt que par l'impôt immédiat, des ménages parfaitement rationnels et prévoyants comprennent que cette dette devra, tôt ou tard, être remboursée — nécessairement par des impôts futurs plus élevés. Anticipant cette charge fiscale future, ces ménages augmenteraient alors leur épargne dès aujourd'hui, dans les mêmes proportions que la baisse d'impôts ou la dépense supplémentaire financée par la dette, neutralisant ainsi tout effet de relance sur la consommation globale."
+      },
+      {
+        "type": "texte",
+        "html": "Cette théorie, si elle se vérifiait intégralement, sonnerait le glas de l'efficacité des politiques de relance keynésiennes vues en tout début de cette phase : financer une relance par la dette plutôt que par l'impôt reviendrait, économiquement, exactement au même. Dans la pratique, l'équivalence ricardienne stricte ne se vérifie que rarement de façon aussi complète, notamment parce que tous les ménages ne sont pas aussi prévoyants, informés ou capables d'emprunter librement pour lisser leur consommation face à des impôts futurs incertains — mais elle reste un contrepoint théorique influent, régulièrement invoqué pour nuancer l'efficacité attendue des relances budgétaires financées par la dette."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "L'équivalence ricardienne de Robert Barro (1974) soutient que financer une dépense publique par la dette plutôt que par l'impôt n'a, en théorie, aucun effet réel sur l'économie, car des ménages rationnels anticiperaient les impôts futurs nécessaires au remboursement et épargneraient en conséquence — une théorie qui nuance fortement l'efficacité attendue des relances keynésiennes financées par la dette."
+      }
+    ]
+  },
+  {
+    "id": 103,
+    "ordre": 103,
+    "phase": 3,
+    "semaine": 4,
+    "jour": 5,
+    "type": "interpellation",
+    "titre": "Faut-il rembourser la dette à tout prix ?",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Après avoir vu cette semaine les mécanismes de la dette, sa notation par les agences, et les débats théoriques sur son efficacité, une question directe s'impose, particulièrement pertinente à l'approche de l'élection présidentielle de 2027 : la réduction rapide de la dette publique doit-elle constituer une priorité absolue de politique économique, y compris au prix de sacrifices budgétaires importants ?"
+      },
+      {
+        "type": "texte",
+        "html": "L'argument en faveur d'une réduction prioritaire et rapide de la dette s'appuie sur plusieurs risques bien identifiés. Une dette élevée fait peser une charge d'intérêts croissante sur le budget de l'État — de l'argent qui, chaque année, ne finance ni écoles ni hôpitaux, mais rembourse des créanciers, comme on l'a vu dans la première semaine de ce programme. Elle peut aussi fragiliser la confiance des investisseurs, comme l'illustrent les dégradations de notation vues cette semaine, renchérissant à terme le coût de tout nouvel emprunt. Enfin, une dette trop élevée réduirait, selon cette lecture, la capacité future de l'État à réagir efficacement à une nouvelle crise majeure, faute de marge de manœuvre budgétaire disponible."
+      },
+      {
+        "type": "texte",
+        "html": "L'argument inverse souligne d'abord que le contexte compte énormément : réduire précipitamment la dette en pleine récession, en coupant massivement les dépenses publiques, peut, selon la logique keynésienne vue en tout début de cette phase, aggraver le ralentissement économique et donc, paradoxalement, faire grimper le ratio dette/PIB plutôt que le faire baisser, la croissance du dénominateur (le PIB) ralentissant plus vite que la dette elle-même. Certains économistes, dans la lignée de Keynes, estiment aussi qu'un endettement public consacré à des investissements porteurs de croissance future — infrastructures, éducation, recherche — peut s'auto-financer partiellement par la croissance et les recettes fiscales supplémentaires qu'il génère, contrairement à une dette purement consacrée au fonctionnement courant."
+      },
+      {
+        "type": "texte",
+        "html": "Ce débat recoupe directement les tensions théoriques déjà croisées cette semaine, entre la lecture keynésienne (la dépense publique peut soutenir l'activité) et la lecture plus proche de Barro ou du monétarisme (une dette non maîtrisée finit par peser sur la confiance et l'efficacité économique). Le bon arbitrage dépend largement de facteurs concrets rarement mis en avant dans le débat politique simplifié : le niveau de dette déjà atteint, la nature des dépenses financées, la conjoncture économique du moment, et la crédibilité de l'État aux yeux des marchés financiers."
+      },
+      {
+        "type": "encadre",
+        "titre": "Pas de réponse toute faite",
+        "html": "La question du rythme de réduction de la dette publique oppose des arguments économiques solides de chaque côté, sans consensus tranché parmi les économistes eux-mêmes. Le contexte — récession ou croissance, nature des dépenses financées, niveau de dette déjà atteint — compte souvent davantage que le principe général invoqué dans le débat politique."
+      }
+    ]
+  },
+  {
+    "id": 104,
+    "ordre": 104,
+    "phase": 3,
+    "semaine": 4,
+    "jour": 6,
+    "type": "actu",
+    "titre": "La dette française face à ses voisins européens",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Situer la dette française dans une perspective comparative, plutôt qu'en valeur absolue, permet de mieux juger de sa spécificité. Selon les prévisions les plus récentes, le ratio dette publique sur PIB de la France devrait continuer à progresser pour atteindre environ 116 % à horizon 2027, contre environ 110 % en 2023 — une trajectoire jugée « de plus en plus hors de portée » par rapport aux objectifs officiels de réduction du déficit, selon les analyses de plusieurs agences de notation déjà évoquées cette semaine."
+      },
+      {
+        "type": "texte",
+        "html": "Ce niveau place la France nettement au-dessus de la moyenne de la zone euro, mais dans une position intermédiaire par rapport à ses grands voisins : l'Allemagne conserve un ratio dette/PIB structurellement plus faible, hérité de sa tradition de rigueur budgétaire (la fameuse « règle d'or » constitutionnelle limitant les déficits), tandis que l'Italie et la Grèce affichent des ratios dette/PIB encore supérieurs à celui de la France, dépassant les 130 à 150 % selon les années. Le déficit public français lui-même, autour de 5,1 % du PIB en 2025 comme vu en phase 1, reste très supérieur au plafond de 3 % fixé par les règles budgétaires européennes."
+      },
+      {
+        "type": "texte",
+        "html": "Cette comparaison européenne éclaire un point souvent négligé dans le débat public français : la France n'est ni la pire élève, ni un cas totalement isolé, mais sa trajectoire — combinant endettement déjà élevé, déficit persistant au-dessus des seuils européens, et instabilité politique affectant la crédibilité de sa consolidation budgétaire — la place dans une situation de vigilance particulière par rapport à des voisins comme l'Allemagne, davantage en mesure de rassurer les marchés sur sa trajectoire de long terme."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Le ratio dette/PIB français, attendu autour de 116 % à horizon 2027, dépasse nettement celui de l'Allemagne mais reste inférieur à ceux de l'Italie ou de la Grèce. C'est surtout la combinaison d'un déficit persistant au-delà des seuils européens et d'une instabilité politique qui distingue la vigilance particulière portée à la trajectoire française."
+      }
+    ],
+    "source": {
+      "texte": "Ratio dette publique/PIB français projeté à environ 116 % à horizon 2027 (contre environ 110 % en 2023). Déficit public 2025 : 5,1 % du PIB, contre un plafond européen de 3 %. Comparaison : Allemagne structurellement plus basse, Italie et Grèce structurellement plus élevées.",
+      "lien": "https://www.journaldunet.com/business/1545557-notation-de-la-france-moody-s-face-a-la-pression-apres-fitch-et-standard-poor-s/",
+      "date_verification": "25 août 2026"
+    }
+  },
+  {
+    "id": 105,
+    "ordre": 105,
+    "phase": 3,
+    "semaine": 4,
+    "jour": 7,
+    "type": "quiz",
+    "titre": "Quiz — Semaine 4 (Phase 3)",
+    "contenu": "Teste ce que tu as retenu sur la dette et le budget public.",
+    "questions": [
+      {
+        "question": "Comment se forme la dette publique d'un État ?",
+        "options": [
+          "Par l'accumulation des déficits publics successifs",
+          "Uniquement par la création monétaire",
+          "Elle ne peut jamais varier"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Pourquoi le ratio dette/PIB est-il plus pertinent que le montant absolu de la dette ?",
+        "options": [
+          "Parce qu'il reflète la capacité de l'économie à générer les ressources nécessaires au remboursement",
+          "Parce que le PIB n'a aucun rapport avec la dette",
+          "Ce n'est pas un indicateur utilisé"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "En 2025, quelles agences ont dégradé la note souveraine de la France à A+ ?",
+        "options": [
+          "Fitch et S&P",
+          "Aucune agence",
+          "Uniquement Moody's"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Quelle raison principale les agences ont-elles invoquée pour dégrader la note française ?",
+        "options": [
+          "L'instabilité politique et les doutes sur la trajectoire des finances publiques",
+          "Une trop forte croissance économique",
+          "La suppression de l'euro"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Pourquoi le financement d'un déficit par création monétaire directe de la banque centrale est-il aujourd'hui interdit dans la plupart des économies développées ?",
+        "options": [
+          "Pour éviter le risque inflationniste d'une création monétaire excessive au service des dépenses publiques",
+          "Parce que c'est trop compliqué techniquement",
+          "Ce n'est pas interdit"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Que soutient l'équivalence ricardienne de Robert Barro ?",
+        "options": [
+          "Que financer une dépense par la dette ou par l'impôt n'a, en théorie, aucun effet réel si les ménages sont rationnels",
+          "Que la dette publique n'a jamais aucun effet",
+          "Que l'impôt est toujours préférable à la dette"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Sur quelle hypothèse comportementale repose l'équivalence ricardienne ?",
+        "options": [
+          "Que les ménages anticipent les impôts futurs et épargnent en conséquence",
+          "Que les ménages ne pensent jamais à l'avenir",
+          "Que l'État ne rembourse jamais sa dette"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Selon la logique keynésienne, pourquoi réduire précipitamment la dette en pleine récession peut-il être contre-productif ?",
+        "options": [
+          "Cela peut aggraver le ralentissement économique et donc faire grimper le ratio dette/PIB",
+          "Cela n'a jamais aucun effet",
+          "Cela réduit toujours immédiatement la dette"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "À combien le ratio dette/PIB français est-il projeté à horizon 2027 ?",
+        "options": [
+          "Environ 50 %",
+          "Environ 116 %",
+          "Environ 300 %"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Comment se situe la dette française par rapport à l'Allemagne et à l'Italie ?",
+        "options": [
+          "Plus élevée que l'Allemagne, mais généralement plus basse que l'Italie",
+          "Plus basse que les deux pays",
+          "Identique aux deux pays"
+        ],
+        "bonne_reponse": 0
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "ordre": 106,
+    "phase": 3,
+    "semaine": 5,
+    "jour": 1,
+    "type": "concept",
+    "titre": "Les cycles économiques",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Le PIB d'une économie ne progresse jamais de façon parfaitement régulière : il alterne des phases d'expansion, où la croissance s'accélère, l'emploi progresse et la confiance s'installe, et des phases de ralentissement voire de contraction, où l'activité se replie. Cette alternance récurrente porte un nom : le <em class=\"accent\">cycle économique</em>."
+      },
+      {
+        "type": "texte",
+        "html": "Un cycle économique complet se décompose traditionnellement en quatre phases : l'<em class=\"accent\">expansion</em>, où la production, l'emploi et les revenus augmentent ; le <em class=\"accent\">pic</em>, point culminant du cycle, souvent marqué par une économie proche de ses capacités maximales et des tensions inflationnistes ; la <em class=\"accent\">contraction</em> (ou récession), où l'activité recule ; et le <em class=\"accent\">creux</em>, point bas du cycle, à partir duquel une nouvelle expansion peut redémarrer. Ces cycles n'ont ni durée ni amplitude fixes — certains durent quelques trimestres, d'autres plusieurs années — ce qui rend leur anticipation précise particulièrement difficile pour les économistes."
+      },
+      {
+        "type": "texte",
+        "html": "Comprendre l'origine de ces fluctuations reste l'un des grands chantiers de la macroéconomie, avec des explications concurrentes selon les écoles de pensée : les keynésiens y voient surtout des variations de la demande globale et de la confiance des agents économiques ; les monétaristes, dans la lignée de Friedman, y voient davantage l'effet de politiques monétaires mal calibrées ; d'autres courants, comme celui qu'on découvre dès demain avec Joseph Schumpeter, y voient au contraire le résultat naturel et même nécessaire du processus d'innovation."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Un cycle économique alterne quatre phases : expansion, pic, contraction et creux. Leur durée et leur amplitude varient fortement, et leurs causes restent débattues entre écoles de pensée économique — demande globale, politique monétaire, ou innovation."
+      }
+    ]
+  },
+  {
+    "id": 107,
+    "ordre": 107,
+    "phase": 3,
+    "semaine": 5,
+    "jour": 2,
+    "type": "auteur",
+    "titre": "Joseph Schumpeter — la destruction créatrice",
+    "blocs": [
+      {
+        "type": "image",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Joseph%20Schumpeter%20ekonomialaria.jpg",
+        "legende": "Joseph Schumpeter (1883-1950), économiste autrichien puis américain"
+      },
+      {
+        "type": "texte",
+        "html": "Joseph Schumpeter, économiste né en Autriche-Hongrie, brièvement ministre des Finances autrichien en 1919 avant d'émigrer aux États-Unis en 1932 pour enseigner à Harvard jusqu'à la fin de sa carrière, développe une vision des cycles économiques radicalement différente de celle de Keynes, son quasi-contemporain. Pour Schumpeter, les fluctuations économiques ne sont pas un dysfonctionnement à corriger, mais le moteur même du progrès économique de long terme."
+      },
+      {
+        "type": "texte",
+        "html": "Le concept qui porte aujourd'hui son héritage le plus durable est celui de <em class=\"accent\">destruction créatrice</em> : l'innovation — qu'elle soit technologique, organisationnelle ou commerciale — détruit en permanence des entreprises, des emplois et des façons de produire devenus obsolètes, tout en créant simultanément de nouvelles activités, plus productives, appelées à remplacer les anciennes. L'automobile a détruit l'industrie de la calèche ; internet a bouleversé la presse écrite et le commerce de détail traditionnel ; l'intelligence artificielle, sur laquelle on reviendra demain, transforme aujourd'hui de nombreux métiers. Ce processus, douloureux à court terme pour les acteurs déplacés, serait selon Schumpeter le véritable moteur de la croissance économique de long terme."
+      },
+      {
+        "type": "texte",
+        "html": "Schumpeter place l'<em class=\"accent\">entrepreneur innovateur</em> au centre de cette dynamique — non pas le simple gestionnaire d'une entreprise existante, mais celui qui introduit une nouveauté radicale, prend un risque considérable, et bouscule l'équilibre établi. Cette vision, longtemps restée marginale face à l'hégémonie keynésienne de l'après-guerre, a connu un regain d'influence considérable depuis les années 1980, notamment pour analyser les révolutions technologiques successives — et on la retrouvera développée en détail avec Philippe Aghion en phase 5 de ce programme."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Joseph Schumpeter voit dans la destruction créatrice — l'innovation qui détruit les activités obsolètes tout en créant de nouvelles activités plus productives — le véritable moteur de la croissance économique de long terme, porté par la figure de l'entrepreneur innovateur."
+      }
+    ]
+  },
+  {
+    "id": 108,
+    "ordre": 108,
+    "phase": 3,
+    "semaine": 5,
+    "jour": 3,
+    "type": "actu",
+    "titre": "L'intelligence artificielle, moteur (fragile) de la croissance américaine",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "L'engouement pour l'intelligence artificielle en 2025-2026 offre une illustration saisissante, et potentiellement fragile, de la destruction créatrice vue hier. Selon plusieurs analyses économiques, la croissance américaine de 2025, établie à 2,1 %, tiendrait pour près des deux tiers directement à l'investissement massif dans l'intelligence artificielle — des centres de données, des puces, des infrastructures — qui aurait permis à l'économie américaine d'absorber le choc de la guerre commerciale et des droits de douane, déjà vus en phase 2, sans basculer en récession."
+      },
+      {
+        "type": "texte",
+        "html": "L'ampleur de ces investissements atteint des niveaux inédits : Microsoft, Alphabet, Meta et Amazon prévoient à eux seuls plus de 600 milliards de dollars de dépenses d'investissement en 2026, soit environ 1,6 milliard de dollars par jour. Cette frénésie d'investissement nourrit cependant un débat de plus en plus vif sur l'existence d'une possible bulle spéculative : plusieurs dirigeants du secteur technologique lui-même, dont l'ancien patron d'Intel Pat Gelsinger, ont publiquement reconnu évoluer en zone de bulle, tandis que les économistes de la BCE ont averti que cette dynamique, bien que largement américaine, exposait aussi les ménages de la zone euro via leur exposition boursière aux géants technologiques concernés."
+      },
+      {
+        "type": "texte",
+        "html": "Ce cas illustre parfaitement l'ambivalence de la destruction créatrice schumpétérienne : les gains de productivité espérés de l'intelligence artificielle pourraient justifier ces investissements colossaux sur le long terme, mais rien ne garantit que le rythme actuel des dépenses soit durablement soutenable si les revenus générés ne suivent pas — un doute renforcé par des précédents historiques comme la bulle internet du début des années 2000, où l'innovation technologique réelle avait fini par survivre à l'éclatement financier de sa phase spéculative initiale."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Près des deux tiers de la croissance américaine de 2025 tiendraient à l'investissement massif dans l'intelligence artificielle, illustrant la destruction créatrice à l'œuvre — mais l'ampleur inédite de ces investissements (plus de 600 Md$ en 2026 pour les seuls géants technologiques) nourrit un débat croissant sur le risque de bulle spéculative."
+      }
+    ],
+    "source": {
+      "texte": "Croissance américaine 2025 : 2,1 %, dont environ deux tiers liés à l'investissement en intelligence artificielle. Capex 2026 de Microsoft, Alphabet, Meta et Amazon : plus de 600 Md$ (environ 1,6 Md$/jour). Avertissements de dirigeants technologiques et d'économistes de la BCE sur un risque de bulle.",
+      "lien": "https://lecercledeseconomistes.fr/articles/finance/ia-bulle-financiere/",
+      "date_verification": "25 août 2026"
+    }
+  },
+  {
+    "id": 109,
+    "ordre": 109,
+    "phase": 3,
+    "semaine": 5,
+    "jour": 4,
+    "type": "concept",
+    "titre": "Qu'est-ce qu'une récession ?",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Le mot « récession », omniprésent dans les commentaires économiques, mérite d'être précisément défini. La définition la plus couramment utilisée, notamment en Europe, retient un critère technique simple : une <em class=\"accent\">récession</em> correspond à deux trimestres consécutifs de baisse du PIB réel. C'est cette définition qu'on a implicitement croisée en phase 1, en observant l'évolution trimestrielle du PIB français en 2026."
+      },
+      {
+        "type": "texte",
+        "html": "Aux États-Unis, la définition officielle est en réalité plus nuancée : c'est le National Bureau of Economic Research, un organisme de recherche indépendant, qui détermine officiellement les dates de début et de fin des récessions américaines, en s'appuyant sur un ensemble plus large d'indicateurs — emploi, production industrielle, revenus, ventes — plutôt que sur le seul critère mécanique des deux trimestres consécutifs. Cette approche permet de capter des situations où l'activité se dégrade nettement sans que le PIB, à lui seul, ne recule formellement deux trimestres de suite."
+      },
+      {
+        "type": "texte",
+        "html": "Au-delà de la seule définition technique, une récession a des conséquences concrètes bien identifiées : hausse du chômage (avec un certain décalage temporel, les entreprises ajustant leurs effectifs après avoir observé la baisse d'activité), recul de l'investissement des entreprises, souvent baisse de la confiance des ménages et donc de leur consommation — un cercle qui peut s'auto-entretenir, exactement comme le décrivait Keynes en tout début de cette phase, sauf intervention compensatrice de la politique économique."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Une récession se définit techniquement, en Europe, par deux trimestres consécutifs de baisse du PIB réel — une définition plus large et qualitative prévaut aux États-Unis. Une récession s'accompagne typiquement d'une hausse du chômage, d'un recul de l'investissement et souvent d'une baisse de la confiance des ménages."
+      }
+    ]
+  },
+  {
+    "id": 110,
+    "ordre": 110,
+    "phase": 3,
+    "semaine": 5,
+    "jour": 5,
+    "type": "auteur",
+    "titre": "Nikolai Kondratiev — les cycles longs de l'économie",
+    "blocs": [
+      {
+        "type": "image",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9%20%D0%9A%D0%BE%D0%BD%D0%B4%D1%80%D0%B0%D1%82%D1%8C%D0%B5%D0%B2.JPG",
+        "legende": "Nikolai Kondratiev (1892-1938), économiste soviétique"
+      },
+      {
+        "type": "texte",
+        "html": "Nikolai Kondratiev, économiste soviétique né en 1892, propose dans les années 1920 une théorie qui va enrichir considérablement l'analyse des cycles économiques vue cette semaine : au-delà des cycles courts, de quelques années, qu'on a détaillés en début de semaine, il identifie l'existence de <em class=\"accent\">cycles longs</em>, d'une durée approximative de 40 à 60 ans, portés par les grandes vagues d'innovation technologique — un concept resté célèbre sous le nom de cycles de Kondratiev, ou « ondes de Kondratiev »."
+      },
+      {
+        "type": "texte",
+        "html": "Ces cycles longs correspondraient aux grandes révolutions technologiques successives de l'histoire économique moderne : la machine à vapeur et le textile mécanisé à la fin du xviiie siècle, le chemin de fer et l'acier au xixe siècle, l'électricité et l'automobile au tournant du xxe siècle, l'informatique et les technologies de l'information dans la seconde moitié du xxe siècle. Chaque vague suivrait un même schéma : une phase d'expansion portée par la diffusion massive de l'innovation, suivie d'une phase de maturité puis de ralentissement, jusqu'à ce qu'une nouvelle vague d'innovation ne relance un nouveau cycle."
+      },
+      {
+        "type": "texte",
+        "html": "Le destin personnel de Kondratiev illustre tragiquement les tensions entre science économique et pouvoir politique : ses travaux, jugés incompatibles avec l'orthodoxie marxiste-léniniste sur la nature cyclique et non uniquement destinée à s'effondrer du capitalisme, lui valent d'être arrêté en 1930, puis exécuté en 1938 lors des grandes purges staliniennes. Sa théorie des cycles longs reste aujourd'hui débattue empiriquement — certains économistes contestant la régularité statistique de ces cycles —, mais elle continue d'alimenter les réflexions sur les grandes révolutions technologiques successives, dont celle de l'intelligence artificielle, vue hier, pourrait constituer, selon certains, la vague la plus récente."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Nikolai Kondratiev identifie, dans les années 1920, des cycles économiques longs de 40 à 60 ans, portés par les grandes vagues d'innovation technologique successives. Ses travaux, jugés incompatibles avec l'orthodoxie soviétique, lui vaudront d'être exécuté en 1938 — sa théorie reste débattue mais continue d'alimenter la réflexion sur les révolutions technologiques."
+      }
+    ]
+  },
+  {
+    "id": 111,
+    "ordre": 111,
+    "phase": 3,
+    "semaine": 5,
+    "jour": 6,
+    "type": "actu",
+    "titre": "L'intelligence artificielle, nouvelle vague longue de Kondratiev ?",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "La théorie des cycles longs de Kondratiev, vue hier, offre une grille de lecture stimulante pour interpréter le débat actuel sur l'intelligence artificielle abordé cette semaine : et si cette révolution technologique constituait la vague longue la plus récente, succédant à celle de l'informatique et d'internet de la fin du xxe siècle ? Plusieurs analystes du secteur technologique, tout en reconnaissant les signes d'une possible bulle financière à court terme, distinguent explicitement la question de la valorisation boursière actuelle — potentiellement excessive — de celle de la réalité de la transformation technologique de fond, qu'ils jugent, elle, indéniable et durable."
+      },
+      {
+        "type": "texte",
+        "html": "Cette distinction fait écho à un précédent historique déjà évoqué cette semaine : la bulle internet du début des années 2000. De nombreuses entreprises technologiques avaient alors fait faillite après l'éclatement de la bulle spéculative, mais la technologie elle-même — internet — avait continué de se développer et de transformer durablement l'économie mondiale dans les décennies suivantes, portée par de nouveaux acteurs mieux positionnés que les entreprises disparues. C'est précisément le mécanisme de destruction créatrice de Schumpeter, vu cette semaine : l'éclatement d'une bulle spéculative sur une innovation réelle n'invalide pas nécessairement l'innovation elle-même, il en réorganise brutalement les acteurs."
+      },
+      {
+        "type": "texte",
+        "html": "Le Cercle des économistes, think tank français, propose une lecture équilibrée de cette situation pour l'Europe : plutôt que de se focaliser uniquement sur le risque de bulle financière à court terme, il souligne l'importance de rattraper le retard d'investissement européen dans l'intelligence artificielle, notamment pour ses applications dans la santé face au vieillissement démographique, et pour les gains de productivité susceptibles de contribuer, à terme, au financement des systèmes de protection sociale — un lien direct avec les débats sur l'État-providence qu'on approfondira en phase 4 de ce programme."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Certains analystes voient dans l'intelligence artificielle une nouvelle vague longue au sens de Kondratiev, distincte du risque de bulle financière à court terme — un parallèle avec la bulle internet des années 2000, où l'éclatement spéculatif n'avait pas empêché la technologie sous-jacente de transformer durablement l'économie mondiale."
+      }
+    ],
+    "source": {
+      "texte": "Analyses distinguant le risque de bulle financière à court terme autour de l'IA de la réalité de la transformation technologique de fond, avec un parallèle régulièrement établi avec la bulle internet du début des années 2000. Le Cercle des économistes souligne l'enjeu du rattrapage européen en matière d'investissement en IA.",
+      "lien": "https://lecercledeseconomistes.fr/articles/finance/ia-bulle-financiere/",
+      "date_verification": "25 août 2026"
+    }
+  },
+  {
+    "id": 112,
+    "ordre": 112,
+    "phase": 3,
+    "semaine": 5,
+    "jour": 7,
+    "type": "quiz",
+    "titre": "Quiz — Semaine 5 (Phase 3)",
+    "contenu": "Teste ce que tu as retenu sur les cycles économiques, Schumpeter et Kondratiev.",
+    "questions": [
+      {
+        "question": "Quelles sont les quatre phases traditionnelles d'un cycle économique ?",
+        "options": [
+          "Expansion, pic, contraction, creux",
+          "Offre, demande, prix, équilibre",
+          "Naissance, croissance, maturité, déclin uniquement pour les entreprises"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Que désigne la « destruction créatrice » de Joseph Schumpeter ?",
+        "options": [
+          "L'innovation qui détruit les activités obsolètes tout en créant de nouvelles activités plus productives",
+          "La destruction pure et simple de l'économie",
+          "Une politique de démolition urbaine"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Quelle part de la croissance américaine de 2025 serait liée à l'investissement en intelligence artificielle, selon certaines analyses ?",
+        "options": [
+          "Environ un dixième",
+          "Environ deux tiers",
+          "La totalité"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Que dénoncent certains dirigeants technologiques concernant l'IA en 2026 ?",
+        "options": [
+          "Un possible risque de bulle spéculative",
+          "L'absence totale d'investissement dans le secteur",
+          "La fin de l'intelligence artificielle"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Quelle est la définition technique la plus courante d'une récession en Europe ?",
+        "options": [
+          "Deux trimestres consécutifs de baisse du PIB réel",
+          "Une hausse du chômage d'un seul mois",
+          "Une baisse de l'inflation"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Que décrivent les cycles longs de Nikolai Kondratiev ?",
+        "options": [
+          "Des cycles économiques de 40 à 60 ans, portés par les grandes vagues d'innovation technologique",
+          "Des cycles de quelques semaines",
+          "Le cycle de vie d'une seule entreprise"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Quel a été le destin de Nikolai Kondratiev sous le régime soviétique ?",
+        "options": [
+          "Il a été célébré et récompensé",
+          "Il a été arrêté puis exécuté en 1938 lors des purges staliniennes",
+          "Il a émigré paisiblement aux États-Unis"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Quel précédent historique est régulièrement comparé à la situation actuelle de l'IA ?",
+        "options": [
+          "La bulle internet du début des années 2000",
+          "La crise de 1929",
+          "La révolution industrielle du xviiie siècle uniquement"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Selon le Cercle des économistes, quel enjeu l'Europe devrait-elle privilégier concernant l'IA ?",
+        "options": [
+          "Ignorer totalement cette technologie",
+          "Rattraper son retard d'investissement, notamment pour la santé et la productivité",
+          "Interdire l'intelligence artificielle"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Selon Schumpeter, qui est au centre du processus de destruction créatrice ?",
+        "options": [
+          "L'entrepreneur innovateur",
+          "Uniquement l'État",
+          "Les syndicats"
+        ],
+        "bonne_reponse": 0
+      }
+    ]
+  },
+  {
+    "id": 113,
+    "ordre": 113,
+    "phase": 3,
+    "semaine": 6,
+    "jour": 1,
+    "type": "concept",
+    "titre": "La balance commerciale",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "On a évoqué, en semaine 1 de cette phase, le solde commercial comme l'une des quatre composantes de la demande globale. Il est temps de le préciser : la <em class=\"accent\">balance commerciale</em> d'un pays mesure la différence entre la valeur de ses exportations (les biens et services vendus à l'étranger) et celle de ses importations (les biens et services achetés à l'étranger), sur une période donnée."
+      },
+      {
+        "type": "texte",
+        "html": "Un pays dont les exportations dépassent les importations enregistre un <em class=\"accent\">excédent commercial</em> ; dans le cas inverse, un <em class=\"accent\">déficit commercial</em>. Contrairement à une intuition répandue dans le débat public, un déficit commercial n'est pas nécessairement le signe d'une économie en difficulté : il peut refléter une économie qui investit massivement (en important des biens d'équipement), ou une monnaie forte qui rend les importations bon marché — tandis qu'un excédent important peut, à l'inverse, refléter une demande intérieure insuffisamment dynamique, l'épargne domestique excédentaire étant alors placée à l'étranger plutôt que consommée ou investie sur place."
+      },
+      {
+        "type": "texte",
+        "html": "La balance commerciale n'est qu'une composante de la <em class=\"accent\">balance des paiements</em>, un document comptable plus large qui retrace l'ensemble des échanges économiques d'un pays avec le reste du monde — biens, services, mais aussi revenus des investissements et mouvements de capitaux. C'est cette vision plus complète qui permet de comprendre pourquoi un pays peut, par exemple, afficher un déficit commercial sur les biens tout en dégageant un excédent global grâce aux revenus tirés de ses investissements à l'étranger."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "La balance commerciale mesure l'écart entre exportations et importations. Un déficit commercial n'est pas nécessairement un signe de faiblesse économique — il peut refléter un investissement dynamique ou une monnaie forte — de même qu'un excédent n'est pas toujours un signe de bonne santé économique."
+      }
+    ]
+  },
+  {
+    "id": 114,
+    "ordre": 114,
+    "phase": 3,
+    "semaine": 6,
+    "jour": 2,
+    "type": "actu",
+    "titre": "La guerre commerciale s'intensifie : le Canada frappe au dollar près",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "La tension commerciale entre les États-Unis et le Canada, déjà évoquée en phase 2 avec la théorie de l'avantage comparatif, a franchi une nouvelle étape fin août 2026. Le Canada, dont les exportations vers les États-Unis représentent près de 70 % de son commerce extérieur total, a annoncé des mesures de rétorsion calibrées « au dollar près » sur les nouveaux droits de douane américains, touchant désormais le papier, les machines agricoles et l'électronique, en plus de l'acier, de l'aluminium et de l'automobile déjà visés."
+      },
+      {
+        "type": "texte",
+        "html": "Cette escalade illustre un mécanisme central de la balance commerciale vue hier : au-delà de son effet direct sur les prix des biens échangés, une guerre commerciale de cette ampleur affecte aussi les flux de capitaux et la confiance des investisseurs, avec des répercussions potentielles sur le taux de change des deux monnaies concernées — un mécanisme qu'on va détailler dans les prochaines fiches de cette semaine. Le premier ministre canadien Mark Carney a d'ailleurs annoncé des mesures de soutien à l'économie canadienne « pour la durée qu'il faudra », signe que l'impact économique de cette confrontation commerciale est jugé potentiellement durable."
+      },
+      {
+        "type": "texte",
+        "html": "Une association réunissant plus de 200 grandes entreprises américaines, la Business Roundtable, a publiquement appelé les deux gouvernements à revenir à la table des négociations et à lever ces droits de douane jugés néfastes — un signal que les coûts économiques de cette confrontation commerciale, y compris pour l'économie américaine elle-même, ne sont pas négligeables, malgré l'objectif politique affiché de protection de certains secteurs industriels stratégiques."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "L'escalade commerciale entre les États-Unis et le Canada fin août 2026, avec des rétorsions calibrées « au dollar près », illustre comment une guerre commerciale dépasse le seul effet sur les prix des biens échangés pour affecter la confiance des investisseurs et, potentiellement, les taux de change des monnaies concernées."
+      }
+    ],
+    "source": {
+      "texte": "Exportations canadiennes vers les États-Unis : environ 70 % du commerce extérieur total du Canada. Rétorsions canadiennes annoncées fin août 2026 sur environ 20 Md$ de produits américains (ciment, papier, machines agricoles, électronique), entrée en vigueur le 8 septembre 2026.",
+      "lien": "https://www.france24.com/fr/am%C3%A9riques/20260823-commerce-%C3%A9conomie-droits-de-douane-le-ton-monte-entre-donald-trump-%C3%A9tats-unis-canada-marc-carney",
+      "date_verification": "25 août 2026"
+    }
+  },
+  {
+    "id": 115,
+    "ordre": 115,
+    "phase": 3,
+    "semaine": 6,
+    "jour": 3,
+    "type": "concept",
+    "titre": "Le taux de change : comment il se détermine",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Le <em class=\"accent\">taux de change</em> exprime la valeur d'une monnaie par rapport à une autre — par exemple, combien de dollars il faut pour obtenir un euro. Comme n'importe quel prix vu en phase 1, ce taux résulte, sur un marché des changes flottant comme celui de l'euro face au dollar, de la confrontation entre l'offre et la demande de chaque monnaie."
+      },
+      {
+        "type": "texte",
+        "html": "Plusieurs facteurs influencent cette offre et cette demande. Les écarts de taux d'intérêt entre deux zones monétaires jouent un rôle central : une monnaie offrant des rendements plus attractifs (via des taux directeurs plus élevés) attire davantage de capitaux étrangers en quête de rendement, ce qui augmente la demande pour cette monnaie et tend à la faire apprécier. Les flux commerciaux comptent aussi : un pays qui exporte massivement génère une demande pour sa propre monnaie de la part des acheteurs étrangers, qui doivent se la procurer pour régler leurs achats. Enfin, la confiance et le climat géopolitique jouent un rôle non négligeable, certaines monnaies — le dollar en particulier — jouant traditionnellement un rôle de valeur refuge en période de tension internationale."
+      },
+      {
+        "type": "texte",
+        "html": "Un taux de change élevé pour sa propre monnaie (une monnaie « forte ») rend les importations moins chères mais pénalise la compétitivité des exportations, en renchérissant leur prix pour les acheteurs étrangers ; un taux de change faible produit l'effet inverse. C'est précisément cette logique qui explique pourquoi Donald Trump, comme on l'a vu en semaine 2, souhaite un dollar plus faible pour améliorer la compétitivité américaine à l'exportation — un objectif qui entre directement en tension avec le mandat de stabilité des prix de la banque centrale, une baisse de taux favorisant certes un dollar plus faible mais au risque d'alimenter l'inflation."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Le taux de change résulte de l'offre et de la demande sur le marché des changes, influencées par les écarts de taux d'intérêt, les flux commerciaux et la confiance géopolitique. Une monnaie forte favorise les importations mais pénalise la compétitivité des exportations, et inversement pour une monnaie faible."
+      }
+    ]
+  },
+  {
+    "id": 116,
+    "ordre": 116,
+    "phase": 3,
+    "semaine": 6,
+    "jour": 4,
+    "type": "auteur",
+    "titre": "Robert Mundell — la zone monétaire optimale",
+    "blocs": [
+      {
+        "type": "image",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Mundell%20(headshot).jpg",
+        "legende": "Robert Mundell (1932-2021), économiste canadien, prix Nobel d'économie 1999"
+      },
+      {
+        "type": "texte",
+        "html": "Robert Mundell, économiste canadien mort en 2021, professeur notamment à l'université Columbia, reçoit en 1999 le prix Nobel d'économie pour ses travaux pionniers sur la dynamique monétaire et les zones monétaires optimales — une contribution particulièrement précieuse pour comprendre, avec le recul, un projet politique majeur de son époque : la création de l'euro, lancée quelques mois seulement après son prix Nobel."
+      },
+      {
+        "type": "texte",
+        "html": "Mundell pose, dès les années 1960, une question théorique fondamentale : à quelles conditions un groupe de pays a-t-il intérêt à partager une même monnaie plutôt que de conserver des monnaies nationales distinctes, ajustables indépendamment les unes des autres via leur taux de change ? Il identifie plusieurs critères d'une <em class=\"accent\">zone monétaire optimale</em> : une forte mobilité du travail et du capital entre les pays concernés (permettant aux travailleurs de se déplacer vers les régions en croissance en cas de choc asymétrique touchant un seul pays), une flexibilité suffisante des prix et des salaires, et l'existence de mécanismes de transferts budgétaires entre régions pour amortir les chocs qui touchent inégalement les membres de l'union."
+      },
+      {
+        "type": "texte",
+        "html": "Cette théorie, aussi abstraite paraisse-t-elle, a pris une dimension éminemment pratique avec la création de l'euro en 1999 : Mundell lui-même, considéré comme l'un des « pères intellectuels » de la monnaie unique européenne, en était un défenseur enthousiaste, tandis que de nombreux économistes ont depuis souligné que la zone euro ne remplissait que partiellement les critères qu'il avait lui-même définis — une tension qu'on va explorer dès demain."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Robert Mundell définit les critères d'une zone monétaire optimale : forte mobilité du travail et du capital, flexibilité des prix et des salaires, et mécanismes de transferts budgétaires entre régions pour absorber les chocs asymétriques — des critères directement mobilisés, depuis, pour évaluer la solidité de la zone euro."
+      }
+    ]
+  },
+  {
+    "id": 117,
+    "ordre": 117,
+    "phase": 3,
+    "semaine": 6,
+    "jour": 5,
+    "type": "concept",
+    "titre": "L'euro est-il une zone monétaire optimale ?",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Appliquons directement les critères de Mundell, vus hier, à la zone euro. Sur la mobilité du travail, premier critère, le constat est plutôt mitigé : contrairement aux États-Unis, où un travailleur américain se déplace relativement facilement d'un État à l'autre en cas de choc économique local, la mobilité du travail entre pays européens reste limitée par les barrières linguistiques, culturelles et administratives, malgré la libre circulation garantie par les traités européens."
+      },
+      {
+        "type": "texte",
+        "html": "Sur les mécanismes de transferts budgétaires, second critère, la zone euro reste également en retrait par rapport à une fédération comme les États-Unis, où le budget fédéral joue un rôle stabilisateur automatique important entre États en cas de choc asymétrique. Le budget commun de l'Union européenne reste, en comparaison, de taille très modeste, même si des dispositifs exceptionnels — comme le plan de relance post-Covid financé par une dette commune européenne — ont marqué une évolution notable de cette logique ces dernières années."
+      },
+      {
+        "type": "texte",
+        "html": "Cette analyse par les critères de Mundell aide à comprendre certaines difficultés structurelles vécues par la zone euro, notamment lors de la crise de la dette souveraine des années 2010 : un pays comme la Grèce, frappé par un choc économique spécifique, ne pouvait ni dévaluer sa propre monnaie pour retrouver de la compétitivité (puisqu'elle partageait l'euro avec des pays aux situations très différentes), ni compter sur des transferts budgétaires automatiques massifs comparables à ceux dont bénéficierait un État américain en difficulté au sein de la fédération. Cette fragilité structurelle explique pourquoi les débats sur l'approfondissement de l'intégration budgétaire européenne restent, encore aujourd'hui, aussi vifs — un thème qu'on retrouvera en phase 4 avec les débats sur l'État-providence et l'intégration européenne."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Appliqués à la zone euro, les critères de Mundell révèlent des faiblesses structurelles : mobilité du travail limitée entre pays membres et mécanismes de transferts budgétaires communs encore modestes comparés à une fédération comme les États-Unis — des lacunes qui ont notamment fragilisé la zone euro lors de la crise de la dette souveraine des années 2010."
+      }
+    ]
+  },
+  {
+    "id": 118,
+    "ordre": 118,
+    "phase": 3,
+    "semaine": 6,
+    "jour": 6,
+    "type": "actu",
+    "titre": "Euro-dollar en 2026 : le reflet d'une divergence monétaire transatlantique",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Le taux de change entre l'euro et le dollar, vu de façon théorique cette semaine, offre un cas d'application très concret en cette année 2026. Après avoir touché un plancher historique proche de 0,95-1,02 dollar fin 2022, en pleine crise énergétique européenne, l'euro s'est nettement redressé pour évoluer, au printemps et à l'été 2026, dans une fourchette comprise entre environ 1,12 et 1,17 dollar — un renforcement significatif de la monnaie européenne sur la période."
+      },
+      {
+        "type": "texte",
+        "html": "Ce mouvement s'explique en grande partie par la mécanique vue hier : la divergence de politique monétaire entre la BCE et la Fed. Alors que la BCE a entamé un cycle de baisse de ses taux directeurs dès 2024 avant de les relever de nouveau en juin 2026 face au choc pétrolier déjà vu en phase 1, la Fed, elle, a fait face à des pressions politiques contradictoires — celles de Donald Trump pour des baisses rapides, vues en semaine 2, contre la prudence de la Réserve fédérale soucieuse de maîtriser l'inflation. Cette instabilité perçue de la politique monétaire américaine, combinée aux tensions commerciales provoquées par les droits de douane américains eux-mêmes, a contribué à l'affaiblissement relatif du dollar sur la période."
+      },
+      {
+        "type": "texte",
+        "html": "Les prévisions des grandes banques pour la fin de l'année 2026 restent, à ce stade, incertaines, oscillant selon les scénarios entre 1,08 et 1,18 dollar pour un euro — une fourchette large qui traduit bien la difficulté, déjà évoquée hier, de calibrer précisément l'effet net de facteurs aussi nombreux et parfois contradictoires : politique monétaire, tensions commerciales, climat géopolitique et rôle de valeur refuge traditionnellement dévolu au dollar en période d'incertitude mondiale."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "L'euro, après un plancher historique fin 2022, s'est redressé pour évoluer autour de 1,12 à 1,17 dollar au printemps-été 2026, porté par la divergence de politique monétaire entre BCE et Fed et par les tensions autour de l'indépendance de la banque centrale américaine — un cas d'école des multiples facteurs qui déterminent un taux de change."
+      }
+    ],
+    "source": {
+      "texte": "EUR/USD : plancher historique autour de 0,95-1,02 $ fin 2022, remontée à 1,12-1,17 $ au printemps-été 2026. Prévisions des grandes banques pour fin 2026 comprises entre 1,08 et 1,18 $, selon les scénarios de politique monétaire et de tensions commerciales.",
+      "lien": "https://finactuel.fr/euro-dollar-cours-previsions-2026/",
+      "date_verification": "25 août 2026"
+    }
+  },
+  {
+    "id": 119,
+    "ordre": 119,
+    "phase": 3,
+    "semaine": 6,
+    "jour": 7,
+    "type": "quiz",
+    "titre": "Quiz — Semaine 6 et bilan de la phase 3",
+    "contenu": "Dernière ligne droite de la phase 3 ! Ce quiz mélange les notions de la semaine et quelques rappels de l'ensemble de la phase, avant de passer à la phase 4 consacrée au débat État versus marché.",
+    "questions": [
+      {
+        "question": "Qu'est-ce qu'un déficit commercial ?",
+        "options": [
+          "Une situation où les importations dépassent les exportations",
+          "Une situation où l'État est en faillite",
+          "Un synonyme de récession"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Un déficit commercial est-il toujours le signe d'une économie en difficulté ?",
+        "options": [
+          "Oui, toujours",
+          "Non, il peut refléter un investissement dynamique ou une monnaie forte",
+          "Un déficit commercial n'existe jamais en réalité"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Fin août 2026, comment le Canada a-t-il répliqué aux nouveaux droits de douane américains ?",
+        "options": [
+          "Il n'a pas réagi",
+          "Par des rétorsions calibrées « au dollar près » sur environ 20 Md$ de produits américains",
+          "En rejoignant les États-Unis"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Qu'est-ce qui influence le taux de change entre deux monnaies ?",
+        "options": [
+          "Uniquement la météo",
+          "Les écarts de taux d'intérêt, les flux commerciaux et la confiance géopolitique",
+          "Rien, il est fixé arbitrairement"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Quels critères Robert Mundell définit-il pour une zone monétaire optimale ?",
+        "options": [
+          "Mobilité du travail et du capital, flexibilité des prix et salaires, transferts budgétaires entre régions",
+          "Uniquement la taille de la population",
+          "Le nombre de banques centrales"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Sur quel critère de Mundell la zone euro reste-t-elle structurellement en retrait par rapport aux États-Unis ?",
+        "options": [
+          "La mobilité du travail et les mécanismes de transferts budgétaires communs",
+          "Le nombre d'habitants",
+          "La monnaie utilisée"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Entre fin 2022 et l'été 2026, comment l'euro a-t-il évolué face au dollar ?",
+        "options": [
+          "Il s'est effondré",
+          "Il s'est redressé, passant d'un plancher historique à environ 1,12-1,17 $",
+          "Il est resté strictement identique"
+        ],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Rappel semaine 2 : que préconise Milton Friedman pour la politique monétaire ?",
+        "options": [
+          "Une croissance stable et prévisible de la masse monétaire",
+          "Une création monétaire illimitée",
+          "L'abolition de toute monnaie"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Rappel semaine 4 : que soutient l'équivalence ricardienne de Robert Barro ?",
+        "options": [
+          "Que dette et impôt ont, en théorie, un effet équivalent si les ménages sont rationnels",
+          "Que la dette n'existe pas",
+          "Que l'impôt est toujours nul"
+        ],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Quelle phase du programme aborde ensuite le débat État versus marché ?",
+        "options": [
+          "La phase 4",
+          "La phase 1",
+          "On revient à la phase 2"
+        ],
+        "bonne_reponse": 0
+      }
+    ]
   }
 ]
