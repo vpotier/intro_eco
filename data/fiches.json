@@ -248,5 +248,251 @@
         "bonne_reponse": 1
       }
     ]
+  },
+  {
+    "id": 8,
+    "ordre": 8,
+    "phase": 1,
+    "semaine": 2,
+    "jour": 1,
+    "type": "concept",
+    "titre": "Qu'est-ce qu'un marché ?",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Dans le langage courant, un marché évoque un lieu physique : des étals, des vendeurs, des acheteurs qui déambulent. En économie, la notion est beaucoup plus large. Un <em class=\"accent\">marché</em> désigne tout mécanisme de rencontre entre une offre et une demande pour un bien, un service ou une ressource donnée, permettant à des transactions de se conclure à un certain prix. Ce mécanisme n'a pas besoin d'un lieu physique : le marché du travail, le marché des devises ou le marché de l'immobilier sont des marchés à part entière, même s'ils n'ont pas d'adresse précise.<br><br>Cette définition inclut des réalités très diverses : le marché des fruits et légumes de ton quartier, mais aussi le marché mondial du pétrole, le marché du crédit bancaire, ou encore le marché de l'art. Ce qui les unit, c'est la présence de deux catégories d'acteurs — ceux qui proposent un bien ou un service (l'offre) et ceux qui souhaitent l'acquérir (la demande) — et un mécanisme, le prix, qui permet d'ajuster ces deux forces l'une à l'autre."
+      },
+      {
+        "type": "texte",
+        "html": "Le prix joue ici un rôle central : il fonctionne comme un signal. Un prix qui monte indique généralement que la demande dépasse l'offre disponible ; un prix qui baisse signale l'inverse. Ce signal, en retour, influence les décisions des acheteurs et des vendeurs — c'est ce qui permet à un marché de s'ajuster sans qu'une autorité centrale n'ait besoin de dicter, produit par produit, qui doit produire quoi et en quelle quantité. On retrouve ici, sous une autre forme, l'intuition de la main invisible d'Adam Smith, vue la semaine dernière.<br><br>Cela ne signifie pas que les marchés fonctionnent toujours parfaitement, ni qu'ils devraient être la seule façon d'organiser une société — on consacrera une phase entière de ce programme aux situations où le marché échoue à produire un résultat satisfaisant, et aux débats sur le rôle de l'État. Mais comprendre ce mécanisme de base est indispensable avant d'en discuter les limites."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Un marché, ce n'est pas un lieu : c'est un mécanisme de rencontre entre une offre et une demande, coordonné par le prix. Cette définition s'applique aussi bien à un marché de quartier qu'au marché mondial de l'énergie ou à celui du travail."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "ordre": 9,
+    "phase": 1,
+    "semaine": 2,
+    "jour": 2,
+    "type": "actu",
+    "titre": "Le marché de l'énergie, un cas d'école grandeur nature",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Peu de marchés illustrent aussi bien les mécanismes de prix que celui de l'énergie. En 2026, après une année 2025 de relative accalmie, le marché européen du gaz a de nouveau basculé dans une phase de tension : une escalade militaire au Moyen-Orient et des restrictions sur certaines routes maritimes ont réduit ou fragilisé une partie de l'offre disponible, provoquant une hausse de la volatilité des prix sur les marchés de gros. Fin août 2026, le prix repère moyen du gaz en France s'établit tout de même autour de 0,163 €/kWh TTC, en légère baisse par rapport au mois précédent — preuve que ces marchés bougent en permanence, dans les deux sens, selon l'équilibre du moment entre offre et demande."
+      },
+      {
+        "type": "texte",
+        "html": "Le marché de l'électricité illustre un autre aspect intéressant : la structure de l'offre elle-même influence la sensibilité aux chocs. La France, grâce à un parc de production nucléaire important et relativement stable, absorbe mieux les à-coups du marché international que des pays plus dépendants des importations de gaz pour produire leur électricité. Les prix de l'électricité dite « baseload » pour 2026 s'établissent ainsi entre 58 et 70 €/MWh, une fourchette qui reflète à la fois le niveau de disponibilité du parc nucléaire, le développement des énergies renouvelables, et l'évolution des prix du gaz et du carbone utilisés comme référence sur le marché européen."
+      },
+      {
+        "type": "texte",
+        "html": "Ce cas illustre bien la mécanique vue dans la fiche précédente : un choc sur l'offre disponible (conflit, restriction d'approvisionnement) se traduit, toutes choses égales par ailleurs, par une pression à la hausse sur les prix, jusqu'à ce qu'un nouvel équilibre se stabilise — soit par une hausse de la production ailleurs, soit par une baisse de la consommation, soit par les deux."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Le marché de l'énergie répond à la même logique que n'importe quel marché : un choc sur l'offre disponible se répercute sur les prix. La structure de production d'un pays — son mix énergétique — détermine sa capacité à amortir ces chocs."
+      }
+    ],
+    "source": {
+      "texte": "Prix repère gaz CRE (août 2026) : environ 0,163 €/kWh TTC, en baisse de 0,8 % sur un mois. Électricité baseload 2026 : 58 à 70 €/MWh. Contexte de tensions géopolitiques sur le marché gazier européen depuis le début de l'année 2026.",
+      "lien": "https://www.optima-energie.fr/blog/actualites/prix-de-lelectricite-et-du-gaz-evolution/",
+      "date_verification": "25 août 2026"
+    }
+  },
+  {
+    "id": 10,
+    "ordre": 10,
+    "phase": 1,
+    "semaine": 2,
+    "jour": 3,
+    "type": "concept",
+    "titre": "La demande",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "La <em class=\"accent\">demande</em> désigne la quantité d'un bien ou d'un service que les acheteurs sont prêts à acquérir, à un prix donné, sur une période donnée. Elle obéit à un principe simple, connu sous le nom de <em class=\"accent\">loi de la demande</em> : toutes choses égales par ailleurs, plus le prix d'un bien augmente, plus la quantité demandée diminue — et inversement. Représentée sur un graphique avec le prix en ordonnée et la quantité en abscisse, la courbe de demande est donc décroissante : elle descend de gauche à droite."
+      },
+      {
+        "type": "texte",
+        "html": "Le prix n'est cependant pas le seul déterminant de la demande. Le revenu des acheteurs joue un rôle évident : à prix constant, une hausse de revenu augmente généralement la demande pour la plupart des biens. Les goûts et préférences, souvent influencés par la mode ou la publicité, déplacent également la courbe. Le prix des biens substituables (si le beurre devient trop cher, la demande de margarine augmente) et des biens complémentaires (si le prix de l'essence explose, la demande de grosses voitures baisse) entrent aussi en jeu, de même que les anticipations : si les acheteurs pensent qu'un prix va encore monter, ils peuvent avancer leurs achats dès aujourd'hui."
+      },
+      {
+        "type": "texte",
+        "html": "Il existe quelques exceptions notables à la loi de la demande, que les économistes ont identifiées précisément parce qu'elles sortent de la règle générale. Les biens dits de Veblen — certains produits de luxe — peuvent voir leur demande augmenter quand leur prix augmente, car le prix élevé fait partie de leur attrait social. Les biens de Giffen, plus rares et plus discutés empiriquement, désignent des biens de première nécessité pour lesquels une hausse de prix, dans un contexte de grande pauvreté, peut paradoxalement augmenter la quantité achetée, faute de pouvoir se tourner vers une alternative plus coûteuse. Ces exceptions confirment, par contraste, la robustesse du principe général."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "La demande décrit la quantité qu'on est prêt à acheter à un prix donné. Elle diminue quand le prix augmente (loi de la demande), et dépend aussi du revenu, des goûts, et du prix des biens liés."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "ordre": 11,
+    "phase": 1,
+    "semaine": 2,
+    "jour": 4,
+    "type": "auteur",
+    "titre": "Alfred Marshall — les deux lames du marché",
+    "blocs": [
+      {
+        "type": "image",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Alfred_Marshall.jpg",
+        "legende": "Alfred Marshall (1842-1924), économiste britannique, fondateur de l'école néoclassique de Cambridge"
+      },
+      {
+        "type": "texte",
+        "html": "Alfred Marshall, professeur à Cambridge, publie en 1890 ses Principes d'économie, qui deviendra le manuel de référence de la discipline en Angleterre pendant plusieurs décennies. Il compte parmi ses élèves deux économistes que l'on croisera abondamment dans ce programme : John Maynard Keynes et Arthur Cecil Pigou.<br><br>La contribution la plus durable de Marshall est d'avoir clos, ou du moins largement apaisé, un débat qui agitait les économistes depuis des décennies : qu'est-ce qui détermine la valeur d'un bien ? Les classiques, dans la lignée de Smith et Ricardo, insistaient sur le coût de production, et donc sur l'offre. Les marginalistes, de leur côté, mettaient en avant l'utilité que le bien procure à l'acheteur, et donc la demande."
+      },
+      {
+        "type": "image",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Offre-demande-equilibre.svg",
+        "legende": "Représentation classique de la rencontre entre l'offre et la demande : le point d'intersection détermine le prix et la quantité d'équilibre"
+      },
+      {
+        "type": "texte",
+        "html": "Marshall propose une image restée célèbre pour trancher ce débat : demander si c'est l'offre ou la demande qui détermine le prix revient, dit-il, à demander laquelle des deux lames d'une paire de ciseaux coupe le papier. Aucune des deux, isolément : c'est leur rencontre qui produit l'effet recherché. De la même façon, le prix d'équilibre sur un marché résulte de la confrontation simultanée de l'offre et de la demande, représentées par les deux courbes que tu as découvertes ces deux derniers jours — leur point d'intersection donne à la fois le prix et la quantité échangée à l'équilibre."
+      },
+      {
+        "type": "texte",
+        "html": "Marshall introduit également le concept d'<em class=\"accent\">élasticité</em>, qui mesure à quel point la quantité demandée (ou offerte) réagit à une variation de prix. La demande de pain est peu élastique : même si son prix augmente, on continue globalement à en acheter, faute d'alternative facile. La demande de voyages en avion pour les vacances, en revanche, est bien plus élastique : une hausse de prix pousse beaucoup de gens à renoncer ou à reporter leur voyage. Cet outil reste aujourd'hui central pour comprendre comment un marché réagit à un choc, qu'il s'agisse d'une taxe, d'une pénurie ou d'une innovation."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Alfred Marshall a réconcilié les explications par l'offre et par la demande grâce à la métaphore des deux lames de ciseaux : le prix résulte de leur rencontre, pas de l'une ou l'autre isolément. Il introduit aussi la notion d'élasticité, qui mesure la sensibilité d'un marché aux variations de prix."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "ordre": 12,
+    "phase": 1,
+    "semaine": 2,
+    "jour": 5,
+    "type": "concept",
+    "titre": "L'offre",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "L'<em class=\"accent\">offre</em> désigne la quantité d'un bien ou d'un service que les producteurs sont disposés à vendre, à un prix donné, sur une période donnée. Elle obéit, symétriquement à la demande, à une <em class=\"accent\">loi de l'offre</em> : toutes choses égales par ailleurs, plus le prix d'un bien est élevé, plus les producteurs sont incités à en proposer sur le marché — parce qu'un prix plus élevé rend rentable la production d'unités supplémentaires, plus coûteuses à produire. Représentée graphiquement, la courbe d'offre est donc croissante : elle monte de gauche à droite."
+      },
+      {
+        "type": "texte",
+        "html": "Plusieurs facteurs, au-delà du prix, déplacent la courbe d'offre. Le coût des facteurs de production — matières premières, salaires, énergie — en est un déterminant direct : si le coût de production augmente, les producteurs sont prêts à vendre moins à chaque niveau de prix. Le nombre de producteurs présents sur le marché joue également : plus ils sont nombreux, plus l'offre totale est importante à prix donné. Les progrès technologiques, en abaissant les coûts de production, déplacent aussi la courbe vers la droite — on peut produire davantage au même prix qu'avant."
+      },
+      {
+        "type": "texte",
+        "html": "Une distinction importante, introduite notamment par Marshall, sépare le court terme et le long terme. À très court terme, l'offre peut être quasiment fixe : un producteur agricole ne peut pas faire pousser davantage de blé du jour au lendemain, même si le prix grimpe fortement. À long terme, en revanche, l'offre devient beaucoup plus flexible : de nouveaux producteurs peuvent entrer sur le marché, des capacités de production supplémentaires peuvent être installées. C'est pourquoi un choc de prix a souvent des effets très différents selon l'horizon temporel considéré — une hausse brutale et durable des prix finit, à terme, par attirer de nouveaux offreurs, ce qui tend à faire refluer les prix."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "L'offre décrit la quantité qu'on est prêt à vendre à un prix donné. Elle augmente avec le prix (loi de l'offre), et dépend aussi des coûts de production, du nombre de producteurs, et de la technologie disponible — avec une flexibilité bien plus grande à long terme qu'à court terme."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "ordre": 13,
+    "phase": 1,
+    "semaine": 2,
+    "jour": 6,
+    "type": "actu",
+    "titre": "Le logement en France : quand l'offre ne suit pas la demande",
+    "blocs": [
+      {
+        "type": "texte",
+        "html": "Le marché du logement français offre une illustration particulièrement nette de ce qui se passe quand l'offre peine à suivre la demande. Selon les estimations couramment reprises par les acteurs du secteur en 2026, la France aurait besoin de produire environ 400 000 logements par an pour stabiliser durablement le marché — 200 000 pour accompagner la croissance démographique, et un volume équivalent pour renouveler un parc vieillissant. La production actuelle reste très en dessous de ce seuil."
+      },
+      {
+        "type": "texte",
+        "html": "Cette insuffisance structurelle de l'offre alimente mécaniquement la pression sur les prix et les loyers, en particulier dans les zones dites « tendues » — les grandes métropoles et leurs périphéries, où la demande de logement reste forte du fait de l'attractivité économique. Un facteur aggrave encore ce déséquilibre : plus de 3 millions de résidences secondaires existent en France, souvent concentrées dans des zones déjà très demandées, ce qui retire d'autant de logements du marché de la résidence principale et de la location longue durée. Dans certaines stations touristiques, ces résidences secondaires représentent plus de 40 % du parc immobilier local."
+      },
+      {
+        "type": "texte",
+        "html": "Ce cas est un bon exercice d'application des deux dernières fiches : une demande de logement qui reste structurellement forte (portée par la démographie et l'attractivité économique de certains territoires), une offre qui progresse trop lentement pour la suivre, et un ajustement qui se fait, comme le prédit la théorie, par les prix plutôt que par les quantités — puisque la quantité de logements disponibles, elle, met des années à s'ajuster."
+      },
+      {
+        "type": "encadre",
+        "titre": "À retenir",
+        "html": "Quand l'offre ne suit pas la demande sur un marché où les quantités mettent du temps à s'ajuster — comme le logement, qui se construit lentement —, le déséquilibre se traduit directement par une hausse des prix, plutôt que par une résorption rapide de la pénurie."
+      }
+    ],
+    "source": {
+      "texte": "Besoin estimé de 400 000 logements neufs par an en France pour stabiliser le marché (200 000 liés à la croissance démographique, autant pour le renouvellement du parc), production actuelle en deçà de ce seuil. Plus de 3 millions de résidences secondaires retirent des logements du marché locatif dans les zones tendues.",
+      "lien": "https://www.immobil-ia.fr/immobilier-et-economie/mal-logement-en-france-les-chiffres-2026-doivent-alerter-lecosysteme-immobilier/",
+      "date_verification": "25 août 2026"
+    }
+  },
+  {
+    "id": 14,
+    "ordre": 14,
+    "phase": 1,
+    "semaine": 2,
+    "jour": 7,
+    "type": "quiz",
+    "titre": "Quiz — Semaine 2",
+    "contenu": "Teste ce que tu as retenu cette semaine.",
+    "questions": [
+      {
+        "question": "En économie, qu'est-ce qui définit un « marché » ?",
+        "options": ["Un lieu physique où l'on vend des produits", "Un mécanisme de rencontre entre une offre et une demande, coordonné par le prix", "Une entreprise cotée en bourse"],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Que signale généralement une hausse de prix sur un marché ?",
+        "options": ["Que l'offre dépasse largement la demande", "Que la demande dépasse l'offre disponible", "Rien, les prix montent au hasard"],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Pourquoi la France a-t-elle été relativement moins exposée aux chocs du marché du gaz en 2026 ?",
+        "options": ["Elle n'importe aucune énergie", "Son parc de production nucléaire, plus stable, amortit les chocs", "Les prix de l'énergie sont fixés par la loi"],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Que dit la loi de la demande ?",
+        "options": ["Plus le prix augmente, plus la quantité demandée augmente", "Plus le prix augmente, plus la quantité demandée diminue", "Le prix n'a aucun effet sur la demande"],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Qu'appelle-t-on un bien substituable ?",
+        "options": ["Un bien qu'on utilise en complément d'un autre", "Un bien qui peut remplacer un autre pour satisfaire le même besoin", "Un bien dont le prix ne varie jamais"],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Selon la métaphore d'Alfred Marshall, qu'est-ce qui détermine le prix d'un bien ?",
+        "options": ["Seulement l'offre", "Seulement la demande", "La rencontre entre l'offre et la demande, comme les deux lames d'une paire de ciseaux"],
+        "bonne_reponse": 2
+      },
+      {
+        "question": "Que mesure l'élasticité, concept introduit par Marshall ?",
+        "options": ["Le nombre de vendeurs sur un marché", "La sensibilité de la quantité demandée ou offerte à une variation de prix", "Le taux d'inflation d'un pays"],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Que dit la loi de l'offre ?",
+        "options": ["Plus le prix augmente, plus les producteurs sont incités à vendre", "Plus le prix augmente, moins les producteurs veulent vendre", "L'offre ne dépend jamais du prix"],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "Pourquoi l'offre est-elle souvent plus rigide à court terme qu'à long terme ?",
+        "options": ["Parce que les producteurs n'aiment pas vendre davantage", "Parce qu'il faut du temps pour augmenter les capacités de production ou attirer de nouveaux producteurs", "Ce n'est pas vrai, l'offre est toujours identique"],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "Dans l'exemple du logement en France, pourquoi le déséquilibre se traduit-il surtout par une hausse des prix ?",
+        "options": ["Parce que la quantité de logements met du temps à s'ajuster à la demande", "Parce que les logements ne sont pas soumis à l'offre et la demande", "Parce que le gouvernement fixe les prix librement"],
+        "bonne_reponse": 0
+      }
+    ]
   }
 ]
