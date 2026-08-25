@@ -188,8 +188,6 @@ button:active {
 /* ---------- Retournement de la carte du jour (effet d'écrasement, robuste sur mobile) ---------- */
 .carte-flip-simple {
   cursor: pointer;
-  border-radius: 28px;
-  box-shadow: var(--card-shadow);
   transform: scaleX(1);
   opacity: 1;
   transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.32s ease;
@@ -197,10 +195,6 @@ button:active {
 .carte-flip-simple.ecrasee {
   transform: scaleX(0.02);
   opacity: 0;
-}
-.carte-flip-simple .carte-verrouillee,
-.carte-flip-simple .carte-recto {
-  box-shadow: none;
 }
 
 /* ---------- Carte verrouillée (face avant) ---------- */
