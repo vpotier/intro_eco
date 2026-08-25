@@ -480,6 +480,7 @@ function afficherLongRead() {
     html += construireQuizLongRead(fiche);
   } else {
     html += construireBlocsLongRead(fiche);
+    html += construireRessources(fiche);
     html += construirePullsOn(fiche);
   }
 
@@ -511,16 +512,16 @@ function afficherLongRead() {
 function construireBlocsLongRead(fiche) {
   if (!fiche.blocs) return `<div class="longread-bloc"><p>${fiche.contenu || ''}</p></div>`;
 
-  // Le premier bloc texte et la première image sont déjà montrés au recto : on ne les répète pas.
-  let premierTexteSaute = false;
+  // Important : le recto de la carte n'affiche qu'un EXTRAIT tronqué (220 caractères) du
+  // premier bloc texte, jamais son intégralité — donc on l'affiche ici en entier, quitte à
+  // répéter ses toutes premières phrases déjà entrevues. Sauter ce bloc entièrement (comme
+  // avant) faisait disparaître silencieusement le début réel de chaque fiche.
+  // L'image, elle, est montrée intégralement sur le recto : on peut se permettre de ne pas
+  // la répéter ici.
   let premiereImageSautee = false;
   let html = "";
 
   fiche.blocs.forEach(bloc => {
-    if (bloc.type === "texte" && !premierTexteSaute) {
-      premierTexteSaute = true;
-      return;
-    }
     if (bloc.type === "image" && !premiereImageSautee) {
       premiereImageSautee = true;
       return;
@@ -573,6 +574,27 @@ function extraireMotsCles(fiche) {
     }
   });
   return Array.from(motsCles).slice(0, 6);
+}
+
+const ICONES_RESSOURCES = { video: "🎬", podcast: "🎙️", article: "📰" };
+const LABELS_RESSOURCES = { video: "Vidéo", podcast: "Podcast", article: "Article" };
+
+function construireRessources(fiche) {
+  if (!fiche.ressources || fiche.ressources.length === 0) return "";
+  const items = fiche.ressources.map(r => `
+    <a class="ressource-item" href="${r.url}" target="_blank" rel="noopener">
+      <span class="ressource-icone">${ICONES_RESSOURCES[r.type] || "🔗"}</span>
+      <span class="ressource-texte">
+        <span class="ressource-titre">${r.titre}</span>
+        <span class="ressource-meta">${LABELS_RESSOURCES[r.type] || ""}${r.source ? " · " + r.source : ""}</span>
+      </span>
+      <span class="ressource-fleche">↗</span>
+    </a>
+  `).join("");
+  return `
+    <div class="longread-section-eyebrow">Pour aller plus loin</div>
+    <div class="ressources-liste">${items}</div>
+  `;
 }
 
 function construirePullsOn(fiche) {
