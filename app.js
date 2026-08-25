@@ -1,104 +1,257 @@
-// ---- Réglages du programme ----
-const START_DATE = "2026-08-25"; // jour 1 du programme
-const TOTAL_DAYS = 236; // dernière fiche prévue le 18 avril 2027
+const CLE_LUES = "eco_du_jour_lues";
+const CLE_FICHE_AFFICHEE = "eco_du_jour_fiche_affichee";
 
-// Libellés affichés pour chaque type de fiche
-const TYPE_LABELS = {
-  concept: "Concept",
-  auteur: "Portrait d'auteur",
-  actu: "Actualité",
-  interpellation: "Question",
-  quiz: "Quiz"
+const NOMS_PHASES = {
+  1: "Phase 1 — Fondamentaux",
+  2: "Phase 2 — Courants classiques",
+  3: "Phase 3 — Macro & politique économique",
+  4: "Phase 4 — État vs marché",
+  5: "Phase 5 — Économie contemporaine",
+  6: "Phase 6 — Économistes médiatiques"
 };
 
-// ---- Calcule quel numéro de jour du programme on est aujourd'hui ----
-function getDayNumber() {
-  const start = new Date(START_DATE + "T00:00:00");
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-  const diffMs = today - start;
-  const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
-  return diffDays + 1; // jour 1 = jour de lancement
+let toutesLesFiches = [];
+
+async function init() {
+  const reponse = await fetch("data/fiches.json");
+  toutesLesFiches = await reponse.json();
+  toutesLesFiches.sort((a, b) => a.ordre - b.ordre);
+
+  document.getElementById("nav-jour").addEventListener("click", afficherFicheDuJour);
+  document.getElementById("nav-sommaire").addEventListener("click", afficherSommaire);
+  window.addEventListener("scroll", mettreAJourBarreProgression);
+
+  afficherFicheDuJour();
 }
 
-// ---- Affiche la date du jour en français, en toutes lettres ----
-function renderDate() {
-  const el = document.getElementById("date");
-  const formatted = new Date().toLocaleDateString("fr-FR", {
-    weekday: "long",
-    day: "numeric",
-    month: "long",
-    year: "numeric"
+function getLues() {
+  const stocke = localStorage.getItem(CLE_LUES);
+  return stocke ? JSON.parse(stocke) : [];
+}
+
+function toggleLue(id) {
+  let lues = getLues();
+  if (lues.includes(id)) {
+    lues = lues.filter(x => x !== id);
+  } else {
+    lues.push(id);
+  }
+  localStorage.setItem(CLE_LUES, JSON.stringify(lues));
+}
+
+function getFicheAffichee() {
+  const stocke = localStorage.getItem(CLE_FICHE_AFFICHEE);
+  return stocke ? JSON.parse(stocke) : null;
+}
+
+function definirFicheAffichee(id) {
+  const aujourdhui = new Date().toISOString().split("T")[0];
+  localStorage.setItem(CLE_FICHE_AFFICHEE, JSON.stringify({ id, date: aujourdhui }));
+}
+
+function prochaineFicheNonLue() {
+  const lues = getLues();
+  return toutesLesFiches.find(f => !lues.includes(f.id)) || toutesLesFiches[toutesLesFiches.length - 1];
+}
+
+function ficheDuJourCourante() {
+  const aujourdhui = new Date().toISOString().split("T")[0];
+  const affichee = getFicheAffichee();
+
+  if (affichee && affichee.date === aujourdhui) {
+    const fiche = toutesLesFiches.find(f => f.id === affichee.id);
+    if (fiche) return fiche;
+  }
+
+  const nouvelleFiche = prochaineFicheNonLue();
+  definirFicheAffichee(nouvelleFiche.id);
+  return nouvelleFiche;
+}
+
+function afficherFicheDuJour() {
+  document.getElementById("nav-jour").classList.add("actif");
+  document.getElementById("nav-sommaire").classList.remove("actif");
+
+  const fiche = ficheDuJourCourante();
+  const dejaLue = getLues().includes(fiche.id);
+  const zone = document.getElementById("contenu");
+  zone.innerHTML = construireHTMLFiche(fiche, dejaLue);
+
+  if (fiche.type === "quiz") activerQuiz(fiche);
+  brancherBoutonLue(fiche, afficherFicheDuJour);
+  window.scrollTo(0, 0);
+  mettreAJourBarreProgression();
+}
+
+function afficherSommaire() {
+  document.getElementById("nav-sommaire").classList.add("actif");
+  document.getElementById("nav-jour").classList.remove("actif");
+
+  const lues = getLues();
+  const zone = document.getElementById("contenu");
+
+  // Regroupement des fiches par phase puis par semaine
+  const groupes = {};
+  toutesLesFiches.forEach(f => {
+    if (!groupes[f.phase]) groupes[f.phase] = {};
+    if (!groupes[f.phase][f.semaine]) groupes[f.phase][f.semaine] = [];
+    groupes[f.phase][f.semaine].push(f);
   });
-  el.textContent = formatted;
+
+  let html = "";
+
+  Object.keys(groupes).sort((a, b) => a - b).forEach(phase => {
+    const semaines = groupes[phase];
+    const fichesPhase = Object.values(semaines).flat();
+    const luesPhase = fichesPhase.filter(f => lues.includes(f.id)).length;
+    const titrePhase = NOMS_PHASES[phase] || `Phase ${phase}`;
+
+    html += `<details class="groupe-phase" open>
+      <summary>${titrePhase} <span class="compteur">${luesPhase}/${fichesPhase.length}</span></summary>`;
+
+    Object.keys(semaines).sort((a, b) => a - b).forEach(semaine => {
+      const fichesSemaine = semaines[semaine];
+      const luesSemaine = fichesSemaine.filter(f => lues.includes(f.id)).length;
+
+      html += `<details class="groupe-semaine">
+        <summary>Semaine ${semaine} <span class="compteur">${luesSemaine}/${fichesSemaine.length}</span></summary>
+        <ul class="sommaire">`;
+
+      fichesSemaine.forEach(f => {
+        const lue = lues.includes(f.id);
+        html += `
+          <li class="ligne-sommaire ${lue ? 'lue' : ''}" data-id="${f.id}">
+            <span class="check">${lue ? '✓' : '○'}</span>
+            <span class="type-badge">${f.type}</span>
+            <span class="titre-sommaire">${f.titre}</span>
+          </li>
+        `;
+      });
+
+      html += `</ul></details>`;
+    });
+
+    html += `</details>`;
+  });
+
+  zone.innerHTML = html;
+
+  document.querySelectorAll(".ligne-sommaire").forEach(ligne => {
+    ligne.addEventListener("click", () => afficherFicheParId(parseInt(ligne.dataset.id)));
+  });
+
+  window.scrollTo(0, 0);
+  mettreAJourBarreProgression();
 }
 
-// ---- Construit le HTML d'une fiche ----
-function renderFiche(fiche) {
-  const container = document.getElementById("fiche-content");
+function afficherFicheParId(id) {
+  const fiche = toutesLesFiches.find(f => f.id === id);
+  const dejaLue = getLues().includes(fiche.id);
+  const zone = document.getElementById("contenu");
 
-  const badgeLabel = TYPE_LABELS[fiche.type] || fiche.type;
+  zone.innerHTML = `<button id="btn-retour-sommaire">← Retour au sommaire</button>` + construireHTMLFiche(fiche, dejaLue);
 
-  let exampleHtml = "";
-  if (fiche.exemple) {
-    exampleHtml = `
-      <div class="example-box">
-        <span class="label">Exemple d'actualité</span>
-        <p>${fiche.exemple}</p>
-        ${fiche.source ? `<a class="source-link" href="${fiche.source}" target="_blank" rel="noopener">Voir la source →</a>` : ""}
+  if (fiche.type === "quiz") activerQuiz(fiche);
+  document.getElementById("btn-retour-sommaire").addEventListener("click", afficherSommaire);
+  brancherBoutonLue(fiche, () => afficherFicheParId(id));
+  window.scrollTo(0, 0);
+  mettreAJourBarreProgression();
+}
+
+function brancherBoutonLue(fiche, callbackRafraichir) {
+  const bouton = document.getElementById("btn-marquer-lue");
+  if (bouton) {
+    bouton.addEventListener("click", () => {
+      toggleLue(fiche.id);
+      callbackRafraichir();
+    });
+  }
+}
+
+function construireBloc(bloc) {
+  switch (bloc.type) {
+    case "texte":
+      return `<div class="bloc-texte">${bloc.html}</div>`;
+    case "image":
+      return `<figure class="bloc-image"><img src="${bloc.url}" alt="${bloc.legende || ''}" loading="lazy"><figcaption>${bloc.legende || ''}</figcaption></figure>`;
+    case "video":
+      return `<div class="bloc-video"><iframe src="${bloc.url}" title="${bloc.titre || ''}" frameborder="0" allowfullscreen loading="lazy"></iframe></div>`;
+    case "lien":
+      return `<p class="bloc-lien">🔗 <a href="${bloc.url}" target="_blank" rel="noopener">${bloc.texte}</a></p>`;
+    case "encadre":
+      return `<div class="bloc-encadre"><p class="encadre-titre">${bloc.titre}</p><div>${bloc.html}</div></div>`;
+    default:
+      return "";
+  }
+}
+
+function construireHTMLFiche(fiche, dejaLue) {
+  let html = `
+    <span class="type">${fiche.type}</span>
+    <h2>${fiche.titre}</h2>
+  `;
+
+  if (fiche.blocs) {
+    fiche.blocs.forEach(bloc => {
+      html += construireBloc(bloc);
+    });
+  } else if (fiche.contenu) {
+    html += `<p>${fiche.contenu}</p>`;
+  }
+
+  if (fiche.type === "actu" && fiche.source) {
+    html += `
+      <div class="source">
+        <p><strong>Source :</strong> ${fiche.source.texte}</p>
+        ${fiche.source.lien ? `<a href="${fiche.source.lien}" target="_blank">Lire l'article</a>` : ""}
+        ${fiche.source.date_verification ? `<p class="date-verif">Vérifié le ${fiche.source.date_verification}</p>` : ""}
       </div>
     `;
   }
 
-  container.innerHTML = `
-    <div class="card">
-      <span class="badge ${fiche.type}">${badgeLabel}</span>
-      <h1 class="fiche-title">${fiche.titre}</h1>
-      <div class="fiche-body">
-        ${fiche.contenu.map(p => `<p>${p}</p>`).join("")}
-      </div>
-      ${exampleHtml}
-    </div>
-  `;
+  if (fiche.type === "quiz" && fiche.questions) {
+    fiche.questions.forEach((q, i) => {
+      html += `<div class="question" data-question="${i}">
+        <p><strong>${q.question}</strong></p>
+        ${q.options.map((opt, j) => `<button class="option" data-question="${i}" data-option="${j}">${opt}</button>`).join("")}
+        <p class="resultat" data-question="${i}"></p>
+      </div>`;
+    });
+  }
+
+  html += `<div class="marquer-lue-zone">
+    <button id="btn-marquer-lue" class="${dejaLue ? 'lue' : ''}">${dejaLue ? 'Annuler la lecture' : 'Marquer comme lue'}</button>
+  </div>`;
+
+  return html;
 }
 
-// ---- Affiche un message si aucune fiche n'existe pour aujourd'hui ----
-function renderEmpty(dayNumber) {
-  const container = document.getElementById("fiche-content");
-  if (dayNumber < 1) {
-    container.innerHTML = `<p class="empty">Le programme n'a pas encore commencé.</p>`;
-  } else if (dayNumber > TOTAL_DAYS) {
-    container.innerHTML = `<p class="empty">Le programme est terminé. Merci d'avoir suivi ces 236 fiches !</p>`;
-  } else {
-    container.innerHTML = `<p class="empty">Aucune fiche trouvée pour aujourd'hui (jour ${dayNumber}). Vérifie data/fiches.json.</p>`;
-  }
+function activerQuiz(fiche) {
+  document.querySelectorAll(".option").forEach(bouton => {
+    bouton.addEventListener("click", () => {
+      const qIndex = parseInt(bouton.dataset.question);
+      const oIndex = parseInt(bouton.dataset.option);
+      const bonneReponse = fiche.questions[qIndex].bonne_reponse;
+      const resultat = document.querySelector(`.resultat[data-question="${qIndex}"]`);
+
+      if (oIndex === bonneReponse) {
+        resultat.textContent = "Bonne réponse !";
+        resultat.style.color = "green";
+      } else {
+        resultat.textContent = "Pas tout à fait — réessaie.";
+        resultat.style.color = "#b03a2e";
+      }
+    });
+  });
 }
 
-// ---- Point d'entrée ----
-async function init() {
-  renderDate();
-  const dayNumber = getDayNumber();
-
-  document.getElementById("progress").textContent =
-    dayNumber >= 1 && dayNumber <= TOTAL_DAYS
-      ? `Jour ${dayNumber} sur ${TOTAL_DAYS}`
-      : "";
-
-  try {
-    const response = await fetch("data/fiches.json");
-    const fiches = await response.json();
-    const todayFiche = fiches.find(f => f.jour === dayNumber);
-
-    if (todayFiche) {
-      renderFiche(todayFiche);
-    } else {
-      renderEmpty(dayNumber);
-    }
-  } catch (err) {
-    document.getElementById("fiche-content").innerHTML =
-      `<p class="empty">Erreur de chargement des données.</p>`;
-    console.error(err);
-  }
+function mettreAJourBarreProgression() {
+  const barre = document.getElementById("barre-progression");
+  if (!barre) return;
+  const hauteurTotale = document.documentElement.scrollHeight - window.innerHeight;
+  const scroll = window.scrollY;
+  const pourcentage = hauteurTotale > 0 ? Math.min(100, (scroll / hauteurTotale) * 100) : 0;
+  barre.style.width = pourcentage + "%";
 }
 
 init();
