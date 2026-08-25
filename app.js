@@ -27,7 +27,13 @@ const NOMS_SEMAINES = {
   "3-3": "Inflation et chômage",
   "3-4": "Dette et budget public",
   "3-5": "Croissance et cycles",
-  "3-6": "Commerce international et change"
+  "3-6": "Commerce international et change",
+  "4-1": "Les libéraux et l'État minimal",
+  "4-2": "Keynésianisme et interventionnisme",
+  "4-3": "L'État-providence",
+  "4-4": "Néolibéralisme et critique de l'État",
+  "4-5": "Régulation et externalités",
+  "4-6": "Synthèse État/marché"
 };
 
 function titreSemaine(phase, semaine) {
