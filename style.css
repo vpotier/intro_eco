@@ -120,7 +120,8 @@ button:active {
 
 /* ---------- En-tête commun ---------- */
 .ecran-titre {
-  font-size: 1.7rem;
+  font-size: 1.55rem;
+  line-height: 1.15;
   margin: 4px 0 2px;
 }
 
@@ -135,6 +136,11 @@ button:active {
   align-items: flex-start;
   justify-content: space-between;
   gap: 10px;
+}
+
+.header-row .ecran-titre {
+  flex: 1;
+  min-width: 0;
 }
 
 .streak-badge {
