@@ -631,23 +631,28 @@ button:active {
 }
 .streak-record strong { color: var(--ink); }
 
+.calendrier-entetes {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-top: 10px;
+}
+.calendrier-entetes span {
+  text-align: center;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
 .calendrier-streak {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 8px;
-  margin: 10px 0 26px;
+  margin: 8px 0 26px;
 }
 
 .jour-streak {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-}
-.jour-streak-lettre {
-  font-size: 0.62rem;
-  color: var(--ink-soft);
-  font-weight: 600;
+  justify-content: center;
 }
 .jour-streak-point {
   width: 26px;
@@ -662,6 +667,11 @@ button:active {
 }
 .jour-streak.aujourdhui .jour-streak-point {
   box-shadow: 0 0 0 2px var(--cream), 0 0 0 4px var(--olive);
+}
+.jour-streak.futur .jour-streak-point {
+  background-color: transparent;
+  border: 1px dashed var(--cream-darker);
+  opacity: 0.5;
 }
 
 .paliers-liste {
