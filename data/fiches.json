@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "date": "2026-08-25",
+    "phase": 1,
+    "semaine": 1,
+    "jour": 1,
+    "type": "concept",
+    "titre": "Qu'est-ce que l'économie ?",
+    "contenu": "L'économie, ce n'est pas d'abord une histoire de bourse ou de billets de banque. C'est la science qui étudie comment les individus et les sociétés font des choix face à une réalité incontournable : les ressources sont limitées, alors que nos besoins et désirs semblent illimités. Ce principe s'appelle la RARETÉ, et c'est le point de départ de toute réflexion économique. Que ce soit ton temps, ton argent, ou les ressources naturelles d'un pays : tout est limité, et il faut donc choisir comment les utiliser.",
+    "exemple": null
+  }
+]
