@@ -8,9 +8,21 @@ body {
   line-height: 1.6;
 }
 
+#barre-progression {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 0%;
+  background-color: #9c6b3f;
+  z-index: 1000;
+  transition: width 0.1s ease-out;
+}
+
 header h1 {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 nav {
@@ -53,6 +65,51 @@ nav button.actif {
 .accent {
   font-style: italic;
   color: #9c6b3f;
+}
+
+.bloc-texte {
+  margin-bottom: 12px;
+}
+
+.bloc-image img {
+  width: 100%;
+  border-radius: 6px;
+  display: block;
+}
+
+.bloc-image figcaption {
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.bloc-video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 6px;
+  border: none;
+}
+
+.bloc-lien a {
+  color: #9c6b3f;
+}
+
+.bloc-encadre {
+  background-color: #eee8dd;
+  border-left: 3px solid #b0946a;
+  padding: 12px 14px;
+  margin: 18px 0;
+  border-radius: 0 6px 6px 0;
+}
+
+.encadre-titre {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  margin: 0 0 6px 0;
+  color: #7a5a35;
 }
 
 .source {
@@ -111,9 +168,8 @@ nav button.actif {
   font-family: Georgia, serif;
 }
 
-.statut-lue {
-  color: #2e7d32;
-  font-weight: bold;
+#btn-marquer-lue.lue {
+  background-color: #8a8a8a;
 }
 
 .sommaire {
