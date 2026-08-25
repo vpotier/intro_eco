@@ -2,13 +2,27 @@ const CLE_LUES = "eco_du_jour_lues";
 const CLE_FICHE_AFFICHEE = "eco_du_jour_fiche_affichee";
 
 const NOMS_PHASES = {
-  1: "Phase 1 — Fondamentaux",
-  2: "Phase 2 — Courants classiques",
-  3: "Phase 3 — Macro & politique économique",
-  4: "Phase 4 — État vs marché",
-  5: "Phase 5 — Économie contemporaine",
-  6: "Phase 6 — Économistes médiatiques"
+  1: "Fondamentaux",
+  2: "Courants classiques",
+  3: "Macro & politique économique",
+  4: "État vs marché",
+  5: "Économie contemporaine",
+  6: "Économistes médiatiques"
 };
+
+const NOMS_SEMAINES = {
+  "1-1": "Les bases",
+  "1-2": "Le marché",
+  "1-3": "Équilibre et monnaie",
+  "1-4": "Monnaie et prix",
+  "1-5": "Mesurer l'économie",
+  "1-6": "Travail et pouvoir d'achat"
+};
+
+function titreSemaine(phase, semaine) {
+  const cle = `${phase}-${semaine}`;
+  return NOMS_SEMAINES[cle] ? `Semaine ${semaine} — ${NOMS_SEMAINES[cle]}` : `Semaine ${semaine}`;
+}
 
 let toutesLesFiches = [];
 
@@ -107,14 +121,21 @@ function afficherSommaire() {
     const titrePhase = NOMS_PHASES[phase] || `Phase ${phase}`;
 
     html += `<details class="groupe-phase" open>
-      <summary>${titrePhase} <span class="compteur">${luesPhase}/${fichesPhase.length}</span></summary>`;
+      <summary>
+        <span class="numero-phase">${phase}</span>
+        <span class="texte-phase">${titrePhase}</span>
+        <span class="compteur">${luesPhase}/${fichesPhase.length}</span>
+      </summary>`;
 
     Object.keys(semaines).sort((a, b) => a - b).forEach(semaine => {
       const fichesSemaine = semaines[semaine];
       const luesSemaine = fichesSemaine.filter(f => lues.includes(f.id)).length;
 
       html += `<details class="groupe-semaine">
-        <summary>Semaine ${semaine} <span class="compteur">${luesSemaine}/${fichesSemaine.length}</span></summary>
+        <summary>
+          <span class="texte-semaine">${titreSemaine(phase, semaine)}</span>
+          <span class="compteur">${luesSemaine}/${fichesSemaine.length}</span>
+        </summary>
         <ul class="sommaire">`;
 
       fichesSemaine.forEach(f => {
@@ -122,7 +143,7 @@ function afficherSommaire() {
         html += `
           <li class="ligne-sommaire ${lue ? 'lue' : ''}" data-id="${f.id}">
             <span class="check">${lue ? '✓' : '○'}</span>
-            <span class="type-badge">${f.type}</span>
+            <span class="type-badge" data-type="${f.type}">${f.type}</span>
             <span class="titre-sommaire">${f.titre}</span>
           </li>
         `;
@@ -187,7 +208,7 @@ function construireBloc(bloc) {
 
 function construireHTMLFiche(fiche, dejaLue) {
   let html = `
-    <span class="type">${fiche.type}</span>
+    <span class="type" data-type="${fiche.type}">${fiche.type}</span>
     <h2>${fiche.titre}</h2>
   `;
 
