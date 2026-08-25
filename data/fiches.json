@@ -357,6 +357,14 @@
         "titre": "À retenir",
         "html": "Un marché, ce n'est pas un lieu : c'est un mécanisme de rencontre entre une offre et une demande, coordonné par le prix. Cette définition s'applique aussi bien à un marché de quartier qu'au marché mondial de l'énergie ou à celui du travail."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Qu'est-ce qu'un marché ?",
+        "source": "La finance pour tous",
+        "url": "https://www.lafinancepourtous.com/juniors/lyceens/reviser-leconomie/notions-du-programme-de-ses-2nde-generale-et-technologique/qu-est-ce-qu-un-marche/"
+      }
     ]
   },
   {
@@ -418,6 +426,14 @@
         "titre": "À retenir",
         "html": "La demande décrit la quantité qu'on est prêt à acheter à un prix donné. Elle diminue quand le prix augmente (loi de la demande), et dépend aussi du revenu, des goûts, et du prix des biens liés."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Offre et demande : le graphique fondamental de l'économie",
+        "source": "Iconomix",
+        "url": "https://www.iconomix.ch/fr/modules/v07/savoir/"
+      }
     ]
   },
   {
@@ -456,6 +472,14 @@
         "titre": "À retenir",
         "html": "Alfred Marshall a réconcilié les explications par l'offre et par la demande grâce à la métaphore des deux lames de ciseaux : le prix résulte de leur rencontre, pas de l'une ou l'autre isolément. Il introduit aussi la notion d'élasticité, qui mesure la sensibilité d'un marché aux variations de prix."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Alfred Marshall",
+        "source": "economie.gouv.fr",
+        "url": "https://www.economie.gouv.fr/facileco/culture-economique/grands-noms-et-courants-de-leconomie/alfred-marshall"
+      }
     ]
   },
   {
@@ -483,6 +507,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "L'offre décrit la quantité qu'on est prêt à vendre à un prix donné. Elle augmente avec le prix (loi de l'offre), et dépend aussi des coûts de production, du nombre de producteurs, et de la technologie disponible — avec une flexibilité bien plus grande à long terme qu'à court terme."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "video",
+        "titre": "Offre et demande, expliquées en vidéo",
+        "source": "Iconomix",
+        "url": "https://www.iconomix.ch/fr/modules/v07/contenu/"
       }
     ]
   },
@@ -684,6 +716,14 @@
         "titre": "À retenir",
         "html": "Léon Walras a formalisé mathématiquement l'idée d'un équilibre général, où tous les marchés d'une économie s'équilibrent simultanément grâce à un système de prix. Une avancée théorique majeure, mais dont les hypothèses très abstraites (information parfaite, ajustement instantané) ont été critiquées aussi bien par les libéraux autrichiens que par Keynes."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Léon Walras publie ses Éléments d'économie politique pure",
+        "source": "Citéco, série \"10 000 ans d'économie\"",
+        "url": "https://www.citeco.fr/10000-ans-histoire-economie/revolutions-industrielles/leon-walras-publie-ses-elements-d-economie-politique-pure"
+      }
     ]
   },
   {
@@ -805,6 +845,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Nicole Oresme, penseur médiéval français, est l'un des tout premiers à avoir théorisé la monnaie de façon rigoureuse, en dénonçant l'altération monétaire par les souverains comme une forme de vol déguisé — une intuition qui préfigure les débats contemporains sur la création monétaire et l'inflation."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Traité de la première invention des monnaies (texte intégral, ca. 1355)",
+        "source": "Institut Coppet",
+        "url": "https://www.institutcoppet.org/oresme-traite-de-la-premiere-invention-des-monnaies-ca-1355/"
       }
     ]
   },
@@ -936,6 +984,14 @@
         "titre": "À retenir",
         "html": "L'essentiel de la monnaie en circulation est créé par les banques commerciales lorsqu'elles accordent des crédits, pas directement par l'État. Ce mécanisme est encadré par des règles prudentielles, et influencé indirectement par la banque centrale via ses taux directeurs."
       }
+    ],
+    "ressources": [
+      {
+        "type": "video",
+        "titre": "La création monétaire, comment ça marche ?",
+        "source": "Citéco (Banque de France)",
+        "url": "https://www.citeco.fr/la-creation-monetaire"
+      }
     ]
   },
   {
@@ -997,6 +1053,14 @@
         "titre": "À retenir",
         "html": "Une banque centrale vise principalement la stabilité des prix, via ses taux directeurs et d'autres outils monétaires. Elle joue aussi un rôle de prêteur en dernier ressort en cas de crise bancaire. Son indépendance vis-à-vis du pouvoir politique vise à éviter que la création monétaire ne serve à financer les dépenses publiques sans limite."
       }
+    ],
+    "ressources": [
+      {
+        "type": "video",
+        "titre": "La politique monétaire, expliquée",
+        "source": "Citéco / Dessine-moi l'éco",
+        "url": "https://www.citeco.fr/la-politique-monetaire"
+      }
     ]
   },
   {
@@ -1056,6 +1120,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "L'inflation est une hausse générale et durable des prix, mesurée via un indice des prix à la consommation. Elle peut venir d'un excès de demande, d'une hausse des coûts de production, ou d'une création monétaire trop rapide — et il est utile de distinguer l'inflation globale, qui inclut l'énergie, de l'inflation sous-jacente, qui la retire pour mieux voir la tendance de fond."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "L'inflation, comment ça marche ?",
+        "source": "Citéco (Banque de France)",
+        "url": "https://www.citeco.fr/l-inflation"
       }
     ]
   },
@@ -1225,6 +1297,14 @@
         "titre": "À retenir",
         "html": "Le PIB additionne les valeurs ajoutées produites dans un pays sur une période donnée. Il peut se calculer par la production, les revenus ou la dépense. Distingue toujours le PIB nominal (aux prix courants) du PIB réel (corrigé de l'inflation) pour juger d'une véritable croissance."
       }
+    ],
+    "ressources": [
+      {
+        "type": "podcast",
+        "titre": "T'as capté ? — Épisode 28 : Le PIB",
+        "source": "Citéco (Banque de France)",
+        "url": "https://www.citeco.fr/t-as-capte/episode-28-le-pib"
+      }
     ]
   },
   {
@@ -1258,6 +1338,14 @@
         "titre": "À retenir",
         "html": "Simon Kuznets a posé, dans les années 1930, les bases méthodologiques du PIB moderne — une contribution majeure récompensée par le Nobel en 1971. Mais il fut aussi l'un des tout premiers à avertir que cet indicateur ne devait jamais être confondu avec une mesure du bien-être d'une population."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Simon Kuznets, l'inventeur du PIB",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Simon_Kuznets"
+      }
     ]
   },
   {
@@ -1285,6 +1373,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "La croissance mesure la variation du PIB réel dans le temps. Elle peut venir d'une mobilisation accrue de facteurs de production (extensive) ou de gains de productivité (intensive) — cette seconde source expliquant l'essentiel de l'amélioration du niveau de vie sur longue période, du fait de l'effet cumulatif des écarts de croissance."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "video",
+        "titre": "La croissance, expliquée en vidéo",
+        "source": "Citéco (Banque de France)",
+        "url": "https://www.citeco.fr/la-croissance"
       }
     ]
   },
@@ -1347,6 +1443,14 @@
         "titre": "À retenir",
         "html": "Le PIB ignore le travail non marchand, ne déduit pas la dégradation environnementale, et ne dit rien de la répartition des richesses produites. Ce n'est pas un indicateur de bien-être — un point sur lequel les économistes s'accordent largement, au-delà des clivages politiques habituels."
       }
+    ],
+    "ressources": [
+      {
+        "type": "video",
+        "titre": "Au-delà du PIB : ce que mesure (et ne mesure pas) le PIB",
+        "source": "Citéco, conférence",
+        "url": "https://www.citeco.fr/au-del%C3%A0-du-pib"
+      }
     ]
   },
   {
@@ -1388,6 +1492,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Joseph Stiglitz a présidé, en 2009, la commission qui a formalisé les limites du PIB et proposé de lui adjoindre des indicateurs de revenu des ménages, de répartition des richesses et de soutenabilité — une influence durable sur la façon dont les instituts statistiques mesurent aujourd'hui la performance économique."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "podcast",
+        "titre": "Stiglitz : pour une croissance solidaire",
+        "source": "FMI, podcast",
+        "url": "https://www.imf.org/fr/news/podcasts/all-podcasts/2017/11/10/stiglitz-pour-une-croissance-solidaire"
       }
     ]
   },
@@ -1519,6 +1631,14 @@
         "titre": "À retenir",
         "html": "Le marché du travail suit la logique offre-demande, mais avec des spécificités fortes : le travail est indissociable de la personne, et ce marché est largement régulé (salaire minimum, droit du travail), ce qui limite l'ajustement automatique des salaires et alimente les débats sur les causes du chômage."
       }
+    ],
+    "ressources": [
+      {
+        "type": "video",
+        "titre": "Le marché du travail, expliqué en vidéo",
+        "source": "Citéco (Banque de France)",
+        "url": "https://www.citeco.fr/le-marche-du-travail"
+      }
     ]
   },
   {
@@ -1585,6 +1705,14 @@
         "titre": "À retenir",
         "html": "Le chômage se décompose en plusieurs types : frictionnel (transition normale entre deux emplois), structurel (inadéquation durable des compétences) et conjoncturel (lié au ralentissement de l'activité). Le sous-emploi et le halo du chômage complètent ce tableau, sans être toujours comptabilisés dans les chiffres officiels."
       }
+    ],
+    "ressources": [
+      {
+        "type": "podcast",
+        "titre": "T'as capté ? — Épisode 5 : Le chômage",
+        "source": "Citéco (Banque de France)",
+        "url": "https://www.citeco.fr/t-as-capte/episode-5"
+      }
     ]
   },
   {
@@ -1617,6 +1745,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "William Beveridge, dans son rapport de 1942, jette les bases de l'État-providence britannique moderne, en proposant une protection sociale universelle censée combattre cinq maux : le besoin, la maladie, l'ignorance, l'insalubrité et l'oisiveté — une matrice qui influencera la reconstruction sociale de plusieurs pays européens après-guerre."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Bismarck / Beveridge : deux modèles de l'indemnisation du chômage en Europe",
+        "source": "Unédic",
+        "url": "https://www.unedic.org/publications/bismarck-beveridge-deux-modeles-de-lindemnisation-du-chomage-en-europe"
       }
     ]
   },
@@ -1651,6 +1787,14 @@
         "titre": "À retenir",
         "html": "Le pouvoir d'achat dépend de l'écart entre l'évolution du salaire nominal et celle de l'inflation. Une hausse de salaire peut masquer une perte de pouvoir d'achat si l'inflation progresse plus vite — un mécanisme souvent en jeu dans le décalage entre statistiques officielles et ressenti des ménages."
       }
+    ],
+    "ressources": [
+      {
+        "type": "podcast",
+        "titre": "T'as capté ? — Épisode 18 : Le pouvoir d'achat",
+        "source": "Citéco (Banque de France)",
+        "url": "https://www.citeco.fr/t-as-capte/episode-18"
+      }
     ]
   },
   {
@@ -1682,6 +1826,14 @@
         "type": "encadre",
         "titre": "Pas de réponse toute faite",
         "html": "Le débat sur le revenu garanti oppose des arguments solides de chaque côté : simplicité et lutte contre le non-recours d'un côté, soutenabilité budgétaire et risque désincitatif de l'autre. La question n'est pas tranchée parmi les économistes eux-mêmes, ce qui en fait un bon marqueur pour situer les propositions des candidats à l'élection de 2027."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "video",
+        "titre": "Le revenu universel : définition, arguments pour et contre",
+        "source": "Citéco / Dessine-moi l'éco",
+        "url": "https://www.citeco.fr/le-revenu-universel"
       }
     ]
   },
