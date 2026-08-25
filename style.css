@@ -500,7 +500,38 @@ button:active {
   font-size: 0.95rem;
 }
 .option:hover { background-color: var(--cream-dark); }
+.option:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+.option-correcte {
+  background-color: #DCEACD !important;
+  border-color: #7FA65E !important;
+  color: #355024;
+  opacity: 1 !important;
+}
+.option-incorrecte {
+  background-color: #F6D9D3 !important;
+  border-color: #C97060 !important;
+  color: #8A3226;
+  opacity: 1 !important;
+}
 .resultat { font-weight: 700; margin-top: 8px; font-size: 0.9rem; }
+
+.btn-recommencer-quiz {
+  width: 100%;
+  background-color: var(--cream-dark);
+  color: var(--ink);
+  border: 1px solid var(--cream-darker);
+  padding: 14px;
+  border-radius: 999px;
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 0.98rem;
+  cursor: pointer;
+  margin-top: 8px;
+}
+.btn-recommencer-quiz[hidden] { display: none; }
 
 .pulls-on {
   display: flex;
