@@ -1,25 +1,123 @@
-async function chargerFicheDuJour() {
-  const zoneFiche = document.getElementById("fiche");
+const CLE_LUES = "eco_du_jour_lues";
+const CLE_FICHE_AFFICHEE = "eco_du_jour_fiche_affichee";
 
-  try {
-    const reponse = await fetch("data/fiches.json");
-    const fiches = await reponse.json();
+let toutesLesFiches = [];
 
-    const aujourdhui = new Date().toISOString().split("T")[0];
-    const ficheDuJour = fiches.find(f => f.date === aujourdhui) || fiches[0];
+async function init() {
+  const reponse = await fetch("data/fiches.json");
+  toutesLesFiches = await reponse.json();
+  toutesLesFiches.sort((a, b) => a.ordre - b.ordre);
 
-    zoneFiche.innerHTML = construireHTML(ficheDuJour);
+  document.getElementById("nav-jour").addEventListener("click", afficherFicheDuJour);
+  document.getElementById("nav-sommaire").addEventListener("click", afficherSommaire);
 
-    if (ficheDuJour.type === "quiz") {
-      activerQuiz(ficheDuJour);
-    }
-  } catch (erreur) {
-    zoneFiche.innerHTML = "<p>Erreur de chargement de la fiche. Vérifie que le fichier data/fiches.json existe bien.</p>";
-    console.error(erreur);
+  afficherFicheDuJour();
+}
+
+function getLues() {
+  const stocke = localStorage.getItem(CLE_LUES);
+  return stocke ? JSON.parse(stocke) : [];
+}
+
+function marquerCommeLue(id) {
+  const lues = getLues();
+  if (!lues.includes(id)) {
+    lues.push(id);
+    localStorage.setItem(CLE_LUES, JSON.stringify(lues));
   }
 }
 
-function construireHTML(fiche) {
+function getFicheAffichee() {
+  const stocke = localStorage.getItem(CLE_FICHE_AFFICHEE);
+  return stocke ? JSON.parse(stocke) : null;
+}
+
+function definirFicheAffichee(id) {
+  const aujourdhui = new Date().toISOString().split("T")[0];
+  localStorage.setItem(CLE_FICHE_AFFICHEE, JSON.stringify({ id, date: aujourdhui }));
+}
+
+function prochaineFicheNonLue() {
+  const lues = getLues();
+  return toutesLesFiches.find(f => !lues.includes(f.id)) || toutesLesFiches[toutesLesFiches.length - 1];
+}
+
+function ficheDuJourCourante() {
+  const aujourdhui = new Date().toISOString().split("T")[0];
+  const affichee = getFicheAffichee();
+
+  if (affichee && affichee.date === aujourdhui) {
+    const fiche = toutesLesFiches.find(f => f.id === affichee.id);
+    if (fiche) return fiche;
+  }
+
+  const nouvelleFiche = prochaineFicheNonLue();
+  definirFicheAffichee(nouvelleFiche.id);
+  return nouvelleFiche;
+}
+
+function afficherFicheDuJour() {
+  document.getElementById("nav-jour").classList.add("actif");
+  document.getElementById("nav-sommaire").classList.remove("actif");
+
+  const fiche = ficheDuJourCourante();
+  const dejaLue = getLues().includes(fiche.id);
+  const zone = document.getElementById("contenu");
+  zone.innerHTML = construireHTMLFiche(fiche, dejaLue);
+
+  if (fiche.type === "quiz") activerQuiz(fiche);
+  brancherBoutonLue(fiche, afficherFicheDuJour);
+}
+
+function afficherSommaire() {
+  document.getElementById("nav-sommaire").classList.add("actif");
+  document.getElementById("nav-jour").classList.remove("actif");
+
+  const lues = getLues();
+  const zone = document.getElementById("contenu");
+
+  let html = "<ul class='sommaire'>";
+  toutesLesFiches.forEach(f => {
+    const lue = lues.includes(f.id);
+    html += `
+      <li class="ligne-sommaire ${lue ? 'lue' : ''}" data-id="${f.id}">
+        <span class="check">${lue ? '✓' : '○'}</span>
+        <span class="type-badge">${f.type}</span>
+        <span class="titre-sommaire">${f.titre}</span>
+      </li>
+    `;
+  });
+  html += "</ul>";
+  zone.innerHTML = html;
+
+  document.querySelectorAll(".ligne-sommaire").forEach(ligne => {
+    ligne.addEventListener("click", () => afficherFicheParId(parseInt(ligne.dataset.id)));
+  });
+}
+
+function afficherFicheParId(id) {
+  const fiche = toutesLesFiches.find(f => f.id === id);
+  const dejaLue = getLues().includes(fiche.id);
+  const zone = document.getElementById("contenu");
+
+  zone.innerHTML = `<button id="btn-retour-sommaire">← Retour au sommaire</button>` + construireHTMLFiche(fiche, dejaLue);
+
+  if (fiche.type === "quiz") activerQuiz(fiche);
+  document.getElementById("btn-retour-sommaire").addEventListener("click", afficherSommaire);
+  brancherBoutonLue(fiche, () => afficherFicheParId(id));
+}
+
+function brancherBoutonLue(fiche, callbackRafraichir) {
+  const bouton = document.getElementById("btn-marquer-lue");
+  if (bouton) {
+    bouton.addEventListener("click", () => {
+      marquerCommeLue(fiche.id);
+      callbackRafraichir();
+    });
+  }
+}
+
+function construireHTMLFiche(fiche, dejaLue) {
   let html = `
     <span class="type">${fiche.type}</span>
     <h2>${fiche.titre}</h2>
@@ -46,6 +144,12 @@ function construireHTML(fiche) {
     });
   }
 
+  html += `<div class="marquer-lue-zone">
+    ${dejaLue
+      ? `<p class="statut-lue">✓ Fiche marquée comme lue</p>`
+      : `<button id="btn-marquer-lue">Marquer comme lue</button>`}
+  </div>`;
+
   return html;
 }
 
@@ -68,4 +172,4 @@ function activerQuiz(fiche) {
   });
 }
 
-chargerFicheDuJour();
+init();
