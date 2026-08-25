@@ -6,8 +6,8 @@
     "semaine": 1,
     "jour": 1,
     "type": "concept",
-    "titre": "Qu'est-ce que l'économie ?",
-    "contenu": "L'économie, ce n'est pas d'abord une histoire de bourse ou de billets de banque. C'est la science qui étudie comment les individus et les sociétés font des choix face à une réalité incontournable : les ressources sont limitées, alors que nos besoins et désirs semblent illimités. Ce principe s'appelle la RARETÉ, et c'est le point de départ de toute réflexion économique."
+    "titre": "qu'est-ce que l'économie ?",
+    "contenu": "l'économie n'est pas d'abord une affaire de bourse, de banques ou de chiffres qui défilent sur un écran. c'est une science sociale, au même titre que la sociologie ou l'anthropologie, qui s'intéresse à une question très concrète : comment les individus et les sociétés font-ils des choix quand tout ne peut pas être satisfait à la fois ?<br><br>ce point de départ porte un nom : la <em class=\"accent\">rareté</em>. non pas au sens où les ressources seraient nécessairement peu abondantes dans l'absolu, mais au sens où elles sont toujours limitées face à des besoins et des désirs qui, eux, ne le sont pas. le temps dont tu disposes dans une journée est rare. le budget d'un ménage est rare. les terres agricoles, l'énergie, les compétences disponibles sur un marché du travail : tout est rare, en ce sens précis.<br><br>de cette rareté découle une conséquence directe : il faut choisir. et choisir, c'est nécessairement renoncer à autre chose — on y reviendra dans deux jours avec la notion de coût d'opportunité. l'économie, comme discipline, cherche à comprendre et à modéliser la façon dont ces choix se prennent : au niveau d'un individu, d'une entreprise, ou d'un état.<br><br>il existe de nombreuses écoles de pensée en économie, souvent en désaccord entre elles sur la meilleure façon d'organiser une société — on les croisera tout au long de ce programme. mais toutes partent de ce même point commun : la rareté impose l'arbitrage, et l'arbitrage est au cœur de toute décision économique."
   },
   {
     "id": 2,
@@ -16,8 +16,8 @@
     "semaine": 1,
     "jour": 2,
     "type": "auteur",
-    "titre": "Xénophon et Aristote — l'origine du mot économie",
-    "contenu": "Le mot économie vient du grec ancien 'oikonomia', littéralement la gestion (nomos) de la maison (oikos). Xénophon, au 4e siècle avant notre ère, l'utilise pour désigner l'art de bien administrer un domaine. Aristote va plus loin en distinguant l'économie domestique de la 'chrématistique', l'accumulation de richesse pour elle-même, qu'il juge moralement suspecte."
+    "titre": "xénophon et aristote — l'origine du mot économie",
+    "contenu": "le mot économie vient du grec ancien <em class=\"accent\">oikonomia</em>, formé de oikos (la maison, le foyer, le patrimoine) et nomos (la règle, la gestion). à l'origine, il ne désigne donc pas une science globale, mais un art très concret : celui de bien administrer un domaine.<br><br>c'est xénophon, au ive siècle avant notre ère, qui donne ce sens au terme dans un traité intitulé l'économique (oikonomikos), sous forme de dialogue. il y décrit les qualités nécessaires à un bon chef de famille pour faire prospérer ses terres et ses biens.<br><br>aristote, quelques décennies plus tard, reprend et complexifie la notion dans sa politique. il distingue l'économie proprement dite — l'art de gérer une maison pour satisfaire des besoins réels — d'une autre activité qu'il nomme la <em class=\"accent\">chrématistique</em> : l'art d'accumuler de la richesse pour elle-même, sans autre finalité que l'enrichissement. pour aristote, cette seconde activité est suspecte, car elle n'a pas de limite naturelle, contrairement aux besoins d'un foyer.<br><br>cette distinction, vieille de plus de deux mille ans, résonne étrangement avec des débats très actuels : l'économie doit-elle servir à satisfaire des besoins, ou la recherche du profit peut-elle constituer une fin en soi ?"
   },
   {
     "id": 3,
@@ -25,14 +25,9 @@
     "phase": 1,
     "semaine": 1,
     "jour": 3,
-    "type": "actu",
-    "titre": "Le coût d'opportunité, illustré par l'actualité",
-    "contenu": "Choisir, c'est renoncer : le coût d'opportunité désigne ce à quoi on renonce quand on fait un choix plutôt qu'un autre. Exemple à insérer après vérification par recherche web au moment de la publication.",
-    "source": {
-      "texte": "Exemple à vérifier et sourcer au moment de la publication réelle",
-      "lien": "",
-      "date_verification": ""
-    }
+    "type": "concept",
+    "titre": "le coût d'opportunité",
+    "contenu": "choisir, c'est renoncer. cette phrase résume l'une des idées les plus utiles de la pensée économique : le <em class=\"accent\">coût d'opportunité</em>.<br><br>le coût d'opportunité d'une décision, ce n'est pas seulement ce qu'elle coûte en argent — c'est la valeur de la meilleure option à laquelle on renonce en la prenant. si tu passes ta soirée à regarder un film plutôt qu'à avancer sur un projet personnel, le coût de cette soirée n'est pas nul sous prétexte que le film était gratuit : c'est le temps que tu n'as pas consacré à ton projet.<br><br>ce raisonnement s'applique à toutes les échelles. une entreprise qui investit dans une usine renonce, avec le même argent, à un placement financier ou à une autre usine. un état qui augmente le budget de la défense renonce, à budget constant, à une dépense équivalente ailleurs.<br><br>c'est un outil de lecture précieux en période électorale : quand un programme politique promet une dépense nouvelle, la vraie question n'est pas seulement « combien ça coûte ? » mais « à quoi renonce-t-on pour la financer ? ». exemple concret dans la fiche suivante, avec le budget de l'état français pour 2027."
   },
   {
     "id": 4,
@@ -40,9 +35,14 @@
     "phase": 1,
     "semaine": 1,
     "jour": 4,
-    "type": "interpellation",
-    "titre": "Faut-il toujours choisir le moins cher ?",
-    "contenu": "Exemple de fiche interpellation : une question frontale liée au concept du jour, avec plusieurs points de vue exposés sans trancher. Contenu réel à rédiger lors de la phase de rédaction."
+    "type": "actu",
+    "titre": "un budget, c'est une suite de renoncements : l'exemple du budget 2027",
+    "contenu": "chaque été, le gouvernement français répartit les crédits de l'état entre ses ministères pour l'année suivante — un exercice qui illustre le coût d'opportunité à une échelle très concrète.<br><br>pour le budget 2027, les premiers arbitrages transmis au parlement à l'été 2026 montrent des choix nets : le ministère des armées bénéficie d'une hausse de plus de 6 milliards d'euros, protégée par la loi de programmation militaire, de même que la transition écologique et la justice. mais ces hausses ne sont pas financées par de l'argent qui apparaît par magie : elles ont un miroir. la mission travail et administration des ministères sociaux, elle, voit ses crédits amputés de 2,8 milliards d'euros.<br><br>ce n'est pas une anomalie isolée : c'est la mécanique même d'un budget contraint. la france affichait un déficit public de 5,1 % du pib en 2025, largement au-dessus de la cible européenne de 3 %, ce qui limite fortement la marge de manœuvre pour augmenter toutes les dépenses en même temps.<br><br><em class=\"accent\">à retenir</em> : la prochaine fois qu'un responsable politique annonce une dépense nouvelle, la question à se poser n'est pas seulement « est-ce une bonne idée ? » mais « qu'est-ce que cela déplace, ailleurs dans le budget ? ».",
+    "source": {
+      "texte": "arbitrages du budget 2027 : défense +6 md€, justice +400 m€, transition écologique +1,5 md€, mission travail et administration des ministères sociaux -2,8 md€. déficit public 2025 : 5,1 % du pib.",
+      "lien": "https://www.europe1.fr/politique/budget-2027-les-1ers-arbitrages-devoiles-976140",
+      "date_verification": "25 août 2026"
+    }
   },
   {
     "id": 5,
@@ -50,18 +50,53 @@
     "phase": 1,
     "semaine": 1,
     "jour": 5,
+    "type": "concept",
+    "titre": "les facteurs de production",
+    "contenu": "pour produire un bien ou un service — une baguette, un smartphone, un cours de yoga — il faut combiner des ressources. les économistes regroupent traditionnellement ces ressources en trois grandes catégories, appelées <em class=\"accent\">facteurs de production</em>.<br><br>le premier est le travail : les compétences, le temps et l'effort humain mobilisés. le second est le capital, au sens économique — pas seulement l'argent, mais l'ensemble des outils, machines et infrastructures qui permettent de produire plus efficacement. le troisième, plus ancien dans la pensée économique, est la terre ou les ressources naturelles : le sol agricole, les matières premières, l'énergie.<br><br>la façon de combiner ces trois facteurs varie selon les époques et les secteurs. une agriculture du xviiie siècle mobilisait énormément de travail et de terre, très peu de capital. une usine de semi-conducteurs aujourd'hui mobilise à l'inverse un capital considérable — des machines valant parfois plusieurs centaines de millions d'euros — pour une quantité de travail humain directement impliqué relativement faible.<br><br>cette répartition n'est pas un détail technique : elle explique en partie pourquoi certains pays se spécialisent dans certaines productions plutôt que d'autres, question qu'on approfondira bientôt avec la théorie des avantages comparatifs de david ricardo."
+  },
+  {
+    "id": 6,
+    "ordre": 6,
+    "phase": 1,
+    "semaine": 1,
+    "jour": 6,
+    "type": "auteur",
+    "titre": "adam smith — la main invisible et la division du travail",
+    "contenu": "adam smith publie en 1776 son ouvrage fondateur, recherches sur la nature et les causes de la richesse des nations, souvent abrégé en la richesse des nations. c'est l'un des textes fondateurs de l'économie comme discipline autonome.<br><br>smith y développe deux idées devenues centrales. la première est la <em class=\"accent\">division du travail</em> : il prend l'exemple, resté célèbre, d'une manufacture d'épingles. fabriquer une épingle demande une vingtaine d'opérations distinctes. si un seul ouvrier réalisait toutes ces étapes seul, il produirait péniblement quelques dizaines d'épingles par jour. mais en décomposant la tâche entre plusieurs ouvriers spécialisés, chacun sur une seule opération, la production explose — smith évoque une production journalière multipliée par plusieurs centaines. la spécialisation, selon lui, est l'un des principaux moteurs de la richesse d'une nation.<br><br>la seconde idée, plus connue encore, est celle de la <em class=\"accent\">main invisible</em> — une image que smith n'emploie en réalité qu'une seule fois dans tout l'ouvrage, mais qui a fini par résumer sa pensée dans l'imaginaire collectif. l'idée : quand chaque individu poursuit son propre intérêt sur un marché, l'ensemble de ces intérêts individuels, mis en concurrence, tend à produire un résultat collectivement bénéfique, sans qu'aucune autorité centrale n'ait eu besoin de le planifier.<br><br>cette idée est fondatrice du libéralisme économique — on la retrouvera, discutée et nuancée, tout au long du programme, notamment face aux arguments de keynes ou de hayek."
+  },
+  {
+    "id": 7,
+    "ordre": 7,
+    "phase": 1,
+    "semaine": 1,
+    "jour": 7,
     "type": "quiz",
-    "titre": "Quiz — Semaine 1",
-    "contenu": "Teste ce que tu as retenu cette semaine.",
+    "titre": "quiz — semaine 1",
+    "contenu": "teste ce que tu as retenu cette semaine.",
     "questions": [
       {
-        "question": "Que signifie le terme 'rareté' en économie ?",
-        "options": ["Un bien coûteux", "Une ressource limitée face à des besoins illimités", "Un produit de luxe"],
+        "question": "que signifie le terme économique de « rareté » ?",
+        "options": ["un bien coûteux", "une ressource limitée face à des besoins illimités", "un produit précieux et peu répandu"],
         "bonne_reponse": 1
       },
       {
-        "question": "D'où vient le mot 'économie' ?",
-        "options": ["Du latin 'economia'", "Du grec 'oikonomia' (gestion de la maison)", "De l'anglais 'economy'"],
+        "question": "d'où vient le mot « économie » ?",
+        "options": ["du grec oikonomia, la gestion de la maison", "du latin economia", "de l'anglais economy"],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "que désigne le « coût d'opportunité » d'un choix ?",
+        "options": ["son prix affiché", "la valeur de la meilleure option à laquelle on renonce", "le coût de production d'un bien"],
+        "bonne_reponse": 1
+      },
+      {
+        "question": "quels sont les trois facteurs de production traditionnels ?",
+        "options": ["travail, capital, terre", "argent, banque, état", "offre, demande, prix"],
+        "bonne_reponse": 0
+      },
+      {
+        "question": "quelle est l'idée derrière la « main invisible » d'adam smith ?",
+        "options": ["l'état doit tout planifier", "la poursuite d'intérêts individuels sur un marché peut produire un résultat collectivement bénéfique", "les marchés sont toujours justes"],
         "bonne_reponse": 1
       }
     ]
