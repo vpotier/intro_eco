@@ -28,3 +28,45 @@ header h1 {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+
+.source {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #eee8dd;
+  border-left: 3px solid #b0946a;
+  font-size: 0.9rem;
+}
+
+.date-verif {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.question {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.option {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin: 6px 0;
+  padding: 8px;
+  background-color: #f0ece3;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #e2d9c5;
+}
+
+.resultat {
+  font-weight: bold;
+  margin-top: 8px;
+}
