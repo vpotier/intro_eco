@@ -25,6 +25,20 @@
         "titre": "À retenir",
         "html": "L'économie étudie comment individus, entreprises et États font des choix face à des ressources limitées. Ce principe de rareté, et le renoncement que suppose tout choix, structurent l'ensemble de la discipline, quelles que soient les écoles de pensée qui s'y affrontent."
       }
+    ],
+    "ressources": [
+      {
+        "type": "podcast",
+        "titre": "Entendez-vous l'éco ?",
+        "source": "France Culture",
+        "url": "https://www.franceculture.fr/emissions/entendez-vous-leco"
+      },
+      {
+        "type": "article",
+        "titre": "La rareté, le choix et les coûts d'opportunité",
+        "source": "Khan Academy",
+        "url": "https://fr.khanacademy.org/economics-finance-domain/microeconomics/basic-economic-concepts-gen-micro/economics-introduction/a/lesson-overview-scarcity-choice-and-opportunity-cost"
+      }
     ]
   },
   {
@@ -63,6 +77,14 @@
         "titre": "À retenir",
         "html": "L'économie, avant d'être une science de la croissance et des marchés, désignait pour les Grecs l'art de bien administrer un foyer. Aristote y ajoute très tôt une mise en garde : distinguer l'échange qui répond à un besoin de l'accumulation de richesse comme fin en soi — une frontière que beaucoup de débats économiques contemporains continuent d'interroger."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Économique (Xénophon) — le texte qui a donné son nom à la discipline",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89conomique_(X%C3%A9nophon)"
+      }
     ]
   },
   {
@@ -90,6 +112,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Le coût d'opportunité, c'est la valeur de ce à quoi on renonce en faisant un choix — et pas seulement ce que ce choix coûte en argent. Un réflexe utile pour évaluer n'importe quelle promesse, personnelle ou politique : qu'est-ce que cela déplace ailleurs ?"
+      }
+    ],
+    "ressources": [
+      {
+        "type": "video",
+        "titre": "Le coût d'opportunité, expliqué en vidéo",
+        "source": "Khan Academy",
+        "url": "https://fr.khanacademy.org/economics-finance-domain/macroeconomics/macro-basic-economics-concepts/macro-opportunity-cost-and-the-production-possibilities-curve/v/opportunity-cost"
       }
     ]
   },
@@ -152,6 +182,14 @@
         "titre": "À retenir",
         "html": "Travail, capital, ressources naturelles : ces trois facteurs, combinés dans des proportions variables selon les époques et les secteurs, sont la matière première de toute production. Leur répartition inégale entre pays explique une grande partie des logiques de spécialisation internationale."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Facteur de production",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Facteur_de_production"
+      }
     ]
   },
   {
@@ -184,6 +222,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Adam Smith pose, dès 1776, deux piliers de la pensée économique moderne : la division du travail comme moteur de productivité, et l'idée qu'un marché où chacun poursuit son intérêt peut produire un résultat collectivement bénéfique — sans pour autant, chez Smith lui-même, exclure tout rôle pour l'État."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "video",
+        "titre": "Adam Smith et la main invisible",
+        "source": "Dessine-moi l'éco",
+        "url": "https://www.youtube.com/watch?v=JWztnGRFPII"
       }
     ]
   },
