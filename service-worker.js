@@ -1,4 +1,4 @@
-const CACHE_NOM = "deux-sous-cache-v6";
+const CACHE_NOM = "deux-sous-cache-v7";
 
 const FICHIERS_APP_SHELL = [
   "./",
