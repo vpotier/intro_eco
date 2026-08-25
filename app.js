@@ -69,6 +69,14 @@ function getQuizStats() {
 
 function aujourdhui() { return new Date().toISOString().split("T")[0]; }
 
+function remplacerContenu(zone, html) {
+  zone.innerHTML = html;
+  // Relance l'animation d'entrée (une classe déjà présente ne se réanime pas seule)
+  zone.classList.remove("contenu-anime");
+  void zone.offsetWidth;
+  zone.classList.add("contenu-anime");
+}
+
 function marquerLue(id) {
   const lues = getLues();
   if (!lues.includes(id)) {
@@ -243,30 +251,44 @@ function afficherToday() {
       <h1 class="ecran-titre serif">Éco du jour</h1>
       <div class="header-right">
         <button class="btn-icone" id="btn-sommaire" title="Sommaire">☰</button>
-        <div class="streak-badge">🔥 ${streak} -day streak</div>
+        <div class="streak-badge">🔥 ${streak} jours de suite</div>
       </div>
     </div>
-    <div class="date-ligne">${dateCapitalisee}<span class="separateur">·</span>Card no. ${fiche.ordre}</div>
+    <div class="date-ligne">${dateCapitalisee}<span class="separateur">·</span>Carte n° ${fiche.ordre}</div>
   `;
 
   if (!carteEstOuverte(fiche.id)) {
     html += `
-      <div class="carte-verrouillee" id="carte-verrouillee">
-        <div class="anneau a1"></div>
-        <div class="anneau a2"></div>
-        <div class="anneau a3"></div>
-        <h2 class="serif">Today's card is ready</h2>
-        <button class="btn-reveler serif" id="btn-reveler">Tap to reveal</button>
+      <div class="carte-flip" id="carte-flip">
+        <div class="carte-flip-inner" id="carte-flip-inner">
+          <div class="carte-face carte-face-avant">
+            <div class="carte-verrouillee">
+              <div class="anneau a1"></div>
+              <div class="anneau a2"></div>
+              <div class="anneau a3"></div>
+              <h2 class="serif">Ta carte du jour est prête</h2>
+              <button class="btn-reveler serif" id="btn-reveler">Toucher pour révéler</button>
+            </div>
+          </div>
+          <div class="carte-face carte-face-arriere">
+            ${construireCarteRecto(fiche, false)}
+          </div>
+        </div>
       </div>
     `;
-    zone.innerHTML = html;
-    document.getElementById("carte-verrouillee").addEventListener("click", () => {
-      ouvrirCarteDuJour(fiche.id);
-      afficherToday();
-    });
+    remplacerContenu(zone, html);
+
+    document.getElementById("carte-flip").addEventListener("click", () => {
+      const inner = document.getElementById("carte-flip-inner");
+      inner.classList.add("retournee");
+      setTimeout(() => {
+        ouvrirCarteDuJour(fiche.id);
+        afficherToday();
+      }, 650);
+    }, { once: true });
   } else {
     html += construireCarteRecto(fiche, true);
-    zone.innerHTML = html;
+    remplacerContenu(zone, html);
     brancherEvenementsRecto(fiche);
   }
 
@@ -295,12 +317,12 @@ function construireCarteRecto(fiche, avecActions) {
   }
 
   const hint = fiche.type === "actu"
-    ? "🔗 Tap for the real-world case"
-    : (fiche.type === "quiz" ? "📝 Tap to start the quiz" : "→ Tap Go deeper for more");
+    ? "🔗 Toucher pour le cas concret"
+    : (fiche.type === "quiz" ? "📝 Toucher pour commencer le quiz" : "→ Aller plus loin pour en savoir plus");
 
   let html = `
     <div class="carte-recto" id="carte-recto">
-      <span class="carte-numero">NO. ${fiche.ordre}</span>
+      <span class="carte-numero">N° ${fiche.ordre}</span>
       <span class="type-tag">${typeLabel}</span>
       <h2 class="serif">${fiche.titre}</h2>
       ${teaser}
@@ -312,7 +334,7 @@ function construireCarteRecto(fiche, avecActions) {
   if (avecActions) {
     html += `
       <div class="action-row">
-        <button class="btn-go-deeper serif" id="btn-go-deeper">Go deeper</button>
+        <button class="btn-go-deeper serif" id="btn-go-deeper">Aller plus loin</button>
         <button class="btn-favori ${estFavori ? 'actif' : ''}" id="btn-favori">🔖</button>
       </div>
     `;
@@ -356,7 +378,7 @@ function afficherLongRead() {
     <div class="longread-header">
       <button class="btn-retour-rond" id="btn-retour-longread">${SVG_FLECHE}</button>
       <div>
-        <div class="longread-eyebrow">THE LONG READ</div>
+        <div class="longread-eyebrow">POUR ALLER PLUS LOIN</div>
       </div>
     </div>
     <h2 class="longread-titre serif">${fiche.titre}</h2>
@@ -371,18 +393,18 @@ function afficherLongRead() {
 
   html += `
     <button class="btn-collection serif ${dejaLue ? 'dans-collection' : ''}" id="btn-garder">
-      ${dejaLue ? '✓ In your collection' : 'Keep in my collection'}
+      ${dejaLue ? '✓ Dans ta collection' : 'Garder dans ma collection'}
     </button>
   `;
 
-  zone.innerHTML = html;
+  remplacerContenu(zone, html);
 
   document.getElementById("btn-retour-longread").addEventListener("click", retourArriere);
 
   const btnGarder = document.getElementById("btn-garder");
   btnGarder.addEventListener("click", () => {
     marquerLue(fiche.id);
-    btnGarder.textContent = "✓ In your collection";
+    btnGarder.textContent = "✓ Dans ta collection";
     btnGarder.classList.add("dans-collection");
   });
 
@@ -432,7 +454,7 @@ function construireBlocsLongRead(fiche) {
   if (fiche.source) {
     html += `
       <div class="encadre-source">
-        <div class="longread-section-eyebrow">Spot it in the wild</div>
+        <div class="longread-section-eyebrow">Repéré dans l'actualité</div>
         <p>${fiche.source.texte}</p>
         ${fiche.source.lien ? `<a href="${fiche.source.lien}" target="_blank" rel="noopener">Lire l'article source</a>` : ""}
         ${fiche.source.date_verification ? `<div class="date-verif">Vérifié le ${fiche.source.date_verification}</div>` : ""}
@@ -468,7 +490,7 @@ function construirePullsOn(fiche) {
     `<button class="tag-pill tag-pill-clic" data-mot="${mot.replace(/"/g, '&quot;')}">${mot}</button>`
   ).join("");
   return `
-    <div class="longread-section-eyebrow">Pulls on</div>
+    <div class="longread-section-eyebrow">Mots-clés</div>
     <div class="pulls-on">${pills}</div>
   `;
 }
@@ -524,16 +546,16 @@ function afficherCollection() {
   const fichesLues = toutesLesFiches.filter(f => lues.includes(f.id)).sort((a, b) => b.ordre - a.ordre);
 
   let html = `
-    <h1 class="ecran-titre serif">Your collection</h1>
-    <div class="ecran-soustitre">${fichesLues.length} cards drawn.</div>
+    <h1 class="ecran-titre serif">Ta collection</h1>
+    <div class="ecran-soustitre">${fichesLues.length} carte${fichesLues.length > 1 ? 's' : ''} tirée${fichesLues.length > 1 ? 's' : ''}.</div>
     <div class="stats-row">
       <div class="stat-carte">
         <div class="stat-chiffre serif">${streak}</div>
-        <div class="stat-label">day streak</div>
+        <div class="stat-label">jours de suite</div>
       </div>
       <div class="stat-carte">
         <div class="stat-chiffre serif">${accuracy}%</div>
-        <div class="stat-label">quiz accuracy</div>
+        <div class="stat-label">précision aux quiz</div>
       </div>
     </div>
   `;
@@ -555,7 +577,7 @@ function afficherCollection() {
         const teinte = i % 2 === 0 ? "teinte-a" : "teinte-b";
         html += `
           <div class="mini-carte ${teinte}" data-id="${f.id}">
-            <span class="carte-numero-label">NO. ${f.ordre}</span>
+            <span class="carte-numero-label">N° ${f.ordre}</span>
             <div class="mini-titre serif">${f.titre}</div>
             <div class="mini-type">${NOMS_TYPES[f.type] || f.type}</div>
           </div>
@@ -565,7 +587,7 @@ function afficherCollection() {
     });
   }
 
-  zone.innerHTML = html;
+  remplacerContenu(zone, html);
 
   document.querySelectorAll(".mini-carte").forEach(el => {
     el.addEventListener("click", () => ouvrirLongRead(parseInt(el.dataset.id)));
@@ -580,8 +602,8 @@ function afficherThreads() {
   const couleurs = { concept: "var(--terracotta)", auteur: "var(--olive)", actu: "var(--terracotta)", interpellation: "var(--olive)", quiz: "var(--terracotta)" };
 
   let html = `
-    <h1 class="ecran-titre serif">Threads</h1>
-    <div class="ecran-soustitre">Cards arrive daily, but they're stitched into these.</div>
+    <h1 class="ecran-titre serif">Fils</h1>
+    <div class="ecran-soustitre">Une carte par jour, tissée dans ces grands fils.</div>
   `;
 
   types.forEach(t => {
@@ -594,7 +616,7 @@ function afficherThreads() {
       <div class="thread-carte">
         <div class="thread-titre-row">
           <span class="thread-titre serif">${NOMS_TYPES[t]}</span>
-          <span class="thread-compte">${luesType} of ${total}</span>
+          <span class="thread-compte">${luesType} / ${total}</span>
         </div>
         <div class="thread-barre-fond">
           <div class="thread-barre-fill" style="width:${pourcentage}%;background-color:${couleurs[t]};"></div>
@@ -604,7 +626,7 @@ function afficherThreads() {
     `;
   });
 
-  zone.innerHTML = html;
+  remplacerContenu(zone, html);
 }
 
 /* ===================== Recherche par mot-clé ===================== */
@@ -632,7 +654,7 @@ function afficherRechercheContenu(mot) {
     const check = lues.includes(f.id) ? "✓ " : "";
     html += `
       <div class="mini-carte ${teinte}" data-id="${f.id}">
-        <span class="carte-numero-label">NO. ${f.ordre}</span>
+        <span class="carte-numero-label">N° ${f.ordre}</span>
         <div class="mini-titre serif">${check}${f.titre}</div>
         <div class="mini-type">${NOMS_TYPES[f.type] || f.type}</div>
       </div>
@@ -640,7 +662,7 @@ function afficherRechercheContenu(mot) {
   });
 
   html += `</div>`;
-  zone.innerHTML = html;
+  remplacerContenu(zone, html);
 
   document.getElementById("btn-retour-imbrique").addEventListener("click", retourArriere);
   document.querySelectorAll(".mini-carte").forEach(el => {
@@ -710,7 +732,7 @@ function afficherSommaireContenu() {
     html += `</details>`;
   });
 
-  zone.innerHTML = html;
+  remplacerContenu(zone, html);
 
   document.getElementById("btn-retour-imbrique").addEventListener("click", retourArriere);
   document.querySelectorAll(".ligne-sommaire").forEach(el => {
