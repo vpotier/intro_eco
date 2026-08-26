@@ -1,5 +1,6 @@
 /* ===================== Clés localStorage ===================== */
 const CLE_LUES = "eco_du_jour_lues";
+const CLE_FICHE_AFFICHEE = "eco_du_jour_fiche_affichee";
 const CLE_FAVORIS = "eco_du_jour_favoris";
 const CLE_STREAK_DATES = "eco_du_jour_streak_dates";
 const CLE_QUIZ_STATS = "eco_du_jour_quiz_stats";
@@ -296,15 +297,31 @@ function prochaineFicheNonLue() {
   return toutesLesFiches.find(f => !lues.includes(f.id)) || toutesLesFiches[toutesLesFiches.length - 1];
 }
 
-// La fiche « du jour » est toujours la première fiche non lue : plus de verrou par date
-// calendaire. Une fois une fiche lue (via le retournement ou le bouton "Fiche suivante"),
-// l'app avance naturellement vers la suivante, y compris plusieurs fois le même jour.
-function ficheDuJourCourante() {
-  return prochaineFicheNonLue();
+function getFicheAffichee() {
+  const s = localStorage.getItem(CLE_FICHE_AFFICHEE);
+  return s ? JSON.parse(s) : null;
 }
 
-// Une fois lue, une fiche s'affiche toujours directement révélée (plus de nouveau
-// verrouillage à chaque visite) ; tant qu'elle ne l'est pas, elle reste verrouillée.
+function definirFicheAffichee(id) {
+  localStorage.setItem(CLE_FICHE_AFFICHEE, JSON.stringify({ id, date: aujourdhui() }));
+}
+
+// La fiche « du jour » reste épinglée pour toute la journée locale (un reload de page ne
+// change rien) : elle n'avance que si la date locale a changé depuis le dernier passage
+// (minuit franchi), ou explicitement via le bouton "Fiche suivante".
+function ficheDuJourCourante() {
+  const affichee = getFicheAffichee();
+  if (affichee && affichee.date === aujourdhui()) {
+    const f = toutesLesFiches.find(x => x.id === affichee.id);
+    if (f) return f;
+  }
+  const nouvelle = prochaineFicheNonLue();
+  definirFicheAffichee(nouvelle.id);
+  return nouvelle;
+}
+
+// Détermine si la carte épinglée du jour doit s'afficher verrouillée (pas encore lue)
+// ou directement révélée (déjà lue plus tôt dans la journée, par ex. après un reload).
 function carteEstOuverte(id) {
   return getLues().includes(id);
 }
@@ -314,10 +331,12 @@ function ouvrirCarteDuJour(id) {
 }
 
 // Appelée par le bouton "Fiche suivante" en fin de lecture complète : marque la fiche
-// actuelle comme lue, revient à l'écran Aujourd'hui (qui affichera alors automatiquement
-// la fiche suivante, verrouillée et prête à être retournée).
+// actuelle comme lue, épingle explicitement la fiche non lue suivante (même le même jour),
+// puis revient à l'écran Aujourd'hui pour l'afficher, verrouillée et prête à être retournée.
 function allerALaFicheSuivante(ficheActuelleId) {
   marquerCommeLue(ficheActuelleId);
+  const suivante = prochaineFicheNonLue();
+  definirFicheAffichee(suivante.id);
   vueRacine = "today";
   if (pileImbriquee.length > 0) {
     history.go(-pileImbriquee.length);
@@ -357,6 +376,7 @@ function afficherToday() {
         </div>
       </div>
     `;
+    html += construirePiedDePage();
     remplacerContenu(zone, html);
 
     const carte = document.getElementById("carte-flip-simple");
@@ -399,12 +419,21 @@ function afficherToday() {
     }, { once: true });
   } else {
     html += construireCarteRecto(fiche, true);
+    html += construirePiedDePage();
     remplacerContenu(zone, html);
     brancherEvenementsRecto(fiche);
   }
 
   document.getElementById("btn-sommaire").addEventListener("click", ouvrirSommaire);
   document.getElementById("btn-streak").addEventListener("click", ouvrirStreak);
+}
+
+function construirePiedDePage() {
+  return `
+    <div class="pied-de-page">
+      © Victor Potier. <a href="mailto:victor.potier@univ-eiffel.fr">Contact</a>
+    </div>
+  `;
 }
 
 function construireActionRow(fiche) {
