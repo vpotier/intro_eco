@@ -266,13 +266,6 @@ function ouvrirStreak() {
   rendreVueImbriquee();
 }
 
-function ouvrirFavoris() {
-  pileImbriquee.push({ type: "favoris" });
-  history.pushState({ profondeur: pileImbriquee.length }, "", "");
-  document.getElementById("bottom-nav").style.display = "none";
-  rendreVueImbriquee();
-}
-
 function ouvrirRechercheMotCle(mot) {
   pileImbriquee.push({ type: "recherche", mot });
   history.pushState({ profondeur: pileImbriquee.length }, "", "");
@@ -296,8 +289,6 @@ function rendreVueImbriquee() {
     afficherSommaireContenu();
   } else if (sommet.type === "streak") {
     afficherStreakContenu();
-  } else if (sommet.type === "favoris") {
-    afficherFavorisContenu();
   }
   window.scrollTo(0, 0);
   mettreAJourBarreProgression();
@@ -522,7 +513,6 @@ function brancherEvenementsRecto(fiche) {
 function afficherLongRead() {
   const fiche = toutesLesFiches.find(f => f.id === ficheLongreadId);
   const zone = document.getElementById("contenu");
-  const dejaLue = getLues().includes(fiche.id);
   const typeLabel = NOMS_TYPES[fiche.type] || fiche.type;
 
   let html = `
@@ -550,9 +540,6 @@ function afficherLongRead() {
       <button class="btn-collection serif" id="btn-suivante">Fiche suivante →</button>
       <button class="btn-favori ${estFavori ? 'actif' : ''}" id="btn-favori">🔖</button>
     </div>
-    <button class="btn-toggle-collection ${dejaLue ? 'dans-collection' : ''}" id="btn-garder">
-      ${dejaLue ? '✓ Dans ta collection' : 'Garder dans ma collection'}
-    </button>
   `;
 
   remplacerContenu(zone, html);
@@ -567,13 +554,6 @@ function afficherLongRead() {
   btnFav.addEventListener("click", () => {
     toggleFavori(fiche.id);
     btnFav.classList.toggle("actif");
-  });
-
-  const btnGarder = document.getElementById("btn-garder");
-  btnGarder.addEventListener("click", () => {
-    const estMaintenantLue = toggleLue(fiche.id);
-    btnGarder.textContent = estMaintenantLue ? "✓ Dans ta collection" : "Garder dans ma collection";
-    btnGarder.classList.toggle("dans-collection", estMaintenantLue);
   });
 
   document.querySelectorAll(".tag-pill-clic").forEach(el => {
@@ -771,11 +751,12 @@ function activerQuizLongRead(fiche) {
 function afficherCollection() {
   const zone = document.getElementById("contenu");
   const lues = getLues();
+  const favoris = getFavoris();
   const streak = calculerStreak();
   const quizStats = getQuizStats();
   const accuracy = quizStats.total > 0 ? Math.round((quizStats.correct / quizStats.total) * 100) : 0;
 
-  const fichesLues = toutesLesFiches.filter(f => lues.includes(f.id)).sort((a, b) => b.ordre - a.ordre);
+  const fichesFavorites = toutesLesFiches.filter(f => favoris.includes(f.id)).sort((a, b) => b.ordre - a.ordre);
 
   // Vue d'ensemble : progression globale et estimation par rapport à l'échéance du programme.
   const total = toutesLesFiches.length;
@@ -798,11 +779,8 @@ function afficherCollection() {
         : `Au rythme actuel, tu termines ${Math.abs(margeJours)} jour${Math.abs(margeJours) > 1 ? "s" : ""} après le 1er tour — accélère un peu si tu veux finir à temps.`);
 
   let html = `
-    <div class="header-row">
-      <h1 class="ecran-titre serif">Ta collection</h1>
-      <button class="btn-icone" id="btn-favoris" title="Favoris">🔖</button>
-    </div>
-    <div class="ecran-soustitre">${fichesLues.length} carte${fichesLues.length > 1 ? 's' : ''} tirée${fichesLues.length > 1 ? 's' : ''}.</div>
+    <h1 class="ecran-titre serif">Ta collection</h1>
+    <div class="ecran-soustitre">${fichesFavorites.length} carte${fichesFavorites.length > 1 ? 's' : ''} mise${fichesFavorites.length > 1 ? 's' : ''} de côté.</div>
 
     <div class="stats-row">
       <div class="stat-carte">
@@ -827,12 +805,12 @@ function afficherCollection() {
     </div>
   `;
 
-  if (fichesLues.length === 0) {
-    html += `<div class="collection-vide">Tes fiches lues apparaîtront ici au fil des jours.</div>`;
+  if (fichesFavorites.length === 0) {
+    html += `<div class="collection-vide">Touche 🔖 en bas d'une fiche pour la garder sous la main ici.</div>`;
   } else {
     // Regroupement par phase, plus lisible que par mois vu notre structure
     const groupes = {};
-    fichesLues.forEach(f => {
+    fichesFavorites.forEach(f => {
       const cle = `Phase ${f.phase}`;
       if (!groupes[cle]) groupes[cle] = [];
       groupes[cle].push(f);
@@ -842,10 +820,11 @@ function afficherCollection() {
       html += `<div class="groupe-mois">${cle}</div><div class="grille-collection">`;
       groupes[cle].forEach((f, i) => {
         const teinte = i % 2 === 0 ? "teinte-a" : "teinte-b";
+        const check = lues.includes(f.id) ? "✓ " : "";
         html += `
           <div class="mini-carte ${teinte}" data-id="${f.id}">
             <span class="carte-numero-label">N° ${f.ordre}</span>
-            <div class="mini-titre serif">${f.titre}</div>
+            <div class="mini-titre serif">${check}${f.titre}</div>
             <div class="mini-type">${NOMS_TYPES[f.type] || f.type}</div>
           </div>
         `;
@@ -868,8 +847,6 @@ function afficherCollection() {
 
   remplacerContenu(zone, html);
 
-  document.getElementById("btn-favoris").addEventListener("click", ouvrirFavoris);
-
   document.querySelectorAll(".mini-carte").forEach(el => {
     el.addEventListener("click", () => ouvrirLongRead(parseInt(el.dataset.id)));
   });
@@ -879,47 +856,6 @@ function afficherCollection() {
   document.getElementById("btn-importer").addEventListener("click", () => inputImport.click());
   inputImport.addEventListener("change", (e) => {
     if (e.target.files.length > 0) importerProgression(e.target.files[0]);
-  });
-}
-
-/* ===================== Écran Favoris ===================== */
-function afficherFavorisContenu() {
-  const zone = document.getElementById("contenu");
-  const favoris = getFavoris();
-  const lues = getLues();
-  const fichesFavorites = toutesLesFiches.filter(f => favoris.includes(f.id)).sort((a, b) => a.ordre - b.ordre);
-
-  let html = `
-    <div class="longread-header">
-      <button class="btn-retour-rond" id="btn-retour-imbrique">${SVG_FLECHE}</button>
-      <div><div class="longread-eyebrow">FAVORIS</div></div>
-    </div>
-    <h2 class="longread-titre serif">Tes fiches mises de côté</h2>
-  `;
-
-  if (fichesFavorites.length === 0) {
-    html += `<div class="collection-vide">Touche 🔖 sur une carte pour la garder sous la main ici.</div>`;
-  } else {
-    html += `<div class="grille-collection">`;
-    fichesFavorites.forEach((f, i) => {
-      const teinte = i % 2 === 0 ? "teinte-a" : "teinte-b";
-      const check = lues.includes(f.id) ? "✓ " : "";
-      html += `
-        <div class="mini-carte ${teinte}" data-id="${f.id}">
-          <span class="carte-numero-label">N° ${f.ordre}</span>
-          <div class="mini-titre serif">${check}${f.titre}</div>
-          <div class="mini-type">${NOMS_TYPES[f.type] || f.type}</div>
-        </div>
-      `;
-    });
-    html += `</div>`;
-  }
-
-  remplacerContenu(zone, html);
-
-  document.getElementById("btn-retour-imbrique").addEventListener("click", retourArriere);
-  document.querySelectorAll(".mini-carte").forEach(el => {
-    el.addEventListener("click", () => ouvrirLongRead(parseInt(el.dataset.id)));
   });
 }
 
@@ -1253,11 +1189,6 @@ function mettreAJourBarreProgression() {
 
 function marquerFicheLueDepuisLeScroll(id) {
   marquerCommeLue(id);
-  const btnGarder = document.getElementById("btn-garder");
-  if (btnGarder) {
-    btnGarder.textContent = "✓ Dans ta collection";
-    btnGarder.classList.add("dans-collection");
-  }
 }
 window.addEventListener("scroll", mettreAJourBarreProgression);
 
