@@ -1,6 +1,7 @@
 /* ===================== Clés localStorage ===================== */
 const CLE_LUES = "eco_du_jour_lues";
 const CLE_FICHE_AFFICHEE = "eco_du_jour_fiche_affichee";
+const CLE_OUVERTE = "eco_du_jour_carte_ouverte";
 const CLE_FAVORIS = "eco_du_jour_favoris";
 const CLE_STREAK_DATES = "eco_du_jour_streak_dates";
 const CLE_QUIZ_STATS = "eco_du_jour_quiz_stats";
@@ -320,14 +321,18 @@ function ficheDuJourCourante() {
   return nouvelle;
 }
 
-// Détermine si la carte épinglée du jour doit s'afficher verrouillée (pas encore lue)
-// ou directement révélée (déjà lue plus tôt dans la journée, par ex. après un reload).
+// Détermine si la carte épinglée du jour doit s'afficher verrouillée ou directement révélée.
+// Distinct du statut "lue" : on peut avoir révélé une carte (retournée) sans l'avoir
+// terminée — la lecture ne compte que lorsqu'on a scrollé jusqu'en bas de la fiche.
 function carteEstOuverte(id) {
-  return getLues().includes(id);
+  const s = localStorage.getItem(CLE_OUVERTE);
+  if (!s) return false;
+  const o = JSON.parse(s);
+  return o.date === aujourdhui() && o.id === id;
 }
 
 function ouvrirCarteDuJour(id) {
-  marquerCommeLue(id);
+  localStorage.setItem(CLE_OUVERTE, JSON.stringify({ id, date: aujourdhui() }));
 }
 
 // Appelée par le bouton "Fiche suivante" en fin de lecture complète : marque la fiche
@@ -553,6 +558,16 @@ function afficherLongRead() {
 
   if (fiche.type === "quiz") activerQuizLongRead(fiche);
   mettreAJourBarreProgression();
+
+  // Si le contenu tient déjà entièrement dans l'écran, il n'y a rien à scroller :
+  // on considère alors la fiche comme lue dès l'ouverture plutôt que de bloquer
+  // indéfiniment son statut.
+  requestAnimationFrame(() => {
+    const hauteurTotale = document.documentElement.scrollHeight - window.innerHeight;
+    if (hauteurTotale <= 0 && !getLues().includes(fiche.id)) {
+      marquerFicheLueDepuisLeScroll(fiche.id);
+    }
+  });
 }
 
 function construireBlocsLongRead(fiche) {
@@ -1018,6 +1033,24 @@ function mettreAJourBarreProgression() {
   const scroll = window.scrollY;
   const pourcentage = hauteurTotale > 0 ? Math.min(100, (scroll / hauteurTotale) * 100) : 0;
   barre.style.width = pourcentage + "%";
+
+  // Une fiche n'est marquée "lue" que lorsqu'on a effectivement scrollé jusqu'à son bas,
+  // pas simplement en la retournant ou en ouvrant "Aller plus loin".
+  if (pourcentage >= 96 && pileImbriquee.length > 0) {
+    const sommet = pileImbriquee[pileImbriquee.length - 1];
+    if (sommet.type === "longread" && !getLues().includes(sommet.id)) {
+      marquerFicheLueDepuisLeScroll(sommet.id);
+    }
+  }
+}
+
+function marquerFicheLueDepuisLeScroll(id) {
+  marquerCommeLue(id);
+  const btnGarder = document.getElementById("btn-garder");
+  if (btnGarder) {
+    btnGarder.textContent = "✓ Dans ta collection";
+    btnGarder.classList.add("dans-collection");
+  }
 }
 window.addEventListener("scroll", mettreAJourBarreProgression);
 
