@@ -50,9 +50,22 @@ h1, h2, h3, .serif {
   flex-direction: column;
 }
 
+#entete-globale {
+  position: sticky;
+  top: 0;
+  z-index: 400;
+  background-color: var(--cream);
+  padding: 16px 20px 10px;
+}
+
+#entete-globale .ecran-titre {
+  font-size: 1.15rem;
+  margin: 0;
+}
+
 #contenu {
   flex: 1;
-  padding: 20px 20px 24px;
+  padding: 6px 20px 24px;
   padding-bottom: calc(100px + env(safe-area-inset-bottom));
 }
 
