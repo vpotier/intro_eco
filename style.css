@@ -775,10 +775,6 @@ button:active {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
-.btn-toggle-collection.dans-collection {
-  color: var(--olive-dark);
-  text-decoration: none;
-}
 
 /* ---------- Collection ---------- */
 .stats-row {
