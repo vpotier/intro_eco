@@ -97,6 +97,14 @@ function remplacerContenu(zone, html) {
   zone.classList.remove("contenu-anime");
   void zone.offsetWidth;
   zone.classList.add("contenu-anime");
+  rafraichirEnteteGlobale();
+}
+
+function rafraichirEnteteGlobale() {
+  const badge = document.getElementById("btn-streak");
+  if (!badge) return;
+  const streak = calculerStreak();
+  badge.textContent = `🔥 ${streak} jour${streak > 1 ? "s" : ""} de suite`;
 }
 
 function toggleLue(id) {
@@ -212,6 +220,10 @@ async function init() {
     btn.addEventListener("click", () => allerA(btn.dataset.screen));
   });
 
+  document.getElementById("btn-sommaire").addEventListener("click", ouvrirSommaire);
+  document.getElementById("btn-streak").addEventListener("click", ouvrirStreak);
+  rafraichirEnteteGlobale();
+
   window.addEventListener("popstate", () => {
     if (pileImbriquee.length > 0) {
       pileImbriquee.pop();
@@ -236,7 +248,6 @@ function afficherEcranRacine() {
   document.querySelectorAll(".nav-btn").forEach(b => {
     b.classList.toggle("actif", b.dataset.screen === vueRacine);
   });
-  document.getElementById("bottom-nav").style.display = "flex";
   if (vueRacine === "today") afficherToday();
   if (vueRacine === "collection") afficherCollection();
   if (vueRacine === "threads") afficherThreads();
@@ -248,21 +259,18 @@ function afficherEcranRacine() {
 function ouvrirLongRead(id) {
   pileImbriquee.push({ type: "longread", id });
   history.pushState({ profondeur: pileImbriquee.length }, "", "");
-  document.getElementById("bottom-nav").style.display = "none";
   rendreVueImbriquee();
 }
 
 function ouvrirSommaire() {
   pileImbriquee.push({ type: "sommaire" });
   history.pushState({ profondeur: pileImbriquee.length }, "", "");
-  document.getElementById("bottom-nav").style.display = "none";
   rendreVueImbriquee();
 }
 
 function ouvrirStreak() {
   pileImbriquee.push({ type: "streak" });
   history.pushState({ profondeur: pileImbriquee.length }, "", "");
-  document.getElementById("bottom-nav").style.display = "none";
   rendreVueImbriquee();
 }
 
@@ -367,18 +375,10 @@ function allerALaFicheSuivante(ficheActuelleId) {
 function afficherToday() {
   const fiche = ficheDuJourCourante();
   const zone = document.getElementById("contenu");
-  const streak = calculerStreak();
   const dateAffichee = new Date().toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long" });
   const dateCapitalisee = dateAffichee.charAt(0).toUpperCase() + dateAffichee.slice(1);
 
   let html = `
-    <div class="header-row">
-      <h1 class="ecran-titre serif">Les deux sous de l'économie</h1>
-      <div class="header-right">
-        <button class="btn-icone" id="btn-sommaire" title="Sommaire">☰</button>
-        <div class="streak-badge" id="btn-streak">🔥 ${streak} jour${streak > 1 ? "s" : ""} de suite</div>
-      </div>
-    </div>
     <div class="date-ligne">${dateCapitalisee}<span class="separateur">·</span>Carte n° ${fiche.ordre}</div>
   `;
 
@@ -441,9 +441,6 @@ function afficherToday() {
     remplacerContenu(zone, html);
     brancherEvenementsRecto(fiche);
   }
-
-  document.getElementById("btn-sommaire").addEventListener("click", ouvrirSommaire);
-  document.getElementById("btn-streak").addEventListener("click", ouvrirStreak);
 }
 
 function construirePiedDePage() {
@@ -780,7 +777,7 @@ function afficherCollection() {
 
   let html = `
     <h1 class="ecran-titre serif">Ta collection</h1>
-    <div class="ecran-soustitre">${fichesFavorites.length} carte${fichesFavorites.length > 1 ? 's' : ''} mise${fichesFavorites.length > 1 ? 's' : ''} de côté.</div>
+    <div class="ecran-soustitre">Tes statistiques, ta progression, et tes fiches sauvegardées.</div>
 
     <div class="stats-row">
       <div class="stat-carte">
@@ -803,6 +800,11 @@ function afficherCollection() {
       </div>
       <p class="vue-ensemble-rythme">${messageRythme}${fichesRestantes > 0 ? ` (fin estimée le ${dateEstimeeTexte})` : ""}</p>
     </div>
+  `;
+
+  html += `
+    <div class="longread-section-eyebrow">🔖 Fiches sauvegardées</div>
+    <p class="vue-ensemble-rythme">${fichesFavorites.length === 0 ? "Retrouve ici les cartes que tu mets de côté, pour y revenir quand tu veux." : `${fichesFavorites.length} carte${fichesFavorites.length > 1 ? 's' : ''} mise${fichesFavorites.length > 1 ? 's' : ''} de côté.`}</p>
   `;
 
   if (fichesFavorites.length === 0) {
