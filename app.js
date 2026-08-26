@@ -1,7 +1,5 @@
 /* ===================== Clés localStorage ===================== */
 const CLE_LUES = "eco_du_jour_lues";
-const CLE_FICHE_AFFICHEE = "eco_du_jour_fiche_affichee";
-const CLE_OUVERTE = "eco_du_jour_carte_ouverte";
 const CLE_FAVORIS = "eco_du_jour_favoris";
 const CLE_STREAK_DATES = "eco_du_jour_streak_dates";
 const CLE_QUIZ_STATS = "eco_du_jour_quiz_stats";
@@ -71,7 +69,23 @@ function getQuizStats() {
   return s ? JSON.parse(s) : { correct: 0, total: 0 };
 }
 
-function aujourdhui() { return new Date().toISOString().split("T")[0]; }
+function aujourdhui() {
+  const d = new Date();
+  const annee = d.getFullYear();
+  const mois = String(d.getMonth() + 1).padStart(2, "0");
+  const jour = String(d.getDate()).padStart(2, "0");
+  return `${annee}-${mois}-${jour}`;
+}
+
+// Même logique que aujourdhui(), appliquée à une date quelconque (pas seulement "maintenant") —
+// à utiliser partout où on calcule une date locale, plutôt que toISOString() qui est en UTC
+// et provoque un décalage d'un jour entre minuit local et minuit UTC.
+function versDateLocale(date) {
+  const annee = date.getFullYear();
+  const mois = String(date.getMonth() + 1).padStart(2, "0");
+  const jour = String(date.getDate()).padStart(2, "0");
+  return `${annee}-${mois}-${jour}`;
+}
 
 function remplacerContenu(zone, html) {
   zone.innerHTML = html;
@@ -134,7 +148,7 @@ function calculerStreak() {
     curseur.setDate(curseur.getDate() - 1);
   }
   while (true) {
-    const iso = curseur.toISOString().split("T")[0];
+    const iso = versDateLocale(curseur);
     if (dates.has(iso)) {
       streak++;
       curseur.setDate(curseur.getDate() - 1);
@@ -277,41 +291,39 @@ function rendreVueImbriquee() {
 }
 
 /* ===================== Fiche du jour ===================== */
-function getFicheAffichee() {
-  const s = localStorage.getItem(CLE_FICHE_AFFICHEE);
-  return s ? JSON.parse(s) : null;
-}
-
-function definirFicheAffichee(id) {
-  localStorage.setItem(CLE_FICHE_AFFICHEE, JSON.stringify({ id, date: aujourdhui() }));
-}
-
 function prochaineFicheNonLue() {
   const lues = getLues();
   return toutesLesFiches.find(f => !lues.includes(f.id)) || toutesLesFiches[toutesLesFiches.length - 1];
 }
 
+// La fiche « du jour » est toujours la première fiche non lue : plus de verrou par date
+// calendaire. Une fois une fiche lue (via le retournement ou le bouton "Fiche suivante"),
+// l'app avance naturellement vers la suivante, y compris plusieurs fois le même jour.
 function ficheDuJourCourante() {
-  const affichee = getFicheAffichee();
-  if (affichee && affichee.date === aujourdhui()) {
-    const f = toutesLesFiches.find(x => x.id === affichee.id);
-    if (f) return f;
-  }
-  const nouvelle = prochaineFicheNonLue();
-  definirFicheAffichee(nouvelle.id);
-  return nouvelle;
+  return prochaineFicheNonLue();
 }
 
+// Une fois lue, une fiche s'affiche toujours directement révélée (plus de nouveau
+// verrouillage à chaque visite) ; tant qu'elle ne l'est pas, elle reste verrouillée.
 function carteEstOuverte(id) {
-  const s = localStorage.getItem(CLE_OUVERTE);
-  if (!s) return false;
-  const o = JSON.parse(s);
-  return o.date === aujourdhui() && o.id === id;
+  return getLues().includes(id);
 }
 
 function ouvrirCarteDuJour(id) {
-  localStorage.setItem(CLE_OUVERTE, JSON.stringify({ id, date: aujourdhui() }));
   marquerCommeLue(id);
+}
+
+// Appelée par le bouton "Fiche suivante" en fin de lecture complète : marque la fiche
+// actuelle comme lue, revient à l'écran Aujourd'hui (qui affichera alors automatiquement
+// la fiche suivante, verrouillée et prête à être retournée).
+function allerALaFicheSuivante(ficheActuelleId) {
+  marquerCommeLue(ficheActuelleId);
+  vueRacine = "today";
+  if (pileImbriquee.length > 0) {
+    history.go(-pileImbriquee.length);
+  } else {
+    afficherEcranRacine();
+  }
 }
 
 /* ===================== Écran Today ===================== */
@@ -327,7 +339,7 @@ function afficherToday() {
       <h1 class="ecran-titre serif">Les deux sous de l'économie</h1>
       <div class="header-right">
         <button class="btn-icone" id="btn-sommaire" title="Sommaire">☰</button>
-        <div class="streak-badge" id="btn-streak">🔥 ${streak} jours de suite</div>
+        <div class="streak-badge" id="btn-streak">🔥 ${streak} jour${streak > 1 ? "s" : ""} de suite</div>
       </div>
     </div>
     <div class="date-ligne">${dateCapitalisee}<span class="separateur">·</span>Carte n° ${fiche.ordre}</div>
@@ -485,7 +497,8 @@ function afficherLongRead() {
   }
 
   html += `
-    <button class="btn-collection serif ${dejaLue ? 'dans-collection' : ''}" id="btn-garder">
+    <button class="btn-collection serif" id="btn-suivante">Fiche suivante →</button>
+    <button class="btn-toggle-collection ${dejaLue ? 'dans-collection' : ''}" id="btn-garder">
       ${dejaLue ? '✓ Dans ta collection' : 'Garder dans ma collection'}
     </button>
   `;
@@ -493,6 +506,10 @@ function afficherLongRead() {
   remplacerContenu(zone, html);
 
   document.getElementById("btn-retour-longread").addEventListener("click", retourArriere);
+
+  document.getElementById("btn-suivante").addEventListener("click", () => {
+    allerALaFicheSuivante(fiche.id);
+  });
 
   const btnGarder = document.getElementById("btn-garder");
   btnGarder.addEventListener("click", () => {
@@ -908,7 +925,7 @@ function afficherStreakContenu() {
   for (let i = 0; i < 28; i++) {
     const d = new Date(debutGrille);
     d.setDate(debutGrille.getDate() + i);
-    const iso = d.toISOString().split("T")[0];
+    const iso = versDateLocale(d);
     jours.push({
       iso,
       actif: datesActives.has(iso),
