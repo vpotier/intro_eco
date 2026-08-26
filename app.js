@@ -1,5 +1,6 @@
 /* ===================== Clés localStorage ===================== */
 const CLE_LUES = "eco_du_jour_lues";
+const CLE_FICHE_AFFICHEE = "eco_du_jour_fiche_affichee";
 const CLE_OUVERTE = "eco_du_jour_carte_ouverte";
 const CLE_FAVORIS = "eco_du_jour_favoris";
 const CLE_STREAK_DATES = "eco_du_jour_streak_dates";
@@ -308,14 +309,29 @@ function prochaineFicheNonLue() {
   return toutesLesFiches.find(f => !lues.includes(f.id)) || toutesLesFiches[toutesLesFiches.length - 1];
 }
 
-// La fiche « du jour » est toujours la première fiche non lue, recalculée à chaque fois.
-// Comme "lue" ne se déclenche plus que par une action volontaire (scroll jusqu'en bas,
-// ou bouton explicite), cette fiche reste naturellement stable tant que rien de tel ne
-// s'est produit — pas besoin d'épingle par date : un reload ne change donc rien, et si
-// une fiche antérieure est décochée depuis le Sommaire, l'écran Aujourd'hui la reprend
-// correctement au prochain passage, sans attendre minuit.
+function getFicheAffichee() {
+  const s = localStorage.getItem(CLE_FICHE_AFFICHEE);
+  return s ? JSON.parse(s) : null;
+}
+
+function definirFicheAffichee(id) {
+  localStorage.setItem(CLE_FICHE_AFFICHEE, JSON.stringify({ id, date: aujourdhui() }));
+}
+
+// Règle stricte, non négociable : une seule carte proposée par jour. La fiche du jour
+// reste épinglée, QUEL QUE SOIT son statut de lecture entre-temps (la marquer "lue" en
+// scrollant ne doit surtout pas la faire avancer toute seule) — elle ne change que dans
+// deux cas : la date locale a changé depuis le dernier passage (minuit franchi), ou le
+// bouton "Fiche suivante" a été utilisé explicitement (voir allerALaFicheSuivante).
 function ficheDuJourCourante() {
-  return prochaineFicheNonLue();
+  const affichee = getFicheAffichee();
+  if (affichee && affichee.date === aujourdhui()) {
+    const f = toutesLesFiches.find(x => x.id === affichee.id);
+    if (f) return f;
+  }
+  const nouvelle = prochaineFicheNonLue();
+  definirFicheAffichee(nouvelle.id);
+  return nouvelle;
 }
 
 // Détermine si la carte du jour doit s'afficher verrouillée ou directement révélée.
@@ -333,10 +349,12 @@ function ouvrirCarteDuJour(id) {
 }
 
 // Appelée par le bouton "Fiche suivante" en fin de lecture complète : marque la fiche
-// actuelle comme lue, puis revient à l'écran Aujourd'hui, qui affichera automatiquement
-// la fiche suivante (recalculée), verrouillée et prête à être retournée.
+// actuelle comme lue, avance explicitement l'épingle vers la fiche non lue suivante
+// (seul moyen de changer de carte avant minuit), puis revient à l'écran Aujourd'hui.
 function allerALaFicheSuivante(ficheActuelleId) {
   marquerCommeLue(ficheActuelleId);
+  const suivante = prochaineFicheNonLue();
+  definirFicheAffichee(suivante.id);
   vueRacine = "today";
   if (pileImbriquee.length > 0) {
     history.go(-pileImbriquee.length);
