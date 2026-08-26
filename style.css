@@ -854,6 +854,46 @@ button:active {
   font-size: 0.95rem;
 }
 
+/* ---------- Vue d'ensemble (progression globale) ---------- */
+.vue-ensemble {
+  background-color: var(--mint);
+  border-radius: 16px;
+  padding: 16px 18px;
+  margin: 18px 0 24px;
+}
+.vue-ensemble-titre-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+.vue-ensemble-titre { font-size: 1.05rem; }
+.vue-ensemble-rythme {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin: 10px 0 0;
+}
+
+/* ---------- Sauvegarde / restauration ---------- */
+.zone-sauvegarde {
+  margin-top: 34px;
+  padding-top: 20px;
+  border-top: 1px solid var(--cream-darker);
+}
+.sauvegarde-boutons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+.sauvegarde-boutons .btn-toggle-collection {
+  text-decoration: none;
+  background-color: var(--cream-dark);
+  border-radius: 12px;
+  text-align: left;
+  padding: 12px 14px;
+}
+
 /* ---------- Threads ---------- */
 .thread-carte {
   background-color: var(--cream-dark);
