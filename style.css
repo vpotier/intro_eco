@@ -317,6 +317,20 @@ button:active {
   display: none;
 }
 
+.pied-de-page {
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  margin-top: 28px;
+  padding-bottom: 10px;
+}
+.pied-de-page a {
+  color: var(--terracotta-dark);
+  font-weight: 600;
+  text-decoration: none;
+}
+.pied-de-page a:hover { text-decoration: underline; }
+
 .action-row {
   display: flex;
   gap: 10px;
