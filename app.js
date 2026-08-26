@@ -349,18 +349,27 @@ function ouvrirCarteDuJour(id) {
 }
 
 // Appelée par le bouton "Fiche suivante" en fin de lecture complète : marque la fiche
-// actuelle comme lue, avance explicitement l'épingle vers la fiche non lue suivante
-// (seul moyen de changer de carte avant minuit), puis revient à l'écran Aujourd'hui.
+// actuelle comme lue, puis ouvre directement la lecture complète de la fiche non lue
+// suivante — une pure continuation de lecture. Ne touche JAMAIS à l'épingle du jour
+// (CLE_FICHE_AFFICHEE) : quel que soit le nombre de fiches lues d'affilée via ce bouton,
+// l'écran Aujourd'hui continuera d'afficher la fiche épinglée du jour, inchangée jusqu'à
+// minuit. On remplace aussi l'entrée courante de la pile plutôt que d'en empiler une
+// nouvelle à chaque clic, pour que le bouton retour ramène directement au point de départ
+// de cette séquence de lecture, pas fiche par fiche en sens inverse.
 function allerALaFicheSuivante(ficheActuelleId) {
   marquerCommeLue(ficheActuelleId);
   const suivante = prochaineFicheNonLue();
-  definirFicheAffichee(suivante.id);
-  vueRacine = "today";
-  if (pileImbriquee.length > 0) {
-    history.go(-pileImbriquee.length);
+
+  if (pileImbriquee.length > 0 && pileImbriquee[pileImbriquee.length - 1].type === "longread") {
+    pileImbriquee[pileImbriquee.length - 1].id = suivante.id;
   } else {
-    afficherEcranRacine();
+    pileImbriquee.push({ type: "longread", id: suivante.id });
+    history.pushState({ profondeur: pileImbriquee.length }, "", "");
   }
+
+  ficheLongreadId = suivante.id;
+  afficherLongRead();
+  window.scrollTo(0, 0);
 }
 
 /* ===================== Écran Today ===================== */
