@@ -265,6 +265,13 @@ function ouvrirStreak() {
   rendreVueImbriquee();
 }
 
+function ouvrirFavoris() {
+  pileImbriquee.push({ type: "favoris" });
+  history.pushState({ profondeur: pileImbriquee.length }, "", "");
+  document.getElementById("bottom-nav").style.display = "none";
+  rendreVueImbriquee();
+}
+
 function ouvrirRechercheMotCle(mot) {
   pileImbriquee.push({ type: "recherche", mot });
   history.pushState({ profondeur: pileImbriquee.length }, "", "");
@@ -288,6 +295,8 @@ function rendreVueImbriquee() {
     afficherSommaireContenu();
   } else if (sommet.type === "streak") {
     afficherStreakContenu();
+  } else if (sommet.type === "favoris") {
+    afficherFavorisContenu();
   }
   window.scrollTo(0, 0);
   mettreAJourBarreProgression();
@@ -739,9 +748,33 @@ function afficherCollection() {
 
   const fichesLues = toutesLesFiches.filter(f => lues.includes(f.id)).sort((a, b) => b.ordre - a.ordre);
 
+  // Vue d'ensemble : progression globale et estimation par rapport à l'échéance du programme.
+  const total = toutesLesFiches.length;
+  const pourcentageGlobal = total > 0 ? Math.round((lues.length / total) * 100) : 0;
+  const nombrePhases = Object.keys(NOMS_PHASES).length;
+  const phaseCourante = ficheDuJourCourante().phase;
+  const fichesRestantes = total - lues.length;
+
+  const dateScrutin = new Date(2027, 3, 18); // 18 avril 2027
+  const aujourdhuiDate = new Date();
+  const joursJusquauScrutin = Math.max(0, Math.ceil((dateScrutin - aujourdhuiDate) / 86400000));
+  const dateEstimee = new Date();
+  dateEstimee.setDate(dateEstimee.getDate() + fichesRestantes);
+  const dateEstimeeTexte = dateEstimee.toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" });
+  const margeJours = joursJusquauScrutin - fichesRestantes;
+  const messageRythme = fichesRestantes === 0
+    ? "Programme terminé !"
+    : (margeJours >= 0
+        ? `Au rythme actuel, tu termines avec ${margeJours} jour${margeJours > 1 ? "s" : ""} d'avance sur le 1er tour.`
+        : `Au rythme actuel, tu termines ${Math.abs(margeJours)} jour${Math.abs(margeJours) > 1 ? "s" : ""} après le 1er tour — accélère un peu si tu veux finir à temps.`);
+
   let html = `
-    <h1 class="ecran-titre serif">Ta collection</h1>
+    <div class="header-row">
+      <h1 class="ecran-titre serif">Ta collection</h1>
+      <button class="btn-icone" id="btn-favoris" title="Favoris">🔖</button>
+    </div>
     <div class="ecran-soustitre">${fichesLues.length} carte${fichesLues.length > 1 ? 's' : ''} tirée${fichesLues.length > 1 ? 's' : ''}.</div>
+
     <div class="stats-row">
       <div class="stat-carte">
         <div class="stat-chiffre serif">${streak}</div>
@@ -751,6 +784,17 @@ function afficherCollection() {
         <div class="stat-chiffre serif">${accuracy}%</div>
         <div class="stat-label">précision aux quiz</div>
       </div>
+    </div>
+
+    <div class="vue-ensemble">
+      <div class="vue-ensemble-titre-row">
+        <span class="vue-ensemble-titre serif">Phase ${phaseCourante} sur ${nombrePhases}</span>
+        <span class="thread-compte">${pourcentageGlobal}% du parcours</span>
+      </div>
+      <div class="thread-barre-fond">
+        <div class="thread-barre-fill" style="width:${pourcentageGlobal}%;background-color:var(--terracotta);"></div>
+      </div>
+      <p class="vue-ensemble-rythme">${messageRythme}${fichesRestantes > 0 ? ` (fin estimée le ${dateEstimeeTexte})` : ""}</p>
     </div>
   `;
 
@@ -781,11 +825,125 @@ function afficherCollection() {
     });
   }
 
+  html += `
+    <div class="zone-sauvegarde">
+      <div class="longread-section-eyebrow">Sauvegarde</div>
+      <p class="vue-ensemble-rythme">Ta progression est stockée uniquement sur cet appareil. Pense à l'exporter avant de changer de téléphone ou de vider ton cache.</p>
+      <div class="sauvegarde-boutons">
+        <button class="btn-toggle-collection" id="btn-exporter">💾 Exporter ma progression</button>
+        <button class="btn-toggle-collection" id="btn-importer">📂 Restaurer une sauvegarde</button>
+      </div>
+      <input type="file" id="input-import-fichier" accept=".json" style="display:none;">
+    </div>
+  `;
+
   remplacerContenu(zone, html);
+
+  document.getElementById("btn-favoris").addEventListener("click", ouvrirFavoris);
 
   document.querySelectorAll(".mini-carte").forEach(el => {
     el.addEventListener("click", () => ouvrirLongRead(parseInt(el.dataset.id)));
   });
+
+  document.getElementById("btn-exporter").addEventListener("click", exporterProgression);
+  const inputImport = document.getElementById("input-import-fichier");
+  document.getElementById("btn-importer").addEventListener("click", () => inputImport.click());
+  inputImport.addEventListener("change", (e) => {
+    if (e.target.files.length > 0) importerProgression(e.target.files[0]);
+  });
+}
+
+/* ===================== Écran Favoris ===================== */
+function afficherFavorisContenu() {
+  const zone = document.getElementById("contenu");
+  const favoris = getFavoris();
+  const lues = getLues();
+  const fichesFavorites = toutesLesFiches.filter(f => favoris.includes(f.id)).sort((a, b) => a.ordre - b.ordre);
+
+  let html = `
+    <div class="longread-header">
+      <button class="btn-retour-rond" id="btn-retour-imbrique">${SVG_FLECHE}</button>
+      <div><div class="longread-eyebrow">FAVORIS</div></div>
+    </div>
+    <h2 class="longread-titre serif">Tes fiches mises de côté</h2>
+  `;
+
+  if (fichesFavorites.length === 0) {
+    html += `<div class="collection-vide">Touche 🔖 sur une carte pour la garder sous la main ici.</div>`;
+  } else {
+    html += `<div class="grille-collection">`;
+    fichesFavorites.forEach((f, i) => {
+      const teinte = i % 2 === 0 ? "teinte-a" : "teinte-b";
+      const check = lues.includes(f.id) ? "✓ " : "";
+      html += `
+        <div class="mini-carte ${teinte}" data-id="${f.id}">
+          <span class="carte-numero-label">N° ${f.ordre}</span>
+          <div class="mini-titre serif">${check}${f.titre}</div>
+          <div class="mini-type">${NOMS_TYPES[f.type] || f.type}</div>
+        </div>
+      `;
+    });
+    html += `</div>`;
+  }
+
+  remplacerContenu(zone, html);
+
+  document.getElementById("btn-retour-imbrique").addEventListener("click", retourArriere);
+  document.querySelectorAll(".mini-carte").forEach(el => {
+    el.addEventListener("click", () => ouvrirLongRead(parseInt(el.dataset.id)));
+  });
+}
+
+/* ===================== Sauvegarde / restauration ===================== */
+function exporterProgression() {
+  const donnees = {
+    application: "Les deux sous de l'économie",
+    dateExport: aujourdhui(),
+    lues: getLues(),
+    favoris: getFavoris(),
+    streakDates: getStreakDates(),
+    quizStats: getQuizStats()
+  };
+  const blob = new Blob([JSON.stringify(donnees, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const lien = document.createElement("a");
+  lien.href = url;
+  lien.download = `deux-sous-sauvegarde-${aujourdhui()}.json`;
+  document.body.appendChild(lien);
+  lien.click();
+  document.body.removeChild(lien);
+  URL.revokeObjectURL(url);
+}
+
+function importerProgression(fichier) {
+  const lecteur = new FileReader();
+  lecteur.onload = (e) => {
+    let donnees;
+    try {
+      donnees = JSON.parse(e.target.result);
+    } catch (erreur) {
+      alert("Ce fichier ne semble pas être une sauvegarde valide.");
+      return;
+    }
+    if (!Array.isArray(donnees.lues)) {
+      alert("Ce fichier ne semble pas être une sauvegarde valide.");
+      return;
+    }
+    const confirmation = confirm(
+      "Restaurer cette sauvegarde va remplacer ta progression actuelle sur cet appareil " +
+      "(fiches lues, favoris, streak, précision aux quiz). Continuer ?"
+    );
+    if (!confirmation) return;
+
+    localStorage.setItem(CLE_LUES, JSON.stringify(donnees.lues || []));
+    localStorage.setItem(CLE_FAVORIS, JSON.stringify(donnees.favoris || []));
+    localStorage.setItem(CLE_STREAK_DATES, JSON.stringify(donnees.streakDates || []));
+    localStorage.setItem(CLE_QUIZ_STATS, JSON.stringify(donnees.quizStats || { correct: 0, total: 0 }));
+
+    alert("Sauvegarde restaurée !");
+    allerA("collection");
+  };
+  lecteur.readAsText(fichier);
 }
 
 /* ===================== Écran Threads ===================== */
