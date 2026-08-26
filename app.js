@@ -927,7 +927,7 @@ function afficherSommaireContenu() {
         const lu = lues.includes(f.id);
         html += `
           <li class="ligne-sommaire ${lu ? 'lue' : ''}" data-id="${f.id}">
-            <span class="check">${lu ? '✓' : '○'}</span>
+            <button class="check-toggle ${lu ? 'lue' : ''}" data-id-check="${f.id}" title="${lu ? 'Marquer comme non lue' : 'Marquer comme lue'}">${lu ? '✓' : '○'}</button>
             <span class="type-tag mini ${classeType(f.type)}">${NOMS_TYPES[f.type] || f.type}</span>
             <span class="titre-sommaire">${f.titre}</span>
           </li>
@@ -945,6 +945,13 @@ function afficherSommaireContenu() {
   document.getElementById("btn-retour-imbrique").addEventListener("click", retourArriere);
   document.querySelectorAll(".ligne-sommaire").forEach(el => {
     el.addEventListener("click", () => ouvrirLongRead(parseInt(el.dataset.id)));
+  });
+  document.querySelectorAll(".check-toggle").forEach(el => {
+    el.addEventListener("click", (e) => {
+      e.stopPropagation(); // ne doit pas déclencher l'ouverture de la fiche
+      toggleLue(parseInt(el.dataset.idCheck));
+      afficherSommaireContenu(); // rafraîchit l'affichage et les compteurs
+    });
   });
 }
 
