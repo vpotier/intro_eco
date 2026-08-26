@@ -35,7 +35,7 @@ h1, h2, h3, .serif {
   position: fixed;
   top: 0;
   left: 0;
-  height: 3px;
+  height: 5px;
   width: 0%;
   background-color: var(--terracotta);
   z-index: 1000;
