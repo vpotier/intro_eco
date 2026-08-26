@@ -1,6 +1,5 @@
 /* ===================== Clés localStorage ===================== */
 const CLE_LUES = "eco_du_jour_lues";
-const CLE_FICHE_AFFICHEE = "eco_du_jour_fiche_affichee";
 const CLE_OUVERTE = "eco_du_jour_carte_ouverte";
 const CLE_FAVORIS = "eco_du_jour_favoris";
 const CLE_STREAK_DATES = "eco_du_jour_streak_dates";
@@ -27,6 +26,8 @@ function classeType(type) {
 }
 
 const SVG_FLECHE = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>`;
+
+const SVG_CHECK = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>`;
 
 const NOMS_PHASES = {
   1: "Fondamentaux",
@@ -298,30 +299,17 @@ function prochaineFicheNonLue() {
   return toutesLesFiches.find(f => !lues.includes(f.id)) || toutesLesFiches[toutesLesFiches.length - 1];
 }
 
-function getFicheAffichee() {
-  const s = localStorage.getItem(CLE_FICHE_AFFICHEE);
-  return s ? JSON.parse(s) : null;
-}
-
-function definirFicheAffichee(id) {
-  localStorage.setItem(CLE_FICHE_AFFICHEE, JSON.stringify({ id, date: aujourdhui() }));
-}
-
-// La fiche « du jour » reste épinglée pour toute la journée locale (un reload de page ne
-// change rien) : elle n'avance que si la date locale a changé depuis le dernier passage
-// (minuit franchi), ou explicitement via le bouton "Fiche suivante".
+// La fiche « du jour » est toujours la première fiche non lue, recalculée à chaque fois.
+// Comme "lue" ne se déclenche plus que par une action volontaire (scroll jusqu'en bas,
+// ou bouton explicite), cette fiche reste naturellement stable tant que rien de tel ne
+// s'est produit — pas besoin d'épingle par date : un reload ne change donc rien, et si
+// une fiche antérieure est décochée depuis le Sommaire, l'écran Aujourd'hui la reprend
+// correctement au prochain passage, sans attendre minuit.
 function ficheDuJourCourante() {
-  const affichee = getFicheAffichee();
-  if (affichee && affichee.date === aujourdhui()) {
-    const f = toutesLesFiches.find(x => x.id === affichee.id);
-    if (f) return f;
-  }
-  const nouvelle = prochaineFicheNonLue();
-  definirFicheAffichee(nouvelle.id);
-  return nouvelle;
+  return prochaineFicheNonLue();
 }
 
-// Détermine si la carte épinglée du jour doit s'afficher verrouillée ou directement révélée.
+// Détermine si la carte du jour doit s'afficher verrouillée ou directement révélée.
 // Distinct du statut "lue" : on peut avoir révélé une carte (retournée) sans l'avoir
 // terminée — la lecture ne compte que lorsqu'on a scrollé jusqu'en bas de la fiche.
 function carteEstOuverte(id) {
@@ -336,12 +324,10 @@ function ouvrirCarteDuJour(id) {
 }
 
 // Appelée par le bouton "Fiche suivante" en fin de lecture complète : marque la fiche
-// actuelle comme lue, épingle explicitement la fiche non lue suivante (même le même jour),
-// puis revient à l'écran Aujourd'hui pour l'afficher, verrouillée et prête à être retournée.
+// actuelle comme lue, puis revient à l'écran Aujourd'hui, qui affichera automatiquement
+// la fiche suivante (recalculée), verrouillée et prête à être retournée.
 function allerALaFicheSuivante(ficheActuelleId) {
   marquerCommeLue(ficheActuelleId);
-  const suivante = prochaineFicheNonLue();
-  definirFicheAffichee(suivante.id);
   vueRacine = "today";
   if (pileImbriquee.length > 0) {
     history.go(-pileImbriquee.length);
@@ -907,7 +893,7 @@ function afficherSommaireContenu() {
       <summary>
         <span class="numero-phase">${phase}</span>
         <span class="texte-phase serif">${NOMS_PHASES[phase] || ("Phase " + phase)}</span>
-        <span class="thread-compte">${luesPhase}/${fichesPhase.length}</span>
+        <span class="thread-compte" data-compte-phase="${phase}">${luesPhase}/${fichesPhase.length}</span>
       </summary>`;
 
     Object.keys(semaines).sort((a, b) => a - b).forEach(semaine => {
@@ -919,15 +905,15 @@ function afficherSommaireContenu() {
       html += `<details class="groupe-semaine">
         <summary>
           <span class="texte-semaine">${titreSemaine}</span>
-          <span class="thread-compte">${luesSemaine}/${fichesSemaine.length}</span>
+          <span class="thread-compte" data-compte-semaine="${cle}">${luesSemaine}/${fichesSemaine.length}</span>
         </summary>
         <ul class="sommaire-liste">`;
 
       fichesSemaine.forEach(f => {
         const lu = lues.includes(f.id);
         html += `
-          <li class="ligne-sommaire ${lu ? 'lue' : ''}" data-id="${f.id}">
-            <button class="check-toggle ${lu ? 'lue' : ''}" data-id-check="${f.id}" title="${lu ? 'Marquer comme non lue' : 'Marquer comme lue'}">${lu ? '✓' : '○'}</button>
+          <li class="ligne-sommaire ${lu ? 'lue' : ''}" data-id="${f.id}" data-phase="${phase}" data-semaine-cle="${cle}">
+            <button class="check-toggle ${lu ? 'lue' : ''}" data-id-check="${f.id}" title="${lu ? 'Marquer comme non lue' : 'Marquer comme lue'}">${lu ? SVG_CHECK : ''}</button>
             <span class="type-tag mini ${classeType(f.type)}">${NOMS_TYPES[f.type] || f.type}</span>
             <span class="titre-sommaire">${f.titre}</span>
           </li>
@@ -949,8 +935,35 @@ function afficherSommaireContenu() {
   document.querySelectorAll(".check-toggle").forEach(el => {
     el.addEventListener("click", (e) => {
       e.stopPropagation(); // ne doit pas déclencher l'ouverture de la fiche
-      toggleLue(parseInt(el.dataset.idCheck));
-      afficherSommaireContenu(); // rafraîchit l'affichage et les compteurs
+      const id = parseInt(el.dataset.idCheck);
+      const estMaintenantLue = toggleLue(id);
+
+      // Mise à jour ciblée du bouton et de la ligne, sans reconstruire tout le sommaire
+      // (un rafraîchissement complet refermerait tous les accordéons ouverts).
+      el.innerHTML = estMaintenantLue ? SVG_CHECK : "";
+      el.classList.toggle("lue", estMaintenantLue);
+      el.title = estMaintenantLue ? "Marquer comme non lue" : "Marquer comme lue";
+      const ligne = el.closest(".ligne-sommaire");
+      ligne.classList.toggle("lue", estMaintenantLue);
+
+      // Mise à jour des compteurs "X/Y" de la semaine et de la phase concernées
+      const cleSemaine = ligne.dataset.semaineCle;
+      const phase = ligne.dataset.phase;
+      const luesActuelles = getLues();
+
+      const fichesSemaineConcernee = toutesLesFiches.filter(f => `${f.phase}-${f.semaine}` === cleSemaine);
+      const compteSemaine = document.querySelector(`[data-compte-semaine="${cleSemaine}"]`);
+      if (compteSemaine) {
+        const n = fichesSemaineConcernee.filter(f => luesActuelles.includes(f.id)).length;
+        compteSemaine.textContent = `${n}/${fichesSemaineConcernee.length}`;
+      }
+
+      const fichesPhaseConcernee = toutesLesFiches.filter(f => String(f.phase) === phase);
+      const comptePhase = document.querySelector(`[data-compte-phase="${phase}"]`);
+      if (comptePhase) {
+        const n = fichesPhaseConcernee.filter(f => luesActuelles.includes(f.id)).length;
+        comptePhase.textContent = `${n}/${fichesPhaseConcernee.length}`;
+      }
     });
   });
 }
