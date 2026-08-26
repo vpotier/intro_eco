@@ -464,12 +464,9 @@ function construirePiedDePage() {
 }
 
 function construireActionRow(fiche) {
-  const favoris = getFavoris();
-  const estFavori = favoris.includes(fiche.id);
   return `
     <div class="action-row">
       <button class="btn-go-deeper serif" id="btn-go-deeper">Aller plus loin</button>
-      <button class="btn-favori ${estFavori ? 'actif' : ''}" id="btn-favori">🔖</button>
     </div>
   `;
 }
@@ -519,12 +516,6 @@ function extraireTexte(html, maxLen) {
 function brancherEvenementsRecto(fiche) {
   const btnDeeper = document.getElementById("btn-go-deeper");
   if (btnDeeper) btnDeeper.addEventListener("click", () => ouvrirLongRead(fiche.id));
-
-  const btnFav = document.getElementById("btn-favori");
-  if (btnFav) btnFav.addEventListener("click", () => {
-    toggleFavori(fiche.id);
-    btnFav.classList.toggle("actif");
-  });
 }
 
 /* ===================== Long Read ("Go deeper") ===================== */
@@ -552,8 +543,13 @@ function afficherLongRead() {
     html += construirePullsOn(fiche);
   }
 
+  const estFavori = getFavoris().includes(fiche.id);
+
   html += `
-    <button class="btn-collection serif" id="btn-suivante">Fiche suivante →</button>
+    <div class="action-row">
+      <button class="btn-collection serif" id="btn-suivante">Fiche suivante →</button>
+      <button class="btn-favori ${estFavori ? 'actif' : ''}" id="btn-favori">🔖</button>
+    </div>
     <button class="btn-toggle-collection ${dejaLue ? 'dans-collection' : ''}" id="btn-garder">
       ${dejaLue ? '✓ Dans ta collection' : 'Garder dans ma collection'}
     </button>
@@ -565,6 +561,12 @@ function afficherLongRead() {
 
   document.getElementById("btn-suivante").addEventListener("click", () => {
     allerALaFicheSuivante(fiche.id);
+  });
+
+  const btnFav = document.getElementById("btn-favori");
+  btnFav.addEventListener("click", () => {
+    toggleFavori(fiche.id);
+    btnFav.classList.toggle("actif");
   });
 
   const btnGarder = document.getElementById("btn-garder");
