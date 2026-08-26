@@ -15,11 +15,12 @@
 * { box-sizing: border-box; }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
   max-width: 480px;
   margin: 0 auto;
   padding: 0;
   background-color: var(--cream);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.11'/></svg>");
   color: var(--ink);
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
@@ -106,7 +107,7 @@ button:active {
   align-items: center;
   justify-content: center;
   gap: 3px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
   font-size: 0.72rem;
   font-weight: 600;
   color: var(--ink-soft);
@@ -477,7 +478,7 @@ button:active {
   border: 1px solid var(--cream-darker);
   border-radius: 12px;
   cursor: pointer;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
   font-size: 0.95rem;
 }
 .option:hover { background-color: var(--cream-dark); }
@@ -557,7 +558,7 @@ button:active {
 
 .tag-pill-clic {
   cursor: pointer;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
   color: var(--terracotta-dark);
   background-color: var(--mint);
   border-color: transparent;
@@ -629,7 +630,26 @@ button:active {
 .ligne-sommaire:hover { background-color: var(--cream); }
 .ligne-sommaire.lue { opacity: 0.55; }
 
-.check { font-size: 1rem; width: 16px; flex-shrink: 0; color: var(--olive-dark); }
+.check-toggle {
+  font-size: 0.95rem;
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid var(--cream-darker);
+  background-color: var(--cream);
+  color: var(--ink-soft);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.check-toggle.lue {
+  background-color: var(--olive);
+  border-color: var(--olive-dark);
+  color: var(--cream);
+}
 
 .type-tag.mini {
   font-size: 0.65rem;
@@ -747,7 +767,7 @@ button:active {
   background: none;
   border: none;
   color: var(--ink-soft);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
   font-weight: 600;
   font-size: 0.88rem;
   cursor: pointer;
