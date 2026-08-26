@@ -679,6 +679,14 @@
         "titre": "À retenir",
         "html": "L'équilibre de marché est le point où l'offre et la demande coïncident exactement. Un prix trop haut crée un surplus qui tire les prix vers le bas ; un prix trop bas crée une pénurie qui les tire vers le haut. Ce mécanisme est puissant, mais ni instantané, ni automatiquement souhaitable sur tous les marchés."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Loi de l'offre et de la demande",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Loi_de_l%27offre_et_de_la_demande"
+      }
     ]
   },
   {
@@ -752,6 +760,14 @@
         "titre": "À retenir",
         "html": "L'élasticité-prix mesure la sensibilité de la quantité demandée à une variation de prix. Elle dépend de l'existence de substituts, du caractère plus ou moins essentiel du bien, et du temps disponible pour s'adapter — ce qui a des conséquences directes sur l'efficacité des taxes et des politiques publiques."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Élasticité (économie)",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89lasticit%C3%A9_(%C3%A9conomie)"
+      }
     ]
   },
   {
@@ -808,6 +824,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "La monnaie remplit trois fonctions : intermédiaire des échanges (elle évite le troc), unité de compte (elle permet de comparer la valeur des biens), et réserve de valeur (elle permet d'épargner). Une monnaie qui perd sa valeur trop vite remplit mal cette dernière fonction."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "La monnaie : origines et fonctions",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Monnaie"
       }
     ]
   },
@@ -1092,6 +1116,14 @@
         "type": "encadre",
         "titre": "Pas de réponse toute faite",
         "html": "Cette fiche ne cherche pas à trancher entre relance keynésienne et rigueur budgétaire — les deux positions s'appuient sur des raisonnements économiques solides, et le bon arbitrage dépend largement du contexte (gravité de la crise, niveau de dette déjà atteint, crédibilité de l'État sur les marchés). L'objectif est que tu puisses situer chaque discours politique par rapport à ces deux logiques, plutôt que d'adopter l'une ou l'autre par réflexe."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Politique budgétaire",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Politique_budg%C3%A9taire"
       }
     ]
   },
@@ -1969,6 +2001,14 @@
         "titre": "À retenir",
         "html": "La valeur d'usage (l'utilité d'un bien) et la valeur d'échange (ce contre quoi il s'échange) peuvent diverger fortement, comme l'illustre le paradoxe de l'eau et du diamant. Résoudre cette énigme occupera les économistes classiques pendant plus d'un siècle."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Théorie de la valeur (économie)",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Th%C3%A9orie_de_la_valeur_(%C3%A9conomie)"
+      }
     ]
   },
   {
@@ -2000,6 +2040,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Adam Smith propose une première théorie de la valeur fondée sur le travail nécessaire à la production d'un bien, mais reconnaît ses limites dès qu'interviennent le capital et la rente. Le paradoxe de la valeur reste, chez lui, sans réponse pleinement satisfaisante."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Adam Smith",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Adam_Smith"
       }
     ]
   },
@@ -2067,6 +2115,14 @@
         "titre": "À retenir",
         "html": "La théorie de la valeur-travail, dans sa version classique, fait dépendre la valeur d'échange d'un bien du temps de travail socialement nécessaire à sa production. Puissante pour expliquer de nombreux cas, elle peine à rendre compte de la valeur des biens rares et non reproductibles — une limite qui ouvrira la voie à d'autres explications."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Théorie de la valeur-travail",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Th%C3%A9orie_de_la_valeur-travail"
+      }
     ]
   },
   {
@@ -2103,6 +2159,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "L'avantage comparatif de David Ricardo montre que deux pays ont intérêt à échanger même si l'un est plus efficace que l'autre dans absolument tous les domaines — à condition que chacun se spécialise dans le bien où son désavantage relatif est le plus faible. C'est l'un des fondements théoriques les plus durables du libre-échange."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "David Ricardo",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/David_Ricardo"
       }
     ]
   },
@@ -2267,6 +2331,14 @@
         "titre": "À retenir",
         "html": "Une population croît en théorie de façon exponentielle, tandis que la production agricole préindustrielle croît beaucoup plus lentement. Ce déséquilibre potentiel, au cœur du raisonnement malthusien, a longtemps caractérisé l'histoire économique humaine, avant d'être bouleversé par la révolution industrielle."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Malthusianisme",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Malthusianisme"
+      }
     ]
   },
   {
@@ -2300,6 +2372,14 @@
         "titre": "À retenir",
         "html": "Thomas Malthus soutient, en 1798, que la population croît plus vite que les subsistances, menant à des ajustements douloureux (famine, maladie) sauf recours à la « contrainte morale » (report des naissances). Sa prédiction ne s'est pas réalisée en Europe grâce à la révolution agricole et industrielle, mais son raisonnement structure encore les débats sur les limites écologiques de la croissance."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Thomas Robert Malthus",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Thomas_Robert_Malthus"
+      }
     ]
   },
   {
@@ -2332,6 +2412,14 @@
         "titre": "Pas de réponse toute faite",
         "html": "Le débat sur la natalité et l'environnement mêle des arguments démographiques, éthiques et économiques, sans qu'aucun consensus scientifique ne tranche clairement la question. Il est utile de le connaître pour décoder les discours médiatiques sur ce sujet, sans pour autant y voir une réponse simple et unique."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Antinatalisme",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Antinatalisme"
+      }
     ]
   },
   {
@@ -2359,6 +2447,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "La loi des rendements décroissants énonce que chaque unité supplémentaire d'un facteur de production, les autres facteurs restant fixes, apporte une production additionnelle de moins en moins importante. C'est ce principe, sous-jacent au raisonnement de Malthus, que seule l'innovation technologique permet de contourner durablement."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Loi des rendements décroissants",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Loi_des_rendements_d%C3%A9croissants"
       }
     ]
   },
@@ -2396,6 +2492,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "La loi des débouchés de Jean-Baptiste Say affirme que la production d'un bien génère mécaniquement les revenus nécessaires à son achat, rendant impossibles les crises de surproduction généralisées et durables. Cette idée influencera durablement le libéralisme économique, avant d'être remise en question par Keynes."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Jean-Baptiste Say et la loi des débouchés",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Jean-Baptiste_Say"
       }
     ]
   },
@@ -2560,6 +2664,14 @@
         "titre": "À retenir",
         "html": "L'utilité marginale — la satisfaction apportée par la dernière unité consommée d'un bien — explique enfin le paradoxe de l'eau et du diamant : l'eau, abondante, a une utilité marginale faible malgré son utilité totale élevée ; le diamant, rare, conserve une utilité marginale élevée. C'est ce basculement qui fonde la révolution marginaliste."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Utilité marginale",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Utilit%C3%A9_marginale"
+      }
     ]
   },
   {
@@ -2593,6 +2705,14 @@
         "titre": "À retenir",
         "html": "Carl Menger fonde l'école autrichienne en 1871 avec une théorie radicalement subjective de la valeur : un bien ne vaut rien en soi, seule l'appréciation individuelle qu'on lui porte compte. Il distingue aussi les biens de consommation directe des biens de production, dont la valeur découle de celle des biens qu'ils permettent de produire."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Carl Menger",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Carl_Menger"
+      }
     ]
   },
   {
@@ -2620,6 +2740,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "La rareté économiquement pertinente n'est jamais absolue, mais relative à la demande exercée sur un bien à un instant et un lieu donnés. Cette relecture fonde la méthode « à la marge » — raisonner sur l'effet d'une unité de plus ou de moins — qui deviendra la méthode dominante de l'analyse économique du xxe siècle."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Rareté (économie)",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Raret%C3%A9_(%C3%A9conomie)"
       }
     ]
   },
@@ -2653,6 +2781,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "William Stanley Jevons, en 1871, formalise mathématiquement l'utilité marginale décroissante — indépendamment de Menger et Walras. Il est aussi l'auteur du « paradoxe de Jevons », selon lequel une meilleure efficacité énergétique peut, paradoxalement, augmenter la consommation totale d'énergie plutôt que la réduire."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "William Stanley Jevons",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/William_Stanley_Jevons"
       }
     ]
   },
@@ -2714,6 +2850,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Un consommateur rationnel répartit son budget entre différents biens de façon à égaliser, pour chaque bien, la satisfaction apportée par le dernier euro dépensé. Ce cadre marginaliste, bien que fondé sur des hypothèses de rationalité parfaite aujourd'hui nuancées, reste la base de la microéconomie moderne."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Théorie du consommateur",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Th%C3%A9orie_du_consommateur_(micro%C3%A9conomie)"
       }
     ]
   },
@@ -2845,6 +2989,14 @@
         "titre": "À retenir",
         "html": "Léon Walras, pionnier de la révolution marginaliste aux côtés de Jevons et Menger, se distingue par son ambition systémique : démontrer qu'un système de prix peut équilibrer simultanément tous les marchés d'une économie. Sa loi énonce que si tous les marchés sont à l'équilibre sauf un, ce dernier l'est nécessairement aussi."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Léon Walras",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/L%C3%A9on_Walras"
+      }
     ]
   },
   {
@@ -2873,6 +3025,14 @@
         "titre": "À retenir",
         "html": "L'équilibre partiel (Marshall) analyse un marché isolément, toutes choses égales par ailleurs — plus simple et souvent suffisant. L'équilibre général (Walras) prend en compte les interactions entre tous les marchés d'une économie — plus rigoureux mais bien plus complexe à manier concrètement."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Équilibre général",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89quilibre_g%C3%A9n%C3%A9ral"
+      }
     ]
   },
   {
@@ -2900,6 +3060,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Alfred Marshall concevait l'économie comme une boîte à outils pragmatique pour analyser des situations concrètes, plutôt que comme un système de vérités abstraites — une conception qui a durablement influencé la façon dont la discipline est enseignée et pratiquée aujourd'hui."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Alfred Marshall",
+        "source": "economie.gouv.fr",
+        "url": "https://www.economie.gouv.fr/facileco/culture-economique/grands-noms-et-courants-de-leconomie/alfred-marshall"
       }
     ]
   },
@@ -2962,6 +3130,14 @@
         "titre": "À retenir",
         "html": "Les rendements d'échelle décrivent l'effet d'une augmentation proportionnelle de tous les facteurs de production à la fois : constants si la production suit exactement, croissants si elle augmente plus que proportionnellement (économies d'échelle), décroissants si elle augmente moins — un concept clé pour comprendre la concentration de certains secteurs à forts coûts fixes."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Rendement d'échelle",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Rendement_d%27%C3%A9chelle"
+      }
     ]
   },
   {
@@ -2994,6 +3170,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Francis Edgeworth invente en 1881 un outil graphique, la boîte d'Edgeworth, pour visualiser l'échange volontaire entre deux personnes détenant deux biens. Sa « courbe des contrats », qui rassemble les points où plus aucun échange mutuellement bénéfique n'est possible, annonce directement le concept d'optimum de Pareto."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Francis Ysidro Edgeworth",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Francis_Ysidro_Edgeworth"
       }
     ]
   },
@@ -3130,6 +3314,14 @@
         "titre": "À retenir",
         "html": "L'optimum de Pareto désigne une situation où aucune réorganisation des ressources ne peut améliorer une personne sans en détériorer une autre. C'est un critère purement technique d'efficacité, qui ne dit rien sur la justice de la répartition — une situation très inégalitaire peut être parfaitement optimale au sens de Pareto."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Vilfredo Pareto",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Vilfredo_Pareto"
+      }
     ]
   },
   {
@@ -3157,6 +3349,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "L'« optimalité » économique, au sens de Pareto, est un critère d'efficacité technique, distinct de l'équité ou de la justice sociale. Une situation peut être optimale et pourtant profondément inégalitaire — une distinction essentielle pour décoder les désaccords entre courants économiques et politiques."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Optimum de Pareto",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Optimum_de_Pareto"
       }
     ]
   },
@@ -3189,6 +3389,14 @@
         "type": "encadre",
         "titre": "Pas de réponse toute faite",
         "html": "Le lien entre inégalités et performance économique fait l'objet de débats économiques et empiriques non tranchés, entre effet incitatif et frein à la croissance de long terme. La rigueur consiste surtout à ne jamais confondre un jugement d'efficacité technique avec un jugement de justice sociale, sans le rendre explicite."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Inégalité économique",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/In%C3%A9galit%C3%A9_%C3%A9conomique"
       }
     ]
   },
@@ -3250,6 +3458,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Thorstein Veblen critique, dès 1899, la rationalité purement utilitaire des marginalistes en introduisant la consommation ostentatoire — l'achat pour afficher son statut social plutôt que pour l'utilité fonctionnelle du bien. C'est de là que vient le concept de « bien de Veblen », dont la demande peut augmenter avec le prix."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Thorstein Veblen et la consommation ostentatoire",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Thorstein_Veblen"
       }
     ]
   },
@@ -3414,6 +3630,14 @@
         "titre": "À retenir",
         "html": "La microéconomie étudie les comportements individuels et les marchés pris isolément ; la macroéconomie étudie l'économie dans son ensemble (PIB, inflation, chômage). Ce qui est vrai à l'échelle individuelle n'est pas toujours vrai à l'échelle collective — un paradoxe central de la macroéconomie."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Macroéconomie",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Macro%C3%A9conomie"
+      }
     ]
   },
   {
@@ -3450,6 +3674,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "John Maynard Keynes, en 1936, place la demande globale — et non l'offre — au centre de l'analyse macroéconomique, et assigne à l'État un rôle actif pour compenser les effondrements de la demande privée en période de crise, quitte à s'endetter temporairement."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "John Maynard Keynes",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/John_Maynard_Keynes"
       }
     ]
   },
@@ -3507,6 +3739,14 @@
         "titre": "À retenir",
         "html": "La demande globale se décompose en quatre éléments : consommation des ménages, investissement des entreprises, dépenses publiques et solde commercial extérieur. Identifier laquelle de ces composantes porte ou freine la croissance permet une lecture bien plus fine de la conjoncture économique."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Demande agrégée",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Demande_agr%C3%A9g%C3%A9e"
+      }
     ]
   },
   {
@@ -3535,6 +3775,14 @@
         "titre": "À retenir",
         "html": "Le circuit économique représente une économie comme un flux de revenus et de dépenses entre ménages, entreprises, État et reste du monde. Il permet de visualiser comment un choc sur un acteur (par exemple une hausse de l'épargne) se propage nécessairement au reste du circuit."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Circuit économique",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Circuit_%C3%A9conomique"
+      }
     ]
   },
   {
@@ -3562,6 +3810,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Le multiplicateur keynésien décrit comment une dépense publique initiale se propage et amplifie la croissance du PIB, via les dépenses successives des acteurs qui en bénéficient. Son ampleur exacte dépend de la propension à consommer, du contexte économique et du type de dépense — un point encore largement débattu parmi les économistes."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Multiplicateur keynésien",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Multiplicateur_keyn%C3%A9sien"
       }
     ]
   },
@@ -3693,6 +3949,14 @@
         "titre": "À retenir",
         "html": "La masse monétaire se mesure via des agrégats emboîtés (M1, M2, M3), du plus liquide au moins liquide. Sa croissance, surveillée de près par les banques centrales, est un indicateur classique des tensions inflationnistes à venir."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Masse monétaire",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Masse_mon%C3%A9taire"
+      }
     ]
   },
   {
@@ -3725,6 +3989,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Milton Friedman fonde le monétarisme en replaçant la masse monétaire, plutôt que la demande globale keynésienne, au centre de l'explication de l'inflation. Il plaide pour une règle monétaire stable plutôt que pour des politiques de relance discrétionnaires, jugées trop imprévisibles dans leurs effets."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Milton Friedman",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Milton_Friedman"
       }
     ]
   },
@@ -3787,6 +4059,14 @@
         "titre": "À retenir",
         "html": "L'équation quantitative de la monnaie (M × V = P × Y) relie masse monétaire, vitesse de circulation, niveau des prix et production réelle. C'est l'hypothèse de stabilité de la vitesse de circulation, chez Friedman, qui transforme cette identité comptable en théorie de l'inflation — une hypothèse débattue depuis 2008."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Théorie quantitative de la monnaie",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Th%C3%A9orie_quantitative_de_la_monnaie"
+      }
     ]
   },
   {
@@ -3814,6 +4094,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Au-delà des taux directeurs (politique conventionnelle), les banques centrales disposent d'outils non conventionnels : l'assouplissement quantitatif (QE), qui injecte de la liquidité en achetant des titres, et le resserrement quantitatif (QT), qui la retire en laissant ces titres arriver à échéance sans les remplacer."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Politique monétaire non conventionnelle",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Politique_mon%C3%A9taire_non_conventionnelle"
       }
     ]
   },
@@ -3978,6 +4266,14 @@
         "titre": "À retenir",
         "html": "La courbe de Phillips établit une relation statistique inverse entre chômage et inflation : moins de chômage tendrait à s'accompagner de plus d'inflation, et inversement. Cette relation a été interprétée, dans les années 1960, comme un arbitrage possible de politique économique — une lecture qui sera bientôt remise en cause."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Courbe de Phillips",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Courbe_de_Phillips"
+      }
     ]
   },
   {
@@ -4005,6 +4301,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Milton Friedman démontre que l'arbitrage apparent de la courbe de Phillips n'est que temporaire : dès lors que les anticipations d'inflation s'ajustent, l'effet sur le chômage s'estompe, laissant place à une inflation durablement plus élevée sans gain sur l'emploi. À long terme, le chômage tend vers un « taux naturel » indépendant de la politique monétaire."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Taux de chômage n'accélérant pas l'inflation (NAIRU)",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Taux_de_ch%C3%B4mage_n%27acc%C3%A9l%C3%A9rant_pas_l%27inflation"
       }
     ]
   },
@@ -4062,6 +4366,14 @@
         "titre": "À retenir",
         "html": "La théorie des anticipations rationnelles, développée notamment par Robert Lucas, suppose que les agents économiques utilisent efficacement toute l'information disponible pour anticiper les effets des politiques économiques — ce qui peut, selon la critique de Lucas, neutraliser par avance l'efficacité d'une politique clairement annoncée."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Anticipations rationnelles",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Anticipations_rationnelles"
+      }
     ]
   },
   {
@@ -4089,6 +4401,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Edmund Phelps, disparu en mai 2026, a formalisé indépendamment de Friedman la théorie du taux de chômage naturel, en insérant des microfondations — les décisions individuelles fondées sur des anticipations imparfaites — dans l'analyse macroéconomique. Son héritage se prolonge aujourd'hui dans le concept de NAIRU, utilisé par les banques centrales."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Edmund Phelps",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Edmund_Phelps"
       }
     ]
   },
@@ -4248,6 +4568,14 @@
         "titre": "À retenir",
         "html": "La dette publique résulte de l'accumulation des déficits successifs. Sa soutenabilité se juge surtout par son rapport au PIB, qui peut augmenter non seulement par de nouveaux déficits, mais aussi mécaniquement par un effet « boule de neige » quand les taux d'intérêt dépassent la croissance économique."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Dette publique",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Dette_publique"
+      }
     ]
   },
   {
@@ -4309,6 +4637,14 @@
         "titre": "À retenir",
         "html": "Un déficit public se finance principalement par l'emprunt sur les marchés financiers, plutôt que par une création monétaire directe de la banque centrale — une pratique aujourd'hui interdite dans la plupart des économies développées. Une part importante de la dette française est détenue par des investisseurs étrangers."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Déficit public",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/D%C3%A9ficit_public"
+      }
     ]
   },
   {
@@ -4336,6 +4672,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "L'équivalence ricardienne de Robert Barro (1974) soutient que financer une dépense publique par la dette plutôt que par l'impôt n'a, en théorie, aucun effet réel sur l'économie, car des ménages rationnels anticiperaient les impôts futurs nécessaires au remboursement et épargneraient en conséquence — une théorie qui nuance fortement l'efficacité attendue des relances keynésiennes financées par la dette."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Équivalence ricardienne",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89quivalence_ricardienne"
       }
     ]
   },
@@ -4368,6 +4712,14 @@
         "type": "encadre",
         "titre": "Pas de réponse toute faite",
         "html": "La question du rythme de réduction de la dette publique oppose des arguments économiques solides de chaque côté, sans consensus tranché parmi les économistes eux-mêmes. Le contexte — récession ou croissance, nature des dépenses financées, niveau de dette déjà atteint — compte souvent davantage que le principe général invoqué dans le débat politique."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Austérité (politique économique)",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Politique_d%27aust%C3%A9rit%C3%A9"
       }
     ]
   },
@@ -4532,6 +4884,14 @@
         "titre": "À retenir",
         "html": "Un cycle économique alterne quatre phases : expansion, pic, contraction et creux. Leur durée et leur amplitude varient fortement, et leurs causes restent débattues entre écoles de pensée économique — demande globale, politique monétaire, ou innovation."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Cycle économique",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Cycle_%C3%A9conomique"
+      }
     ]
   },
   {
@@ -4564,6 +4924,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Joseph Schumpeter voit dans la destruction créatrice — l'innovation qui détruit les activités obsolètes tout en créant de nouvelles activités plus productives — le véritable moteur de la croissance économique de long terme, porté par la figure de l'entrepreneur innovateur."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Joseph Schumpeter",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Joseph_Schumpeter"
       }
     ]
   },
@@ -4626,6 +4994,14 @@
         "titre": "À retenir",
         "html": "Une récession se définit techniquement, en Europe, par deux trimestres consécutifs de baisse du PIB réel — une définition plus large et qualitative prévaut aux États-Unis. Une récession s'accompagne typiquement d'une hausse du chômage, d'un recul de l'investissement et souvent d'une baisse de la confiance des ménages."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Récession",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/R%C3%A9cession"
+      }
     ]
   },
   {
@@ -4658,6 +5034,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Nikolai Kondratiev identifie, dans les années 1920, des cycles économiques longs de 40 à 60 ans, portés par les grandes vagues d'innovation technologique successives. Ses travaux, jugés incompatibles avec l'orthodoxie soviétique, lui vaudront d'être exécuté en 1938 — sa théorie reste débattue mais continue d'alimenter la réflexion sur les révolutions technologiques."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Nikolaï Kondratiev",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Nikola%C3%AF_Kondratiev"
       }
     ]
   },
@@ -4822,6 +5206,14 @@
         "titre": "À retenir",
         "html": "La balance commerciale mesure l'écart entre exportations et importations. Un déficit commercial n'est pas nécessairement un signe de faiblesse économique — il peut refléter un investissement dynamique ou une monnaie forte — de même qu'un excédent n'est pas toujours un signe de bonne santé économique."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Balance commerciale",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Balance_commerciale"
+      }
     ]
   },
   {
@@ -4883,6 +5275,14 @@
         "titre": "À retenir",
         "html": "Le taux de change résulte de l'offre et de la demande sur le marché des changes, influencées par les écarts de taux d'intérêt, les flux commerciaux et la confiance géopolitique. Une monnaie forte favorise les importations mais pénalise la compétitivité des exportations, et inversement pour une monnaie faible."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Taux de change",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Taux_de_change"
+      }
     ]
   },
   {
@@ -4916,6 +5316,14 @@
         "titre": "À retenir",
         "html": "Robert Mundell définit les critères d'une zone monétaire optimale : forte mobilité du travail et du capital, flexibilité des prix et des salaires, et mécanismes de transferts budgétaires entre régions pour absorber les chocs asymétriques — des critères directement mobilisés, depuis, pour évaluer la solidité de la zone euro."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Robert Mundell",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Robert_Mundell"
+      }
     ]
   },
   {
@@ -4943,6 +5351,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Appliqués à la zone euro, les critères de Mundell révèlent des faiblesses structurelles : mobilité du travail limitée entre pays membres et mécanismes de transferts budgétaires communs encore modestes comparés à une fédération comme les États-Unis — des lacunes qui ont notamment fragilisé la zone euro lors de la crise de la dette souveraine des années 2010."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Zone monétaire optimale",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Zone_mon%C3%A9taire_optimale"
       }
     ]
   },
@@ -5107,6 +5523,14 @@
         "titre": "À retenir",
         "html": "Le libéralisme économique fait confiance aux mécanismes de marché pour coordonner efficacement les décisions individuelles, et confine le rôle de l'État à quelques fonctions essentielles (droit, concurrence, biens publics de base). Ce courant regroupe plusieurs écoles aux nuances importantes, qu'on détaillera tout au long de cette phase."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Libéralisme économique",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Lib%C3%A9ralisme_%C3%A9conomique"
+      }
     ]
   },
   {
@@ -5139,6 +5563,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Friedrich Hayek soutient, en 1944, que la planification centralisée d'une économie est vouée à l'échec — la connaissance nécessaire étant dispersée entre des millions d'individus — et fait courir un risque de dérive autoritaire, même dans une démocratie. Cette thèse influente reste débattue, notamment sur sa portée exacte face à l'État-providence modéré."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Friedrich Hayek",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Friedrich_Hayek"
       }
     ]
   },
@@ -5201,6 +5633,14 @@
         "titre": "À retenir",
         "html": "Le marché fonctionne efficacement sous certaines conditions (information, concurrence, absence d'externalités, exclusion possible des non-payeurs). Quand ces conditions ne sont pas réunies, on parle de défaillance de marché — un point largement reconnu, y compris par les libéraux, mais dont l'ampleur et le bon remède restent débattus."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Main invisible",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Main_invisible"
+      }
     ]
   },
   {
@@ -5228,6 +5668,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "George Stigler montre, en 1971, que les réglementations censées protéger les consommateurs finissent souvent « capturées » par les entreprises du secteur régulé elles-mêmes, mieux organisées pour influencer le régulateur que des consommateurs aux intérêts diffus — une grille de lecture précieuse pour interroger l'efficacité réelle de toute réglementation."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "George Stigler",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/George_Stigler"
       }
     ]
   },
@@ -5392,6 +5840,14 @@
         "titre": "À retenir",
         "html": "L'intervention de l'État se justifie économiquement dans plusieurs situations précises : les biens publics, les monopoles naturels, et les asymétries d'information entre acheteurs et vendeurs — des justifications techniques distinctes des débats plus généraux sur le rôle souhaitable de l'État."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Défaillance de marché",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/D%C3%A9faillance_de_march%C3%A9"
+      }
     ]
   },
   {
@@ -5419,6 +5875,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "John Kenneth Galbraith conteste, en 1958, l'idée d'une souveraineté du consommateur : les grandes entreprises modernes créeraient activement la demande via le marketing plutôt que de simplement y répondre. Il en conclut qu'un État fort est nécessaire pour rééquilibrer ce pouvoir concentré et orienter l'économie vers des besoins collectifs."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "John Kenneth Galbraith",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/John_Kenneth_Galbraith"
       }
     ]
   },
@@ -5481,6 +5945,14 @@
         "titre": "À retenir",
         "html": "Les stabilisateurs automatiques (baisse mécanique des impôts, hausse mécanique des allocations en période de récession) amortissent les chocs économiques sans intervention politique nouvelle. Leur ampleur, plus forte dans les pays dotés d'un État-providence développé, explique en partie les différences d'impact social des récessions entre l'Europe et les États-Unis."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Stabilisateur automatique",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Stabilisateur_automatique"
+      }
     ]
   },
   {
@@ -5512,6 +5984,14 @@
         "type": "encadre",
         "titre": "Pas de réponse toute faite",
         "html": "Le débat « plus ou moins d'État » oppose des arguments économiques solides de chaque côté. La question la plus utile n'est pas binaire, mais porte sur où et comment l'État doit intervenir — un choix qui varie selon les contextes et ne fait pas consensus parmi les économistes."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Interventionnisme",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Interventionnisme"
       }
     ]
   },
@@ -5671,6 +6151,14 @@
         "titre": "À retenir",
         "html": "L'État-providence mutualise les grands risques sociaux à l'échelle de la collectivité, plutôt que de les laisser peser sur chaque individu isolément. Deux grandes logiques historiques coexistent : le modèle bismarckien, fondé sur les cotisations liées à l'emploi, et le modèle beveridgien, fondé sur la citoyenneté et l'impôt."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "État-providence",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89tat-providence"
+      }
     ]
   },
   {
@@ -5698,6 +6186,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Pierre Laroque bâtit en 1945 la Sécurité sociale française, un système hybride combinant financement par cotisations (logique bismarckienne) et ambition universaliste (logique beveridgienne), fondé sur un principe de solidarité nationale plutôt que sur la seule logique assurantielle individuelle."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Pierre Laroque",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Pierre_Laroque"
       }
     ]
   },
@@ -5755,6 +6251,14 @@
         "titre": "À retenir",
         "html": "L'assurance sociale (retraite, chômage) repose sur des cotisations préalables et des prestations proportionnelles ; l'assistance sociale (RSA, minima sociaux) repose sur un critère de besoin, financée par l'impôt, sans condition de cotisation préalable. Ces deux logiques, combinées, structurent l'ensemble du système de protection sociale français."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Protection sociale",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Protection_sociale"
+      }
     ]
   },
   {
@@ -5782,6 +6286,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Gunnar Myrdal, prix Nobel 1974, défend l'idée qu'une protection sociale généreuse constitue un investissement productif plutôt qu'un frein à la croissance — une intuition théorique au fondement du modèle scandinave, articulant flexibilité économique et sécurité sociale forte."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Gunnar Myrdal",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Gunnar_Myrdal"
       }
     ]
   },
@@ -5946,6 +6458,14 @@
         "titre": "À retenir",
         "html": "Le terme « néolibéralisme », né dans les années 1930 pour désigner un cadre institutionnel fort garantissant une concurrence saine, est aujourd'hui le plus souvent employé comme une critique désignant un excès de marché — un glissement de sens qui invite à toujours préciser la politique concrète dont on parle."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Néolibéralisme",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/N%C3%A9olib%C3%A9ralisme"
+      }
     ]
   },
   {
@@ -5973,6 +6493,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Walter Eucken fonde l'ordolibéralisme : un cadre où l'État garantit activement les conditions institutionnelles d'une concurrence saine, plutôt que de laisser le marché s'auto-réguler seul. Ce courant a durablement influencé l'économie sociale de marché allemande et les règles européennes de concurrence et de stabilité budgétaire."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Walter Eucken",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Walter_Eucken"
       }
     ]
   },
@@ -6035,6 +6563,14 @@
         "titre": "À retenir",
         "html": "La privatisation transfère une activité du secteur public au secteur privé, la nationalisation opère le mouvement inverse. Le débat porte rarement sur des biens publics purs, mais sur des biens « mixtes » ou des monopoles naturels, où la vraie question est souvent moins « public ou privé » que « quelle régulation encadre le mieux l'activité »."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Privatisation",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Privatisation"
+      }
     ]
   },
   {
@@ -6062,6 +6598,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "James Buchanan fonde la théorie du choix public en appliquant aux décideurs publics la même hypothèse de rationalité intéressée qu'aux acteurs de marché — élus et fonctionnaires poursuivant aussi leurs propres intérêts. Une grille de lecture qui éclaire la croissance des administrations et le court-termisme électoral, sans conclure que l'État est nécessairement inefficace."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "James M. Buchanan",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/James_M._Buchanan"
       }
     ]
   },
@@ -6226,6 +6770,14 @@
         "titre": "À retenir",
         "html": "Un monopole, en l'absence de concurrence, peut fixer des prix plus élevés qu'un marché concurrentiel, au détriment des consommateurs. Les politiques de concurrence (antitrust) — interdiction des ententes, contrôle des fusions, sanction des abus de position dominante — visent à limiter ce risque, particulièrement vif aujourd'hui dans l'économie numérique."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Monopole",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Monopole"
+      }
     ]
   },
   {
@@ -6287,6 +6839,14 @@
         "titre": "À retenir",
         "html": "Une externalité négative désigne le coût qu'une activité économique fait peser sur des tiers, sans que ce coût n'apparaisse dans son prix de marché — la pollution en étant l'exemple le plus classique. Cette divergence entre coût privé et coût social conduit à une surproduction du bien concerné par rapport à l'optimum social."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Externalité",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Externalit%C3%A9"
+      }
     ]
   },
   {
@@ -6319,6 +6879,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Arthur Pigou propose, en 1920, de corriger une externalité négative en imposant une taxe équivalente au dommage social causé — « internalisant » ainsi ce coût dans le calcul économique privé de l'entreprise. Ce principe reste, un siècle plus tard, un pilier de l'économie de l'environnement."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Arthur Cecil Pigou",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Arthur_Cecil_Pigou"
       }
     ]
   },
@@ -6380,6 +6948,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Les biens communs (non exclusifs mais rivaux) sont exposés au risque de « tragédie des communs » : chaque usager rationnel est incité à surexploiter sa part, au détriment de la ressource collective. Régulation publique stricte et privatisation sont les deux solutions classiquement envisagées, mais une troisième voie existe, qu'on explorera la semaine prochaine."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Tragédie des biens communs",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Trag%C3%A9die_des_biens_communs"
       }
     ]
   },
@@ -6516,6 +7092,14 @@
         "titre": "À retenir",
         "html": "Elinor Ostrom, première femme Nobel d'économie en 2009, démontre empiriquement qu'au-delà du marché et de l'État, une troisième voie existe pour gérer durablement les biens communs : l'auto-organisation des communautés d'usagers elles-mêmes, à travers des règles collectives locales."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Elinor Ostrom",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Elinor_Ostrom"
+      }
     ]
   },
   {
@@ -6543,6 +7127,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Aucune économie développée n'est purement libérale ou purement étatisée : même les économies les plus « libérales » consacrent une part considérable de leur PIB à la dépense publique, et même les économies les plus interventionnistes laissent l'essentiel de la production aux entreprises privées. Le vrai débat porte sur le curseur précis, pas sur un choix binaire."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Économie mixte",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/%C3%89conomie_mixte"
       }
     ]
   },
@@ -6608,6 +7200,14 @@
         "type": "encadre",
         "titre": "Pas de réponse toute faite",
         "html": "La question de savoir si le marché peut « tout » réguler seul appelle, dans sa formulation la plus stricte, une réponse largement négative même chez les économistes les plus favorables au marché — mais la vraie question utile porte sur la combinaison précise, secteur par secteur, entre marché, régulation publique et auto-organisation collective."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Laissez-faire",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Laissez-faire"
       }
     ]
   },
@@ -6795,6 +7395,14 @@
         "titre": "À retenir",
         "html": "La mondialisation économique désigne l'intégration croissante des économies via le commerce, les capitaux et les investissements — un phénomène ancien (Ricardo) mais considérablement accéléré depuis les années 1980-1990, aux effets contrastés entre baisse des prix, réduction de la pauvreté mondiale et tensions sur l'emploi industriel des pays développés."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Mondialisation",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Mondialisation"
+      }
     ]
   },
   {
@@ -6822,6 +7430,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Paul Krugman explique, via la nouvelle économie géographique, pourquoi le commerce mondial se concentre souvent entre pays similaires (économies d'échelle, préférence pour la diversité) et pourquoi l'activité économique tend à se concentrer géographiquement en pôles plutôt qu'à se répartir uniformément — un apport récompensé par le Nobel 2008."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Paul Krugman",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Paul_Krugman"
       }
     ]
   },
@@ -6884,6 +7500,14 @@
         "titre": "À retenir",
         "html": "Les délocalisations réduisent les coûts de production et les prix pour les consommateurs, en cohérence avec l'avantage comparatif de Ricardo, mais la réallocation des emplois perdus vers des activités à plus forte valeur ajoutée ne se produit pas toujours aussi facilement en pratique — une tension entre gains agrégés et pertes concentrées territorialement."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Délocalisation",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/D%C3%A9localisation"
+      }
     ]
   },
   {
@@ -6911,6 +7535,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Le trilemme de Dani Rodrik affirme qu'un pays ne peut poursuivre simultanément l'intégration économique mondiale poussée, la pleine souveraineté nationale et la démocratie de masse — il doit nécessairement renoncer à l'un des trois. Cette grille éclaire de nombreuses tensions politiques contemporaines, de la construction européenne aux mouvements protectionnistes."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Dani Rodrik",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Dani_Rodrik"
       }
     ]
   },
@@ -7075,6 +7707,14 @@
         "titre": "À retenir",
         "html": "Le coefficient de Gini résume en un chiffre entre 0 (égalité parfaite) et 1 (inégalité absolue) le degré d'inégalité d'une distribution de revenu ou de patrimoine. Utile pour comparer pays et époques, il masque cependant des profils d'inégalité parfois très différents, d'où l'intérêt de le compléter par d'autres indicateurs, comme la part de revenu captée par les plus riches."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Coefficient de Gini",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Coefficient_de_Gini"
+      }
     ]
   },
   {
@@ -7102,6 +7742,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Thomas Piketty formule, en 2013, la loi empirique r > g : le rendement du capital tend structurellement à dépasser la croissance économique, ce qui alimente mécaniquement la concentration des patrimoines sur longue période — une dynamique que seules des périodes exceptionnelles (guerres, crises, fiscalité très progressive) auraient temporairement inversée au xxe siècle."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Thomas Piketty",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Thomas_Piketty"
       }
     ]
   },
@@ -7196,6 +7844,14 @@
         "titre": "Pas de réponse toute faite",
         "html": "Le débat sur la taxation des héritages oppose l'objectif de limiter la transmission intergénérationnelle des inégalités de patrimoine à celui d'éviter une double imposition et de préserver l'incitation à l'épargne productive ou la transmission d'outils de travail familiaux — sans consensus tranché parmi les économistes."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Droits de succession en France",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Droits_de_succession_en_France"
+      }
     ]
   },
   {
@@ -7223,6 +7879,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Anthony Atkinson, pionnier méthodologique de la mesure des inégalités dès les années 1970, développe l'indice qui porte son nom et documente, bien avant Piketty, la remontée des inégalités de hauts revenus dans les pays développés — une filiation intellectuelle directe entre les deux économistes, qui ont longuement collaboré."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Anthony Atkinson",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Anthony_Atkinson"
       }
     ]
   },
@@ -7354,6 +8018,14 @@
         "titre": "À retenir",
         "html": "Le capitalisme se caractérise par la propriété privée des moyens de production, la recherche du profit et la coordination par les marchés — mais recouvre une grande diversité de variantes concrètes, et connaît, depuis la fin du xxe siècle, des transformations structurelles majeures : financiarisation et essor des plateformes numériques."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Capitalisme",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Capitalisme"
+      }
     ]
   },
   {
@@ -7381,6 +8053,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Frédéric Lordon développe une critique institutionnaliste du capitalisme, analysant le salariat comme un rapport de force structurel plutôt qu'un simple échange entre agents libres, et mobilisant la philosophie de Spinoza pour comprendre l'adhésion affective des individus au système économique — une analyse qui débouche sur des positions fortement interventionnistes sur la finance et le travail."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Frédéric Lordon",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Lordon"
       }
     ]
   },
@@ -7443,6 +8123,14 @@
         "titre": "À retenir",
         "html": "La financiarisation désigne le poids croissant de la finance dans l'économie contemporaine — pression actionnariale accrue, part croissante des profits financiers, taille grandissante du secteur financier. Son jugement divise les économistes entre efficacité d'allocation du capital et risque de déconnexion instable avec l'économie réelle."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Financiarisation",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Financiarisation"
+      }
     ]
   },
   {
@@ -7470,6 +8158,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Michel Aglietta fonde en France l'école de la régulation, qui explique la stabilité relative du capitalisme sur de longues périodes par des « régimes d'accumulation » successifs — du fordisme d'après-guerre au régime plus financiarisé depuis les années 1980 — chacun finissant par générer ses propres tensions internes jusqu'à une crise de réorganisation."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Michel Aglietta",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Michel_Aglietta"
       }
     ]
   },
@@ -7629,6 +8325,14 @@
         "titre": "À retenir",
         "html": "L'indice de développement humain (IDH), créé en 1990 par le PNUD, combine niveau de vie, santé et éducation pour mesurer le développement d'un pays au-delà du seul PIB — révélant des écarts parfois significatifs entre richesse produite et développement humain effectif, tout en restant lui-même un indicateur imparfait."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Indice de développement humain",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Indice_de_d%C3%A9veloppement_humain"
+      }
     ]
   },
   {
@@ -7656,6 +8360,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Esther Duflo, prix Nobel 2019, importe en économie du développement la méthode des essais contrôlés randomisés, testant rigoureusement chaque dispositif de lutte contre la pauvreté à petite échelle avant généralisation — une approche empirique qui a profondément renouvelé la discipline, en la déplaçant des grandes théories vers l'évaluation systématique."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Esther Duflo",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Esther_Duflo"
       }
     ]
   },
@@ -7713,6 +8425,14 @@
         "titre": "À retenir",
         "html": "Une trappe à pauvreté désigne une situation où un individu reste piégé dans la pauvreté faute de pouvoir franchir un seuil d'investissement minimal (semences, santé, crédit) qui lui permettrait d'en sortir. Cette théorie suggère qu'une aide ponctuelle mais suffisante peut être plus efficace qu'une aide continue mais insuffisante pour sortir durablement certains ménages de la pauvreté."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Pauvreté",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Pauvret%C3%A9"
+      }
     ]
   },
   {
@@ -7740,6 +8460,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Abhijit Banerjee, avec Esther Duflo, documente dans Repenser la pauvreté que les choix économiques des ménages pauvres répondent souvent à une rationalité propre plutôt qu'à un manque d'effort — un travail qui a contribué à déplacer le débat sur l'aide au développement vers une évaluation pragmatique dispositif par dispositif."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Abhijit Banerjee",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Abhijit_Banerjee"
       }
     ]
   },
@@ -7899,6 +8627,14 @@
         "titre": "À retenir",
         "html": "Contrairement à l'hypothèse de rationalité parfaite mobilisée dans les phases précédentes, les décisions humaines réelles sont marquées par une rationalité limitée (Herbert Simon) : face à un temps et une information limités, les individus recourent à des raccourcis mentaux qui produisent des biais cognitifs systématiques et prévisibles, plutôt que des erreurs aléatoires."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Rationalité limitée",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Rationalit%C3%A9_limit%C3%A9e"
+      }
     ]
   },
   {
@@ -7926,6 +8662,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Daniel Kahneman distingue un système de pensée rapide et intuitif (système 1), à l'origine de la plupart de nos décisions et de nos biais cognitifs, d'un système lent et délibératif (système 2), plus fiable mais rarement mobilisé. Ses travaux avec Amos Tversky révèlent aussi l'aversion à la perte : la douleur d'une perte est ressentie plus intensément que le plaisir d'un gain équivalent."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Daniel Kahneman",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Daniel_Kahneman"
       }
     ]
   },
@@ -7988,6 +8732,14 @@
         "titre": "À retenir",
         "html": "Un nudge modifie l'architecture des choix pour orienter les comportements, sans jamais interdire d'option ni modifier les incitations économiques. Cette approche, dite de « paternalisme libéral », cherche à concilier l'efficacité d'une orientation comportementale et le respect de la liberté de choix individuelle — une position à mi-chemin entre intervention publique et libéralisme."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Nudge (sciences comportementales)",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Nudge_(sciences_comportementales)"
+      }
     ]
   },
   {
@@ -8015,6 +8767,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Richard Thaler, prix Nobel 2017, cofonde le concept de nudge et de paternalisme libéral avec Cass Sunstein, et développe la théorie de la comptabilité mentale, montrant que les individus classent mentalement l'argent en catégories distinctes plutôt que de le traiter comme parfaitement fongible. Ses travaux ont directement inspiré la création d'unités gouvernementales de sciences comportementales dans plusieurs pays."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Richard Thaler",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Richard_Thaler"
       }
     ]
   },
@@ -8047,6 +8807,14 @@
         "type": "encadre",
         "titre": "Pas de réponse toute faite",
         "html": "Le débat sur la légitimité du nudge oppose son efficacité documentée et le respect formel de la liberté de choix à un risque de dérive manipulatoire, contournant la délibération rationnelle. Sa légitimité dépend souvent de critères concrets — transparence, réversibilité, degré de consensus social sur l'objectif poursuivi — plutôt que d'un jugement de principe tranché."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Paternalisme libertarien",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Paternalisme_libertarien"
       }
     ]
   },
@@ -8178,6 +8946,14 @@
         "titre": "À retenir",
         "html": "La théorie de la croissance endogène explique l'innovation par le caractère non rival de la connaissance : une idée, contrairement à un bien matériel, peut être utilisée simultanément par plusieurs acteurs sans s'épuiser. Cette particularité justifie, pour ses défenseurs, un investissement public soutenu dans la recherche et l'éducation, le marché seul tendant à sous-investir dans ce domaine."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Croissance endogène",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Croissance_endog%C3%A8ne"
+      }
     ]
   },
   {
@@ -8205,6 +8981,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Philippe Aghion, prix Nobel 2025, formalise mathématiquement la destruction créatrice de Schumpeter avec Peter Howitt, montrant qu'un niveau intermédiaire de concurrence — ni trop faible ni trop intense — maximiserait le rythme d'innovation. Il plaide pour des politiques industrielles facilitant la réallocation vers les activités innovantes plutôt que la seule protection des emplois existants."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Philippe Aghion",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Philippe_Aghion"
       }
     ]
   },
@@ -8262,6 +9046,14 @@
         "titre": "À retenir",
         "html": "Le concept de limites planétaires, formulé en 2009, identifie neuf seuils biophysiques critiques pour la stabilité du système Terre, dont plusieurs seraient déjà dépassés. Les tenants de la décroissance en concluent que la croissance économique indéfinie est incompatible avec ces limites physiques, un débat qui s'oppose frontalement à la thèse d'un découplage rendu possible par l'innovation."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Limites planétaires",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Limites_plan%C3%A9taires"
+      }
     ]
   },
   {
@@ -8289,6 +9081,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Kate Raworth propose, avec la théorie du donut, de définir un espace économique sûr et juste compris entre un plancher social (les besoins humains fondamentaux) et un plafond écologique (les limites planétaires) — une tentative de synthèse entre croissance et décroissance, adoptée comme cadre de politique publique par plusieurs villes, dont Amsterdam."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Kate Raworth et la théorie du donut",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Kate_Raworth"
       }
     ]
   },
@@ -8481,6 +9281,14 @@
         "titre": "À retenir",
         "html": "Thomas Piketty dirige le World Inequality Lab, chronique dans Le Monde depuis 2004, et défend publiquement une fiscalité fortement progressive et un « héritage universel » — des éléments factuels qui expliquent son identification à une sensibilité favorable à une redistribution plus marquée, sans que cela résume l'ensemble de ses contributions scientifiques détaillées en phase 5."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Chroniques de Thomas Piketty",
+        "source": "Le Monde",
+        "url": "https://www.lemonde.fr/signataires/thomas-piketty/"
+      }
     ]
   },
   {
@@ -8542,6 +9350,14 @@
         "titre": "À retenir",
         "html": "Frédéric Lordon tient depuis 2007 le blog « La pompe à phynance » sur Le Monde diplomatique et s'est fait connaître d'un large public via le mouvement Nuit debout en 2016. Il défend une position minoritaire, y compris parmi les économistes classés à sa gauche, en faveur d'une sortie ou d'une refonte radicale de la zone euro."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "La pompe à phynance, le blog de Frédéric Lordon",
+        "source": "Le Monde diplomatique",
+        "url": "https://blog.mondediplo.net/-Frederic-Lordon-"
+      }
     ]
   },
   {
@@ -8602,6 +9418,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Thomas Porcher, membre des Économistes atterrés et cofondateur du parti Place publique en 2018, a tenu de 2023 à 2026 une chronique hebdomadaire sur France Inter face à Dominique Seux, avant de rejoindre les médias du groupe Combat en 2026 — un parcours qui illustre la centralité croissante des médias dans la carrière de certains économistes contemporains."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Thomas Porcher",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Thomas_Porcher"
       }
     ]
   },
@@ -8733,6 +9557,14 @@
         "titre": "À retenir",
         "html": "Jean Tirole, prix Nobel 2014, développe une théorie de la régulation économique par les mécanismes de marché correctement encadrés, adaptée secteur par secteur plutôt qu'universelle. Sa présence publique passe surtout par des rapports commandés par les pouvoirs publics, dont celui coprésidé avec Olivier Blanchard en 2021, plutôt que par une chronique médiatique récurrente."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Toulouse School of Economics, fondée par Jean Tirole",
+        "source": "TSE",
+        "url": "https://www.tse-fr.eu"
+      }
     ]
   },
   {
@@ -8794,6 +9626,14 @@
         "titre": "À retenir",
         "html": "Philippe Aghion, professeur au Collège de France et Nobel 2025, construit sa présence publique française principalement à travers des missions d'expertise gouvernementale sur l'innovation et la compétitivité plutôt que par une chronique médiatique régulière — sa distinction a été saluée publiquement par plusieurs responsables politiques comme une validation des politiques d'innovation menées ces dernières années."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Leçons et travaux de Philippe Aghion",
+        "source": "Collège de France",
+        "url": "https://www.college-de-france.fr/fr/chaire/philippe-aghion-economie-des-institutions-de-linnovation-et-de-la-croissance-chaire-statutaire"
+      }
     ]
   },
   {
@@ -8854,6 +9694,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Nicolas Bouzou, fondateur du cabinet Asterès, revendique un libéralisme assumé dans une présence médiatique particulièrement continue (France 5, LCI, BFMTV, Le Figaro, Les Échos). Il a publiquement soutenu Alain Juppé en 2016, puis cosigné en 2022 une tribune appelant explicitement à voter Emmanuel Macron face à Marine Le Pen."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Asterès, le cabinet de Nicolas Bouzou",
+        "source": "Asterès",
+        "url": "https://asteres.fr"
       }
     ]
   },
@@ -9017,6 +9865,14 @@
         "titre": "À retenir",
         "html": "Esther Duflo privilégie une présence publique fondée sur des rapports d'expertise et des auditions institutionnelles plutôt que sur une chronique médiatique régulière, avec des recommandations précisément circonscrites au périmètre de ses données — une posture de prudence scientifique qui ne l'empêche pas de défendre publiquement le renforcement de l'aide au développement."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "J-PAL, le laboratoire cofondé par Esther Duflo",
+        "source": "J-PAL",
+        "url": "https://www.povertyactionlab.org/fr"
+      }
     ]
   },
   {
@@ -9044,6 +9900,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Xavier Ragot préside depuis 2014 l'OFCE, premier think tank économique français, et revendique explicitement une ambition de « dépolitisation de l'analyse économique ». Membre du Conseil d'analyse économique, il a défendu publiquement, sur des bases techniques, l'endettement public comme solution plutôt que problème pendant la crise du Covid-19."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "OFCE, l'institut présidé par Xavier Ragot",
+        "source": "OFCE",
+        "url": "https://www.ofce.sciences-po.fr/"
       }
     ]
   },
@@ -9106,6 +9970,14 @@
         "titre": "À retenir",
         "html": "Olivier Blanchard, ex-économiste en chef du FMI (2008-2015) et revenu à l'École d'économie de Paris en 2023, privilégie les publications académiques et les rapports d'expertise à la présence médiatique régulière. Il a publiquement nuancé l'alarmisme sur la dette publique, soutenant qu'un refinancement continu peut rester soutenable tant que les taux d'intérêt réels restent inférieurs à la croissance."
       }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Olivier Blanchard",
+        "source": "Peterson Institute for International Economics",
+        "url": "https://www.piie.com/experts/senior-research-staff/olivier-blanchard"
+      }
     ]
   },
   {
@@ -9166,6 +10038,14 @@
         "type": "encadre",
         "titre": "À retenir",
         "html": "Jean Pisani-Ferry, contributeur au programme économique d'Emmanuel Macron en 2017, a remis en mai 2023 un rapport chiffrant à 66 milliards d'euros par an l'effort nécessaire pour la transition écologique française, proposant notamment un prélèvement exceptionnel sur le patrimoine des plus aisés — une proposition finalement écartée par le gouvernement qui l'avait pourtant commandée, illustrant l'écart possible entre expertise et décision politique."
+      }
+    ],
+    "ressources": [
+      {
+        "type": "article",
+        "titre": "Jean Pisani-Ferry",
+        "source": "Wikipédia",
+        "url": "https://fr.wikipedia.org/wiki/Jean_Pisani-Ferry"
       }
     ]
   },
