@@ -749,7 +749,7 @@ button:active {
 .palier-detail { font-size: 0.78rem; color: var(--ink-soft); }
 
 .btn-collection {
-  width: 100%;
+  flex: 1;
   background-color: var(--terracotta);
   color: var(--cream);
   border: none;
@@ -759,7 +759,6 @@ button:active {
   font-weight: 600;
   font-size: 1.02rem;
   cursor: pointer;
-  margin-top: 26px;
 }
 
 .btn-toggle-collection {
