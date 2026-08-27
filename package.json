@@ -1,0 +1,20 @@
+{
+  "name": "intro-eco",
+  "version": "1.0.0",
+  "description": "Une fiche d'économie par jour, jusqu'au premier tour de la présidentielle 2027.",
+  "private": true,
+  "scripts": {
+    "start": "npx serve .",
+    "test": "echo \"No tests configured\" && exit 0"
+  },
+  "keywords": [
+    "economics",
+    "education",
+    "pwa"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vercel/analytics": "^1.4.1"
+  }
+}
